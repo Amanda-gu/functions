@@ -76,14 +76,26 @@
         <!-- output -->    
             <output for="amount" form="my-form">
                 <article>
-                    <h3 id="card-recipe-name">name</h3>
-                    <p>description</p>
-                    <section id="ingredients">
-                        <p>faergaer</p>
-                    </section>
-                    <section id="instructions">
-                        <p>gaergaerg</p>
-                    </section>
+                    <h2 id="card-recipe-name">name</h3>
+                    <h3 id="card-recipe-description">description</h3>
+                    <details open name="ingredients">
+                        <summary id="card-recipe-description">Description</summary>
+                        <section id="single-ingredient">
+                            <p>vodka</p>
+                            <p>20oz.</p>
+                        </section>
+                        <section id="single-ingredient">
+                            <p>vodka</p>
+                            <p>20oz.</p>
+                        </section>
+                    </details>
+                    <details open name="instructions">
+                        <summary id="card-recipe-instructions">Instructions</summary>
+                        <ol>
+                            <li>pour drink</li>
+                            <li>drink</li>
+                        </ol>
+                    </detials>
 
                 </article>
             </output>
