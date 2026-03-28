@@ -17,6 +17,8 @@ form {
 		display: grid;
 		gap: calc(var(--spacing) / 2);
 		padding: var(--spacing);
+		height: fit-content;
+		
 	}
 	#input{
 		background-color: whitesmoke;
