@@ -17,62 +17,62 @@
 		<h1>Ganbei</h1>
 
 		<form id="some-form">
+            <section id="input">
+            <!-- name -->        
+                <section>
+                    <label for="recipe-name">Name Your Recipe</label>
+                    <input id="recipe-name" name="recipe-name" placeholder="Name your recipe" required type="text">
+                </section>
 
-        <!-- name -->        
-            <section>
-                <label for="recipe-name">Name Your Recipe</label>
-                <input id="recipe-name" name="recipe-name" placeholder="Name your recipe" required type="text">
+            <!-- dropdown -->
+                <section>
+                    <label for="some-option">What is the occasion?</label>
+                    <select id="some-option" name="some-option">
+                        <option>Brunch</option>
+                        <option>Casual Weeknight</option>
+                        <option>Weekend Fun</option>
+                        <option>Dinner Party</option>
+                        <option>Brunch</option>
+                        <option>Celebrating something</option>
+                        <option>Date Night</option>
+                        <option>I'm flexible</option>
+                    </select>
+                </section>
+
+            <!-- 2 sliders -->    
+                <section>
+                    <label for="some-range">Alcoholic Scale</label>
+                    <input type="range" id="some-range" name="some-range" min="0" max="11" value="5">
+                </section>
+
+                <section>
+                    <label for="some-range">Adventure Scale</label>
+                    <input type="range" id="some-range" name="some-range" min="0" max="11" value="5">
+                </section>
+            <!-- location -->    
+                <section>
+                    <!-- geolocation api: https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API/Using_the_Geolocation_API-->
+                    <!-- live example: https://www.w3schools.com/html/tryit.asp?filename=tryhtml5_geolocation -->
+                    <button id="find-me">Make it match the weather</button>
+                    <p id="location"></p>
+                </section>
+            <!-- glasstype -->
+                <fieldset>
+                        <legend>Choose your glass</legend>
+                        <!-- And how different the `radio` type is! -->
+                        <input checked id="first-option" name="other-option" type="radio" value="first">
+                        <label for="first-option">First</label>
+                        <input id="second-option" name="other-option" type="radio" value="second">
+                        <label for="second-option">Second</label>
+                        <input id="third-option" name="other-option" type="radio" value="third">
+                        <label for="third-option">Third</label>
+                </fieldset>
+            <!-- buttons -->        
+                <section>
+                    <button type="reset">Mix it</button>
+                    <button>Surprise Me</button>
+                </section>
             </section>
-
-        <!-- dropdown -->
-            <section>
-                <label for="some-option">What is the occasion?</label>
-				<select id="some-option" name="some-option">
-                    <option>Brunch</option>
-                    <option>Casual Weeknight</option>
-                    <option>Weekend Fun</option>
-                    <option>Dinner Party</option>
-                    <option>Brunch</option>
-                    <option>Celebrating something</option>
-                    <option>Date Night</option>
-                    <option>I'm flexible</option>
-				</select>
-			</section>
-
-        <!-- 2 sliders -->    
-			<section>
-				<label for="some-range">Alcoholic Scale</label>
-				<input type="range" id="some-range" name="some-range" min="0" max="11" value="5">
-			</section>
-
-            <section>
-				<label for="some-range">Adventure Scale</label>
-				<input type="range" id="some-range" name="some-range" min="0" max="11" value="5">
-			</section>
-		<!-- location -->    
-            <section>
-                <!-- geolocation api: https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API/Using_the_Geolocation_API-->
-                <!-- live example: https://www.w3schools.com/html/tryit.asp?filename=tryhtml5_geolocation -->
-				<button id="find-me">Make it match the weather</button>
-                <p id="location"></p>
-			</section>
-        <!-- glasstype -->
-        <fieldset>
-				<legend>Choose your glass</legend>
-				<!-- And how different the `radio` type is! -->
-				<input checked id="first-option" name="other-option" type="radio" value="first">
-				<label for="first-option">First</label>
-				<input id="second-option" name="other-option" type="radio" value="second">
-				<label for="second-option">Second</label>
-				<input id="third-option" name="other-option" type="radio" value="third">
-				<label for="third-option">Third</label>
-		</fieldset>
-        <!-- buttons -->        
-            <section>
-                <button type="reset">Mix it</button>
-                <button>Surprise Me</button>
-            </section>
-
         <!-- output -->    
             <output for="amount" form="my-form">
                 <article>

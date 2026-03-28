@@ -1,6 +1,6 @@
 /* Some basics to make it easier to read. */
 body {
-	--spacing: 2em;
+	--spacing: 1em;
     font-family: Arial, Helvetica, sans-serif;
 	display: grid;
 	gap: var(--spacing);
@@ -9,11 +9,22 @@ body {
 }
 
 form {
-	background-color: whitesmoke;
-	border-radius: calc(var(--spacing) / 2);
-	display: grid;
+	display: flex;
+	flex-direction: row;
 	gap: var(--spacing);
-	padding: var(--spacing);
+	#input, output{
+		border-radius: calc(var(--spacing) / 2);
+		display: grid;
+		gap: calc(var(--spacing) / 2);
+		padding: var(--spacing);
+	}
+	#input{
+		background-color: whitesmoke;
+	}
+
+	output{
+		background-color: rgb(201, 208, 210);
+	}
 	
 }
 
@@ -23,6 +34,6 @@ canvas{
 	position: absolute;
 	top: 0;
 	left: 0;
-	background-color: rgb(203, 240, 255);
+	background-color: rgb(185, 196, 201);
 	z-index: -1;
 }
