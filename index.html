@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Functions</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+         <style>
+	        /* @import 'reset.css' layer(reset); */
+	        @import 'common.css' layer(common);
+            @import 'style.css' layer(page);
+        </style>
+		<script defer src="script.js"></script>
+    </head>
+
+    <body>
+		
+		<h1>Forms, Params, and Storage</h1>
+
+		<form id="some-form">
+
+
+        <!-- dropdown -->
+            <section>
+                <label for="some-option">What is the occasion?</label>
+				<select id="some-option" name="some-option">
+                    <option>With options</option>
+                    <option>Inside here</option>
+                    <option>To select</option>
+                    <optgroup label="Grouped">
+                        <option>You can organize</option>
+                        <option>Options in groups</option>
+                    </optgroup>
+				</select>
+			</section>
+
+        <!-- 2 sliders -->    
+			<section>
+				<label for="some-range">Alcoholic Scale</label>
+				<input type="range" id="some-range" name="some-range" min="0" max="11" value="5">
+			</section>
+
+            <section>
+				<label for="some-range">Adventure Scale</label>
+				<input type="range" id="some-range" name="some-range" min="0" max="11" value="5">
+			</section>
+		<!-- location -->    
+            <section>
+                <!-- geolocation api: https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API/Using_the_Geolocation_API-->
+                <!-- live example: https://www.w3schools.com/html/tryit.asp?filename=tryhtml5_geolocation -->
+				<button id="find-me">Show my location</button><br />
+                <p id="location"></p>
+                <a id="map-link" target="_blank">Location unknown</a>
+			</section>
+        
+        <!-- additional notes -->        
+            <section>
+                <label for="some-text">Additional Notes:</label>
+                <input id="some-text" name="some-text" placeholder="Some suggested text" required type="text">
+            </section>
+
+        <!-- submit -->        
+            <section>
+                <button type="reset">Reset</button>
+                <button>Submit</button>
+            </section>
+            
+		</form>
+
+
+	</body>
+</html>
