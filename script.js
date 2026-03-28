@@ -1,4 +1,3 @@
-
 // Below is for the grolocation api
 // live example: https://www.w3schools.com/html/tryit.asp?filename=tryhtml5_geolocation
 
