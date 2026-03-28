@@ -31,3 +31,14 @@ findmeButton.addEventListener('click', () => {
 
     getLocation()
 })
+
+
+// function getWeatherConditions(position) { 
+//   var latitude = position.coords.latitude;
+//   var longitude = position.coords.longitude;
+
+
+
+
+
+
