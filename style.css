@@ -1,7 +1,7 @@
 /* Some basics to make it easier to read. */
 body {
 	--spacing: 2em;
-
+    font-family: Arial, Helvetica, sans-serif;
 	display: grid;
 	gap: var(--spacing);
 	margin: initial;
