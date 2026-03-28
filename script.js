@@ -2,8 +2,7 @@
 // Below is for the grolocation api
 // live example: https://www.w3schools.com/html/tryit.asp?filename=tryhtml5_geolocation
 
-const locationName = document.getElementById("location");
-const findmeButton = document.getElementById('find-me');
+const findmeButton = document.getElementById('find-me')
 
 
 findmeButton.addEventListener('click', () => {   
@@ -16,9 +15,32 @@ findmeButton.addEventListener('click', () => {
         }
 
     function success(position) {
-        locationName.innerHTML = "Latitude: " + position.coords.latitude + 
-        "<br>Longitude: " + position.coords.longitude
-        console.log("Your current position is:")
+
+        //to get the current weather i found this open source api: https://open-meteo.com/en/docs?forecast_days=1&hourly=&current=temperature_2m,relative_humidity_2m,weather_code&latitude=40.7143&longitude=-74.006
+        //since it does not have js or json api response im reasearching how to link the api to my site
+        //found this how-to: https://www.omi.me/blogs/api-guides/how-to-fetch-weather-data-using-open-meteo-api-in-javascript
+
+
+        const lat = position.coords.latitude
+        const lon = position.coords.longitude
+        const apiUrl = `https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&current=temperature_2m,weather_code&forecast_days=1`;
+            
+        //params i need for current moment: weather code, temp, location
+        fetch(apiUrl)
+        .then(response => {
+            if (!response.ok) {
+            throw new Error('Network response was not ok');
+            }
+            return response.json();
+        })
+        .then(data => {
+            console.log('Weather data:', data);
+        })
+        .catch(error => {
+            console.error('There has been a problem with your fetch operation:', error);
+        });
+ 
+        
         }
 
     function error() {
@@ -30,15 +52,6 @@ findmeButton.addEventListener('click', () => {
 //https://claude.ai/share/bb8f94ee-4a35-4cd7-b5f3-e308d2ad448f
 
     getLocation()
+  
 })
-
-
-// function getWeatherConditions(position) { 
-//   var latitude = position.coords.latitude;
-//   var longitude = position.coords.longitude;
-
-
-
-
-
 
