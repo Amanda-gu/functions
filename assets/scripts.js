@@ -17,9 +17,13 @@
 let submitButton = document.querySelector('#submit')
 let resultCard = document.querySelector('output')
 
-submitButton.addEventListener('click', () => { // “Listen” for clicks.
-	
+
+
+
+submitButton.addEventListener('click', () => { // “Listen” for clicks.	
 	resultCard.classList.add('show') 
+    showCard()
+})
 // Target your form.
 let formElement = document.querySelector('#some-form')
 
