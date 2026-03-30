@@ -26,7 +26,14 @@ form {
 
 	output{
 		background-color: rgb(201, 208, 210);
+		opacity: 0;
+
+		&.show{
+			opacity: 1;
+		}
 	}
+
+
 	
 }
 
