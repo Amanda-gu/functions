@@ -25,5 +25,19 @@
         "type": "base",
 		"taste": ["sweet", "grainy", "smooth"],
 		"abv": "mild"
+	},
+
+    {
+		"name": "Lemon Juice",
+        "type": "mixer",
+		"taste": ["acid", "fruity", "crisp"],
+        "abv": "none"
+	},
+
+    {
+		"name": "Lemon Juice",
+        "type": "mixer",
+		"taste": ["acid", "fruity", "crisp"],
+        "abv": "none"
 	}
 ]
