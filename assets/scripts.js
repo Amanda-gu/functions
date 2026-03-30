@@ -16,6 +16,11 @@
 
 let submitButton = document.querySelector('#submit')
 let resultCard = document.querySelector('output')
+//everything in the result card
+let cocktaillName = document.querySelector('#card-recipe-name')
+let cocktailBase = document.querySelector('#base')
+let cocktailMixers = document.querySelector('#mixers')
+let cocktailGarnish = document.querySelector('#garnish')
 
 
 
@@ -24,6 +29,14 @@ submitButton.addEventListener('click', () => { // “Listen” for clicks.
 	resultCard.classList.add('show') 
     showCard()
 })
+
+let showCard = () => {
+    let name = document.querySelector('#recipe-name').value;
+    cocktaillName.innerText = name;
+}
+
+
+
 // Target your form.
 let formElement = document.querySelector('#some-form')
 
