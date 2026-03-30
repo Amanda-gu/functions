@@ -26,8 +26,8 @@
 
             <!-- dropdown -->
                 <section>
-                    <label for="some-option">What is the occasion?</label>
-                    <select id="some-option" name="some-option">
+                    <label for="occasion">What is the occasion?</label>
+                    <select id="occasion" name="occasion">
                         <option>Brunch</option>
                         <option>Casual Weeknight</option>
                         <option>Weekend Fun</option>
@@ -41,13 +41,13 @@
 
             <!-- 2 sliders -->    
                 <section>
-                    <label for="some-range">Alcoholic Scale</label>
-                    <input type="range" id="some-range" name="some-range" min="0" max="11" value="5">
+                    <label for="alc-scale">Alcoholic Scale</label>
+                    <input type="range" id="alc-scale" name="alc-scale" min="0" max="10" value="5">
                 </section>
 
                 <section>
-                    <label for="some-range">Adventure Scale</label>
-                    <input type="range" id="some-range" name="some-range" min="0" max="11" value="5">
+                    <label for="adv-scale">Adventure Scale</label>
+                    <input type="range" id="adv-scale" name="adv-scale" min="0" max="10" value="5">
                 </section>
          
             <!-- glasstype -->
@@ -75,7 +75,7 @@
                 </section>
             </section>
         <!-- output -->    
-            <output for="amount" form="my-form">
+            <output>
                 <article>
                     <h2 id="card-recipe-name">name</h3>
                     <h3 id="card-recipe-description">description</h3>
