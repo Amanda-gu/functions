@@ -1,0 +1,29 @@
+[
+	{
+		"name": "Gin",
+        "type": "base",
+		"taste": ["dry", "earthy", "crisp", "clean"],
+		"abv": "forward"
+	},
+
+    {
+		"name": "Vodka",
+        "type": "base",
+		"taste": ["forward", "earthy", "clean"],
+		"abv": "forward"
+	},
+
+    {
+		"name": "Chardonnay",
+        "type": "base",
+		"taste": ["sweet", "acid", "crips"],
+		"abv": "low"
+	},
+
+    {
+		"name": "Junmai Sake",
+        "type": "base",
+		"taste": ["sweet", "grainy", "smooth"],
+		"abv": "mild"
+	}
+]
