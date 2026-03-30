@@ -11,7 +11,18 @@
 // base taste:{clear, crisp} 
 
 
-
+async function getData() {
+  try {
+    const response = await fetch("./data.json");
+    if (!response.ok) {
+      throw new Error(`Response status: ${response.status}`);
+    }
+    const result = await response.json();
+    console.log(result);
+  } catch (error) {
+    console.error(error.message);
+  }
+}
 
 
 let mixButton = document.querySelector('#submit')
@@ -40,6 +51,10 @@ let showCard = () => {
 	let adventureScale = document.querySelector("#adv-scale").value
 
 
+	//how to filter in js: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter
+	if (occasion === "brunch") {
+		base = filter((base) => word.length > 6)
+	}
 
     cocktailName.innerHTML = name; //name is what user types in, no filtering needed
 	cocktailBase.innerHTML = base;
