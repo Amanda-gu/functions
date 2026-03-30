@@ -31,10 +31,27 @@ mixButton.addEventListener('click', () => { // “Listen” for clicks.
 })
 
 let showCard = () => {
-    let name = document.querySelector('#recipe-name').value;
-    cocktailName.innerHTML = name;
 
-	cocktailBase.innerHTML
+    let name = document.querySelector('#recipe-name').value
+	//how to get the selected value: https://www.w3schools.com/JSREF/tryit.asp?filename=tryjsref_select_value
+	let occasion = document.querySelector("#occasion").value
+	let alcoholScale = document.querySelector("#alc-scale").value
+	let adventureScale = document.querySelector("#adv-scale").value
+
+
+
+
+
+
+
+    cocktailName.innerHTML = name;
+	cocktailBase.innerHTML = base;
+	cocktailMixers.innerHTML = mixers;
+	cocktailBase.innerHTML = garnish;
+
+
+
+
 }
 
 
