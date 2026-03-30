@@ -36,14 +36,15 @@ let showCard = () => {
 	let alcoholScale = document.querySelector("#alc-scale").value
 	let adventureScale = document.querySelector("#adv-scale").value
 
-	
-	//how to filter in js: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter
-
-
 //since i have 4 filters, i was not sure how i can make the code work	
 //trying to understand boolean in js using if/else statements: https://claude.ai/share/e74a5c83-61c0-4e88-9b6f-27dc7947f5df
 //i don think this is the most efficient
-//filter() seems better, https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter
+//filter() seems better, https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter	
+//how to filter in js: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter
+//here is an example: https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_filter2
+//watched this tutorial: https://www.youtube.com/watch?v=nKglx7dN7Ss
+
+
 	// if (occasion === "brunch") {
 
 	// }
