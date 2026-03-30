@@ -3,14 +3,12 @@
 // base + mixers + garnish
 
 
-
+//nesting?
 // if occasion is brunch
 // base: abv below 6
 
 // if weather is 20, 23, 24 & temp high (clear sky)
 // base taste:{clear, crisp} 
-
-
 
 
 let mixButton = document.querySelector('#submit')
@@ -29,7 +27,7 @@ mixButton.addEventListener('click', () => { // “Listen” for clicks.
     showCard()
 })
 
-//what's inside the result card
+//what's inside the result card function
 let showCard = () => {
 
     let name = document.querySelector('#recipe-name').value
@@ -38,19 +36,53 @@ let showCard = () => {
 	let alcoholScale = document.querySelector("#alc-scale").value
 	let adventureScale = document.querySelector("#adv-scale").value
 
-
+	
 	//how to filter in js: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter
-	if (occasion === "brunch") {
-		base = filter((base) => word.length > 6)
-	}
+
+
+//since i have 4 filters, i was not sure how i can make the code work	
+//trying to understand boolean in js using if/else statements: https://claude.ai/share/e74a5c83-61c0-4e88-9b6f-27dc7947f5df
+//i don think this is the most efficient
+//filter() seems better, https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter
+	// if (occasion === "brunch") {
+
+	// }
+
+	// else if (occastion === "Casual Weeknight"){
+
+	// }
+
+	// else if (occastion === "Weekend Fun"){
+		
+	// }
+
+	// else if (occastion === "Dinner Party"){
+		
+	// }
+
+	// else if (occastion === "Celebrating something"){
+		
+	// }
+
+	// else if (occastion === "Date Night"){
+		
+	// }
+
+
+	// if (current.weather_code === 0) {
+
+	// }
+
+	// else if (current.weather_code === 1,2,3) {
+
+	// }
+		
+
 
     cocktailName.innerHTML = name; //name is what user types in, no filtering needed
 	cocktailBase.innerHTML = base;
 	cocktailMixers.innerHTML = mixers;
 	cocktailBase.innerHTML = garnish;
-
-
-
 
 }
 
