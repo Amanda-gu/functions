@@ -24,12 +24,13 @@ let cocktailGarnish = document.querySelector('#garnish')
 
 
 
-
+//click button show result card
 mixButton.addEventListener('click', () => { // “Listen” for clicks.	
 	resultCard.classList.add('show') 
     showCard()
 })
 
+//what's inside the result card
 let showCard = () => {
 
     let name = document.querySelector('#recipe-name').value
@@ -40,11 +41,7 @@ let showCard = () => {
 
 
 
-
-
-
-
-    cocktailName.innerHTML = name;
+    cocktailName.innerHTML = name; //name is what user types in, no filtering needed
 	cocktailBase.innerHTML = base;
 	cocktailMixers.innerHTML = mixers;
 	cocktailBase.innerHTML = garnish;
