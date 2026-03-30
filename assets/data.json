@@ -28,16 +28,39 @@
 	},
 
     {
-		"name": "Lemon Juice",
+		"name": "Lime Juice",
         "type": "mixer",
-		"taste": ["acid", "fruity", "crisp"],
-        "abv": "none"
+		"taste": ["acid", "fruity", "crisp"]
+
 	},
 
     {
-		"name": "Lemon Juice",
+		"name": "Coke",
         "type": "mixer",
-		"taste": ["acid", "fruity", "crisp"],
-        "abv": "none"
+		"taste": ["sparkling", "sweet", "crisp"]
+	},
+    
+    {
+		"name": "Coconut Milk",
+        "type": "mixer",
+		"taste": ["creamy", "sweet", "rich"]
+	},
+    
+    {
+		"name": "Agave nectar",
+        "type": "mixer",
+		"taste": ["fruity", "sweet", "natural"]
+	},
+
+    {
+		"name": "Lemon peel",
+        "type": "mixer",
+		"taste": ["fruity", "sweet", "natural"]
+	},
+
+    {
+		"name": "Basil",
+        "type": "mixer",
+		"taste": ["earthy", "aromic"]
 	}
 ]

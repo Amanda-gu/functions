@@ -20,7 +20,6 @@ let cocktailMixers = document.querySelector('#mixers')
 let cocktailGarnish = document.querySelector('#garnish')
 
 
-
 //click button show result card
 mixButton.addEventListener('click', () => { // “Listen” for clicks.	
 	resultCard.classList.add('show') 
@@ -30,60 +29,36 @@ mixButton.addEventListener('click', () => { // “Listen” for clicks.
 //what's inside the result card function
 let showCard = () => {
 
-    let name = document.querySelector('#recipe-name').value
-	//how to get the selected value: https://www.w3schools.com/JSREF/tryit.asp?filename=tryjsref_select_value
+	//how to get the selected value: https://www.w3schools.com/JSREF/tryit.asp?filename=tryjsref_select_value   
+	let name = document.querySelector('#recipe-name').value
 	let occasion = document.querySelector("#occasion").value
 	let alcoholScale = document.querySelector("#alc-scale").value
 	let adventureScale = document.querySelector("#adv-scale").value
+	console.log(occasion)
 
-//since i have 4 filters, i was not sure how i can make the code work	
-//trying to understand boolean in js using if/else statements: https://claude.ai/share/e74a5c83-61c0-4e88-9b6f-27dc7947f5df
-//i don think this is the most efficient
-//filter() seems better, https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter	
-//how to filter in js: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter
-//here is an example: https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_filter2
-//watched this tutorial: https://www.youtube.com/watch?v=nKglx7dN7Ss
+	let base = document.querySelector('#base')
+	let mixers = document.querySelector('#mixers')
+	let garnish = document.querySelector('#garnish')
 
 
-	// if (occasion === "brunch") {
-
-	// }
-
-	// else if (occastion === "Casual Weeknight"){
-
-	// }
-
-	// else if (occastion === "Weekend Fun"){
-		
-	// }
-
-	// else if (occastion === "Dinner Party"){
-		
-	// }
-
-	// else if (occastion === "Celebrating something"){
-		
-	// }
-
-	// else if (occastion === "Date Night"){
-		
-	// }
+	//since i have 4 filters, i was not sure how i can make the code work	
+	//trying to understand boolean in js using if/else statements: https://claude.ai/share/e74a5c83-61c0-4e88-9b6f-27dc7947f5df
+	//i don think this is the most efficient
+	//filter() seems better, https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter	
+	//how to filter in js: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter
+	//here is an example: https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_filter2
+	//watched this tutorial: https://www.youtube.com/watch?v=nKglx7dN7Ss
 
 
-	// if (current.weather_code === 0) {
 
-	// }
 
-	// else if (current.weather_code === 1,2,3) {
 
-	// }
-		
 
 
     cocktailName.innerHTML = name; //name is what user types in, no filtering needed
-	cocktailBase.innerHTML = base;
-	cocktailMixers.innerHTML = mixers;
-	cocktailBase.innerHTML = garnish;
+	// cocktailBase.innerHTML = base;
+	// cocktailMixers.innerHTML = mixers;
+	// cocktailBase.innerHTML = garnish;
 
 }
 
@@ -213,6 +188,7 @@ formElement.addEventListener('input', () => {
 	
 // 	console.log()
 // }
+
 //from arena js
 const file = "data.json"
 let fetchJson = (file, callback) => {
