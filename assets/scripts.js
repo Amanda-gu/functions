@@ -11,18 +11,6 @@
 // base taste:{clear, crisp} 
 
 
-async function getData() {
-  try {
-    const response = await fetch("./data.json");
-    if (!response.ok) {
-      throw new Error(`Response status: ${response.status}`);
-    }
-    const result = await response.json();
-    console.log(result);
-  } catch (error) {
-    console.error(error.message);
-  }
-}
 
 
 let mixButton = document.querySelector('#submit')
@@ -192,3 +180,10 @@ formElement.addEventListener('input', () => {
 	
 // 	console.log()
 // }
+//from arena js
+const file = "data.json"
+let fetchJson = (file, callback) => {
+	fetch(file, { cache: 'no-store' })
+		.then((response) => response.json())
+		.then((json) => callback(json))
+}
