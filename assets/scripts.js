@@ -11,13 +11,9 @@
 // base taste:{clear, crisp} 
 
 
+
 let mixButton = document.querySelector('#submit')
 let resultCard = document.querySelector('output')
-//everything in the result card
-let cocktailName = document.querySelector('#card-recipe-name')
-let cocktailBase = document.querySelector('#base')
-let cocktailMixers = document.querySelector('#mixers')
-let cocktailGarnish = document.querySelector('#garnish')
 
 
 //click button show result card
@@ -27,9 +23,16 @@ mixButton.addEventListener('click', () => { // “Listen” for clicks.
 })
 
 //what's inside the result card function
-let showCard = () => {
+let showCard = (data) => {
 
-	//how to get the selected value: https://www.w3schools.com/JSREF/tryit.asp?filename=tryjsref_select_value   
+	//everything in the result card
+	let cocktailName = document.querySelector('#card-recipe-name')
+	let cocktailBase = document.querySelector('#base')
+	let cocktailMixers = document.querySelector('#mixers')
+	let cocktailGarnish = document.querySelector('#garnish')
+	
+
+	//how to get the ysers selected values: https://www.w3schools.com/JSREF/tryit.asp?filename=tryjsref_select_value   
 	let name = document.querySelector('#recipe-name').value
 	let occasion = document.querySelector("#occasion").value
 	let alcoholScale = document.querySelector("#alc-scale").value
@@ -40,10 +43,55 @@ let showCard = () => {
 	console.log(alcoholScale)
 	console.log(adventureScale)
 
-	let baseFill = document.querySelector('#base')
-	let mixersFill = document.querySelector('#mixers')
-	let garnishFill = document.querySelector('#garnish')
+	let ingredientList = document.getElementById('ingredient-list')
+	data.forEach((item) => {
+	let conditionalClass = '' // Set an empty class variable.
 
+		// Conditional if this is `false` (“not true”):
+		// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else
+		if (!item.alsoWrote) {
+			conditionalClass = 'faded' // Update the variable.
+		}
+
+		if (occasion === 'brunch') {
+            // For brunch: abv below 6
+            if (cocktail.abv >= 6) {
+                matches = false;
+            }
+        } else if (occasion === 'party') {
+            // Party occasion logic
+            if (cocktail.abv < 8) {
+                matches = false;
+            }
+        } else if (occasion === 'dinner') {
+            // Dinner occasion logic
+            if (cocktail.abv > 15) {
+                matches = false;
+            }
+        } else if (occasion === 'date') {
+			// Date occasion logic	
+			if (cocktail.abv < 10 || cocktail.abv > 20) {
+				matches = false;
+			}
+		}
+		// Make a “template literal” as we have before, inserting your data (and maybe the class):
+		// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals
+		let listItem =
+			`           <section id="base">
+                            <p>${item.name}</p>
+                        </section>
+                        <section id="mixers">
+                            <p>${item.name}</p>
+                        </section>
+                        <section id="garnish">
+                            <p>${item.name}</p>
+                        </section>
+			`
+
+		ingredientList.insertAdjacentHTML('beforeend', listItem) // Add it to the `ul`!
+
+		// Don’t feel limited to `ul > li` for these—you can insert any DOM, anywhere!
+	})
 
 	//since i have 4 filters, i was not sure how i can make the code work	
 	//trying to understand boolean in js using if/else statements: https://claude.ai/share/e74a5c83-61c0-4e88-9b6f-27dc7947f5df
