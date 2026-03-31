@@ -1,88 +1,72 @@
 {
   "base": [
-    { "name": "Gin", "taste": ["herbal","bitter","acid"], "abv": 3, "occasion": ["All", "Brunch","Date Night"] },
-    { "name": "Vodka", "taste": [], "abv": 3, "occasion": ["All", "Casual Weeknight","Weekend Fun"] },
-    { "name": "Tequila Blanco", "taste": ["acid","herbal"], "abv": 3, "occasion": ["All", "Weekend Fun"] },
-    { "name": "Tequila Reposado", "taste": ["smoky","sweet"], "abv": 3, "occasion": ["All", "Dinner Party"] },
-    { "name": "White Rum", "taste": ["sweet","fruity"], "abv": 3, "occasion": ["All", "Brunch","Weekend Fun"] },
-    { "name": "Dark Rum", "taste": ["sweet","smoky"], "abv": 3, "occasion": ["All", "Dinner Party"] },
-    { "name": "Bourbon", "taste": ["sweet","smoky"], "abv": 3, "occasion": ["All", "Dinner Party","Date Night"] },
-    { "name": "Scotch", "taste": ["smoky","bitter"], "abv": 3, "occasion": ["All", "Dinner Party"] },
-    { "name": "Brandy", "taste": ["fruity","sweet"], "abv": 3, "occasion": ["All", "Celebrating something"] },
-    { "name": "Cognac", "taste": ["fruity","sweet"], "abv": 3, "occasion": ["All", "Celebrating something"] },
+    { "name": "Gin", "taste": ["herbal","bitter","acid"], "abv": 3, "occasion": ["All","Brunch","Date Night"] },
+    { "name": "Vodka", "taste": ["neutral","bitter"], "abv": 3, "occasion": ["All","Casual Weeknight","Weekend Fun"] },
+    { "name": "Tequila Blanco", "taste": ["acid","herbal"], "abv": 3, "occasion": ["All","Weekend Fun"] },
+    { "name": "Tequila Reposado", "taste": ["smoky","sweet"], "abv": 3, "occasion": ["All","Dinner Party"] },
+    { "name": "White Rum", "taste": ["sweet","fruity"], "abv": 3, "occasion": ["All","Brunch","Weekend Fun"] },
+    { "name": "Dark Rum", "taste": ["sweet","smoky"], "abv": 3, "occasion": ["All","Dinner Party"] },
+    { "name": "Bourbon", "taste": ["sweet","smoky"], "abv": 3, "occasion": ["All","Dinner Party","Date Night"] },
+    { "name": "Scotch", "taste": ["smoky","bitter"], "abv": 3, "occasion": ["All","Dinner Party"] },
+    { "name": "Brandy", "taste": ["fruity","sweet"], "abv": 3, "occasion": ["All","Celebrating something"] },
+    { "name": "Cognac", "taste": ["fruity","sweet"], "abv": 3, "occasion": ["All","Celebrating something"] },
+    { "name": "Soju", "taste": ["sweet","neutral"], "abv": 2, "occasion": ["All","Casual Weeknight"] },
+    { "name": "Sake", "taste": ["umami","sweet"], "abv": 2, "occasion": ["All","Dinner Party"] },
+    { "name": "Mezcal", "taste": ["smoky","bitter"], "abv": 3, "occasion": ["All","Weekend Fun"] },
+    { "name": "Aquavit", "taste": ["herbal","bitter"], "abv": 3, "occasion": ["All","Brunch"] },
+    { "name": "Baijiu", "taste": ["bitter","umami"], "abv": 3, "occasion": ["All","Dinner Party"] },
+    { "name": "Chardonnay", "taste": ["fruity","acid"], "abv": 1, "occasion": ["All","Brunch"] },
+    { "name": "Sauvignon Blanc", "taste": ["acid","fruity"], "abv": 1, "occasion": ["All","Brunch"] },
+    { "name": "Riesling", "taste": ["sweet","acid"], "abv": 1, "occasion": ["All","Brunch","Date Night"] },
+    { "name": "Pinot Noir", "taste": ["fruity","acid"], "abv": 1, "occasion": ["All","Dinner Party"] },
+    { "name": "Champagne", "taste": ["acid","bitter"], "abv": 1, "occasion": ["All","Celebrating something"] }
+],
 
-    { "name": "Soju", "taste": ["sweet"], "abv": 2, "occasion": ["All", "Casual Weeknight"] },
-    { "name": "Sake", "taste": ["umami","sweet"], "abv": 2, "occasion": ["All", "Dinner Party"] },
-    { "name": "Mezcal", "taste": ["smoky","bitter"], "abv": 3, "occasion": ["All", "Weekend Fun"] },
-    { "name": "Aquavit", "taste": ["herbal"], "abv": 3, "occasion": ["All", "Brunch"] },
-    { "name": "Baijiu", "taste": ["bitter","umami"], "abv": 3, "occasion": ["All", "Dinner Party"] },
+"mixer": [
+    { "name": "Tonic Water", "taste": ["bitter","acid"] },
+    { "name": "Soda Water", "taste": ["acid","bitter"]},
+    { "name": "Cola", "taste": ["sweet","bitter"]},
+    { "name": "Ginger Beer", "taste": ["sweet","spicy"]},
+    { "name": "Pickle Juice", "taste": ["salty","umami"]},
+    { "name": "Jalapeno Juice", "taste": ["salty","spicy"]},
+    { "name": "Lime Juice", "taste": ["acid","fruity"]},
+    { "name": "Lemon Juice", "taste": ["acid","fruity"]},
+    { "name": "Orange Juice", "taste": ["sweet","fruity"]},
+    { "name": "Grapefruit Juice", "taste": ["bitter","acid"]},
+    { "name": "Pineapple Juice", "taste": ["sweet","fruity"]},
+    { "name": "Cranberry Juice", "taste": ["acid","fruity"]},
+    { "name": "Apple Juice", "taste": ["sweet","fruity"]},
+    { "name": "Mango Juice", "taste": ["sweet","fruity"]},
+    { "name": "Coconut Milk", "taste": ["creamy","sweet"]},
+    { "name": "Almond Milk", "taste": ["creamy","sweet"]},
+    { "name": "Oat Milk", "taste": ["creamy","sweet"]},
+    { "name": "Honey Syrup", "taste": ["sweet","fruity"]},
+    { "name": "Simple Syrup", "taste": ["sweet","fruity"]},
+    { "name": "Espresso", "taste": ["bitter","umami"]},
+    { "name": "Green Tea", "taste": ["herbal","bitter"]},
+    { "name": "Tomato Juice", "taste": ["umami","salty"]}
+],
 
-
-    { "name": "Chardonnay", "taste": ["fruity","acid"], "abv": 1, "occasion": ["All", "Brunch"] },
-    { "name": "Sauvignon Blanc", "taste": ["acid","fruity"], "abv": 1, "occasion": ["All", "Brunch"] },
-    { "name": "Riesling", "taste": ["sweet","acid"], "abv": 1, "occasion": ["All", "Brunch","Date Night"] },
-    { "name": "Pinot Noir", "taste": ["fruity","acid"], "abv": 1, "occasion": ["All", "Dinner Party"] },
-    { "name": "Champagne", "taste": ["acid","bitter"], "abv": 1, "occasion": ["All", "Celebrating something"] }
-  ],
-
-  "mixer": [
-    { "name": "Tonic Water", "taste": ["bitter","acid"], "occasion": ["Brunch"] },
-    { "name": "Soda Water", "taste": ["acid"], "occasion": ["Casual Weeknight"] },
-    { "name": "Cola", "taste": ["sweet"], "occasion": ["Weekend Fun"] },
-    { "name": "Ginger Beer", "taste": ["sweet","spicy"], "occasion": ["Weekend Fun"] },
-    { "name": "Pickle Juice", "taste": ["salty","umami"], "occasion": ["Weekend Fun"] },
-    { "name": "Jalapeno Juice", "taste": ["salty","spicy"], "occasion": ["Weekend Fun"] },
-
-    { "name": "Lime Juice", "taste": ["acid","fruity"], "occasion": ["Brunch"] },
-    { "name": "Lemon Juice", "taste": ["acid","fruity"], "occasion": ["Brunch"] },
-    { "name": "Orange Juice", "taste": ["sweet","fruity"], "occasion": ["Brunch"] },
-    { "name": "Grapefruit Juice", "taste": ["bitter","acid"], "occasion": ["Brunch"] },
-    { "name": "Pineapple Juice", "taste": ["sweet","fruity"], "occasion": ["Weekend Fun"] },
-    { "name": "Cranberry Juice", "taste": ["acid","fruity"], "occasion": ["Casual Weeknight"] },
-
-    { "name": "Apple Juice", "taste": ["sweet","fruity"], "occasion": ["Casual Weeknight"] },
-    { "name": "Mango Juice", "taste": ["sweet","fruity"], "occasion": ["Weekend Fun"] },
-
-    { "name": "Coconut Milk", "taste": ["creamy","sweet"], "occasion": ["Vacation","Weekend Fun"] },
-    { "name": "Almond Milk", "taste": ["creamy"], "occasion": ["Casual Weeknight"] },
-    { "name": "Oat Milk", "taste": ["creamy","sweet"], "occasion": ["Casual Weeknight"] },
-
-    { "name": "Honey Syrup", "taste": ["sweet"], "occasion": ["Date Night"] },
-    { "name": "Simple Syrup", "taste": ["sweet"], "occasion": ["All"] },
-
-    { "name": "Espresso", "taste": ["bitter"], "occasion": ["Dinner Party"] },
-    { "name": "Green Tea", "taste": ["herbal"], "occasion": ["Brunch"] },
-
-    { "name": "Tomato Juice", "taste": ["umami","salty"], "occasion": ["Brunch"] }
-  ],
-
-  "garnish": [
-    { "name": "Lemon Peel", "taste": ["acid"], "occasion": ["All"] },
-    { "name": "Lime Wedge", "taste": ["acid"], "occasion": ["All"] },
+"garnish": [
+    { "name": "Lemon Peel", "taste": ["acid","fruity"] },
+    { "name": "Lime Wedge", "taste": ["acid","fruity"], "occasion": ["All"] },
     { "name": "Orange Slice", "taste": ["fruity","sweet"], "occasion": ["Brunch"] },
-
-    { "name": "Mint", "taste": ["herbal"], "occasion": ["Brunch"] },
-    { "name": "Basil", "taste": ["herbal"], "occasion": ["Dinner Party"] },
-    { "name": "Rosemary", "taste": ["herbal"], "occasion": ["Dinner Party"] },
-
+    { "name": "Mint", "taste": ["herbal","fruity"], "occasion": ["Brunch"] },
+    { "name": "Basil", "taste": ["herbal","spicy"], "occasion": ["Dinner Party"] },
+    { "name": "Rosemary", "taste": ["herbal","bitter"], "occasion": ["Dinner Party"] },
     { "name": "Cherry", "taste": ["sweet","fruity"], "occasion": ["Celebrating something"] },
     { "name": "Olive", "taste": ["salty","umami"], "occasion": ["Dinner Party"] },
-
-    { "name": "Cucumber", "taste": ["herbal"], "occasion": ["Brunch"] },
-    { "name": "Edible Flower", "taste": ["fruity"], "occasion": ["Celebrating something"] },
-
-    { "name": "Salt Rim", "taste": ["salty"], "occasion": ["Weekend Fun"] },
-    { "name": "Sugar Rim", "taste": ["sweet"], "occasion": ["Celebrating something"] },
-
-    { "name": "Chocolate Shavings", "taste": ["sweet"], "occasion": ["Date Night"] },
+    { "name": "Cucumber", "taste": ["herbal","acid"], "occasion": ["Brunch"] },
+    { "name": "Edible Flower", "taste": ["fruity","herbal"], "occasion": ["Celebrating something"] },
+    { "name": "Salt Rim", "taste": ["salty","bitter"], "occasion": ["Weekend Fun"] },
+    { "name": "Sugar Rim", "taste": ["sweet","acid"], "occasion": ["Celebrating something"] },
+    { "name": "Chocolate Shavings", "taste": ["sweet","bitter"], "occasion": ["Date Night"] },
     { "name": "Cinnamon Stick", "taste": ["sweet","spicy"], "occasion": ["Dinner Party"] },
-
-    { "name": "Herb Dust", "taste": ["herbal"], "occasion": ["Dinner Party"] },
-
-    { "name": "Chili Flakes", "taste": ["spicy"], "occasion": ["Weekend Fun"] },
-    { "name": "Vanilla Pod", "taste": ["sweet"], "occasion": ["Date Night"] },
-    { "name": "Ginger Slice", "taste": ["spicy"], "occasion": ["Casual Weeknight"] },
+    { "name": "Herb Dust", "taste": ["herbal","bitter"], "occasion": ["Dinner Party"] },
+    { "name": "Chili Flakes", "taste": ["spicy","bitter"], "occasion": ["Weekend Fun"] },
+    { "name": "Vanilla Pod", "taste": ["sweet","creamy"], "occasion": ["Date Night"] },
+    { "name": "Ginger Slice", "taste": ["spicy","acid"], "occasion": ["Casual Weeknight"] },
     { "name": "Apple Slice", "taste": ["fruity","sweet"], "occasion": ["Brunch"] },
-    { "name": "Honey Drizzle", "taste": ["sweet"], "occasion": ["Date Night"] }
-  ]
+    { "name": "Honey Drizzle", "taste": ["sweet","fruity"], "occasion": ["Date Night"] }
+]
 }
