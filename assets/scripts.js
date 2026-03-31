@@ -172,7 +172,7 @@ let showCard = (data) => {
 	
 	//to target the item in a nodelist, i used template from https://developer.mozilla.org/en-US/docs/Web/API/NodeList		
 	//i++ means add 1, in my case, the max arrays in a list is 3, so i will either be 0,1,2
-	//i asked gemini to explain it to me https://gemini.google.com/app/df8fbc48ec248bea
+	//i asked gemini to explain it to me https://gemini.google.com/share/cb86c74e30ad
 	for (let i = 0; i < selectedBases.length; i++) {
 		let selectedBase = selectedBases[i];
 		console.log('selectedBase:',selectedBase)
