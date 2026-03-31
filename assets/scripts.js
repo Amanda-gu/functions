@@ -49,8 +49,9 @@ let showCard = (data) => {
 		// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else
 		//watched filter() tutorial: https://www.youtube.com/watch?v=nKglx7dN7Ss	
 		//more about filter: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter
-	
-	
+		//also read about other filtering method like map and reduce and scores but not applying them now as they are too much to digent
+
+//BASE
 		let filterBase = data.base.filter(base => {
 					   //Array.prototype(here is base from data) .filter()
 			if (alcoholScale <= 3) 
@@ -65,27 +66,45 @@ let showCard = (data) => {
 			}
 		})
 
-		data.base.forEach(base => {
-			//data.base is an array so need to do foreach to target each base
-			if (base.taste.includes('crisp')) {
-				return base.name
-			}
-			console.log('taste:', base.name)
-		})
-
 		//if there is more than 1 base that matches, select randomly
-		if (filterBase.length > 0) {
-			const base = filterBase[Math.floor(Math.random() * filterBase.length)]
-			let listItem = `
-				<section class="base">
-				<p>${base.name}</p>
-				</section>
-			`;
+		// if (filterBase.length > 0) {
+		// 	const base = filterBase[Math.floor(Math.random() * filterBase.length)]
+		// 	let listItem = `
+		// 		<section class="base">
+		// 		<p>${base.name}</p>
+		// 		</section>
+		// 	`
+		// 	ingredientList.insertAdjacentHTML('beforeend', listItem)
+		// }
 
-			ingredientList.insertAdjacentHTML('beforeend', listItem)
-		}
+		let selectedBase = filterBase[Math.floor(Math.random() * filterBase.length)]
+		console.log('selected base:', selectedBase.name)
 
-		console.log(filterBase)
+//MIXERs
+		if (alcoholScale <= 3) && (selectedBase.includes('crisp'))) {}
+		data.mixer.forEach(mixer => {
+
+
+			if (adventureScale <= 3) {
+
+				let filterMixer = data.mixer.filter(mixer => {
+
+				if (mixer.taste.includes('crisp')) {
+					return mixer.name
+				}
+					console.log('taste:', mixer.name)
+				})
+			}
+
+			console.log('filtered mixer', mixer.name)
+		
+		})
+			
+
+
+
+
+		console.log( 'filtered base:',filterBase)
 		
 
 		// data.base.forEach(base => {
