@@ -7,6 +7,7 @@
 // if alcohol scale is below 3 -> abv below 3 & one base
 // if alcohol scale is between 3-6 -> abv between 3-6 & one base
 // if alcohol scale is between 6-10 -> abv above 6 & two bases
+//if chose occasion, then assign the base
 
 //if adventure scale is below 3 -> mixer and garnish with similar taste profile as base
 //if adventure scale is between 3-6 -> mixer and garnish with different taste profile as base
@@ -60,18 +61,30 @@ let showCard = (data) => {
 
 		//i decided to use filter and if/else to connect user input to my database. 
 //BASE
+
+//i went to a tutoring sesstion wheren the tutor helped me understand how i can incorporate occasion into my filtering. it can just be nested in side the FilterBase funciton
+
 		let filterBase = data.base.filter(base => {
 					   //Array.prototype(here is base from data) .filter()
-			if (alcoholScale <= 3) 
-				return base.abv === 1
-			else if (alcoholScale <= 6) 
-				return base.abv === 2
-			else if (alcoholScale <= 10) 
-				return base.abv === 3
-
-			if (base.abv === 1) {
-				return base.name
+			let alcohol = ""
+			//set an empty string
+		
+			if (alcoholScale <= 3) {
+				
+				if (occasion === 'Casual Weeknight') {
+					alcohol === base.occasion.includes('Casual Weeknight')
+				}
+			}else if (alcoholScale <= 6) {
+				//4 <= alcoholscale <= 6
+				alcohol === base.abv === 2
+			}else if (alcoholScale <= 10) {
+				alcohol === base.abv === 3
 			}
+			return base.name === alcohol
+
+			console.log('alcohol', alcohol)
+
+			//reture here 
 		})
 
 		//select one randomly
@@ -81,16 +94,15 @@ let showCard = (data) => {
 //inside [] is a number and that number will locate the drink in my array filterBase
 //mathrandom() gives me a number between 0 and 1, and i multiply it by the length of my array, so the number will always brween 0 and my array length.
 
-		let base1 = filterBase[Math.floor(Math.random() * filterBase.length)]
-		let base2 = filterBase[Math.floor(Math.random() * filterBase.length)]
-		let selectedBase = []
+		let random1 = Math.floor(Math.random() * filterBase.length)
+		let random2 = Math.floor(Math.random() * filterBase.length)		 
 		
-		if (alcoholScale <= 6) {
-					selectedBase = filterBase[base1]
+		if (alcoholScale >= 6) {
+					selectedBase = filterBase[random1]
 				}
 				else if (alcoholScale <= 10) 
 				{
-					selectedBase = [filterBase[base1], filterBase[base2]]
+					selectedBase = [filterBase[random1], filterBase[random2]]
 				}
 			console.log('selected base:', selectedBase)
 		
