@@ -78,13 +78,13 @@ let showCard = (data) => {
 		// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals
 		let listItem =
 			`           <section id="base">
-                            <p>${item.name}</p>
+                            <p>${data.base.name}</p>
                         </section>
                         <section id="mixers">
-                            <p>${item.name}</p>
+                            <p>${data.mixers.name}</p>
                         </section>
                         <section id="garnish">
-                            <p>${item.name}</p>
+                            <p>${garnish.name}</p>
                         </section>
 			`
 

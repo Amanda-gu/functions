@@ -1,66 +1,67 @@
-[
-	{
-		"name": "Gin",
-        "type": "base",
-		"taste": ["dry", "earthy", "crisp", "clean"],
-		"abv": "forward"
-	},
-
+{
+  "base": [
     {
-		"name": "Vodka",
-        "type": "base",
-		"taste": ["forward", "earthy", "clean"],
-		"abv": "forward"
-	},
-
+      "name": "Gin",
+      "type": "base",
+      "taste": ["dry", "earthy", "crisp", "clean"],
+      "abv": "forward"
+    },
     {
-		"name": "Chardonnay",
-        "type": "base",
-		"taste": ["sweet", "acid", "crips"],
-		"abv": "low"
-	},
-
+      "name": "Vodka",
+      "type": "base",
+      "taste": ["neutral", "clean"],
+      "abv": "forward"
+    },
     {
-		"name": "Junmai Sake",
-        "type": "base",
-		"taste": ["sweet", "grainy", "smooth"],
-		"abv": "mild"
-	},
-
+      "name": "Chardonnay",
+      "type": "base",
+      "taste": ["sweet", "acid", "crisp"],
+      "abv": "low"
+    },
     {
-		"name": "Lime Juice",
-        "type": "mixer",
-		"taste": ["acid", "fruity", "crisp"]
-
-	},
-
+      "name": "Junmai Sake",
+      "type": "base",
+      "taste": ["sweet", "grainy", "smooth"],
+      "abv": "mild"
+    }
+  ],
+  "mixer": [
     {
-		"name": "Coke",
-        "type": "mixer",
-		"taste": ["sparkling", "sweet", "crisp"]
-	},
-    
+      "name": "Tonic Water",
+      "type": "mixer",
+      "taste": ["bitter", "sparkling", "crisp"]
+    },
     {
-		"name": "Coconut Milk",
-        "type": "mixer",
-		"taste": ["creamy", "sweet", "rich"]
-	},
-    
+      "name": "Lime Juice",
+      "type": "mixer",
+      "taste": ["acid", "fruity", "crisp"]
+    },
     {
-		"name": "Agave nectar",
-        "type": "mixer",
-		"taste": ["fruity", "sweet", "natural"]
-	},
-
+      "name": "Coke",
+      "type": "mixer",
+      "taste": ["sparkling", "sweet", "crisp"]
+    },
     {
-		"name": "Lemon peel",
-        "type": "mixer",
-		"taste": ["fruity", "sweet", "natural"]
-	},
-
+      "name": "Coconut Milk",
+      "type": "mixer",
+      "taste": ["creamy", "sweet", "rich"]
+    },
     {
-		"name": "Basil",
-        "type": "mixer",
-		"taste": ["earthy", "aromic"]
-	}
-]
+      "name": "Agave Nectar",
+      "type": "mixer",
+      "taste": ["sweet", "natural"]
+    }
+  ],
+  "garnish": [
+    {
+      "name": "Lemon Peel",
+      "type": "garnish",
+      "taste": ["citrus", "aromatic"]
+    },
+    {
+      "name": "Basil",
+      "type": "garnish",
+      "taste": ["earthy", "aromatic"]
+    }
+  ]
+}
