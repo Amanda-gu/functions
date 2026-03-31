@@ -1,27 +1,28 @@
 {
   "base": [
-    { "name": "Gin", "taste": ["herbal","bitter","acid"], "abv": 3, "occasion": ["Brunch","Date Night"] },
-    { "name": "Vodka", "taste": [], "abv": 3, "occasion": ["Casual Weeknight","Weekend Fun"] },
-    { "name": "Tequila Blanco", "taste": ["acid","herbal"], "abv": 3, "occasion": ["Weekend Fun"] },
-    { "name": "Tequila Reposado", "taste": ["smoky","sweet"], "abv": 3, "occasion": ["Dinner Party"] },
-    { "name": "White Rum", "taste": ["sweet","fruity"], "abv": 3, "occasion": ["Brunch","Weekend Fun"] },
-    { "name": "Dark Rum", "taste": ["sweet","smoky"], "abv": 3, "occasion": ["Dinner Party"] },
-    { "name": "Bourbon", "taste": ["sweet","smoky"], "abv": 3, "occasion": ["Dinner Party","Date Night"] },
-    { "name": "Scotch", "taste": ["smoky","bitter"], "abv": 3, "occasion": ["Dinner Party"] },
-    { "name": "Brandy", "taste": ["fruity","sweet"], "abv": 3, "occasion": ["Celebrating something"] },
-    { "name": "Cognac", "taste": ["fruity","sweet"], "abv": 3, "occasion": ["Celebrating something"] },
+    { "name": "Gin", "taste": ["herbal","bitter","acid"], "abv": 3, "occasion": ["All", "Brunch","Date Night"] },
+    { "name": "Vodka", "taste": [], "abv": 3, "occasion": ["All", "Casual Weeknight","Weekend Fun"] },
+    { "name": "Tequila Blanco", "taste": ["acid","herbal"], "abv": 3, "occasion": ["All", "Weekend Fun"] },
+    { "name": "Tequila Reposado", "taste": ["smoky","sweet"], "abv": 3, "occasion": ["All", "Dinner Party"] },
+    { "name": "White Rum", "taste": ["sweet","fruity"], "abv": 3, "occasion": ["All", "Brunch","Weekend Fun"] },
+    { "name": "Dark Rum", "taste": ["sweet","smoky"], "abv": 3, "occasion": ["All", "Dinner Party"] },
+    { "name": "Bourbon", "taste": ["sweet","smoky"], "abv": 3, "occasion": ["All", "Dinner Party","Date Night"] },
+    { "name": "Scotch", "taste": ["smoky","bitter"], "abv": 3, "occasion": ["All", "Dinner Party"] },
+    { "name": "Brandy", "taste": ["fruity","sweet"], "abv": 3, "occasion": ["All", "Celebrating something"] },
+    { "name": "Cognac", "taste": ["fruity","sweet"], "abv": 3, "occasion": ["All", "Celebrating something"] },
 
-    { "name": "Soju", "taste": ["sweet"], "abv": 2, "occasion": ["Casual Weeknight"] },
-    { "name": "Sake", "taste": ["umami","sweet"], "abv": 2, "occasion": ["Dinner Party"] },
-    { "name": "Mezcal", "taste": ["smoky","bitter"], "abv": 3, "occasion": ["Weekend Fun"] },
-    { "name": "Aquavit", "taste": ["herbal"], "abv": 3, "occasion": ["Brunch"] },
-    { "name": "Baijiu", "taste": ["bitter","umami"], "abv": 3, "occasion": ["Dinner Party"] },
+    { "name": "Soju", "taste": ["sweet"], "abv": 2, "occasion": ["All", "Casual Weeknight"] },
+    { "name": "Sake", "taste": ["umami","sweet"], "abv": 2, "occasion": ["All", "Dinner Party"] },
+    { "name": "Mezcal", "taste": ["smoky","bitter"], "abv": 3, "occasion": ["All", "Weekend Fun"] },
+    { "name": "Aquavit", "taste": ["herbal"], "abv": 3, "occasion": ["All", "Brunch"] },
+    { "name": "Baijiu", "taste": ["bitter","umami"], "abv": 3, "occasion": ["All", "Dinner Party"] },
 
-    { "name": "Chardonnay", "taste": ["fruity","acid"], "abv": 1, "occasion": ["Brunch"] },
-    { "name": "Sauvignon Blanc", "taste": ["acid","fruity"], "abv": 1, "occasion": ["Brunch"] },
-    { "name": "Riesling", "taste": ["sweet","acid"], "abv": 1, "occasion": ["Brunch","Date Night"] },
-    { "name": "Pinot Noir", "taste": ["fruity","acid"], "abv": 1, "occasion": ["Dinner Party"] },
-    { "name": "Champagne", "taste": ["acid","bitter"], "abv": 1, "occasion": ["Celebrating something"] }
+
+    { "name": "Chardonnay", "taste": ["fruity","acid"], "abv": 1, "occasion": ["All", "Brunch"] },
+    { "name": "Sauvignon Blanc", "taste": ["acid","fruity"], "abv": 1, "occasion": ["All", "Brunch"] },
+    { "name": "Riesling", "taste": ["sweet","acid"], "abv": 1, "occasion": ["All", "Brunch","Date Night"] },
+    { "name": "Pinot Noir", "taste": ["fruity","acid"], "abv": 1, "occasion": ["All", "Dinner Party"] },
+    { "name": "Champagne", "taste": ["acid","bitter"], "abv": 1, "occasion": ["All", "Celebrating something"] }
   ],
 
   "mixer": [

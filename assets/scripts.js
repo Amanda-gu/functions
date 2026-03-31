@@ -91,8 +91,8 @@ let showCard = (data) => {
 				}else if (alcoholScale <= 6) {
 					//4 <= alcoholscale <= 6
 					alcohol = base.abv === 2
-					if (occasion === 'Casual Weeknight') {
-							alcohol = base.occasion.includes('Casual Weeknight')
+					if (occasion === 'Flexible') {
+							alcohol = base.occasion.includes('All')
 						} else if (occasion === 'Celebrating Something') {
 							alcohol = base.occasion.includes('Celebration')
 						} else if (occasion === 'Dinner Party') {
@@ -103,6 +103,8 @@ let showCard = (data) => {
 							alcohol = base.occasion.includes('Weekend Fun')
 						} else if (occasion === 'Date Night') {
 							alcohol = base.occasion.includes('Date Night')
+						} else if (occasion === 'Casual Weeknight') {
+							alcohol = base.occasion.includes('Casual Weeknight')
 						}
 
 				}else if (alcoholScale <= 10) {
