@@ -1,73 +1,149 @@
 {
   "base": [
-    {
-      "name": "Gin",
-      "type": "base",
-      "taste": ["dry", "earthy", "crisp", "clean"],
-      "abv":  3
-    },
-    {
-      "name": "Vodka",
-      "type": "base",
-      "taste": ["neutral", "clean"],
-      "abv": 3
-    },
-    {
-      "name": "Chardonnay",
-      "type": "base",
-      "taste": ["sweet", "acid", "crisp"],
-      "abv": 1
-    },
-     {
-      "name": "Soju",
-      "type": "base",
-      "taste": ["sweet", "crisp"],
-      "abv": 2
-    },
-    {
-      "name": "Junmai Sake",
-      "type": "base",
-      "taste": ["sweet", "grainy", "smooth"],
-      "abv": 2
-    }
+    { "name": "Gin", "taste": ["herbal","bitter","acid"], "abv": 3 },
+    { "name": "Vodka", "taste": [], "abv": 3 },
+    { "name": "Tequila Blanco", "taste": ["acid","herbal"], "abv": 3 },
+    { "name": "Tequila Reposado", "taste": ["smoky","sweet"], "abv": 3 },
+    { "name": "White Rum", "taste": ["sweet","fruity"], "abv": 3 },
+    { "name": "Dark Rum", "taste": ["sweet","smoky"], "abv": 3 },
+    { "name": "Bourbon", "taste": ["sweet","smoky"], "abv": 3 },
+    { "name": "Scotch", "taste": ["smoky","bitter"], "abv": 3 },
+    { "name": "Brandy", "taste": ["fruity","sweet"], "abv": 3 },
+    { "name": "Cognac", "taste": ["fruity","sweet"], "abv": 3 },
+
+    { "name": "Soju", "taste": ["sweet"], "abv": 2 },
+    { "name": "Sake", "taste": ["umami","sweet"], "abv": 2 },
+    { "name": "Mezcal", "taste": ["smoky","bitter"], "abv": 3 },
+    { "name": "Aquavit", "taste": ["herbal"], "abv": 3 },
+    { "name": "Baijiu", "taste": ["bitter","umami"], "abv": 3 },
+
+    { "name": "Chardonnay", "taste": ["fruity","acid"], "abv": 1 },
+    { "name": "Sauvignon Blanc", "taste": ["acid","fruity"], "abv": 1 },
+    { "name": "Riesling", "taste": ["sweet","acid"], "abv": 1 },
+    { "name": "Pinot Noir", "taste": ["fruity","acid"], "abv": 1 },
+    { "name": "Cabernet Sauvignon", "taste": ["bitter"], "abv": 1 },
+
+    { "name": "Rosé", "taste": ["fruity","acid"], "abv": 1 },
+    { "name": "Prosecco", "taste": ["sweet","acid"], "abv": 1 },
+    { "name": "Champagne", "taste": ["acid","bitter"], "abv": 1 },
+
+    { "name": "Light Beer", "taste": ["bitter"], "abv": 1 },
+    { "name": "IPA", "taste": ["bitter","fruity"], "abv": 1 },
+    { "name": "Stout", "taste": ["bitter","creamy"], "abv": 1 },
+    { "name": "Porter", "taste": ["bitter","smoky"], "abv": 1 },
+
+    { "name": "Coffee Liqueur", "taste": ["bitter","sweet"], "abv": 2 },
+    { "name": "Amaretto", "taste": ["sweet"], "abv": 2 },
+    { "name": "Triple Sec", "taste": ["sweet","acid"], "abv": 2 },
+    { "name": "Campari", "taste": ["bitter"], "abv": 2 },
+    { "name": "Vermouth Sweet", "taste": ["sweet","herbal"], "abv": 2 },
+    { "name": "Vermouth Dry", "taste": ["bitter","herbal"], "abv": 2 },
+
+    { "name": "Apple Brandy", "taste": ["fruity","sweet"], "abv": 3 },
+    { "name": "Pear Liqueur", "taste": ["fruity","sweet"], "abv": 2 },
+    { "name": "Peach Schnapps", "taste": ["sweet","fruity"], "abv": 2 },
+    { "name": "Coconut Rum", "taste": ["sweet","creamy"], "abv": 3 },
+    { "name": "Spiced Rum", "taste": ["sweet","smoky"], "abv": 3 },
+
+    { "name": "Chili Vodka", "taste": ["bitter"], "abv": 3 },
+    { "name": "Cucumber Gin", "taste": ["herbal"], "abv": 3 },
+    { "name": "Honey Whiskey", "taste": ["sweet"], "abv": 3 },
+    { "name": "Maple Bourbon", "taste": ["sweet"], "abv": 3 },
+
+    { "name": "Kombucha", "taste": ["acid","fruity"], "abv": 1 },
+    { "name": "Hard Seltzer", "taste": ["fruity"], "abv": 1 },
+
+    { "name": "Cold Brew Spirit", "taste": ["bitter"], "abv": 2 },
+    { "name": "Tea Infusion", "taste": ["herbal"], "abv": 1 },
+
+    { "name": "Rice Wine", "taste": ["umami","sweet"], "abv": 2 },
+    { "name": "Palm Wine", "taste": ["sweet","fruity"], "abv": 2 },
+
+    { "name": "Herbal Liqueur", "taste": ["herbal","bitter"], "abv": 2 },
+    { "name": "Root Liqueur", "taste": ["earthy"], "abv": 2 },
+
+    { "name": "Fig Liqueur", "taste": ["sweet","fruity"], "abv": 2 },
+    { "name": "Date Spirit", "taste": ["sweet"], "abv": 2 },
+
+    { "name": "Banana Liqueur", "taste": ["sweet","fruity"], "abv": 2 },
+    { "name": "Mango Liqueur", "taste": ["sweet","fruity"], "abv": 2 },
+    { "name": "Lychee Spirit", "taste": ["sweet","fruity"], "abv": 2 },
+
+    { "name": "Chocolate Liqueur", "taste": ["sweet","creamy"], "abv": 2 },
+    { "name": "Cream Liqueur", "taste": ["creamy","sweet"], "abv": 2 },
+
+    { "name": "Smoked Whiskey", "taste": ["smoky"], "abv": 3 },
+    { "name": "Barrel Gin", "taste": ["smoky"], "abv": 3 },
+
+    { "name": "Herbal Bitters Spirit", "taste": ["bitter","herbal"], "abv": 2 }
+
   ],
+
   "mixer": [
-    {
-      "name": "Tonic Water",
-      "type": "mixer",
-      "taste": ["bitter", "sparkling", "crisp"]
-    },
-    {
-      "name": "Lime Juice",
-      "type": "mixer",
-      "taste": ["acid", "fruity", "crisp"]
-    },
-    {
-      "name": "Coke",
-      "type": "mixer",
-      "taste": ["sparkling", "sweet", "crisp"]
-    },
-    {
-      "name": "Coconut Milk",
-      "type": "mixer",
-      "taste": ["creamy", "sweet", "rich"]
-    },
-    {
-      "name": "Agave Nectar",
-      "type": "mixer",
-      "taste": ["sweet", "natural"]
-    }
+    { "name": "Tonic Water", "taste": ["bitter","acid"] },
+    { "name": "Soda Water", "taste": [] },
+    { "name": "Cola", "taste": ["sweet"] },
+    { "name": "Ginger Beer", "taste": ["sweet","acid"] },
+
+    { "name": "Lime Juice", "taste": ["acid","fruity"] },
+    { "name": "Lemon Juice", "taste": ["acid","fruity"] },
+    { "name": "Orange Juice", "taste": ["sweet","fruity"] },
+    { "name": "Grapefruit Juice", "taste": ["bitter","acid"] },
+    { "name": "Pineapple Juice", "taste": ["sweet","fruity"] },
+    { "name": "Cranberry Juice", "taste": ["acid","fruity"] },
+
+    { "name": "Apple Juice", "taste": ["sweet","fruity"] },
+    { "name": "Mango Juice", "taste": ["sweet","fruity"] },
+    { "name": "Lychee Juice", "taste": ["sweet","fruity"] },
+
+    { "name": "Coconut Milk", "taste": ["creamy","sweet"] },
+    { "name": "Almond Milk", "taste": ["creamy"] },
+    { "name": "Oat Milk", "taste": ["creamy","sweet"] },
+
+    { "name": "Honey Syrup", "taste": ["sweet"] },
+    { "name": "Simple Syrup", "taste": ["sweet"] },
+    { "name": "Agave", "taste": ["sweet"] },
+
+    { "name": "Cold Brew", "taste": ["bitter"] },
+    { "name": "Espresso", "taste": ["bitter"] },
+
+    { "name": "Green Tea", "taste": ["herbal"] },
+    { "name": "Black Tea", "taste": ["bitter"] },
+
+    { "name": "Vinegar Shrub", "taste": ["acid"] },
+
+    { "name": "Tomato Juice", "taste": ["umami","salty"] },
+
+    { "name": "Salt Water", "taste": ["salty"] },
+
+    { "name": "Herbal Syrup", "taste": ["herbal","sweet"] }
+
   ],
+
   "garnish": [
-    {
-      "name": "Lemon Peel",
-      "type": "garnish",
-      "taste": ["citrus", "aromatic"]
-    },
-    {
-      "name": "Basil",
-      "type": "garnish",
-      "taste": ["earthy", "aromatic"]
-    }
+    { "name": "Lemon Peel", "taste": ["acid"] },
+    { "name": "Lime Wedge", "taste": ["acid"] },
+    { "name": "Orange Slice", "taste": ["fruity","sweet"] },
+
+    { "name": "Mint", "taste": ["herbal"] },
+    { "name": "Basil", "taste": ["herbal"] },
+    { "name": "Rosemary", "taste": ["herbal"] },
+
+    { "name": "Cherry", "taste": ["sweet","fruity"] },
+    { "name": "Olive", "taste": ["salty","umami"] },
+
+    { "name": "Cucumber", "taste": ["herbal"] },
+
+    { "name": "Edible Flower", "taste": ["fruity"] },
+
+    { "name": "Salt Rim", "taste": ["salty"] },
+    { "name": "Sugar Rim", "taste": ["sweet"] },
+
+    { "name": "Chocolate Shavings", "taste": ["sweet"] },
+
+    { "name": "Cinnamon Stick", "taste": ["sweet"] },
+
+    { "name": "Herb Dust", "taste": ["herbal"] }
+
   ]
 }
