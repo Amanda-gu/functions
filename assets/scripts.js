@@ -34,11 +34,15 @@ let showCard = () => {
 	let occasion = document.querySelector("#occasion").value
 	let alcoholScale = document.querySelector("#alc-scale").value
 	let adventureScale = document.querySelector("#adv-scale").value
-	console.log(occasion)
 
-	let base = document.querySelector('#base')
-	let mixers = document.querySelector('#mixers')
-	let garnish = document.querySelector('#garnish')
+	//need to see user input in console
+	console.log(occasion)
+	console.log(alcoholScale)
+	console.log(adventureScale)
+
+	let baseFill = document.querySelector('#base')
+	let mixersFill = document.querySelector('#mixers')
+	let garnishFill = document.querySelector('#garnish')
 
 
 	//since i have 4 filters, i was not sure how i can make the code work	
@@ -51,10 +55,36 @@ let showCard = () => {
 
 
 
+// let placeChannelInfo = (channelData) => {
 
 
+// 	let channelTitle = document.querySelectorAll('.channel-title')// use a class instead of id
+// 	channelTitle.forEach(el => { el.innerHTML = channelData.title})
+// 	//after call every class items, use loop to append content to every class item/element(el), 
+
+// 	let channelDescription = document.querySelectorAll('.channel-description')
+// 	channelDescription.forEach(el => { el.innerHTML = channelData.description?.html || ''})
+
+// 	let channelLink = document.querySelectorAll('.channel-link')
+// 	channelLink.forEach(el => { el.href = `https://www.are.na/channel/${channelSlug}` })
+
+// 	let channelUsers = document.querySelectorAll('.channel-users')
+// 	channelUsers.forEach(el => { el.innerHTML = channelData.owner.name})
+	
+// 	console.log()
+// }
 
 
+	let placeIngredients = (base, mixers, garnish) => {
+
+		
+		let baseFill = Array.from(data.type) 
+
+			baseFill.sort(() => Math.random() - 0.5) // Shuffle the array randomly.
+			baseFill.forEach(card =>  container.appendChild(card))
+			
+			console.log('drink decided', baseFill)
+			}
     cocktailName.innerHTML = name; //name is what user types in, no filtering needed
 	// cocktailBase.innerHTML = base;
 	// cocktailMixers.innerHTML = mixers;
@@ -170,24 +200,6 @@ formElement.addEventListener('input', () => {
 
 
 
-// let placeChannelInfo = (channelData) => {
-
-
-// 	let channelTitle = document.querySelectorAll('.channel-title')// use a class instead of id
-// 	channelTitle.forEach(el => { el.innerHTML = channelData.title})
-// 	//after call every class items, use loop to append content to every class item/element(el), 
-
-// 	let channelDescription = document.querySelectorAll('.channel-description')
-// 	channelDescription.forEach(el => { el.innerHTML = channelData.description?.html || ''})
-
-// 	let channelLink = document.querySelectorAll('.channel-link')
-// 	channelLink.forEach(el => { el.href = `https://www.are.na/channel/${channelSlug}` })
-
-// 	let channelUsers = document.querySelectorAll('.channel-users')
-// 	channelUsers.forEach(el => { el.innerHTML = channelData.owner.name})
-	
-// 	console.log()
-// }
 
 //from arena js
 const file = "./assets/data.json"
