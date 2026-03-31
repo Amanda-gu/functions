@@ -62,7 +62,8 @@ let showCard = (data) => {
 		//i decided to use filter and if/else to connect user input to my database. 
 //BASE
 
-//i went to a tutoring sesstion wheren the tutor helped me understand how i can incorporate occasion into my filtering. it can just be nested in side the FilterBase funciton
+//i went to a tutoring sesstion where the tutor (jonathan wang) helped me understand how i can incorporate occasion into my filtering. 
+// alcoholScale and adventureScale both affect the base selection, so occasion can just be nested in side the filterBase funciton
 
 		let filterBase = data.base.filter(base => {
 					   //Array.prototype(here is base from data) .filter()
@@ -70,17 +71,62 @@ let showCard = (data) => {
 			//set an empty string
 		
 			if (alcoholScale <= 3) {
+				alcohol = base.abv === 1
 
 				if (occasion === 'Casual Weeknight') {
-					return base.occasion.includes('Casual Weeknight')
+					alcohol = base.occasion.includes('Casual Weeknight')
+				} else if (occasion === 'Celebrating Something') {
+					alcohol = base.occasion.includes('Celebration')
+				} else if (occasion === 'Dinner Party') {
+					alcohol = base.occasion.includes('Dinner Party')
+				} else if (occasion === 'Brunch') {
+					alcohol = base.occasion.includes('Brunch')
+				} else if (occasion === 'Weekend Fun') {
+					alcohol = base.occasion.includes('Weekend Fun')
+				} else if (occasion === 'Date Night') {
+					alcohol = base.occasion.includes('Date Night')
 				}
+
+
 				}else if (alcoholScale <= 6) {
 					//4 <= alcoholscale <= 6
 					alcohol = base.abv === 2
+					if (occasion === 'Casual Weeknight') {
+							alcohol = base.occasion.includes('Casual Weeknight')
+						} else if (occasion === 'Celebrating Something') {
+							alcohol = base.occasion.includes('Celebration')
+						} else if (occasion === 'Dinner Party') {
+							alcohol = base.occasion.includes('Dinner Party')
+						} else if (occasion === 'Brunch') {
+							alcohol = base.occasion.includes('Brunch')
+						} else if (occasion === 'Weekend Fun') {
+							alcohol = base.occasion.includes('Weekend Fun')
+						} else if (occasion === 'Date Night') {
+							alcohol = base.occasion.includes('Date Night')
+						}
+
 				}else if (alcoholScale <= 10) {
 					alcohol = base.abv === 3
+					if (occasion === 'Casual Weeknight') {
+					alcohol = base.occasion.includes('Casual Weeknight')
+					} else if (occasion === 'Celebrating Something') {
+						alcohol = base.occasion.includes('Celebration')
+					} else if (occasion === 'Dinner Party') {
+						alcohol = base.occasion.includes('Dinner Party')
+					} else if (occasion === 'Brunch') {
+						alcohol = base.occasion.includes('Brunch')
+					} else if (occasion === 'Weekend Fun') {
+						alcohol = base.occasion.includes('Weekend Fun')
+					} else if (occasion === 'Date Night') {
+						alcohol = base.occasion.includes('Date Night')
+					}
 				}
+
 				console.log('alcohol', alcohol)
+
+				return alcohol
+				//according to my tutor: best practice to return at the end of the function
+				
 			//reture here 
 		})
 
@@ -326,7 +372,6 @@ let showCard = (data) => {
 		let selectedMixer = [filterGarnish[random1], filterGarnish[random2]]
 		//for me to see in console what is chosen
 		console.log('selected mixer', selectedMixer)
-		console.log('selected base:', selectedBase)
 		console.log('selected garnish', selectedGarnish)
 
     cocktailName.innerHTML = name; //name is what user types in, no filtering needed
