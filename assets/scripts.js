@@ -65,6 +65,13 @@ let showCard = (data) => {
 			}
 		})
 
+		data.base.forEach(base => {
+			//data.base is an array so need to do foreach to target each base
+			if (base.taste.includes('crisp')) {
+				return base.name
+			}
+			console.log('taste:', base.name)
+		})
 
 		//if there is more than 1 base that matches, select randomly
 		if (filterBase.length > 0) {
