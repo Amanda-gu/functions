@@ -53,44 +53,16 @@ let showCard = () => {
 	//here is an example: https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_filter2
 	//watched this tutorial: https://www.youtube.com/watch?v=nKglx7dN7Ss
 
-
-
-// let placeChannelInfo = (channelData) => {
-
-
-// 	let channelTitle = document.querySelectorAll('.channel-title')// use a class instead of id
-// 	channelTitle.forEach(el => { el.innerHTML = channelData.title})
-// 	//after call every class items, use loop to append content to every class item/element(el), 
-
-// 	let channelDescription = document.querySelectorAll('.channel-description')
-// 	channelDescription.forEach(el => { el.innerHTML = channelData.description?.html || ''})
-
-// 	let channelLink = document.querySelectorAll('.channel-link')
-// 	channelLink.forEach(el => { el.href = `https://www.are.na/channel/${channelSlug}` })
-
-// 	let channelUsers = document.querySelectorAll('.channel-users')
-// 	channelUsers.forEach(el => { el.innerHTML = channelData.owner.name})
-	
-// 	console.log()
-// }
-
-
-	let placeIngredients = (base, mixers, garnish) => {
-
-		
-		let baseFill = Array.from(data.type) 
-
-			baseFill.sort(() => Math.random() - 0.5) // Shuffle the array randomly.
-			baseFill.forEach(card =>  container.appendChild(card))
-			
-			console.log('drink decided', baseFill)
-			}
     cocktailName.innerHTML = name; //name is what user types in, no filtering needed
 	// cocktailBase.innerHTML = base;
 	// cocktailMixers.innerHTML = mixers;
 	// cocktailBase.innerHTML = garnish;
 
 }
+
+
+
+
 
 
 
@@ -200,22 +172,10 @@ formElement.addEventListener('input', () => {
 
 
 
-
-//from arena js
-const file = "./assets/data.json"
-//fetch local json file: https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch#fetching_local_json_files
-
-fetch(file, { cache: 'no-store' })
-	.then(response => {                                              
-		if (!response.ok) {
-		throw new Error('Network response was not ok ' + response.statusText);
-		}
-		return response.json();
-	})
+fetch('./assets/data.json')
+	.then(response => response.json())
 	.then(data => {
-		console.log(data);
-		callback(json);//added call back
+		console.log(data)
+		// And passes the data to the function, above!
+		showCard(data)
 	})
-	.catch(error => {
-		console.error('There was a problem with the fetch operation:', error);
-	});
