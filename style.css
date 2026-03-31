@@ -26,6 +26,7 @@ form {
 
 	output{
 		background-color: rgb(201, 208, 210);
+		width: 100%;
 		opacity: 0;
 
 		&.show{
