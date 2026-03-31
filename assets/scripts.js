@@ -132,7 +132,7 @@ let showCard = (data) => {
 		})
 
 		//select one randomly
-//random selectionexample:https://codepen.io/thowell/pen/OGONYY
+//random selection example:https://codepen.io/thowell/pen/OGONYY
 //math.floor rounds things down https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/floor so it gives me a number that is not a decimal
 
 //inside [] is a number and that number will locate the drink in my array filterBase
@@ -141,20 +141,20 @@ let showCard = (data) => {
 //random1, 2 will be a number
 		let random1 = Math.floor(Math.random() * filterBase.length)
 		let random2 = Math.floor(Math.random() * filterBase.length)		 
-		let selectedBase = ""
+		let selectedBases = ""
 		if (alcoholScale <= 4) {
-					selectedBase = filterBase[random1]
+					selectedBases = filterBase[random1]
 				}
 				else if (alcoholScale <= 8) 
 				{
-					selectedBase = [filterBase[random1], filterBase[random2]]
+					selectedBases = [filterBase[random1], filterBase[random2]]
 				}
 
 				else if (alcoholScale <= 10) 
 				{
-					selectedBase = [filterBase[random1], filterBase[random2], filterBase[random3]]
+					selectedBases = [filterBase[random1], filterBase[random2], filterBase[random3]]
 				}
-		console.log('selected base:', selectedBase)
+		console.log('selected base:', selectedBases)
 
 //MIXERs
 		
@@ -166,9 +166,11 @@ let showCard = (data) => {
 	//i have 4 filters, so i will use if/else to group them in to groups of 3 based on the adventure scale(what user inputs). within each adventurous group, its a group of 3 base on the taste profiles. for the final selection,i will select one randomly
 
 	//im applying the same filering logic for garnish
+
+let selectedBase = Array.from(selectedBases)
 	
 		let filterMixer = data.mixer.filter(mixer => {
-
+			let mix = ""
 			if (adventureScale <= 3) {
 				if (
 					selectedBase.taste.includes('sweet') ||
@@ -176,7 +178,7 @@ let showCard = (data) => {
 					selectedBase.taste.includes('fruity')
 					) {
 				
-				return mixer.taste.includes('acid') || 
+				mix = mixer.taste.includes('acid') || 
 						mixer.taste.includes('sweet') || 
 						mixer.taste.includes('fruity')
 
@@ -187,7 +189,7 @@ let showCard = (data) => {
 					selectedBase.taste.includes('smoky') ||
 					selectedBase.taste.includes('spicy')
 				) {
-				return mixer.taste.includes('umami') || 
+				mix = mixer.taste.includes('umami') || 
 						mixer.taste.includes('bitter') || 
 						mixer.taste.includes('sweet') || 
 						mixer.taste.includes('fruity')
@@ -198,7 +200,7 @@ let showCard = (data) => {
 					selectedBase.taste.includes('herbal') ||
 					selectedBase.taste.includes('creamy')
 				) {
-				return mixer.taste.includes('acid') || 
+				mix = mixer.taste.includes('acid') || 
 						mixer.taste.includes('sweet') || 
 						mixer.taste.includes('fruity')
 
@@ -209,7 +211,7 @@ let showCard = (data) => {
 					selectedBase.taste.includes('acid') ||
 					selectedBase.taste.includes('fruity')
 					) {
-				return mixer.taste.includes('umami') || 
+				mix = mixer.taste.includes('umami') || 
 						mixer.taste.includes('bitter') || 
 						mixer.taste.includes('salty')
 
@@ -219,7 +221,7 @@ let showCard = (data) => {
 					selectedBase.taste.includes('smoky')||
 					selectedBase.taste.includes('spicy')
 				) {
-				return mixer.taste.includes('umami') || 
+				mix = mixer.taste.includes('umami') || 
 						mixer.taste.includes('acid') ||
 						mixer.taste.includes('fruity')
 
@@ -228,7 +230,7 @@ let showCard = (data) => {
 					selectedBase.taste.includes('herbal') ||
 					selectedBase.taste.includes('creamy')
 				) {
-				return mixer.taste.includes('smoky') || 
+				mix = mixer.taste.includes('smoky') || 
 						mixer.taste.includes('spicy') || 
 						mixer.taste.includes('salty')	
 				}
@@ -239,7 +241,7 @@ let showCard = (data) => {
 					selectedBase.taste.includes('acid') ||
 					selectedBase.taste.includes('fruity')
 					) {
-				return mixer.taste.includes('creamy') || 
+				mix = mixer.taste.includes('creamy') || 
 						mixer.taste.includes('bitter') || 
 						mixer.taste.includes('acid')	
 
@@ -249,7 +251,7 @@ let showCard = (data) => {
 					selectedBase.taste.includes('smoky') ||
 					selectedBase.taste.includes('spicy')
 				) {
-				return mixer.taste.includes('acid') || 
+				mix = mixer.taste.includes('acid') || 
 						mixer.taste.includes('creamy') || 
 						mixer.taste.includes('umami')
 
@@ -258,122 +260,122 @@ let showCard = (data) => {
 					selectedBase.taste.includes('herbal') ||
 					selectedBase.taste.includes('creamy')
 				) {
-				return mixer.taste.includes('spicy') || 
+				mix = mixer.taste.includes('spicy') || 
 						mixer.taste.includes('salty') || 
 						mixer.taste.includes('creamy')					
 				}
+				return mix
 			}
 		
-		})
 
 //Garnish
 
-		let filterGarnish = data.garnish.filter(garnish => {
+		// let filterGarnish = data.garnish.filter(garnish => {
 
-			if (adventureScale <= 3) {
-				if (
-					selectedBase.taste.includes('sweet') ||
-					selectedBase.taste.includes('acid') ||
-					selectedBase.taste.includes('fruity')
-					) {
+		// 	if (adventureScale <= 3) {
+		// 		if (
+		// 			selectedBase.taste.includes('sweet') ||
+		// 			selectedBase.taste.includes('acid') ||
+		// 			selectedBase.taste.includes('fruity')
+		// 			) {
 				
-				return garnish.taste.includes('acid') || 
-						garnish.taste.includes('sweet') || 
-						garnish.taste.includes('fruity')
+		// 		return garnish.taste.includes('acid') || 
+		// 				garnish.taste.includes('sweet') || 
+		// 				garnish.taste.includes('fruity')
 
 					
-				} else if (
-					selectedBase.taste.includes('salty') ||
-					selectedBase.taste.includes('bitter') ||
-					selectedBase.taste.includes('smoky') ||
-					selectedBase.taste.includes('spicy')
-				) {
-				return garnish.taste.includes('umami') || 
-						garnish.taste.includes('bitter') || 
-						garnish.taste.includes('sweet') || 
-						garnish.taste.includes('fruity')
+		// 		} else if (
+		// 			selectedBase.taste.includes('salty') ||
+		// 			selectedBase.taste.includes('bitter') ||
+		// 			selectedBase.taste.includes('smoky') ||
+		// 			selectedBase.taste.includes('spicy')
+		// 		) {
+		// 		return garnish.taste.includes('umami') || 
+		// 				garnish.taste.includes('bitter') || 
+		// 				garnish.taste.includes('sweet') || 
+		// 				garnish.taste.includes('fruity')
 
 					
-				} else if (
-					selectedBase.taste.includes('umami') ||
-					selectedBase.taste.includes('herbal') ||
-					selectedBase.taste.includes('creamy')
-				) {
-				return garnish.taste.includes('acid') || 
-						garnish.taste.includes('sweet') || 
-						garnish.taste.includes('fruity')
+		// 		} else if (
+		// 			selectedBase.taste.includes('umami') ||
+		// 			selectedBase.taste.includes('herbal') ||
+		// 			selectedBase.taste.includes('creamy')
+		// 		) {
+		// 		return garnish.taste.includes('acid') || 
+		// 				garnish.taste.includes('sweet') || 
+		// 				garnish.taste.includes('fruity')
 
-				}
-			} else if (adventureScale <= 6) {
-				if (
-					selectedBase.taste.includes('sweet') ||
-					selectedBase.taste.includes('acid') ||
-					selectedBase.taste.includes('fruity')
-					) {
-				return garnish.taste.includes('umami') || 
-						garnish.taste.includes('bitter') || 
-						garnish.taste.includes('salty')
+		// 		}
+		// 	} else if (adventureScale <= 6) {
+		// 		if (
+		// 			selectedBase.taste.includes('sweet') ||
+		// 			selectedBase.taste.includes('acid') ||
+		// 			selectedBase.taste.includes('fruity')
+		// 			) {
+		// 		return garnish.taste.includes('umami') || 
+		// 				garnish.taste.includes('bitter') || 
+		// 				garnish.taste.includes('salty')
 
-				} else if (
-					selectedBase.taste.includes('salty') ||
-					selectedBase.taste.includes('bitter') ||
-					selectedBase.taste.includes('smoky')||
-					selectedBase.taste.includes('spicy')
-				) {
-				return garnish.taste.includes('umami') || 
-						garnish.taste.includes('acid') ||
-						garnish.taste.includes('fruity')
+		// 		} else if (
+		// 			selectedBase.taste.includes('salty') ||
+		// 			selectedBase.taste.includes('bitter') ||
+		// 			selectedBase.taste.includes('smoky')||
+		// 			selectedBase.taste.includes('spicy')
+		// 		) {
+		// 		return garnish.taste.includes('umami') || 
+		// 				garnish.taste.includes('acid') ||
+		// 				garnish.taste.includes('fruity')
 
-				} else if (
-					selectedBase.taste.includes('umami') ||
-					selectedBase.taste.includes('herbal') ||
-					selectedBase.taste.includes('creamy')
-				) {
-				return garnish.taste.includes('smoky') || 
-						garnish.taste.includes('spicy') || 
-						garnish.taste.includes('salty')	
-				}
+		// 		} else if (
+		// 			selectedBase.taste.includes('umami') ||
+		// 			selectedBase.taste.includes('herbal') ||
+		// 			selectedBase.taste.includes('creamy')
+		// 		) {
+		// 		return garnish.taste.includes('smoky') || 
+		// 				garnish.taste.includes('spicy') || 
+		// 				garnish.taste.includes('salty')	
+		// 		}
 
-			} else if (adventureScale <= 10) {
-				if (
-					selectedBase.taste.includes('sweet') ||
-					selectedBase.taste.includes('acid') ||
-					selectedBase.taste.includes('fruity')
-					) {
-				return garnish.taste.includes('creamy') || 
-						garnish.taste.includes('bitter') || 
-						garnish.taste.includes('acid')	
+		// 	} else if (adventureScale <= 10) {
+		// 		if (
+		// 			selectedBase.taste.includes('sweet') ||
+		// 			selectedBase.taste.includes('acid') ||
+		// 			selectedBase.taste.includes('fruity')
+		// 			) {
+		// 		return garnish.taste.includes('creamy') || 
+		// 				garnish.taste.includes('bitter') || 
+		// 				garnish.taste.includes('acid')	
 
-				} else if (
-					selectedBase.taste.includes('salty') ||
-					selectedBase.taste.includes('bitter') ||
-					selectedBase.taste.includes('smoky') ||
-					selectedBase.taste.includes('spicy')
-				) {
-				return garnish.taste.includes('acid') || 
-						garnish.taste.includes('creamy') || 
-						garnish.taste.includes('umami')
+		// 		} else if (
+		// 			selectedBase.taste.includes('salty') ||
+		// 			selectedBase.taste.includes('bitter') ||
+		// 			selectedBase.taste.includes('smoky') ||
+		// 			selectedBase.taste.includes('spicy')
+		// 		) {
+		// 		return garnish.taste.includes('acid') || 
+		// 				garnish.taste.includes('creamy') || 
+		// 				garnish.taste.includes('umami')
 
-				} else if (
-					selectedBase.taste.includes('umami') ||
-					selectedBase.taste.includes('herbal') ||
-					selectedBase.taste.includes('creamy')
-				) {
-				return garnish.taste.includes('spicy') || 
-						garnish.taste.includes('salty') || 
-						garnish.taste.includes('creamy')					
-				}
-			}
+		// 		} else if (
+		// 			selectedBase.taste.includes('umami') ||
+		// 			selectedBase.taste.includes('herbal') ||
+		// 			selectedBase.taste.includes('creamy')
+		// 		) {
+		// 		return garnish.taste.includes('spicy') || 
+		// 				garnish.taste.includes('salty') || 
+		// 				garnish.taste.includes('creamy')					
+		// 		}
+		// 	}
 		
-		})
+		// })
 
-		
 		let selectedGarnish = filterGarnish[Math.floor(Math.random() * filterGarnish.length)]
 		let selectedMixer = filterMixer[Math.floor(Math.random() * filterMixer.length)]
 		//for me to see in console what is chosen
 		console.log('selected mixer', selectedMixer)
 		console.log('selected garnish', selectedGarnish)
 
+	})
     cocktailName.innerHTML = name; //name is what user types in, no filtering needed
 	// cocktailBase.innerHTML = base;
 	// cocktailMixers.innerHTML = mixers;
