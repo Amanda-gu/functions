@@ -79,88 +79,88 @@ let showCard = (data) => {
 
 			if (adventureScale <= 3) {
 				if (
-					selectedBase.name.includes('sweet') ||
-					selectedBase.name.includes('acid') ||
-					selectedBase.name.includes('fruity')
+					selectedBase.taste.includes('sweet') ||
+					selectedBase.taste.includes('acid') ||
+					selectedBase.taste.includes('fruity')
 					) {
 					data.base.forEach(base => {
-						return data.mixer.taste.includes('acid')
+						return data.mixer.includes('acid')
 					})	
 
 				} else if (
-					selectedBase.name.includes('salty') ||
-					selectedBase.name.includes('bitter') ||
-					selectedBase.name.includes('smokey')
+					selectedBase.taste.includes('salty') ||
+					selectedBase.taste.includes('bitter') ||
+					selectedBase.taste.includes('smoky')
 				) {
 						data.base.forEach(base => {
-								return data.mixer.taste.includes('bitter')
+								return data.mixer.includes('bitter')
 							}) 
 					
 				} else if (
-					selectedBase.name.includes('salty') ||
-					selectedBase.name.includes('bitter') ||
-					selectedBase.name.includes('smokey')
+					selectedBase.taste.includes('umami') ||
+					selectedBase.taste.includes('herbal') ||
+					selectedBase.taste.includes('creamy')
 				) {
 						data.base.forEach(base => {
-							return data.mixer.taste.includes('bitter')
+							return data.mixer.includes('bitter')
 						}) 
 					
 				}
 			} else if (adventureScale <= 6) {
 				if (
-					selectedBase.name.includes('sweet') ||
-					selectedBase.name.includes('acid') ||
-					selectedBase.name.includes('fruity')
+					selectedBase.taste.includes('sweet') ||
+					selectedBase.taste.includes('acid') ||
+					selectedBase.taste.includes('fruity')
 					) {
 					data.base.forEach(base => {
-						return data.mixer.taste.includes('acid')
+						return data.mixer.includes('acid')
 					})	
 
 				} else if (
-					selectedBase.name.includes('salty') ||
-					selectedBase.name.includes('bitter') ||
-					selectedBase.name.includes('smokey')
+					selectedBase.taste.includes('salty') ||
+					selectedBase.taste.includes('bitter') ||
+					selectedBase.taste.includes('smoky')
 				) {
 						data.base.forEach(base => {
-								return data.mixer.taste.includes('bitter')
+								return data.mixer.includes('bitter')
 							}) 
 					
 				} else if (
-					selectedBase.name.includes('salty') ||
-					selectedBase.name.includes('bitter') ||
-					selectedBase.name.includes('smokey')
+					selectedBase.taste.includes('umami') ||
+					selectedBase.taste.includes('herbal') ||
+					selectedBase.taste.includes('creamy')
 				) {
 						data.base.forEach(base => {
-							return data.mixer.taste.includes('bitter')
+							return data.mixer.includes('bitter')
 						}) 
 					
 				}
 			} else if (adventureScale <= 10) {
 				if (
-					selectedBase.name.includes('sweet') ||
-					selectedBase.name.includes('acid') ||
-					selectedBase.name.includes('fruity')
+					selectedBase.taste.includes('sweet') ||
+					selectedBase.taste.includes('acid') ||
+					selectedBase.taste.includes('fruity')
 					) {
 					data.base.forEach(base => {
-						return data.mixer.taste.includes('acid')
+						return data.mixer.includes('acid')
 					})	
 
 				} else if (
-					selectedBase.name.includes('salty') ||
-					selectedBase.name.includes('bitter') ||
-					selectedBase.name.includes('smokey')
+					selectedBase.taste.includes('salty') ||
+					selectedBase.taste.includes('bitter') ||
+					selectedBase.taste.includes('smoky')
 				) {
 						data.base.forEach(base => {
-								return data.mixer.taste.includes('bitter')
+								return data.mixer.includes('bitter')
 							}) 
 					
 				} else if (
-					selectedBase.name.includes('salty') ||
-					selectedBase.name.includes('bitter') ||
-					selectedBase.name.includes('smokey')
+					selectedBase.taste.includes('umami') ||
+					selectedBase.taste.includes('herbal') ||
+					selectedBase.taste.includes('creamy')
 				) {
 						data.base.forEach(base => {
-							return data.mixer.taste.includes('bitter')
+							return data.mixer.includes('bitter')
 						}) 
 					
 				}
@@ -169,12 +169,10 @@ let showCard = (data) => {
 
 		})
 
-			
-
 		let selectedMixer = filterMixer[Math.floor(Math.random() * filterMixer.length)]
 
-		console.log('filtered mixer', data.mixer.name)
-		console.log( 'selected base:',selectedBase.name)
+		console.log('filtered mixer', selectedMixer)
+		console.log( 'selected base:', selectedBase)
 		
 
 		// data.base.forEach(base => {
