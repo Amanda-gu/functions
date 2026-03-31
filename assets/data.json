@@ -29,6 +29,8 @@
     { "name": "Soda Water", "taste": ["acid"], "occasion": ["Casual Weeknight"] },
     { "name": "Cola", "taste": ["sweet"], "occasion": ["Weekend Fun"] },
     { "name": "Ginger Beer", "taste": ["sweet","spicy"], "occasion": ["Weekend Fun"] },
+    { "name": "Pickle Juice", "taste": ["salty","umami"], "occasion": ["Weekend Fun"] },
+    { "name": "Jalapeno Juice", "taste": ["salty","spicy"], "occasion": ["Weekend Fun"] },
 
     { "name": "Lime Juice", "taste": ["acid","fruity"], "occasion": ["Brunch"] },
     { "name": "Lemon Juice", "taste": ["acid","fruity"], "occasion": ["Brunch"] },

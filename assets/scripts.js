@@ -92,9 +92,11 @@ let showCard = (data) => {
 				} else if (
 					selectedBase.taste.includes('salty') ||
 					selectedBase.taste.includes('bitter') ||
-					selectedBase.taste.includes('smoky')
+					selectedBase.taste.includes('smoky') ||
+					selectedBase.taste.includes('spicy')
 				) {
-				return mixer.taste.includes('acid') || 
+				return mixer.taste.includes('umami') || 
+						mixer.taste.includes('bitter') || 
 						mixer.taste.includes('sweet') || 
 						mixer.taste.includes('fruity')
 
@@ -108,7 +110,6 @@ let showCard = (data) => {
 						mixer.taste.includes('sweet') || 
 						mixer.taste.includes('fruity')
 
-					
 				}
 			} else if (adventureScale <= 6) {
 				if (
@@ -116,46 +117,88 @@ let showCard = (data) => {
 					selectedBase.taste.includes('acid') ||
 					selectedBase.taste.includes('fruity')
 					) {
-				return mixer.taste.includes('acid') || 
-						mixer.taste.includes('sweet') || 
-						mixer.taste.includes('fruity')
-
+				return mixer.taste.includes('umami') || 
+						mixer.taste.includes('bitter') || 
+						mixer.taste.includes('salty')
 
 				} else if (
 					selectedBase.taste.includes('salty') ||
 					selectedBase.taste.includes('bitter') ||
-					selectedBase.taste.includes('smoky')
+					selectedBase.taste.includes('smoky')||
+					selectedBase.taste.includes('spicy')
 				) {
-				return mixer.taste.includes('acid') || 
-						mixer.taste.includes('sweet') || 
+				return mixer.taste.includes('umami') || 
+						mixer.taste.includes('acid') ||
 						mixer.taste.includes('fruity')
-
 
 				} else if (
 					selectedBase.taste.includes('umami') ||
 					selectedBase.taste.includes('herbal') ||
 					selectedBase.taste.includes('creamy')
 				) {
-				return mixer.taste.includes('acid') || 
-						mixer.taste.includes('sweet') || 
-						mixer.taste.includes('fruity')
- 
-					
+				return mixer.taste.includes('smoky') || 
+						mixer.taste.includes('spicy') || 
+						mixer.taste.includes('salty')	
 				}
+
 			} else if (adventureScale <= 10) {
 				if (
 					selectedBase.taste.includes('sweet') ||
 					selectedBase.taste.includes('acid') ||
 					selectedBase.taste.includes('fruity')
 					) {
-				return data.mixer.taste.includes('acid')	
+				return mixer.taste.includes('creamy') || 
+						mixer.taste.includes('bitter') || 
+						mixer.taste.includes('acid')	
 
 				} else if (
 					selectedBase.taste.includes('salty') ||
 					selectedBase.taste.includes('bitter') ||
-					selectedBase.taste.includes('smoky')
+					selectedBase.taste.includes('smoky') ||
+					selectedBase.taste.includes('spicy')
 				) {
 				return mixer.taste.includes('acid') || 
+						mixer.taste.includes('creamy') || 
+						mixer.taste.includes('umami')
+
+				} else if (
+					selectedBase.taste.includes('umami') ||
+					selectedBase.taste.includes('herbal') ||
+					selectedBase.taste.includes('creamy')
+				) {
+				return mixer.taste.includes('spicy') || 
+						mixer.taste.includes('salty') || 
+						mixer.taste.includes('creamy')					
+				}
+			}
+		
+		})
+
+		let selectedMixer = filterMixer[Math.floor(Math.random() * filterMixer.length)]
+//Garnish
+
+		let filterGarnish = data.mixer.filter(mixer => {
+
+			if (adventureScale <= 3) {
+				if (
+					selectedBase.taste.includes('sweet') ||
+					selectedBase.taste.includes('acid') ||
+					selectedBase.taste.includes('fruity')
+					) {
+				
+				return mixer.taste.includes('acid') || 
+						mixer.taste.includes('sweet') || 
+						mixer.taste.includes('fruity')
+
+					
+				} else if (
+					selectedBase.taste.includes('salty') ||
+					selectedBase.taste.includes('bitter') ||
+					selectedBase.taste.includes('smoky') ||
+					selectedBase.taste.includes('spicy')
+				) {
+				return mixer.taste.includes('umami') || 
+						mixer.taste.includes('bitter') || 
 						mixer.taste.includes('sweet') || 
 						mixer.taste.includes('fruity')
 
@@ -169,14 +212,69 @@ let showCard = (data) => {
 						mixer.taste.includes('sweet') || 
 						mixer.taste.includes('fruity')
 
-					
+				}
+			} else if (adventureScale <= 6) {
+				if (
+					selectedBase.taste.includes('sweet') ||
+					selectedBase.taste.includes('acid') ||
+					selectedBase.taste.includes('fruity')
+					) {
+				return mixer.taste.includes('umami') || 
+						mixer.taste.includes('bitter') || 
+						mixer.taste.includes('salty')
+
+				} else if (
+					selectedBase.taste.includes('salty') ||
+					selectedBase.taste.includes('bitter') ||
+					selectedBase.taste.includes('smoky')||
+					selectedBase.taste.includes('spicy')
+				) {
+				return mixer.taste.includes('umami') || 
+						mixer.taste.includes('acid') ||
+						mixer.taste.includes('fruity')
+
+				} else if (
+					selectedBase.taste.includes('umami') ||
+					selectedBase.taste.includes('herbal') ||
+					selectedBase.taste.includes('creamy')
+				) {
+				return mixer.taste.includes('smoky') || 
+						mixer.taste.includes('spicy') || 
+						mixer.taste.includes('salty')	
+				}
+
+			} else if (adventureScale <= 10) {
+				if (
+					selectedBase.taste.includes('sweet') ||
+					selectedBase.taste.includes('acid') ||
+					selectedBase.taste.includes('fruity')
+					) {
+				return mixer.taste.includes('creamy') || 
+						mixer.taste.includes('bitter') || 
+						mixer.taste.includes('acid')	
+
+				} else if (
+					selectedBase.taste.includes('salty') ||
+					selectedBase.taste.includes('bitter') ||
+					selectedBase.taste.includes('smoky') ||
+					selectedBase.taste.includes('spicy')
+				) {
+				return mixer.taste.includes('acid') || 
+						mixer.taste.includes('creamy') || 
+						mixer.taste.includes('umami')
+
+				} else if (
+					selectedBase.taste.includes('umami') ||
+					selectedBase.taste.includes('herbal') ||
+					selectedBase.taste.includes('creamy')
+				) {
+				return mixer.taste.includes('spicy') || 
+						mixer.taste.includes('salty') || 
+						mixer.taste.includes('creamy')					
 				}
 			}
 		
 		})
-
-		let selectedMixer = filterMixer[Math.floor(Math.random() * filterMixer.length)]
-
 		console.log('filtered mixer', selectedMixer)
 		console.log( 'selected base:', selectedBase)
 		
