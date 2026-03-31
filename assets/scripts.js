@@ -84,21 +84,21 @@ let showCard = (data) => {
 					selectedBase.taste.includes('fruity')
 					) {
 				
-				return mixer.includes('acid')
+				return mixer.taste.includes('acid')
 					
 				} else if (
 					selectedBase.taste.includes('salty') ||
 					selectedBase.taste.includes('bitter') ||
 					selectedBase.taste.includes('smoky')
 				) {
-				return data.mixer.includes('acid')
+				return mixer.includes('acid')
 					
 				} else if (
 					selectedBase.taste.includes('umami') ||
 					selectedBase.taste.includes('herbal') ||
 					selectedBase.taste.includes('creamy')
 				) {
-				return data.mixer.includes('acid')
+				return mixer.includes('acid')
 					
 				}
 			} else if (adventureScale <= 6) {
@@ -107,21 +107,21 @@ let showCard = (data) => {
 					selectedBase.taste.includes('acid') ||
 					selectedBase.taste.includes('fruity')
 					) {
-				return data.mixer.includes('acid')
+				return mixer.includes('acid')
 
 				} else if (
 					selectedBase.taste.includes('salty') ||
 					selectedBase.taste.includes('bitter') ||
 					selectedBase.taste.includes('smoky')
 				) {
-				return data.mixer.includes('acid')
+				return mixer.includes('acid')
 
 				} else if (
 					selectedBase.taste.includes('umami') ||
 					selectedBase.taste.includes('herbal') ||
 					selectedBase.taste.includes('creamy')
 				) {
-				return data.mixer.includes('acid') 
+				return mixer.includes('acid') 
 					
 				}
 			} else if (adventureScale <= 10) {
@@ -137,14 +137,14 @@ let showCard = (data) => {
 					selectedBase.taste.includes('bitter') ||
 					selectedBase.taste.includes('smoky')
 				) {
-				return data.mixer.includes('acid')
+				return mixer.includes('acid')
 					
 				} else if (
 					selectedBase.taste.includes('umami') ||
 					selectedBase.taste.includes('herbal') ||
 					selectedBase.taste.includes('creamy')
 				) {
-				return data.mixer.includes('acid')
+				return mixer.includes('acid')
 					
 				}
 			}
