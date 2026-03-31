@@ -83,27 +83,22 @@ let showCard = (data) => {
 					selectedBase.taste.includes('acid') ||
 					selectedBase.taste.includes('fruity')
 					) {
-					data.base.forEach(base => {
-						return data.mixer.includes('acid')
-					})	
-
+				
+				return mixer.includes('acid')
+					
 				} else if (
 					selectedBase.taste.includes('salty') ||
 					selectedBase.taste.includes('bitter') ||
 					selectedBase.taste.includes('smoky')
 				) {
-						data.base.forEach(base => {
-								return data.mixer.includes('bitter')
-							}) 
+				return data.mixer.includes('acid')
 					
 				} else if (
 					selectedBase.taste.includes('umami') ||
 					selectedBase.taste.includes('herbal') ||
 					selectedBase.taste.includes('creamy')
 				) {
-						data.base.forEach(base => {
-							return data.mixer.includes('bitter')
-						}) 
+				return data.mixer.includes('acid')
 					
 				}
 			} else if (adventureScale <= 6) {
@@ -112,27 +107,21 @@ let showCard = (data) => {
 					selectedBase.taste.includes('acid') ||
 					selectedBase.taste.includes('fruity')
 					) {
-					data.base.forEach(base => {
-						return data.mixer.includes('acid')
-					})	
+				return data.mixer.includes('acid')
 
 				} else if (
 					selectedBase.taste.includes('salty') ||
 					selectedBase.taste.includes('bitter') ||
 					selectedBase.taste.includes('smoky')
 				) {
-						data.base.forEach(base => {
-								return data.mixer.includes('bitter')
-							}) 
-					
+				return data.mixer.includes('acid')
+
 				} else if (
 					selectedBase.taste.includes('umami') ||
 					selectedBase.taste.includes('herbal') ||
 					selectedBase.taste.includes('creamy')
 				) {
-						data.base.forEach(base => {
-							return data.mixer.includes('bitter')
-						}) 
+				return data.mixer.includes('acid') 
 					
 				}
 			} else if (adventureScale <= 10) {
@@ -141,32 +130,25 @@ let showCard = (data) => {
 					selectedBase.taste.includes('acid') ||
 					selectedBase.taste.includes('fruity')
 					) {
-					data.base.forEach(base => {
-						return data.mixer.includes('acid')
-					})	
+				return data.mixer.taste.includes('acid')	
 
 				} else if (
 					selectedBase.taste.includes('salty') ||
 					selectedBase.taste.includes('bitter') ||
 					selectedBase.taste.includes('smoky')
 				) {
-						data.base.forEach(base => {
-								return data.mixer.includes('bitter')
-							}) 
+				return data.mixer.includes('acid')
 					
 				} else if (
 					selectedBase.taste.includes('umami') ||
 					selectedBase.taste.includes('herbal') ||
 					selectedBase.taste.includes('creamy')
 				) {
-						data.base.forEach(base => {
-							return data.mixer.includes('bitter')
-						}) 
+				return data.mixer.includes('acid')
 					
 				}
 			}
-
-
+		
 		})
 
 		let selectedMixer = filterMixer[Math.floor(Math.random() * filterMixer.length)]
