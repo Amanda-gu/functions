@@ -122,8 +122,7 @@ let showCard = (data) => {
 					}
 				}
 
-				console.log('alcohol', alcohol)
-
+				console.log('alcohol', alcohol) //true or false for each line above
 				return alcohol
 				//according to my tutor: best practice to return at the end of the function
 				
@@ -136,7 +135,8 @@ let showCard = (data) => {
 
 //inside [] is a number and that number will locate the drink in my array filterBase
 //mathrandom() gives me a number between 0 and 1, and i multiply it by the length of my array, so the number will always brween 0 and my array length.
-
+//2 bases will be selected
+//random1, 2 will be a number
 		let random1 = Math.floor(Math.random() * filterBase.length)
 		let random2 = Math.floor(Math.random() * filterBase.length)		 
 		let selectedBase = ""
@@ -153,7 +153,6 @@ let showCard = (data) => {
 					selectedBase = [filterBase[random1], filterBase[random2], filterBase[random3]]
 				}
 		console.log('selected base:', selectedBase)
-		
 
 //MIXERs
 		
@@ -365,11 +364,10 @@ let showCard = (data) => {
 			}
 		
 		})
-//2 mixers and garnish will be selected
-//random1, 2 will be a number
+
 		
-		let selectedGarnish = [filterGarnish[random1], filterGarnish[random2]]
-		let selectedMixer = [filterGarnish[random1], filterGarnish[random2]]
+		let selectedGarnish = filterGarnish[Math.floor(Math.random() * filterGarnish.length)]
+		let selectedMixer = filterMixer[Math.floor(Math.random() * filterMixer.length)]
 		//for me to see in console what is chosen
 		console.log('selected mixer', selectedMixer)
 		console.log('selected garnish', selectedGarnish)
@@ -380,10 +378,6 @@ let showCard = (data) => {
 	// cocktailBase.innerHTML = garnish;
 
 }
-
-
-
-
 
 
 
