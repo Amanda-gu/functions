@@ -70,20 +70,17 @@ let showCard = (data) => {
 			//set an empty string
 		
 			if (alcoholScale <= 3) {
-				
+
 				if (occasion === 'Casual Weeknight') {
-					alcohol === base.occasion.includes('Casual Weeknight')
+					return base.occasion.includes('Casual Weeknight')
 				}
-			}else if (alcoholScale <= 6) {
-				//4 <= alcoholscale <= 6
-				alcohol === base.abv === 2
-			}else if (alcoholScale <= 10) {
-				alcohol === base.abv === 3
-			}
-			return base.name === alcohol
-
-			console.log('alcohol', alcohol)
-
+				}else if (alcoholScale <= 6) {
+					//4 <= alcoholscale <= 6
+					alcohol = base.abv === 2
+				}else if (alcoholScale <= 10) {
+					alcohol = base.abv === 3
+				}
+				console.log('alcohol', alcohol)
 			//reture here 
 		})
 
@@ -96,15 +93,20 @@ let showCard = (data) => {
 
 		let random1 = Math.floor(Math.random() * filterBase.length)
 		let random2 = Math.floor(Math.random() * filterBase.length)		 
-		
-		if (alcoholScale >= 6) {
+		let selectedBase = ""
+		if (alcoholScale <= 4) {
 					selectedBase = filterBase[random1]
 				}
-				else if (alcoholScale <= 10) 
+				else if (alcoholScale <= 8) 
 				{
 					selectedBase = [filterBase[random1], filterBase[random2]]
 				}
-			console.log('selected base:', selectedBase)
+
+				else if (alcoholScale <= 10) 
+				{
+					selectedBase = [filterBase[random1], filterBase[random2], filterBase[random3]]
+				}
+		console.log('selected base:', selectedBase)
 		
 
 //MIXERs
