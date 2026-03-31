@@ -4,25 +4,25 @@
       "name": "Gin",
       "type": "base",
       "taste": ["dry", "earthy", "crisp", "clean"],
-      "abv": "forward"
+      "abv":  3
     },
     {
       "name": "Vodka",
       "type": "base",
       "taste": ["neutral", "clean"],
-      "abv": "forward"
+      "abv": 3
     },
     {
       "name": "Chardonnay",
       "type": "base",
       "taste": ["sweet", "acid", "crisp"],
-      "abv": "low"
+      "abv": 1
     },
     {
       "name": "Junmai Sake",
       "type": "base",
       "taste": ["sweet", "grainy", "smooth"],
-      "abv": "mild"
+      "abv": 2
     }
   ],
   "mixer": [

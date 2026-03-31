@@ -25,7 +25,7 @@ mixButton.addEventListener('click', () => { // “Listen” for clicks.
 //what's inside the result card function
 let showCard = (data) => {
 
-	//everything in the result card
+	//DOM, everything in the result card
 	let cocktailName = document.querySelector('#card-recipe-name')
 	let cocktailBase = document.querySelector('#base')
 	let cocktailMixers = document.querySelector('#mixers')
@@ -44,54 +44,43 @@ let showCard = (data) => {
 	console.log(adventureScale)
 
 	let ingredientList = document.getElementById('ingredient-list')
-	data.forEach((item) => {
-	let conditionalClass = '' // Set an empty class variable.
 
 		// Conditional if this is `false` (“not true”):
 		// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else
-		if (!item.alsoWrote) {
-			conditionalClass = 'faded' // Update the variable.
-		}
 
-		if (occasion === 'brunch') {
-            // For brunch: abv below 6
-            if (cocktail.abv >= 6) {
-                matches = false;
-            }
-        } else if (occasion === 'party') {
-            // Party occasion logic
-            if (cocktail.abv < 8) {
-                matches = false;
-            }
-        } else if (occasion === 'dinner') {
-            // Dinner occasion logic
-            if (cocktail.abv > 15) {
-                matches = false;
-            }
-        } else if (occasion === 'date') {
-			// Date occasion logic	
-			if (cocktail.abv < 10 || cocktail.abv > 20) {
-				matches = false;
+		//watched filter() tutorial: https://www.youtube.com/watch?v=nKglx7dN7Ss	
+		//more about filter: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter
+	
+	
+		let filterBase = data.base.filter(base => {
+					   //Array.prototype(here is base from data) .filter()
+			if (alcoholScale <= 3) 
+				return base.abv === 1
+			else if (alcoholScale <= 6) 
+				return base.abv === 2
+			else if (alcoholScale <= 10) 
+				return base.abv === 3
+
+			if (base.abv === 1) {
+				return base.name
 			}
-		}
+		})
+
+			console.log(filterBase)
+		
 		// Make a “template literal” as we have before, inserting your data (and maybe the class):
 		// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals
 		let listItem =
 			`           <section id="base">
                             <p>${data.base.name}</p>
                         </section>
-                        <section id="mixers">
-                            <p>${data.mixers.name}</p>
-                        </section>
-                        <section id="garnish">
-                            <p>${garnish.name}</p>
-                        </section>
+            
 			`
 
-		ingredientList.insertAdjacentHTML('beforeend', listItem) // Add it to the `ul`!
+		ingredientList.insertAdjacentHTML('beforeend', listItem)
 
 		// Don’t feel limited to `ul > li` for these—you can insert any DOM, anywhere!
-	})
+	
 
 	//since i have 4 filters, i was not sure how i can make the code work	
 	//trying to understand boolean in js using if/else statements: https://claude.ai/share/e74a5c83-61c0-4e88-9b6f-27dc7947f5df
