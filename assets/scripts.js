@@ -74,7 +74,11 @@ let showCard = (data) => {
 		})
 
 		//select one randomly
+//random selectionexample:https://codepen.io/thowell/pen/OGONYY
+//math.floor rounds things down https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/floor so it gives me a number that is not a decimal
 
+//inside [] is a number and that number will locate the drink in my array filterBase
+//mathrandom() gives me a number between 0 and 1, and i multiply it by the length of my array, so the number will always brween 0 and my array length.
 		let selectedBase = filterBase[Math.floor(Math.random() * filterBase.length)]
 		console.log('selected base:', selectedBase.name)
 
@@ -188,7 +192,6 @@ let showCard = (data) => {
 		
 		})
 
-		let selectedMixer = filterMixer[Math.floor(Math.random() * filterMixer.length)]
 //Garnish
 
 		let filterGarnish = data.garnish.filter(garnish => {
@@ -289,8 +292,11 @@ let showCard = (data) => {
 			}
 		
 		})
-		let selectedGarnish = filterGarnish[Math.floor(Math.random() * filterGarnish.length)]
-
+//2 mixers and garnish will be selected
+		let mixer1 = filterGarnish[Math.floor(Math.random() * filterGarnish.length)]
+		let mixer2 = filterGarnish[Math.floor(Math.random() * filterGarnish.length)]
+		let selectedGarnish = [filterGarnish[mixer1], filterGarnish[mixer2]]
+		let selectedMixer = [filterGarnish[mixer1], filterGarnish[mixer2]]
 		//for me to see in console what is chosen
 		console.log('selected mixer', selectedMixer)
 		console.log('selected base:', selectedBase)
