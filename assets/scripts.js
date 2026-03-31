@@ -4,12 +4,13 @@
 
 
 //nesting?
-// if occasion is brunch
-// base: abv below 6
+// if alcohol scale is below 3 -> abv below 3 & one base
+// if alcohol scale is between 3-6 -> abv between 3-6 & one base
+// if alcohol scale is between 6-10 -> abv above 6 & two bases
 
-// if weather is 20, 23, 24 & temp high (clear sky)
-// base taste:{clear, crisp} 
-
+//if adventure scale is below 3 -> mixer and garnish with similar taste profile as base
+//if adventure scale is between 3-6 -> mixer and garnish with different taste profile as base
+//if adventure scale is between 6-10 -> mixer and garnish with very different taste profile as base
 
 
 let mixButton = document.querySelector('#submit')
