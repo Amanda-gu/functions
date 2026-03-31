@@ -81,7 +81,7 @@
 
   "mixer": [
     { "name": "Tonic Water", "taste": ["bitter","acid"] },
-    { "name": "Soda Water", "taste": [] },
+    { "name": "Soda Water", "taste": ["acid"] },
     { "name": "Cola", "taste": ["sweet"] },
     { "name": "Ginger Beer", "taste": ["sweet","acid"] },
 
