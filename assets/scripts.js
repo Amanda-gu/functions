@@ -190,9 +190,21 @@ formElement.addEventListener('input', () => {
 // }
 
 //from arena js
-const file = "data.json"
+const file = "./assets/data.json"
+//fetch local json file: https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch#fetching_local_json_files
 let fetchJson = (file, callback) => {
 	fetch(file, { cache: 'no-store' })
-		.then((response) => response.json())
-		.then((json) => callback(json))
+	.then(response => {                                              
+		if (!response.ok) {
+		throw new Error('Network response was not ok ' + response.statusText);
+		}
+		return response.json();
+	})
+	.then(data => {
+		console.log(data);
+		callback(json);//added call back
+	})
+	.catch(error => {
+		console.error('There was a problem with the fetch operation:', error);
+	});
 }
