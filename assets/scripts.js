@@ -66,45 +66,27 @@ let showCard = (data) => {
 			}
 		})
 
-		//if there is more than 1 base that matches, select randomly
-		// if (filterBase.length > 0) {
-		// 	const base = filterBase[Math.floor(Math.random() * filterBase.length)]
-		// 	let listItem = `
-		// 		<section class="base">
-		// 		<p>${base.name}</p>
-		// 		</section>
-		// 	`
-		// 	ingredientList.insertAdjacentHTML('beforeend', listItem)
-		// }
+		//select one randomly
 
 		let selectedBase = filterBase[Math.floor(Math.random() * filterBase.length)]
 		console.log('selected base:', selectedBase.name)
 
 //MIXERs
-		if (alcoholScale <= 3) && (selectedBase.includes('crisp'))) {}
-		data.mixer.forEach(mixer => {
+		// my taste	set: ["sweet","acid","bitter","salty","umami","fruity","herbal","smoky","creamy"]
+		//here is where the adventurous scale filters
+		if ((selectedBase.name.includes('sweet', 'fruity', 'creamy'))) {
+			data.base.forEach(base => {
+				return data.mixer.taste.includes('acid')
+			})
 
+			console.log('filtered mixer', data.mixer.name)
+		} else if ((selectedBase.name.includes('acid', 'bitter','salty'))) {
+			data.base.forEach(base => {
+				return data.mixer.taste.includes('sweet')
+			})
 
-			if (adventureScale <= 3) {
-
-				let filterMixer = data.mixer.filter(mixer => {
-
-				if (mixer.taste.includes('crisp')) {
-					return mixer.name
-				}
-					console.log('taste:', mixer.name)
-				})
-			}
-
-			console.log('filtered mixer', mixer.name)
-		
-		})
-			
-
-
-
-
-		console.log( 'filtered base:',filterBase)
+		console.log('filtered mixer', data.mixer.name)
+		console.log( 'selected base:',selectedBase.name)
 		
 
 		// data.base.forEach(base => {

@@ -30,20 +30,20 @@ findmeButton.addEventListener('click', () => {
         const apiUrl = `https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&current=temperature_2m,weather_code&forecast_days=1`;    
         //params i need for current moment: weather code, temp, location
         fetch(apiUrl)
-        .then(response => {
-            if (!response.ok) {
-            throw new Error('Network response was not ok');
-            }
-            return response.json();
-        })
-        //^ this is for cases when network fails like no internet.i asked claude to explain more for me https://claude.ai/share/927032b1-77e5-425a-aa0a-404bf1fb4f9a
-        .then(data => {
-            console.log('Weather data:', data);
-        })
-        .catch(error => {
-            console.error('There has been a problem with the weather fetch operation:', error);
-        });
-        
+            .then(response => {
+                if (!response.ok) {
+                throw new Error('Network response was not ok');
+                }
+                return response.json();
+            })
+            //^ this is for cases when network fails like no internet.i asked claude to explain more for me https://claude.ai/share/927032b1-77e5-425a-aa0a-404bf1fb4f9a
+            .then(data => {
+                console.log('Weather data:', data);
+            })
+            .catch(error => {
+                console.error('There has been a problem with the weather fetch operation:', error);
+            });
+            
         }
 
     function error() {
