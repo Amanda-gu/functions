@@ -3,7 +3,7 @@
 // base + mixers + garnish
 
 
-//nesting?
+//initial logics
 // if alcohol scale is below 3 -> abv below 3 & one base
 // if alcohol scale is between 3-6 -> abv between 3-6 & one base
 // if alcohol scale is between 6-10 -> abv above 6 & two bases
@@ -48,23 +48,21 @@ let showCard = (data) => {
 	let ingredientList = document.getElementById('ingredient-list')
 
 		
-
+//this is just some research and thought process
 		//since i have 4 filters, i was not sure how i can make the code work	
 		//trying to understand boolean in js using if/else statements: https://claude.ai/share/e74a5c83-61c0-4e88-9b6f-27dc7947f5df
 		//filter(), https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter	
 		//how to filter in js: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter
 		//here is an example: https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_filter2
-		//i watched this tutorial on how to filter in js: https://www.youtube.com/watch?v=nKglx7dN7Ss
-		//watched filter() tutorial: https://www.youtube.com/watch?v=nKglx7dN7Ss	
+		//i watched this tutorial on how to filter in js: https://www.youtube.com/watch?v=nKglx7dN7Ss	
 		//more about filter: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter
-		//also read about other filtering method like map and reduce and scores but not applying them now as they are too much to digent
-
+		//also read about other filtering method like map and reduce and scores but not applying them now as they are too much to digest
 		//i decided to use filter and if/else to connect user input to my database. 
+
 //BASE
 
 		//i went to a tutoring sesstion where the tutor (jonathan wang) helped me understand how i can incorporate occasion into my filtering. 
 		// alcoholScale and adventureScale both affect the base selection, so occasion can just be nested in side the filterBase funciton
-
 
 		let filterBase = data.base.filter(base => {
 					   //Array.prototype(here is base from data) .filter()
@@ -395,6 +393,9 @@ let showCard = (data) => {
 
 
 
+
+
+
 // Target your form.
 let formElement = document.querySelector('#some-form')
 
@@ -466,8 +467,6 @@ let updateUrlParams = () => {
 	// stateCallback?.()
 }
 
-
-
 // First, check for query/params in the URL:
 // https://developer.mozilla.org/en-US/docs/Web/API/Location/search
 if (location.search) {
@@ -495,9 +494,6 @@ formElement.addEventListener('submit', (event) => {
 formElement.addEventListener('input', () => {
 	updateUrlParams()
 })
-
-
-
 
 
 
