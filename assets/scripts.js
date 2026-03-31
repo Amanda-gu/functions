@@ -177,6 +177,7 @@ let showCard = (data) => {
 	for (let i = 0; i < selectedBases.length; i++) {
 		let selectedBase = selectedBases[i];
 		console.log('selectedBase:',selectedBase)
+
 		let filterMixer = data.mixer.filter(mixer => {
 			let mix = ""
 			if (adventureScale <= 3) {
@@ -272,11 +273,11 @@ let showCard = (data) => {
 						mixer.taste.includes('salty') || 
 						mixer.taste.includes('creamy')					
 				}
-				return mix
 			}
+			return mix //true or false for each line above
 		})
 
-//Garnish
+//Garnish copied pasted from mixer
 		let filterGarnish = data.garnish.filter(garnish => {
 			let gar = ""
 			if (adventureScale <= 3) {
@@ -372,16 +373,17 @@ let showCard = (data) => {
 						garnish.taste.includes('salty') || 
 						garnish.taste.includes('creamy')					
 				}
-				return gar
 			}
+			return gar
 		})
 
-
-		let selectedGarnish = filterGarnish[Math.floor(Math.random() * filterGarnish.length)]
-		let selectedMixer = filterMixer[Math.floor(Math.random() * filterMixer.length)]
+		let mix1 = Math.floor(Math.random() * filterMixer.length)
+		let mix2 = Math.floor(Math.random() * filterMixer.length)
+		selectedMixer = [filterMixer[mix1], filterMixer[mix2]]
+		
 		//for me to see in console what is chosen
 		console.log('selected mixer', selectedMixer)
-		console.log('selected garnish', selectedGarnish)
+		
 
 	}
     cocktailName.innerHTML = name; //name is what user types in, no filtering needed
