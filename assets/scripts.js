@@ -47,7 +47,6 @@ let showCard = (data) => {
 
 		// Conditional if this is `false` (“not true”):
 		// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else
-
 		//watched filter() tutorial: https://www.youtube.com/watch?v=nKglx7dN7Ss	
 		//more about filter: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter
 	
@@ -66,18 +65,30 @@ let showCard = (data) => {
 			}
 		})
 
-			console.log(filterBase)
-		
-		// Make a “template literal” as we have before, inserting your data (and maybe the class):
-		// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals
-		let listItem =
-			`           <section id="base">
-                            <p>${data.base.name}</p>
-                        </section>
-            
-			`
 
-		ingredientList.insertAdjacentHTML('beforeend', listItem)
+		//if there is more than 1 base that matches, select randomly
+		if (filterBase.length > 0) {
+			const base = filterBase[Math.floor(Math.random() * filterBase.length)]
+			let listItem = `
+				<section class="base">
+				<p>${base.name}</p>
+				</section>
+			`;
+
+			ingredientList.insertAdjacentHTML('beforeend', listItem)
+		}
+
+		console.log(filterBase)
+		
+
+		// data.base.forEach(base => {
+		// 	let listItem =
+		// 		`           <section id="base">
+		// 						<p>${data.base.name}</p>
+		// 					</section>
+		// 		`
+		// 	ingredientList.insertAdjacentHTML('beforeend', listItem)
+		// })
 
 		// Don’t feel limited to `ul > li` for these—you can insert any DOM, anywhere!
 	

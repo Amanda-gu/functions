@@ -18,6 +18,12 @@
       "taste": ["sweet", "acid", "crisp"],
       "abv": 1
     },
+     {
+      "name": "Soju",
+      "type": "base",
+      "taste": ["sweet", "crisp"],
+      "abv": 2
+    },
     {
       "name": "Junmai Sake",
       "type": "base",
