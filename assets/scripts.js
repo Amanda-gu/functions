@@ -79,8 +79,20 @@ let showCard = (data) => {
 
 //inside [] is a number and that number will locate the drink in my array filterBase
 //mathrandom() gives me a number between 0 and 1, and i multiply it by the length of my array, so the number will always brween 0 and my array length.
-		let selectedBase = filterBase[Math.floor(Math.random() * filterBase.length)]
-		console.log('selected base:', selectedBase.name)
+
+		let base1 = filterBase[Math.floor(Math.random() * filterBase.length)]
+		let base2 = filterBase[Math.floor(Math.random() * filterBase.length)]
+		let selectedBase = []
+		
+		if (alcoholScale <= 6) {
+					selectedBase = filterBase[base1]
+				}
+				else if (alcoholScale <= 10) 
+				{
+					selectedBase = [filterBase[base1], filterBase[base2]]
+				}
+			console.log('selected base:', selectedBase)
+		
 
 //MIXERs
 		
@@ -293,10 +305,10 @@ let showCard = (data) => {
 		
 		})
 //2 mixers and garnish will be selected
-		let mixer1 = filterGarnish[Math.floor(Math.random() * filterGarnish.length)]
-		let mixer2 = filterGarnish[Math.floor(Math.random() * filterGarnish.length)]
-		let selectedGarnish = [filterGarnish[mixer1], filterGarnish[mixer2]]
-		let selectedMixer = [filterGarnish[mixer1], filterGarnish[mixer2]]
+//random1, 2 will be a number
+		
+		let selectedGarnish = [filterGarnish[random1], filterGarnish[random2]]
+		let selectedMixer = [filterGarnish[random1], filterGarnish[random2]]
 		//for me to see in console what is chosen
 		console.log('selected mixer', selectedMixer)
 		console.log('selected base:', selectedBase)
