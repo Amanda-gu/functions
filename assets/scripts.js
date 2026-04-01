@@ -398,11 +398,7 @@ let showCard = (data) => {
 
     cocktailName.innerHTML = name; //name is what user types in, no filtering needed
 
-
-
-		// Make a “template literal” as we have before, inserting your data (and maybe the class):
-		// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals
-		let listItem =
+	let listItem =
 			`
 					<section>
 						<h3>Base</h3>
@@ -421,10 +417,8 @@ let showCard = (data) => {
 						<p>${selectedGarnish[1].name}</p>
 					</section>
 				</li>
-			`
-
-		ingredientList.insertAdjacentHTML('beforeend', listItem)
-
+		`
+	ingredientList.insertAdjacentHTML('beforeend', listItem)
 
 }
 
@@ -474,7 +468,7 @@ let updateForm = (params) => {
 //click button show result card
 mixButton.addEventListener('click', () => { // “Listen” for clicks.	
 	resultCard.classList.add('show') 
-    showCard()
+    showCard(data)
 })
 
 
