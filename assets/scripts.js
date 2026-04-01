@@ -143,12 +143,13 @@ let showCard = (data) => {
 //2 bases will be selected
 //random1, 2 will be a number
 		let random1 = Math.floor(Math.random() * filterBase.length)
-		let random2 = Math.floor(Math.random() * filterBase.length)		 
+		let random2 = Math.floor(Math.random() * filterBase.length)	
+		let random3 = Math.floor(Math.random() * filterBase.length)		 
 		let selectedBases = ""
-		if (alcoholScale <= 4) {
+		if (alcoholScale <= 3) {
 					selectedBases = filterBase[random1]
 				}
-				else if (alcoholScale <= 8) 
+				else if (alcoholScale <= 6) 
 				{
 					selectedBases = [filterBase[random1], filterBase[random2]]
 				}
@@ -180,13 +181,14 @@ let showCard = (data) => {
 		
 			console.log('selectedBase:',selectedBase)
 
+		// if (selectedBases.length > 1) {}
 			let filterMixer = data.mixer.filter(mixer => {
 				let mix = ""
 				if (adventureScale <= 3) {
 					if (
-						selectedBase.taste.includes('sweet') ||
-						selectedBase.taste.includes('acid') ||
-						selectedBase.taste.includes('fruity')
+						selectedBases.taste.includes('sweet') ||
+						selectedBases.taste.includes('acid') ||
+						selectedBases.taste.includes('fruity')
 						) {
 					
 					mix = mixer.taste.includes('acid') || 
@@ -195,10 +197,10 @@ let showCard = (data) => {
 
 						
 					} else if (
-						selectedBase.taste.includes('salty') ||
-						selectedBase.taste.includes('bitter') ||
-						selectedBase.taste.includes('smoky') ||
-						selectedBase.taste.includes('spicy')
+						selectedBases.taste.includes('salty') ||
+						selectedBases.taste.includes('bitter') ||
+						selectedBases.taste.includes('smoky') ||
+						selectedBases.taste.includes('spicy')
 					) {
 					mix = mixer.taste.includes('umami') || 
 							mixer.taste.includes('bitter') || 
@@ -207,9 +209,9 @@ let showCard = (data) => {
 
 						
 					} else if (
-						selectedBase.taste.includes('umami') ||
-						selectedBase.taste.includes('herbal') ||
-						selectedBase.taste.includes('creamy')
+						selectedBases.taste.includes('umami') ||
+						selectedBases.taste.includes('herbal') ||
+						selectedBases.taste.includes('creamy')
 					) {
 					mix = mixer.taste.includes('acid') || 
 							mixer.taste.includes('sweet') || 
@@ -403,6 +405,7 @@ let showCard = (data) => {
 					<section>
 						<h3>Base</h3>
 						<p>${selectedBases.name}</p>
+						<p>${selectedBases[0].name}</p>
 					</section>
 					<section>
 						<h3>Mixers</h3>
@@ -501,7 +504,7 @@ let updateUrlParams = () => {
 	storeParams()
 
 	// And a callback!
-	stateCallback?.()
+	//stateCallback?.()
 }
 
 // First, check for query/params in the URL:
@@ -541,10 +544,15 @@ mixButton.addEventListener('click', () => { // “Listen” for clicks.
 	fetch('./assets/data.json')
 	.then(response => response.json())
 	.then(data => {
-		console.log(data)
-		// And passes the data to the function, above!
 		showCard(data)
 	})
 	console.log(data)
 })
 
+fetch('./assets/data.json')
+	.then(response => response.json())
+	.then(data => {
+		console.log(data)
+		// And passes the data to the function, above!
+		showCard(data)
+	})
