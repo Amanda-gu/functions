@@ -176,10 +176,9 @@ let showCard = (data) => {
 	//im applying the same filering logic for garnish
 
 	//since selectedBase can be more than one base
-	//so i used array.from to get the single array, but it was not woring. trouble shooting https://chatgpt.com/share/69cc429e-d47c-832e-b92a-1ffe2aa3c32f
-	//
 	
-	//to target the item in a nodelist, i used template from https://developer.mozilla.org/en-US/docs/Web/API/NodeList		
+	//to target the item in the list, i used template from https://developer.mozilla.org/en-US/docs/Web/API/NodeList		
+
 	//i++ means add 1, in my case, the max arrays in a list is 3, so i will either be 0,1,2
 	//i asked gemini to explain it to me https://gemini.google.com/share/cb86c74e30ad
 	for (let i = 0; i < selectedBases.length; i++) {
