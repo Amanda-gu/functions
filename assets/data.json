@@ -14,7 +14,7 @@
     { "name": "Sake", "taste": ["umami","sweet"], "description": "calm and balanced", "abv": 2, "occasion": ["All","Dinner Party"] },
     { "name": "Mezcal", "taste": ["smoky","bitter"], "description": "wild and smoky", "abv": 3, "occasion": ["All","Weekend Fun"] },
     { "name": "Aquavit", "taste": ["herbal","bitter"], "description": "crisp and herbal", "abv": 3, "occasion": ["All","Brunch"] },
-    { "name": "Baijiu", "taste": ["bitter","umami"], "description": "bold and complex", "abv": 3, "occasion": ["All","Dinner Party"] },
+    { "name": "Baijiu", "taste": ["bitter","umami"], "description": "bold and aggressive", "abv": 3, "occasion": ["All","Dinner Party"] },
     { "name": "Chardonnay", "taste": ["fruity","acid"], "description": "bright and smooth", "abv": 1, "occasion": ["All","Brunch"] },
     { "name": "Sauvignon Blanc", "taste": ["acid","fruity"], "description": "crisp and lively", "abv": 1, "occasion": ["All","Brunch"] },
     { "name": "Riesling", "taste": ["sweet","acid"], "description": "sweet and vibrant", "abv": 1, "occasion": ["All","Brunch","Date Night"] },
