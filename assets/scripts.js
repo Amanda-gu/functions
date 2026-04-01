@@ -45,8 +45,8 @@ let showCard = (data) => {
 
 	//need to see user input in console
 	console.log(occasion)
-	console.log(alcoholScale)
-	console.log(adventureScale)
+	console.log('Alcohol Scale:', alcoholScale)
+	console.log('Adventure Scale:', adventureScale)
 
 	let ingredientList = document.getElementById('ingredient-list')
 
@@ -143,20 +143,16 @@ let showCard = (data) => {
 //2 bases will be selected
 //random1, 2 will be a number
 		let random1 = Math.floor(Math.random() * filterBase.length)
-		let random2 = Math.floor(Math.random() * filterBase.length)	
-		let random3 = Math.floor(Math.random() * filterBase.length)		 
+		let random2 = Math.floor(Math.random() * filterBase.length)		 
 		let selectedBases = ""
-		if (alcoholScale <= 3) {
-					selectedBases = filterBase[random1]
-				}
-				else if (alcoholScale <= 6) 
+		if  (alcoholScale <= 6) 
 				{
-					selectedBases = [filterBase[random1], filterBase[random2]]
+					selectedBases = filterBase
 				}
 
 				else if (alcoholScale <= 10) 
 				{
-					selectedBases = [filterBase[random1], filterBase[random2], filterBase[random3]]
+					selectedBases = [filterBase[random1], filterBase[random2]]
 				}
 		console.log('selected base:', selectedBases)
 
@@ -411,13 +407,13 @@ let showCard = (data) => {
 					</section>
 					<section>
 						<h3>Mixers</h3>
-						<p>${selectedMixer[0].name}</p>
-						<p>${selectedMixer[1].name}</p>
+						<p>${selectedMixer[0]?.name || ''}</p>
+						<p>${selectedMixer[1]?.name || ''}</p>
 					</section>
 					<section>
 						<h3>Garnishes</h3>
-						<p>${selectedGarnish[0].name}</p>
-						<p>${selectedGarnish[1].name}</p>
+						<p>${selectedGarnish[0]?.name || ''}</p>
+						<p>${selectedGarnish[1]?.name || ''}</p>
 					</section>
 				</li>
 		`
