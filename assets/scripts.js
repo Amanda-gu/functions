@@ -44,7 +44,7 @@ let showCard = (data) => {
 	let cocktailGarnish = document.querySelector('#garnish')
 	
 
-	//how to get the ysers selected values: https://www.w3schools.com/JSREF/tryit.asp?filename=tryjsref_select_value   
+	//how to get the users selected values: https://www.w3schools.com/JSREF/tryit.asp?filename=tryjsref_select_value   
 	let name = document.querySelector('#recipe-name').value
 	let occasion = document.querySelector("#occasion").value
 	let alcoholScale = document.querySelector("#alc-scale").value
