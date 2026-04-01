@@ -405,24 +405,25 @@ let showCard = (data) => {
 
 
 	let cocktailDescription = 	selectedBases.description ?? 
-	//?? only runs the rest if it's false, so when there is 2 bases, it runs the code below	  
+	//?? only runs the rest if above's false, so when there is 2 bases, it runs the code below	  
 							
 								(selectedBases[0]?.description || '') 
-								//need to add () if ?? and || are in one line! https://chatgpt.com/share/69cd3900-2684-832f-938f-1c0fd70ef54f 
+								//need to add () if ?? and || are in one line! https://chatgpt.com/share/69cd3900-2684-832f-938f-1c0fd70ef54f & https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Nullish_coalescing#:~:text=leftExpr%20??%20rightExpr-,Description,js%20Copy
+
 								 +
 								(selectedBases[1]?.description || '') 
 
-								+ ', with ' +
+								+ ', with ' + 'a ' +
 								
 								selectedMixer[0].description 
-								+ ' ' +
+								+ ' and ' +
 								selectedMixer[1].description 
-
-								+  ' ' + 'and' +
+								+ ' touch,'
+								+  ' and ' + 'a ' +
 								selectedGarnish[0].description 
-								+ ' ' +
+								+ ' yet ' +
 								selectedGarnish[1].description
-								+ '. Enjoy!';
+								+ ' finish. Cheers!';
 
 	console.log('cocktail description:', cocktailDescription)
 
