@@ -401,12 +401,12 @@ let showCard = (data) => {
 
 	}
 
-	let cocktailDescription = 	selectedBases?.description || ''
+	let cocktailDescription = 	selectedBases?.description || '' 
 								+ ' ' +
 								selectedBases[0]?.description || ''
 								+ ' ' +
 								selectedBases[1]?.description || ''
-							
+								
 								+ ', with' +
 								
 								selectedMixer[0].description 
