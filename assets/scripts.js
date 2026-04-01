@@ -410,7 +410,7 @@ let showCard = (data) => {
 								(selectedBases[0]?.description || '') 
 								//need to add () if ?? and || are in one line! https://chatgpt.com/share/69cd3900-2684-832f-938f-1c0fd70ef54f & https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Nullish_coalescing#:~:text=leftExpr%20??%20rightExpr-,Description,js%20Copy
 
-								 +
+								 + ' and ' +
 								(selectedBases[1]?.description || '') 
 
 								+ ', with ' + 'a ' +
@@ -432,27 +432,28 @@ let showCard = (data) => {
     cocktailName.innerHTML = name; //name is what user types in, no filtering needed
 
 	let listItem =
-			`		<section>
-						<h3>Description</h3>
-						<p>${cocktailDescription}</p>
-					</section>
-					<section>
-						<h3>Base</h3>
-						<p>${selectedBases?.name || ''}</p>
-						<p>${selectedBases[0]?.name || ''}</p>
-						<p>${selectedBases[1]?.name || ''}</p>
-						<p>${selectedBases[2]?.name || ''}</p>
-					</section>
-					<section>
-						<h3>Mixers</h3>
-						<p>${selectedMixer[0]?.name || ''}</p>
-						<p>${selectedMixer[1]?.name || ''}</p>
-					</section>
-					<section>
-						<h3>Garnishes</h3>
-						<p>${selectedGarnish[0]?.name || ''}</p>
-						<p>${selectedGarnish[1]?.name || ''}</p>
-					</section>
+			`		
+					<h4>Your mix is ready</h4>
+					<p>${cocktailDescription}</p>
+					
+					<h4>Base</h4>
+					<ul>
+						<li>${selectedBases?.name || ''}</li>
+						<li>${selectedBases[0]?.name || ''}</li>
+						<li>${selectedBases[1]?.name || ''}</li>
+					</ul>
+
+					<h4>Mixers</h4>
+					<ul>
+						<li>${selectedMixer[0]?.name || ''}</li>
+						<li>${selectedMixer[1]?.name || ''}</li>
+					</ul>
+
+					<h4>Garnishes</h4>
+					<ul>
+						<li>${selectedGarnish[0]?.name || ''}</li>
+						<li>${selectedGarnish[1]?.name || ''}</li>
+					</ul>
 				</li>
 		`
 	ingredientList.insertAdjacentHTML('beforeend', listItem)
