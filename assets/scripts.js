@@ -147,7 +147,10 @@ let showCard = (data) => {
 		let selectedBases = ""
 		if  (alcoholScale <= 6) 
 				{
-					selectedBases = filterBase
+
+					selectedBases =[filterBase[random1]]
+					//need to select a single base from the list
+					//i thought this selectedBases =filterBase[random1] was an array but it is single item that breaks the forloop below so i was trying to understand what array, nodelist, and single item really means in code, https://chatgpt.com/share/69cd1390-1094-832c-b089-fbcc443e10b1
 				}
 
 				else if (alcoholScale <= 10) 
@@ -216,28 +219,28 @@ let showCard = (data) => {
 					}
 				} else if (adventureScale <= 6) {
 					if (
-						selectedBase.taste.includes('sweet') ||
-						selectedBase.taste.includes('acid') ||
-						selectedBase.taste.includes('fruity')
+						selectedBases.taste.includes('sweet') ||
+						selectedBases.taste.includes('acid') ||
+						selectedBases.taste.includes('fruity')
 						) {
 					mix = mixer.taste.includes('umami') || 
 							mixer.taste.includes('bitter') || 
 							mixer.taste.includes('salty')
 
 					} else if (
-						selectedBase.taste.includes('salty') ||
-						selectedBase.taste.includes('bitter') ||
-						selectedBase.taste.includes('smoky')||
-						selectedBase.taste.includes('spicy')
+						selectedBases.taste.includes('salty') ||
+						selectedBases.taste.includes('bitter') ||
+						selectedBases.taste.includes('smoky')||
+						selectedBases.taste.includes('spicy')
 					) {
 					mix = mixer.taste.includes('umami') || 
 							mixer.taste.includes('acid') ||
 							mixer.taste.includes('fruity')
 
 					} else if (
-						selectedBase.taste.includes('umami') ||
-						selectedBase.taste.includes('herbal') ||
-						selectedBase.taste.includes('creamy')
+						selectedBases.taste.includes('umami') ||
+						selectedBases.taste.includes('herbal') ||
+						selectedBases.taste.includes('creamy')
 					) {
 					mix = mixer.taste.includes('smoky') || 
 							mixer.taste.includes('spicy') || 
