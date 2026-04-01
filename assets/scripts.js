@@ -541,7 +541,7 @@ formElement.addEventListener('input', () => {
 //click button show result card
 mixButton.addEventListener('click', () => { // “Listen” for clicks.	
 	resultCard.classList.add('show') 
-   
+   //fetch in the click so it only fetches when the button is clicked
 	fetch('./assets/data.json')
 	.then(response => response.json())
 	.then(data => {
