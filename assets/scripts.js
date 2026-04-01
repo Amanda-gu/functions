@@ -404,8 +404,10 @@ let showCard = (data) => {
 			`
 					<section>
 						<h3>Base</h3>
-						<p>${selectedBases.name}</p>
-						<p>${selectedBases[0].name}</p>
+						<p>${selectedBases?.name || ''}</p>
+						<p>${selectedBases[0]?.name || ''}</p>
+						<p>${selectedBases[1]?.name || ''}</p>
+						<p>${selectedBases[2]?.name || ''}</p>
 					</section>
 					<section>
 						<h3>Mixers</h3>
