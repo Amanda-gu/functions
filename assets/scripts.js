@@ -400,14 +400,19 @@ let showCard = (data) => {
 		console.log('selected garnish', selectedGarnish)
 
 	}
+//diferences between || and ?? https://www.reddit.com/r/javascript/comments/1c2kf3q/askjs_javascript_operators_like_or_and_null/
+// || is OR, ?? runs when the previous value is null or undefined
 
-	let cocktailDescription = 	selectedBases?.description || '' 
-								+ ' ' +
-								selectedBases[0]?.description || ''
-								+ ' ' +
-								selectedBases[1]?.description || ''
-								
-								+ ', with' +
+
+	let cocktailDescription = 	selectedBases.description ?? 
+	//?? only runs the rest if it's false, so when there is 2 bases, it runs the code below	  
+							
+								(selectedBases[0]?.description || '') 
+								//need to add () if ?? and || are in one line! https://chatgpt.com/share/69cd3900-2684-832f-938f-1c0fd70ef54f 
+								 +
+								(selectedBases[1]?.description || '') 
+
+								+ ', with ' +
 								
 								selectedMixer[0].description 
 								+ ' ' +
