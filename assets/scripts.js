@@ -401,17 +401,17 @@ let showCard = (data) => {
 
 	}
 
-	let cocktailDescription = 	selectedBases.description || 
-								selectedBases[0].description + ''
+	let cocktailDescription = 	selectedBases.description + '' + 
+								selectedBases[0].description + '' +
 								selectedBases[1].description 
 							
-								+ ', with'
+								+ ', with' +
 								
-								selectedMixer[0].description + ''
+								selectedMixer[0].description + '' +
 								selectedMixer[1].description 
 
-								+  ' ' + 'and'
-								selectedGarnish[0].description + ''
+								+  ' ' + 'and' +
+								selectedGarnish[0].description + '' +
 								selectedGarnish[1].description
 								+ '. Enjoy!';
 
