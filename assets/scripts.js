@@ -402,9 +402,7 @@ let showCard = (data) => {
 			`
 					<section>
 						<h3>Base</h3>
-						<p>${selectedBase[0].name}</p>
-						<p>${selectedBase[1].name}</p>
-						<p>${selectedBase[2].name}</p>
+						<p>${selectedBases.name}</p>
 					</section>
 					<section>
 						<h3>Mixers</h3>
@@ -465,11 +463,7 @@ let updateForm = (params) => {
 
 
 
-//click button show result card
-mixButton.addEventListener('click', () => { // “Listen” for clicks.	
-	resultCard.classList.add('show') 
-    showCard(data)
-})
+
 
 
 
@@ -507,7 +501,7 @@ let updateUrlParams = () => {
 	storeParams()
 
 	// And a callback!
-	// stateCallback?.()
+	stateCallback?.()
 }
 
 // First, check for query/params in the URL:
@@ -540,8 +534,10 @@ formElement.addEventListener('input', () => {
 
 
 
-
-setTimeout(() => {
+//click button show result card
+mixButton.addEventListener('click', () => { // “Listen” for clicks.	
+	resultCard.classList.add('show') 
+   
 	fetch('./assets/data.json')
 	.then(response => response.json())
 	.then(data => {
@@ -549,5 +545,6 @@ setTimeout(() => {
 		// And passes the data to the function, above!
 		showCard(data)
 	})
-  console.log("this is the first message");
-}, 500);
+	console.log(data)
+})
+
