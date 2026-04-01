@@ -550,10 +550,10 @@ mixButton.addEventListener('click', () => { // “Listen” for clicks.
 	console.log(data)
 })
 
-fetch('./assets/data.json')
-	.then(response => response.json())
-	.then(data => {
-		console.log(data)
-		// And passes the data to the function, above!
-		showCard(data)
-	})
+// fetch('./assets/data.json')
+// 	.then(response => response.json())
+// 	.then(data => {
+// 		console.log(data)
+// 		// And passes the data to the function, above!
+// 		showCard(data)
+// 	})
