@@ -3,11 +3,18 @@
 // alcohol scale
 // adventure scale
 // occasion
+// weather condition
 
+// output(mvp)
+// name
+// description { base + mixer + garnish} piece together as a sentense?
+	//so it will be like: "Your cocktail is [base description/sweet], [mixer description/], and [garnish description]. Enjoy!"
+// base(s) <----- alc scale + occasion + weather condition(optional)
+// + 
+// mixers2  <----- adv scale + weather condition(optional)
+// + 
+// garnishes2 <----- adv scale + weather condition(optional)
 
-// output(mvp):
-// name,
-// base + mixers2 + garnishes2
 
 
 //initial logics
@@ -134,7 +141,7 @@ let showCard = (data) => {
 			//reture here 
 		})
 
-		//select one randomly
+		//select one or 2 randomly
 //random selection example:https://codepen.io/thowell/pen/OGONYY
 //math.floor rounds things down https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/floor so it gives me a number that is not a decimal
 
@@ -394,13 +401,32 @@ let showCard = (data) => {
 
 	}
 
+	let cocktailDescription = selectedBases?.description || 
+								selectedBases[0]?.description || + ''
+								selectedBases[1]?.description || 
+								'' 
+							
+								+ ', with'
+								
+								selectedMixer[1]?.description || + ''
+								selectedMixer[2]?.description || + ''
+								''
+								+ 'and'
+								selectedGarnish[1]?.description || + ''
+								selectedGarnish[2]?.description || + ''
+								'';
+
+	console.log('cocktail description:', cocktailDescription)
 
 	//add everything to the card
 
     cocktailName.innerHTML = name; //name is what user types in, no filtering needed
 
 	let listItem =
-			`
+			`		<section>
+						<h3>Description</h3>
+						<p>${cocktailDescription}</p>
+					</section>
 					<section>
 						<h3>Base</h3>
 						<p>${selectedBases?.name || ''}</p>
