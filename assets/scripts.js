@@ -433,7 +433,7 @@ let showCard = (data) => {
 
 	let listItem =
 			`		
-					<h4>Your mix is ready</h4>
+					<h3>Your mix is ready</h4>
 					<p>${cocktailDescription}</p>
 					
 					<h4>Base</h4>
