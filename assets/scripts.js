@@ -185,9 +185,9 @@ let showCard = (data) => {
 				let mix = ""
 				if (adventureScale <= 3) {
 					if (
-						selectedBases.taste.includes('sweet') ||
-						selectedBases.taste.includes('acid') ||
-						selectedBases.taste.includes('fruity')
+						selectedBase.taste.includes('sweet') ||
+						selectedBase.taste.includes('acid') ||
+						selectedBase.taste.includes('fruity')
 						) {
 					
 					mix = mixer.taste.includes('acid') || 
@@ -196,10 +196,10 @@ let showCard = (data) => {
 
 						
 					} else if (
-						selectedBases.taste.includes('salty') ||
-						selectedBases.taste.includes('bitter') ||
-						selectedBases.taste.includes('smoky') ||
-						selectedBases.taste.includes('spicy')
+						selectedBase.taste.includes('salty') ||
+						selectedBase.taste.includes('bitter') ||
+						selectedBase.taste.includes('smoky') ||
+						selectedBase.taste.includes('spicy')
 					) {
 					mix = mixer.taste.includes('umami') || 
 							mixer.taste.includes('bitter') || 
@@ -208,9 +208,9 @@ let showCard = (data) => {
 
 						
 					} else if (
-						selectedBases.taste.includes('umami') ||
-						selectedBases.taste.includes('herbal') ||
-						selectedBases.taste.includes('creamy')
+						selectedBase.taste.includes('umami') ||
+						selectedBase.taste.includes('herbal') ||
+						selectedBase.taste.includes('creamy')
 					) {
 					mix = mixer.taste.includes('acid') || 
 							mixer.taste.includes('sweet') || 
@@ -219,28 +219,28 @@ let showCard = (data) => {
 					}
 				} else if (adventureScale <= 6) {
 					if (
-						selectedBases.taste.includes('sweet') ||
-						selectedBases.taste.includes('acid') ||
-						selectedBases.taste.includes('fruity')
+						selectedBase.taste.includes('sweet') ||
+						selectedBase.taste.includes('acid') ||
+						selectedBase.taste.includes('fruity')
 						) {
 					mix = mixer.taste.includes('umami') || 
 							mixer.taste.includes('bitter') || 
 							mixer.taste.includes('salty')
 
 					} else if (
-						selectedBases.taste.includes('salty') ||
-						selectedBases.taste.includes('bitter') ||
-						selectedBases.taste.includes('smoky')||
-						selectedBases.taste.includes('spicy')
+						selectedBase.taste.includes('salty') ||
+						selectedBase.taste.includes('bitter') ||
+						selectedBase.taste.includes('smoky')||
+						selectedBase.taste.includes('spicy')
 					) {
 					mix = mixer.taste.includes('umami') || 
 							mixer.taste.includes('acid') ||
 							mixer.taste.includes('fruity')
 
 					} else if (
-						selectedBases.taste.includes('umami') ||
-						selectedBases.taste.includes('herbal') ||
-						selectedBases.taste.includes('creamy')
+						selectedBase.taste.includes('umami') ||
+						selectedBase.taste.includes('herbal') ||
+						selectedBase.taste.includes('creamy')
 					) {
 					mix = mixer.taste.includes('smoky') || 
 							mixer.taste.includes('spicy') || 
