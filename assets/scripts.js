@@ -461,6 +461,26 @@ let showCard = (data) => {
 
 }
 
+//share template from MDN: https://developer.mozilla.org/en-US/docs/Web/API/Web_Share_API 
+const shareData = {
+  title: "MDN",
+  text: "Learn web development on MDN!",
+  url: "https://developer.mozilla.org",
+};
+
+const btn = document.querySelector("#share");
+const resultPara = document.querySelector(".result");
+
+// Share must be triggered by "user activation"
+btn.addEventListener("click", async () => {
+  try {
+    await navigator.share(shareData);
+    resultPara.textContent = "MDN shared successfully";
+  } catch (err) {
+    resultPara.textContent = `Error: ${err}`;
+  }
+});
+
 
 
 
