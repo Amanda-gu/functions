@@ -32,7 +32,7 @@
 let mixButton = document.querySelector('#mix')
 let mixagainButton = document.querySelector('#mix-again')
 let resultCard = document.querySelector('output')
-
+let ingredientList = document.getElementById('ingredient-list')
 
 
 //what's inside the result card function
@@ -56,7 +56,6 @@ let showCard = (data) => {
 	console.log('Alcohol Scale:', alcoholScale)
 	console.log('Adventure Scale:', adventureScale)
 
-	let ingredientList = document.getElementById('ingredient-list')
 
 		
 //this is just some research and thought process
@@ -461,6 +460,30 @@ let showCard = (data) => {
 
 
 }
+
+
+//about share() https://developer.mozilla.org/en-US/docs/Web/API/Navigator/share
+document.getElementById("share").addEventListener("click", async () => {
+  
+  if (!navigator.share) {
+    ingredientList.textContent = `Your browser doesn't support the Web Share API.`
+	try {
+      await navigator.share({
+        title: "Your recipe",
+		text: ingredientList.textContent,
+      });
+      output.textContent = "Shared!";
+    } catch (error) {
+      ingredientList.textContent = `Error: ${error.message}`;
+    }
+  } else {
+   	ingredientList.textContent = `Your system doesn't support sharing these files.`
+  }
+
+});
+
+
+
 
 
 // Target your form.
