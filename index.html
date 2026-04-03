@@ -15,19 +15,14 @@
     <body>
 		
 		<h1>Mixology Lab</h1>
-        <h2></h2>
+        <h2>Create your own recipe</h2>
 
 		<form id="some-form">
             <section id="input">
-            <!-- name -->        
-                <section>
-                    <label for="recipe-name">Name Your Recipe</label>
-                    <input id="recipe-name" name="recipe-name" placeholder="Name your recipe" required type="text">
-                </section>
-
+           
             <!-- dropdown -->
                 <section>
-                    <label for="occasion">What is the occasion?</label>
+                    <label for="occasion">What is the vibe?</label>
                     <select id="occasion" name="occasion">
                         <option>Brunch</option>
                         <option>Casual Weeknight</option>
@@ -41,12 +36,12 @@
 
             <!-- 2 sliders -->    
                 <section>
-                    <label for="alc-scale">Alcoholic Scale</label>
+                    <label for="alc-scale">Something light or a little stronger?</label>
                     <input type="range" id="alc-scale" name="alc-scale" min="0" max="10" value="5">
                 </section>
 
                 <section>
-                    <label for="adv-scale">Adventure Scale</label>
+                    <label for="adv-scale">Ready for adventure?</label>
                     <input type="range" id="adv-scale" name="adv-scale" min="0" max="10" value="5">
                 </section>
          
@@ -70,7 +65,7 @@
                 </section> -->
             <!-- buttons -->        
                 <section>
-                    <button id="submit" type="submit">Mix it</button>
+                    <button id="mix" type="mix">Mix it</button>
                 </section>
             </section>
         <!-- output -->    
@@ -80,7 +75,7 @@
                     <section id="ingredient-list">
                     </section>
                     <section>
-                        <button id="submit" type="submit">Mix Again</button>
+                        <button id="mix-again" type="mix-again">Mix Again</button>
                         <button>Share</button>
                     </section>
                 </article>

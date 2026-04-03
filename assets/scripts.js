@@ -29,7 +29,8 @@
 //if adventure scale is between 6-10 -> mixer and garnish with very different taste profile as base
 
 
-let mixButton = document.querySelector('#submit')
+let mixButton = document.querySelector('#mix')
+let mixagainButton = document.querySelector('#mix-again')
 let resultCard = document.querySelector('output')
 
 
@@ -38,14 +39,14 @@ let resultCard = document.querySelector('output')
 let showCard = (data) => {
 
 	//DOM, everything in the result card
-	let cocktailName = document.querySelector('#card-recipe-name')
+	let cocktailName = document.querySelector('#recipe-name')
 	let cocktailBase = document.querySelector('#base')
 	let cocktailMixers = document.querySelector('#mixers')
 	let cocktailGarnish = document.querySelector('#garnish')
 	
 
 	//how to get the users selected values: https://www.w3schools.com/JSREF/tryit.asp?filename=tryjsref_select_value   
-	let name = document.querySelector('#recipe-name').value
+	// let name = document.querySelector('#recipe-name').value
 	let occasion = document.querySelector("#occasion").value
 	let alcoholScale = document.querySelector("#alc-scale").value
 	let adventureScale = document.querySelector("#adv-scale").value
@@ -428,13 +429,15 @@ let showCard = (data) => {
 
 	//add everything to the card
 
-    cocktailName.innerHTML = name; //name is what user types in, no filtering needed
+    // cocktailName.innerHTML = name; //name is what user types in, no filtering needed
 
 	let listItem =
 			`		
-					<h3>Your mix is ready</h4>
+					<h3 id="recipe-name">NAME</h4>
 					<p>${cocktailDescription}</p>
-					
+					<h4></h4>
+				
+               
 					<h4>Base</h4>
 					<ul>
 						<li>${selectedBases?.name || ''}</li>
@@ -577,6 +580,20 @@ formElement.addEventListener('input', () => {
 mixButton.addEventListener('click', () => { // “Listen” for clicks.	
 	resultCard.classList.add('show') 
    //fetch in the click so it only fetches when the button is clicked
+	fetch('./assets/data.json')
+	.then(response => response.json())
+	.then(data => {
+		showCard(data)
+		console.log(data)
+	})
+	
+})
+
+
+//mix again
+
+mixagainButton.addEventListener('click', () => { // “Listen” for clicks.	
+	resultCard.classList.add('show') 
 	fetch('./assets/data.json')
 	.then(response => response.json())
 	.then(data => {
