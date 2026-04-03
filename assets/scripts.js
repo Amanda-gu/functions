@@ -176,8 +176,8 @@ let showCard = (data) => {
 	//im applying the same filering logic for garnish
 
 	//since selectedBase can be more than one base
-	
-	//to target the item in the list, i used template from https://developer.mozilla.org/en-US/docs/Web/API/NodeList		
+	//1. tried using array.from it didnt work
+	//2. to target the item in the list, i tried the for loop template from https://developer.mozilla.org/en-US/docs/Web/API/NodeList		
 
 	//i++ means add 1, in my case, the max arrays in a list is 3, so i will either be 0,1,2
 	//i asked gemini to explain it to me https://gemini.google.com/share/cb86c74e30ad
