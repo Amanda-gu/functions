@@ -31,7 +31,7 @@
 
 let mixButton = document.querySelector('#mix')
 let mixagainButton = document.querySelector('#mix-again')
-let resultCard = document.querySelector('output')
+let resultCard = document.querySelector('#result-modal')
 let ingredientList = document.getElementById('ingredient-list')
 
 
@@ -461,11 +461,12 @@ let showCard = (data) => {
 
 }
 
+
 //share template from MDN: https://developer.mozilla.org/en-US/docs/Web/API/Web_Share_API 
 const shareData = {
-  title: "MDN",
-  text: "Learn web development on MDN!",
-  url: "https://developer.mozilla.org",
+  title: "Mixology Lab",
+  text: "Create Your Own Recipe",
+  url: "https://amanda-gu.github.io/functions/",
 };
 
 const btn = document.querySelector("#share");
@@ -483,6 +484,45 @@ btn.addEventListener("click", async () => {
 
 
 
+
+
+//click button show result modal
+
+mixButton.addEventListener('click', () => { // “Listen” for clicks.	
+
+	resultCard.showModal()
+	
+   //fetch in the click so it only fetches when the button is clicked
+	fetch('./assets/data.json')
+	.then(response => response.json())
+	.then(data => {
+		showCard(data)
+		console.log(data)
+	})
+	
+})
+
+//close modal
+
+let closeButton = document.getElementById('close')
+
+	closeButton.addEventListener('click', () => {
+	resultCard.close() // And this closes it!
+})
+
+//mix again
+
+mixagainButton.addEventListener('click', () => { // “Listen” for clicks.	
+
+   //fetch in the click so it only fetches when the button is clicked
+	fetch('./assets/data.json')
+	.then(response => response.json())
+	.then(data => {
+		showCard(data)
+		console.log(data)
+	})
+	
+})
 
 
 
@@ -586,32 +626,3 @@ formElement.addEventListener('input', () => {
 	updateUrlParams()
 })
 
-
-
-//click button show result card
-mixButton.addEventListener('click', () => { // “Listen” for clicks.	
-	resultCard.classList.add('show') 
-   //fetch in the click so it only fetches when the button is clicked
-	fetch('./assets/data.json')
-	.then(response => response.json())
-	.then(data => {
-		showCard(data)
-		console.log(data)
-	})
-	
-})
-
-
-//mix again
-
-mixagainButton.addEventListener('click', () => { // “Listen” for clicks.	
-	resultCard.classList.add('show') 
-   //fetch in the click so it only fetches when the button is clicked
-	fetch('./assets/data.json')
-	.then(response => response.json())
-	.then(data => {
-		showCard(data)
-		console.log(data)
-	})
-	
-})
