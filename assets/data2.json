@@ -1,0 +1,68 @@
+{"light":
+        {
+        "sprits": {
+            "base": [
+                        {   "name": "Gin", 
+                            "taste": ["herbal","bitter","acid"], 
+                            "description": "fresh", "abv": 3, 
+                            "occasion": ["All","Brunch","Date Night"] },
+                            
+                        {   "name": "Gin", 
+                            "taste": ["herbal","bitter","acid"], 
+                            "description": "fresh", "abv": 3, 
+                            "occasion": ["All","Brunch","Date Night"] }
+                        
+                    ],
+
+                    "mixer": [
+                        {   "name": "Tonic Water", 
+                            "taste": ["bitter","acid"], 
+                            "description": "crisp" },
+                        {   "name": "Coke", 
+                            "taste": ["bitter","acid"], 
+                            "description": "crisp" }
+  
+                    ],
+
+                    "garnish": [
+                        {   "name": "Lemon Peel", 
+                            "taste": ["acid","fruity"], 
+                            "description": "bright" }
+                    
+                    ]
+                    },
+        "punch": {
+            "base": [
+                    {   "name": "Gin", 
+                            "taste": ["herbal","bitter","acid"], 
+                            "description": "fresh", "abv": 3, 
+                            "occasion": ["All","Brunch","Date Night"] },
+                            
+                        {   "name": "Gin", 
+                            "taste": ["herbal","bitter","acid"], 
+                            "description": "fresh", "abv": 3, 
+                            "occasion": ["All","Brunch","Date Night"] }
+                        
+                    ],
+
+                    "mixer": [
+                        {   "name": "Tonic Water", 
+                            "taste": ["bitter","acid"], 
+                            "description": "crisp" },
+                        {   "name": "Coke", 
+                            "taste": ["bitter","acid"], 
+                            "description": "crisp" }
+  
+                    ],
+
+                    "garnish": [
+                        {   "name": "Lemon Peel", 
+                            "taste": ["acid","fruity"], 
+                            "description": "bright" }
+                    
+                    ]
+                    }
+                }
+            
+        
+}
