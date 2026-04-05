@@ -134,7 +134,7 @@ let showCard = (data2) => {
 		// console.log('selected garnish', selectedGarnish)
 	
 		let cocktailLabel =	
-			selectedBase.label + ' ' + selectedMixer[0].label + ' ' + selectedMixer[1].label + selectedFamily
+			selectedBase.label + ' ' + selectedMixer[0].label + ' ' + selectedMixer[1].label
 
 		let cocktailDescription = 
 					
@@ -146,28 +146,28 @@ let showCard = (data2) => {
 				console.log('cocktail description:', cocktailDescription)
 				console.log('cocktail label:', cocktailLabel)
 
-			//add to html
-				let listItem =
-					`		
-							<h3 id="recipe-name">${cocktailLabel}</h4>
-							<p>${cocktailDescription}</p>
+		//add to html
+		let listItem =
+				`		
+					<h3 id="recipe-name">${cocktailLabel}</h4>
+						<p>${cocktailDescription}</p>
 
-							<h4>Base</h4>
-							<ul>
-								<li>${selectedBase?.name || ''}</li>
-								<li>${selectedBase[0]?.name || ''}</li>
-								<li>${selectedBase[1]?.name || ''}</li>
-							</ul>
+					<h4>Base</h4>
+					<ul>
+						<li>${selectedBase?.name || ''}</li>
+						<li>${selectedBase[0]?.name || ''}</li>
+						<li>${selectedBase[1]?.name || ''}</li>
+					</ul>
 
-							<h4>Mixers</h4>
-							<ul>
-								<li>${selectedMixer[0].name || ''}</li>
-								<li>${selectedMixer[1].name || ''}</li>
-							</ul>			
+					<h4>Mixers</h4>
+					<ul>
+						<li>${selectedMixer[0].name || ''}</li>
+						<li>${selectedMixer[1].name || ''}</li>
+					</ul>			
 					
 				`
-				//innerHtml so it doesnt add to the list everytime i click
-				ingredientList.innerHTML = listItem
+			//innerHtml so it doesnt add to the list everytime i click
+			ingredientList.innerHTML = listItem
 
 			
 
@@ -195,10 +195,6 @@ btn.addEventListener("click", async () => {
     resultPara.textContent = `Error: ${err}`;
   }
 });
-
-
-
-
 
 //click button show result modal
 
