@@ -31,17 +31,17 @@ let showCard = (data) => {
 		let familyName
 
 //put everythign in ranges so i dont repeat the code
-		let family
+		let level
 		if (alcoholScale <= 3) {
-			family = data.light
+			level = data.light
 		} else if (alcoholScale <=6){
-			family = data.medium
+			level = data.medium
 		} else if (alcoholScale <=10){
-			family = data.strong
+			level = data.strong
 		}
-		console.log('family:', family)
+		console.log('level:', level)
 
-		selectedFamily = family[Math.floor(Math.random() * family.length)]
+		selectedFamily = level[Math.floor(Math.random() * level.length)]
 		familyName = Object.keys(selectedFamily)[0]//get the string fromt the key, and family is array so [0] to select the family
 		// familyData = selectedFamily[familyName]
 
@@ -49,7 +49,7 @@ let showCard = (data) => {
 		console.log('family name', familyName)
 
 		
-		let filterBase = selectedFamily.familyName.base.filter(base => {
+		let filterBase = level.familyName.base.filter(base => {
 				alcohol = base.occasion.includes(occasion)
 				console.log('alcohol', alcohol) 
 				return alcohol
