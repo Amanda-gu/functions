@@ -30,6 +30,7 @@ let showCard = (data2) => {
 		let selectedFamily
 		let selectedBase
 		let selectedBases
+		let selectedMixer
 
 //put everythign in ranges so i dont repeat the code
 		let family
@@ -51,102 +52,112 @@ let showCard = (data2) => {
 				return alcohol
 			})
 
-		let base = Math.floor(Math.random() * filterBase.length)	 
-			selectedBase = filterBase[base]
-			console.log('selected base:', selectedBase)
+		let base1 = Math.floor(Math.random() * filterBase.length)	 
+		let base2 = Math.floor(Math.random() * filterBase.length)
+
+		if (alcoholScale <= 6){
 			
-		if (6 < alcoholScale <=10){
-			let base1 = Math.floor(Math.random() * filterBase.length)	 
-			let base2 = Math.floor(Math.random() * filterBase.length)	 
+			selectedBases = filterBase[base1]
+			console.log('selected base:', selectedBase)
+		} else if (6 < alcoholScale <= 10){
+				 
 			selectedBases = [filterBase[base1], filterBase[base2]]
-			console.log('selected base:', selectedBases)		
+			console.log('selected base:', selectedBases)
+			
+		
 		}
 		for (let i = 0; i < selectedBases.length; i++) {
-					selectedBase = selectedBases[i];
-				}
+					selectedBase = selectedBases[i]	
+					
+					let group1 = 	selectedBase.taste.includes('sweet') ||
+									selectedBase.taste.includes('acid') ||
+									selectedBase.taste.includes('fruity')
 
+					let group2 =  	selectedBase.taste.includes('salty') ||
+									selectedBase.taste.includes('bitter') ||
+									selectedBase.taste.includes('smoky') ||
+									selectedBase.taste.includes('spicy')
+
+					let group3 =  	selectedBase.taste.includes('umami') ||
+									selectedBase.taste.includes('herbal') ||
+									selectedBase.taste.includes('creamy')
+
+				
+					let filterMixer = selectedFamily.mixer.filter(mixer => {
+						let mix = ""
+
+						let mixGroup1 = mixer.taste.includes('acid') || 
+										mixer.taste.includes('sweet') || 
+										mixer.taste.includes('fruity')
+					
+						let mixGroup2 = mixer.taste.includes('creamy') || 
+										mixer.taste.includes('bitter') || 
+										mixer.taste.includes('herbal') || 
+										mixer.taste.includes('fruity')
+
+						let mixGroup3 = mixer.taste.includes('spicy') || 
+										mixer.taste.includes('smoky') || 
+										mixer.taste.includes('unami')
+
+
+						if (adventureScale <= 3) {
+										if (group1) {
+										mix = mixGroup1 || mixGroup2
+				
+										} else if (group2) {
+										mix = mixGroup2 || mixGroup1
+
+										} else if (group3) {
+										mix = mixGroup3 || mixGroup2
+										}
+
+						} else if (adventureScale <= 6) {
+										if (group1) {
+										mix = mixGroup2 || mixGroup3
+				
+										} else if (group2) {
+										mix = mixGroup3 || mixGroup1
+
+										} else if (group3) {
+										mix = mixGroup1 || mixGroup2
+										}
+
+						} else if (adventureScale <= 10){ 
+										if (group1) {
+										mix = mixGroup3 || mixGroup2
+				
+										} else if (group2) {
+										mix = mixGroup1 || mixGroup2
+
+										} else if (group3) {
+										mix = mixGroup2 || mixGroup3
+										}
+						}
+						return mix //true or false for each line above
+						})
+
+					let mix1 = Math.floor(Math.random() * filterMixer.length)
+					let mix2 = Math.floor(Math.random() * filterMixer.length)		 
+					selectedMixer = [filterMixer[mix1], filterMixer[mix2]]
+								//for me to see in console what is chosen
+					console.log('selected mixer', selectedMixer)
+					// console.log('selected garnish', selectedGarnish)
+				}
+		
 //choose mixer base on the base
 		
-		let group1 = 	selectedBase.taste.includes('sweet') ||
-						selectedBase.taste.includes('acid') ||
-						selectedBase.taste.includes('fruity')
 
-		let group2 =  	selectedBase.taste.includes('salty') ||
-						selectedBase.taste.includes('bitter') ||
-						selectedBase.taste.includes('smoky') ||
-						selectedBase.taste.includes('spicy')
-
-		let group3 =  	selectedBase.taste.includes('umami') ||
-						selectedBase.taste.includes('herbal') ||
-						selectedBase.taste.includes('creamy')
-
-	
-		let filterMixer = selectedFamily.mixer.filter(mixer => {
-			let mix = ""
-
-			let mixGroup1 = mixer.taste.includes('acid') || 
-							mixer.taste.includes('sweet') || 
-							mixer.taste.includes('fruity')
-		
-			let mixGroup2 = mixer.taste.includes('creamy') || 
-							mixer.taste.includes('bitter') || 
-							mixer.taste.includes('sweet') || 
-							mixer.taste.includes('fruity')
-
-			let mixGroup3 = mixer.taste.includes('spicy') || 
-							mixer.taste.includes('smoky') || 
-							mixer.taste.includes('unami')
-
-
-			if (adventureScale <= 3) {
-							if (group1) {
-							mix = mixGroup1 || mixGroup2
-	
-							} else if (group2) {
-							mix = mixGroup2 || mixGroup1
-
-							} else if (group3) {
-							mix = mixGroup3 || mixGroup1
-							}
-
-			} else if (adventureScale <= 6) {
-							if (group1) {
-							mix = mixGroup2 || mixGroup3
-	
-							} else if (group2) {
-							mix = mixGroup3 || mixGroup1
-
-							} else if (group3) {
-							mix = mixGroup1 || mixGroup2
-							}
-
-			} else if (adventureScale <= 10){ 
-							if (group1) {
-							mix = mixGroup3 || mixGroup2
-	
-							} else if (group2) {
-							mix = mixGroup1 || mixGroup3
-
-							} else if (group3) {
-							mix = mixGroup2 || mixGroup1
-							}
-			}
-			return mix //true or false for each line above
-			})
-
-		let mix1 = Math.floor(Math.random() * filterMixer.length)
-		let mix2 = Math.floor(Math.random() * filterMixer.length)		 
-	    let selectedMixer  = [filterMixer[mix1], filterMixer[mix2]]
-					//for me to see in console what is chosen
-		console.log('selected mixer', selectedMixer)
-		// console.log('selected garnish', selectedGarnish)
 	
 		let cocktailLabel =	
-			selectedBase.label + ' ' + selectedMixer[0].label + ' ' + selectedMixer[1].label
+			selectedBases.label ??
+			(selectedBases.label || '') + ' ' +
+			(selectedBases.label || '') 
+			
+			+ ' ' + selectedMixer[0].label + ' ' + selectedMixer[1].label
 
 		let cocktailDescription = 
 					
-					selectedBase.description 
+					selectedBases.description 
 					+ ' and ' +
 					selectedMixer[0].description + ' and ' + selectedMixer[1].description
 					;
@@ -162,9 +173,9 @@ let showCard = (data2) => {
 
 					<h4>Base</h4>
 					<ul>
-						<li>${selectedBase?.name || ''}</li>
-						<li>${selectedBase[0]?.name || ''}</li>
-						<li>${selectedBase[1]?.name || ''}</li>
+						<li>${selectedBases.name || ''}</li>
+						<li>${selectedBases[0]?.name || ''}</li>
+						<li>${selectedBases[1]?.name || ''}</li>
 					</ul>
 
 					<h4>Mixers</h4>
