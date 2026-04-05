@@ -28,6 +28,7 @@ let showCard = (data) => {
 		let selectedBase
 		let selectedBases
 		let selectedMixer
+		let familyName
 
 //put everythign in ranges so i dont repeat the code
 		let family
@@ -38,12 +39,17 @@ let showCard = (data) => {
 		} else if (alcoholScale <=10){
 			family = data.strong
 		}
+		console.log('family:', family)
 
-		let selectedFamilyWrapper = family[Math.floor(Math.random() * family.length)]
-		selectedFamily = Object.values(selectedFamilyWrapper)[0]	
-		//turn object to array so i can select any object(now array) from the family, but here there is only one item in the array, so [0]
-		//resource: https://dev.to/awaisalwaisy/7-ways-to-convert-objects-into-array-in-javascript-35m4
-		let filterBase = selectedFamily.base.filter(base => {
+		selectedFamily = family[Math.floor(Math.random() * family.length)]
+		familyName = Object.keys(selectedFamily)[0]//get the string fromt the key, and family is array so [0] to select the family
+		// familyData = selectedFamily[familyName]
+
+		console.log('selectedfamily:',selectedFamily)
+		console.log('family name', familyName)
+
+		
+		let filterBase = selectedFamily.familyName.base.filter(base => {
 				alcohol = base.occasion.includes(occasion)
 				console.log('alcohol', alcohol) 
 				return alcohol
@@ -62,24 +68,7 @@ let showCard = (data) => {
 			console.log('selected base:', selectedBases)		
 		}
 			
-		// let familyName = Object.keys(family)
-		let familyName = Object.keys(selectedFamily).map(key => selectedFamily[key]);
-		console.log('selected family:', familyName)	
-
-		switch(family) {
-			case 'light':
-			console.log('selected family:', familyName)		
-			break;
 			
-			case 'medium':
-			console.log('selected family:', familyName)		
-			break;
-			
-			case 'strong':
-			console.log('selected family:', familyName)		
-			break
-			default:	
-		}
 
 		//family and base are chosen, below is for mixer selection 
 		//data here looks like: Light/Medium/Strong -> family -> base/mixer
