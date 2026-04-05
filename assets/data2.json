@@ -15,7 +15,7 @@
                             "Brunch"
                         ],
                         "label": [
-                            "a botanical wanderer"
+                            " botanist"
                         ]
                     },
                     {
@@ -30,7 +30,7 @@
                             "Brunch"
                         ],
                         "label": [
-                            "a sun-drunk optimist"
+                            " optimist"
                         ]
                     },
                     {
@@ -45,7 +45,7 @@
                             "Casual Weeknight"
                         ],
                         "label": [
-                            "a velvet diplomat"
+                            " diplomat"
                         ]
                     },
                     {
@@ -60,7 +60,7 @@
                             "Brunch"
                         ],
                         "label": [
-                            "a crisp conversationalist"
+                            " conversationalist"
                         ]
                     },
                     {
@@ -75,7 +75,7 @@
                             "Weekend Fun"
                         ],
                         "label": [
-                            "a golden-hour regular"
+                            " golden hour"
                         ]
                     },
                     {
@@ -90,7 +90,7 @@
                             "Celebrating something"
                         ],
                         "label": [
-                            "a spontaneous toaster"
+                            " toaster"
                         ]
                     },
                     {
@@ -104,7 +104,7 @@
                             "Celebrating something"
                         ],
                         "label": [
-                            "a chandelier in a glass"
+                            " chandelier"
                         ]
                     },
                     {
@@ -119,7 +119,7 @@
                             "Date Night"
                         ],
                         "label": [
-                            "a floral overachiever"
+                            " romantic"
                         ]
                     },
                     {
@@ -134,7 +134,7 @@
                             "Dinner Party"
                         ],
                         "label": [
-                            "a cellar-aged storyteller"
+                            " archivist"
                         ]
                     },
                     {
@@ -149,7 +149,7 @@
                             "Weekend Fun"
                         ],
                         "label": [
-                            "an orchard escapee"
+                            " escapee"
                         ]
                     },
                     {
@@ -163,7 +163,7 @@
                             "Dinner Party"
                         ],
                         "label": [
-                            "a silk-robed minimalist"
+                            " minimalist"
                         ]
                     },
                     {
@@ -177,7 +177,7 @@
                             "Casual Weeknight"
                         ],
                         "label": [
-                            "a gentle rule-bender"
+                            " rule-bender"
                         ]
                     },
                     {
@@ -192,7 +192,7 @@
                             "Date Night"
                         ],
                         "label": [
-                            "a high-altitude romantic"
+                            " idealist"
                         ]
                     },
                     {
@@ -207,7 +207,7 @@
                             "Dinner Party"
                         ],
                         "label": [
-                            "a bitter optimist"
+                            " gentle skeptic"
                         ]
                     },
                     {
@@ -222,7 +222,7 @@
                             "Weekend Fun"
                         ],
                         "label": [
-                            "a sugar-dusted hedonist"
+                            " hedonist"
                         ]
                     }
                 ],
@@ -238,7 +238,7 @@
                             "Flexible"
                         ],
                         "label": [
-                            "a bitter socialite"
+                            " provocateur"
                         ]
                     },
                     {
@@ -251,7 +251,7 @@
                             "Flexible"
                         ],
                         "label": [
-                            "a neutral peacekeeper"
+                            " mediator"
                         ]
                     },
                     {
@@ -264,7 +264,7 @@
                             "Flexible"
                         ],
                         "label": [
-                            "an airy minimalist"
+                            " minimalist"
                         ]
                     },
                     {
@@ -278,7 +278,7 @@
                             "Flexible"
                         ],
                         "label": [
-                            "a tart attention-seeker"
+                            " antagonist"
                         ]
                     },
                     {
@@ -293,7 +293,7 @@
                             "Brunch"
                         ],
                         "label": [
-                            "a breakfast rule-breaker"
+                            " early riser"
                         ]
                     },
                     {
@@ -307,7 +307,7 @@
                             "Flexible"
                         ],
                         "label": [
-                            "a sharp-tongued morning person"
+                            " realist"
                         ]
                     },
                     {
@@ -321,7 +321,7 @@
                             "Flexible"
                         ],
                         "label": [
-                            "a tart little troublemaker"
+                            " troublemaker"
                         ]
                     },
                     {
@@ -335,7 +335,7 @@
                             "Flexible"
                         ],
                         "label": [
-                            "a tropical oversharer"
+                            " oversharer"
                         ]
                     },
                     {
@@ -348,7 +348,7 @@
                             "Flexible"
                         ],
                         "label": [
-                            "a porch-sitting philosopher"
+                            " slow burn"
                         ]
                     },
                     {
@@ -361,7 +361,7 @@
                             "Flexible"
                         ],
                         "label": [
-                            "a hydrated idealist"
+                            " idealist"
                         ]
                     }
                 ],
@@ -418,9 +418,7 @@
                         ]
                     }
                 ]
-            }
-        },
-        {
+            },
             "punch": {
                 "base": [
                     {
@@ -435,7 +433,7 @@
                             "Weekend Fun"
                         ],
                         "label": [
-                            "a barefoot adventurer"
+                            " adventurer"
                         ]
                     },
                     {
@@ -450,7 +448,7 @@
                             "Dinner Party"
                         ],
                         "label": [
-                            "a fireside philosopher"
+                            " philosopher"
                         ]
                     },
                     {
@@ -463,7 +461,7 @@
                             "Flexible"
                         ],
                         "label": [
-                            "a botanical wanderer"
+                            " botanist"
                         ]
                     },
                     {
@@ -476,7 +474,7 @@
                             "Flexible"
                         ],
                         "label": [
-                            "a blank canvas with ambition"
+                            " shapeshifter"
                         ]
                     },
                     {
@@ -489,7 +487,7 @@
                             "Flexible"
                         ],
                         "label": [
-                            "a desert night starter"
+                            " instigator"
                         ]
                     },
                     {
@@ -502,7 +500,7 @@
                             "Flexible"
                         ],
                         "label": [
-                            "a barefoot carnival dancer"
+                            " dancer"
                         ]
                     },
                     {
@@ -516,7 +514,7 @@
                             "Flexible"
                         ],
                         "label": [
-                            "a sugar-dusted hedonist"
+                            " hedonist"
                         ]
                     },
                     {
@@ -529,7 +527,7 @@
                             "Flexible"
                         ],
                         "label": [
-                            "a brooding intellectual"
+                            " brooder"
                         ]
                     },
                     {
@@ -542,7 +540,7 @@
                             "Flexible"
                         ],
                         "label": [
-                            "a velvet diplomat"
+                            " diplomat"
                         ]
                     },
                     {
@@ -555,7 +553,7 @@
                             "Flexible"
                         ],
                         "label": [
-                            "a cellar-aged storyteller"
+                            " archivist"
                         ]
                     },
                     {
@@ -568,7 +566,7 @@
                             "Flexible"
                         ],
                         "label": [
-                            "a table-setting traditionalist"
+                            " traditionalist"
                         ]
                     },
                     {
@@ -581,7 +579,7 @@
                             "Flexible"
                         ],
                         "label": [
-                            "a golden-hour regular"
+                            " golden hour"
                         ]
                     },
                     {
@@ -594,7 +592,7 @@
                             "Flexible"
                         ],
                         "label": [
-                            "a silk-robed minimalist"
+                            " minimalist"
                         ]
                     },
                     {
@@ -607,7 +605,7 @@
                             "Flexible"
                         ],
                         "label": [
-                            "a gentle rule-bender"
+                            " rule-bender"
                         ]
                     },
                     {
@@ -620,7 +618,7 @@
                             "Flexible"
                         ],
                         "label": [
-                            "a high-altitude romantic"
+                            " idealist"
                         ]
                     }
                 ],
@@ -636,7 +634,7 @@
                             "Flexible"
                         ],
                         "label": [
-                            "a sun-ripened shapeshifter"
+                            " shapeshifter"
                         ]
                     },
                     {
@@ -649,7 +647,7 @@
                             "Flexible"
                         ],
                         "label": [
-                            "a neutral peacekeeper"
+                            " mediator"
                         ]
                     },
                     {
@@ -662,7 +660,7 @@
                             "Flexible"
                         ],
                         "label": [
-                            "a gentle fizz merchant"
+                            " peacekeeper"
                         ]
                     },
                     {
@@ -675,7 +673,7 @@
                             "Flexible"
                         ],
                         "label": [
-                            "a crowd-pleasing classic"
+                            " classic"
                         ]
                     },
                     {
@@ -689,7 +687,7 @@
                             "Flexible"
                         ],
                         "label": [
-                            "a backyard classic"
+                            " crowd-pleaser"
                         ]
                     },
                     {
@@ -702,7 +700,7 @@
                             "Flexible"
                         ],
                         "label": [
-                            "a porch-sitting philosopher"
+                            " slow burn"
                         ]
                     },
                     {
@@ -715,7 +713,7 @@
                             "Flexible"
                         ],
                         "label": [
-                            "a hydrated idealist"
+                            " idealist"
                         ]
                     },
                     {
@@ -728,7 +726,7 @@
                             "Flexible"
                         ],
                         "label": [
-                            "a nostalgic softie"
+                            " nostalgic"
                         ]
                     },
                     {
@@ -741,7 +739,7 @@
                             "Flexible"
                         ],
                         "label": [
-                            "a tart little troublemaker"
+                            " troublemaker"
                         ]
                     },
                     {
@@ -754,7 +752,7 @@
                             "Flexible"
                         ],
                         "label": [
-                            "a tropical oversharer"
+                            " oversharer"
                         ]
                     }
                 ],
@@ -810,9 +808,7 @@
                         ]
                     }
                 ]
-            }
-        },
-        {
+            },
             "highbFlexible": {
                 "base": [
                     {
@@ -827,7 +823,7 @@
                             "Casual Weeknight"
                         ],
                         "label": [
-                            "a slow-talking charmer"
+                            " charmer"
                         ]
                     },
                     {
@@ -840,7 +836,7 @@
                             "Flexible"
                         ],
                         "label": [
-                            "a blank canvas with ambition"
+                            " shapeshifter"
                         ]
                     },
                     {
@@ -853,7 +849,7 @@
                             "Flexible"
                         ],
                         "label": [
-                            "a botanical wanderer"
+                            " botanist"
                         ]
                     },
                     {
@@ -866,7 +862,7 @@
                             "Flexible"
                         ],
                         "label": [
-                            "a barefoot adventurer"
+                            " adventurer"
                         ]
                     },
                     {
@@ -879,7 +875,7 @@
                             "Flexible"
                         ],
                         "label": [
-                            "a desert night starter"
+                            " instigator"
                         ]
                     },
                     {
@@ -892,7 +888,7 @@
                             "Flexible"
                         ],
                         "label": [
-                            "a campfire whisperer"
+                            " wanderer"
                         ]
                     },
                     {
@@ -905,7 +901,7 @@
                             "Flexible"
                         ],
                         "label": [
-                            "a fireside philosopher"
+                            " philosopher"
                         ]
                     },
                     {
@@ -918,7 +914,7 @@
                             "Flexible"
                         ],
                         "label": [
-                            "a gentle rule-bender"
+                            " rule-bender"
                         ]
                     },
                     {
@@ -931,7 +927,7 @@
                             "Flexible"
                         ],
                         "label": [
-                            "a silk-robed minimalist"
+                            " minimalist"
                         ]
                     },
                     {
@@ -944,7 +940,7 @@
                             "Flexible"
                         ],
                         "label": [
-                            "a brooding intellectual"
+                            " brooder"
                         ]
                     },
                     {
@@ -957,7 +953,7 @@
                             "Flexible"
                         ],
                         "label": [
-                            "a velvet diplomat"
+                            " diplomat"
                         ]
                     },
                     {
@@ -970,7 +966,7 @@
                             "Flexible"
                         ],
                         "label": [
-                            "a barefoot carnival dancer"
+                            " dancer"
                         ]
                     },
                     {
@@ -983,7 +979,7 @@
                             "Flexible"
                         ],
                         "label": [
-                            "a high-altitude romantic"
+                            " idealist"
                         ]
                     },
                     {
@@ -996,7 +992,7 @@
                             "Flexible"
                         ],
                         "label": [
-                            "a sugar-dusted hedonist"
+                            " hedonist"
                         ]
                     },
                     {
@@ -1009,7 +1005,7 @@
                             "Flexible"
                         ],
                         "label": [
-                            "a sun-drunk optimist"
+                            " optimist"
                         ]
                     }
                 ],
@@ -1024,7 +1020,7 @@
                             "Flexible"
                         ],
                         "label": [
-                            "a neutral peacekeeper"
+                            " mediator"
                         ]
                     },
                     {
@@ -1037,7 +1033,7 @@
                             "Flexible"
                         ],
                         "label": [
-                            "a spicy extrovert"
+                            " extrovert"
                         ]
                     },
                     {
@@ -1050,7 +1046,7 @@
                             "Flexible"
                         ],
                         "label": [
-                            "a bitter socialite"
+                            " provocateur"
                         ]
                     },
                     {
@@ -1063,7 +1059,7 @@
                             "Flexible"
                         ],
                         "label": [
-                            "a crowd-pleasing classic"
+                            " classic"
                         ]
                     },
                     {
@@ -1076,7 +1072,7 @@
                             "Flexible"
                         ],
                         "label": [
-                            "a tart attention-seeker"
+                            " antagonist"
                         ]
                     },
                     {
@@ -1089,7 +1085,7 @@
                             "Flexible"
                         ],
                         "label": [
-                            "a candy-bright enthusiast"
+                            " enthusiast"
                         ]
                     },
                     {
@@ -1102,7 +1098,7 @@
                             "Flexible"
                         ],
                         "label": [
-                            "a porch-sitting philosopher"
+                            " slow burn"
                         ]
                     },
                     {
@@ -1115,7 +1111,7 @@
                             "Flexible"
                         ],
                         "label": [
-                            "a hydrated idealist"
+                            " idealist"
                         ]
                     },
                     {
@@ -1128,7 +1124,7 @@
                             "Flexible"
                         ],
                         "label": [
-                            "a nostalgic softie"
+                            " nostalgic"
                         ]
                     },
                     {
@@ -1142,7 +1138,7 @@
                             "Flexible"
                         ],
                         "label": [
-                            "a bitter-sweet flirt"
+                            " flirt"
                         ]
                     }
                 ],
@@ -1215,7 +1211,7 @@
                             "Flexible"
                         ],
                         "label": [
-                            "a blank canvas with ambition"
+                            " shapeshifter"
                         ]
                     },
                     {
@@ -1228,7 +1224,7 @@
                             "Flexible"
                         ],
                         "label": [
-                            "a botanical wanderer"
+                            " botanist"
                         ]
                     },
                     {
@@ -1241,7 +1237,7 @@
                             "Flexible"
                         ],
                         "label": [
-                            "a barefoot adventurer"
+                            " adventurer"
                         ]
                     },
                     {
@@ -1254,7 +1250,7 @@
                             "Flexible"
                         ],
                         "label": [
-                            "a desert night starter"
+                            " instigator"
                         ]
                     },
                     {
@@ -1268,7 +1264,7 @@
                             "Flexible"
                         ],
                         "label": [
-                            "a slow-talking charmer"
+                            " charmer"
                         ]
                     },
                     {
@@ -1281,7 +1277,7 @@
                             "Flexible"
                         ],
                         "label": [
-                            "a fireside philosopher"
+                            " philosopher"
                         ]
                     },
                     {
@@ -1294,7 +1290,7 @@
                             "Flexible"
                         ],
                         "label": [
-                            "a high-altitude romantic"
+                            " idealist"
                         ]
                     },
                     {
@@ -1307,7 +1303,7 @@
                             "Flexible"
                         ],
                         "label": [
-                            "a barefoot carnival dancer"
+                            " dancer"
                         ]
                     },
                     {
@@ -1320,7 +1316,7 @@
                             "Flexible"
                         ],
                         "label": [
-                            "a campfire whisperer"
+                            " wanderer"
                         ]
                     },
                     {
@@ -1333,7 +1329,7 @@
                             "Flexible"
                         ],
                         "label": [
-                            "a gentle rule-bender"
+                            " rule-bender"
                         ]
                     },
                     {
@@ -1346,7 +1342,7 @@
                             "Flexible"
                         ],
                         "label": [
-                            "a silk-robed minimalist"
+                            " minimalist"
                         ]
                     },
                     {
@@ -1359,7 +1355,7 @@
                             "Flexible"
                         ],
                         "label": [
-                            "a sugar-dusted hedonist"
+                            " hedonist"
                         ]
                     },
                     {
@@ -1372,7 +1368,7 @@
                             "Flexible"
                         ],
                         "label": [
-                            "a sun-drunk optimist"
+                            " optimist"
                         ]
                     },
                     {
@@ -1385,7 +1381,7 @@
                             "Flexible"
                         ],
                         "label": [
-                            "a brooding intellectual"
+                            " brooder"
                         ]
                     },
                     {
@@ -1398,7 +1394,7 @@
                             "Flexible"
                         ],
                         "label": [
-                            "a velvet diplomat"
+                            " diplomat"
                         ]
                     }
                 ],
@@ -1410,7 +1406,7 @@
                         ],
                         "description": "sharp",
                         "label": [
-                            "a bright little acidhead"
+                            " acidhead"
                         ]
                     },
                     {
@@ -1420,7 +1416,7 @@
                         ],
                         "description": "zesty",
                         "label": [
-                            "a zesty overperformer"
+                            " overachiever"
                         ]
                     },
                     {
@@ -1430,7 +1426,7 @@
                         ],
                         "description": "smooth",
                         "label": [
-                            "a smooth operator"
+                            " operator"
                         ]
                     },
                     {
@@ -1440,7 +1436,7 @@
                         ],
                         "description": "round",
                         "label": [
-                            "a golden people-pleaser"
+                            " golden child"
                         ]
                     },
                     {
@@ -1450,7 +1446,7 @@
                         ],
                         "description": "soft",
                         "label": [
-                            "a desert sweetener"
+                            " softener"
                         ]
                     },
                     {
@@ -1460,7 +1456,7 @@
                         ],
                         "description": "bright",
                         "label": [
-                            "a breakfast rule-breaker"
+                            " early riser"
                         ]
                     },
                     {
@@ -1470,7 +1466,7 @@
                         ],
                         "description": "tropical",
                         "label": [
-                            "a tropical oversharer"
+                            " oversharer"
                         ]
                     },
                     {
@@ -1480,7 +1476,7 @@
                         ],
                         "description": "tart",
                         "label": [
-                            "a tart little troublemaker"
+                            " troublemaker"
                         ]
                     },
                     {
@@ -1490,7 +1486,7 @@
                         ],
                         "description": "silky",
                         "label": [
-                            "a silky mood-setter"
+                            " silencer"
                         ]
                     },
                     {
@@ -1500,7 +1496,7 @@
                         ],
                         "description": "spiced",
                         "label": [
-                            "a spiced understudy"
+                            " understudy"
                         ]
                     }
                 ],
@@ -1554,7 +1550,7 @@
                             "Flexible"
                         ],
                         "label": [
-                            "a botanical wanderer"
+                            " botanist"
                         ]
                     },
                     {
@@ -1567,7 +1563,7 @@
                             "Flexible"
                         ],
                         "label": [
-                            "a blank canvas with ambition"
+                            " shapeshifter"
                         ]
                     },
                     {
@@ -1580,7 +1576,7 @@
                             "Flexible"
                         ],
                         "label": [
-                            "a barefoot adventurer"
+                            " adventurer"
                         ]
                     },
                     {
@@ -1593,7 +1589,7 @@
                             "Flexible"
                         ],
                         "label": [
-                            "a desert night starter"
+                            " instigator"
                         ]
                     },
                     {
@@ -1606,7 +1602,7 @@
                             "Flexible"
                         ],
                         "label": [
-                            "a slow-talking charmer"
+                            " charmer"
                         ]
                     },
                     {
@@ -1619,7 +1615,7 @@
                             "Flexible"
                         ],
                         "label": [
-                            "a fireside philosopher"
+                            " philosopher"
                         ]
                     },
                     {
@@ -1632,7 +1628,7 @@
                             "Flexible"
                         ],
                         "label": [
-                            "a high-altitude romantic"
+                            " idealist"
                         ]
                     },
                     {
@@ -1645,7 +1641,7 @@
                             "Flexible"
                         ],
                         "label": [
-                            "a barefoot carnival dancer"
+                            " dancer"
                         ]
                     },
                     {
@@ -1658,7 +1654,7 @@
                             "Flexible"
                         ],
                         "label": [
-                            "a gentle rule-bender"
+                            " rule-bender"
                         ]
                     },
                     {
@@ -1671,7 +1667,7 @@
                             "Flexible"
                         ],
                         "label": [
-                            "a silk-robed minimalist"
+                            " minimalist"
                         ]
                     },
                     {
@@ -1684,7 +1680,7 @@
                             "Flexible"
                         ],
                         "label": [
-                            "a sugar-dusted hedonist"
+                            " hedonist"
                         ]
                     },
                     {
@@ -1697,7 +1693,7 @@
                             "Flexible"
                         ],
                         "label": [
-                            "a sun-drunk optimist"
+                            " optimist"
                         ]
                     },
                     {
@@ -1710,7 +1706,7 @@
                             "Flexible"
                         ],
                         "label": [
-                            "a brooding intellectual"
+                            " brooder"
                         ]
                     },
                     {
@@ -1723,7 +1719,7 @@
                             "Flexible"
                         ],
                         "label": [
-                            "a velvet diplomat"
+                            " diplomat"
                         ]
                     },
                     {
@@ -1736,7 +1732,7 @@
                             "Flexible"
                         ],
                         "label": [
-                            "a campfire whisperer"
+                            " wanderer"
                         ]
                     }
                 ],
@@ -1748,7 +1744,7 @@
                         ],
                         "description": "light",
                         "label": [
-                            "a neutral peacekeeper"
+                            " mediator"
                         ]
                     },
                     {
@@ -1758,7 +1754,7 @@
                         ],
                         "description": "bright",
                         "label": [
-                            "a bright little acidhead"
+                            " acidhead"
                         ]
                     },
                     {
@@ -1768,7 +1764,7 @@
                         ],
                         "description": "smooth",
                         "label": [
-                            "a smooth operator"
+                            " operator"
                         ]
                     },
                     {
@@ -1778,7 +1774,7 @@
                         ],
                         "description": "round",
                         "label": [
-                            "a golden people-pleaser"
+                            " golden child"
                         ]
                     },
                     {
@@ -1788,7 +1784,7 @@
                         ],
                         "description": "soft",
                         "label": [
-                            "a desert sweetener"
+                            " softener"
                         ]
                     },
                     {
@@ -1798,7 +1794,7 @@
                         ],
                         "description": "zesty",
                         "label": [
-                            "a zesty overperformer"
+                            " overachiever"
                         ]
                     },
                     {
@@ -1808,7 +1804,7 @@
                         ],
                         "description": "soft",
                         "label": [
-                            "a breakfast rule-breaker"
+                            " early riser"
                         ]
                     },
                     {
@@ -1818,7 +1814,7 @@
                         ],
                         "description": "sharp",
                         "label": [
-                            "a sharp-tongued morning person"
+                            " realist"
                         ]
                     },
                     {
@@ -1828,7 +1824,7 @@
                         ],
                         "description": "spiced",
                         "label": [
-                            "a spiced understudy"
+                            " understudy"
                         ]
                     },
                     {
@@ -1838,7 +1834,7 @@
                         ],
                         "description": "cool",
                         "label": [
-                            "a porch-sitting philosopher"
+                            " slow burn"
                         ]
                     }
                 ],
@@ -1892,7 +1888,7 @@
                             "Flexible"
                         ],
                         "label": [
-                            "a desert night starter"
+                            " instigator"
                         ]
                     },
                     {
@@ -1905,7 +1901,7 @@
                             "Flexible"
                         ],
                         "label": [
-                            "a botanical wanderer"
+                            " botanist"
                         ]
                     },
                     {
@@ -1918,7 +1914,7 @@
                             "Flexible"
                         ],
                         "label": [
-                            "a blank canvas with ambition"
+                            " shapeshifter"
                         ]
                     },
                     {
@@ -1931,7 +1927,7 @@
                             "Flexible"
                         ],
                         "label": [
-                            "a barefoot adventurer"
+                            " adventurer"
                         ]
                     },
                     {
@@ -1944,7 +1940,7 @@
                             "Flexible"
                         ],
                         "label": [
-                            "a slow-talking charmer"
+                            " charmer"
                         ]
                     },
                     {
@@ -1957,7 +1953,7 @@
                             "Flexible"
                         ],
                         "label": [
-                            "a fireside philosopher"
+                            " philosopher"
                         ]
                     },
                     {
@@ -1970,7 +1966,7 @@
                             "Flexible"
                         ],
                         "label": [
-                            "a high-altitude romantic"
+                            " idealist"
                         ]
                     },
                     {
@@ -1983,7 +1979,7 @@
                             "Flexible"
                         ],
                         "label": [
-                            "a barefoot carnival dancer"
+                            " dancer"
                         ]
                     },
                     {
@@ -1996,7 +1992,7 @@
                             "Flexible"
                         ],
                         "label": [
-                            "a gentle rule-bender"
+                            " rule-bender"
                         ]
                     },
                     {
@@ -2009,7 +2005,7 @@
                             "Flexible"
                         ],
                         "label": [
-                            "a silk-robed minimalist"
+                            " minimalist"
                         ]
                     },
                     {
@@ -2022,7 +2018,7 @@
                             "Flexible"
                         ],
                         "label": [
-                            "a sugar-dusted hedonist"
+                            " hedonist"
                         ]
                     },
                     {
@@ -2035,7 +2031,7 @@
                             "Flexible"
                         ],
                         "label": [
-                            "a sun-drunk optimist"
+                            " optimist"
                         ]
                     },
                     {
@@ -2048,7 +2044,7 @@
                             "Flexible"
                         ],
                         "label": [
-                            "a brooding intellectual"
+                            " brooder"
                         ]
                     },
                     {
@@ -2061,7 +2057,7 @@
                             "Flexible"
                         ],
                         "label": [
-                            "a velvet diplomat"
+                            " diplomat"
                         ]
                     },
                     {
@@ -2074,7 +2070,7 @@
                             "Flexible"
                         ],
                         "label": [
-                            "a campfire whisperer"
+                            " wanderer"
                         ]
                     }
                 ],
@@ -2086,7 +2082,7 @@
                         ],
                         "description": "zesty",
                         "label": [
-                            "a zesty overperformer"
+                            " overachiever"
                         ]
                     },
                     {
@@ -2096,7 +2092,7 @@
                         ],
                         "description": "sharp",
                         "label": [
-                            "a bright little acidhead"
+                            " acidhead"
                         ]
                     },
                     {
@@ -2107,7 +2103,7 @@
                         ],
                         "description": "bright",
                         "label": [
-                            "a citrus-gilded charmer"
+                            " gilded one"
                         ]
                     },
                     {
@@ -2117,7 +2113,7 @@
                         ],
                         "description": "smooth",
                         "label": [
-                            "a smooth operator"
+                            " operator"
                         ]
                     },
                     {
@@ -2127,7 +2123,7 @@
                         ],
                         "description": "soft",
                         "label": [
-                            "a desert sweetener"
+                            " softener"
                         ]
                     },
                     {
@@ -2137,7 +2133,7 @@
                         ],
                         "description": "round",
                         "label": [
-                            "a golden people-pleaser"
+                            " golden child"
                         ]
                     },
                     {
@@ -2147,7 +2143,7 @@
                         ],
                         "description": "tart",
                         "label": [
-                            "a tart little troublemaker"
+                            " troublemaker"
                         ]
                     },
                     {
@@ -2157,7 +2153,7 @@
                         ],
                         "description": "tropical",
                         "label": [
-                            "a tropical oversharer"
+                            " oversharer"
                         ]
                     },
                     {
@@ -2167,7 +2163,7 @@
                         ],
                         "description": "sharp",
                         "label": [
-                            "a sharp-tongued morning person"
+                            " realist"
                         ]
                     },
                     {
@@ -2177,7 +2173,7 @@
                         ],
                         "description": "spiced",
                         "label": [
-                            "a spiced understudy"
+                            " understudy"
                         ]
                     }
                 ],
@@ -2235,7 +2231,7 @@
                             "Night"
                         ],
                         "label": [
-                            "a botanical wanderer"
+                            " botanist"
                         ]
                     },
                     {
@@ -2248,7 +2244,7 @@
                             "Night"
                         ],
                         "label": [
-                            "a front-porch poet"
+                            " poet"
                         ]
                     },
                     {
@@ -2261,7 +2257,7 @@
                             "Night"
                         ],
                         "label": [
-                            "a dry-humored contrarian"
+                            " contrarian"
                         ]
                     },
                     {
@@ -2274,7 +2270,7 @@
                             "Night"
                         ],
                         "label": [
-                            "a barefoot adventurer"
+                            " adventurer"
                         ]
                     },
                     {
@@ -2287,7 +2283,7 @@
                             "Night"
                         ],
                         "label": [
-                            "a desert night starter"
+                            " instigator"
                         ]
                     },
                     {
@@ -2300,7 +2296,7 @@
                             "Night"
                         ],
                         "label": [
-                            "a campfire whisperer"
+                            " wanderer"
                         ]
                     },
                     {
@@ -2313,7 +2309,7 @@
                             "Night"
                         ],
                         "label": [
-                            "a fireside philosopher"
+                            " philosopher"
                         ]
                     },
                     {
@@ -2326,7 +2322,7 @@
                             "Night"
                         ],
                         "label": [
-                            "a velvet-lined hedonist"
+                            " hedonist"
                         ]
                     },
                     {
@@ -2339,7 +2335,7 @@
                             "Night"
                         ],
                         "label": [
-                            "a brooding intellectual"
+                            " brooder"
                         ]
                     },
                     {
@@ -2352,7 +2348,7 @@
                             "Night"
                         ],
                         "label": [
-                            "a sun-drunk optimist"
+                            " optimist"
                         ]
                     },
                     {
@@ -2365,7 +2361,7 @@
                             "Night"
                         ],
                         "label": [
-                            "a velvet diplomat"
+                            " diplomat"
                         ]
                     },
                     {
@@ -2378,7 +2374,7 @@
                             "Night"
                         ],
                         "label": [
-                            "a cellar-aged storyteller"
+                            " archivist"
                         ]
                     },
                     {
@@ -2391,7 +2387,7 @@
                             "Night"
                         ],
                         "label": [
-                            "a port-side dreamer"
+                            " dreamer"
                         ]
                     },
                     {
@@ -2404,7 +2400,7 @@
                             "Night"
                         ],
                         "label": [
-                            "a sugar-dusted hedonist"
+                            " hedonist"
                         ]
                     },
                     {
@@ -2417,7 +2413,7 @@
                             "Night"
                         ],
                         "label": [
-                            "a meadow alchemist"
+                            " alchemist"
                         ]
                     }
                 ],
@@ -2429,7 +2425,7 @@
                         ],
                         "description": "round",
                         "label": [
-                            "a warm-hearted negotiator"
+                            " negotiator"
                         ]
                     },
                     {
@@ -2439,7 +2435,7 @@
                         ],
                         "description": "sharp",
                         "label": [
-                            "a poker-faced minimalist"
+                            " stoic"
                         ]
                     },
                     {
@@ -2449,7 +2445,7 @@
                         ],
                         "description": "bold",
                         "label": [
-                            "a bitter red provocateur"
+                            " provocateur"
                         ]
                     },
                     {
@@ -2459,7 +2455,7 @@
                         ],
                         "description": "bright",
                         "label": [
-                            "a sun-drunk optimist"
+                            " optimist"
                         ]
                     },
                     {
@@ -2469,7 +2465,7 @@
                         ],
                         "description": "deep",
                         "label": [
-                            "a brooding intellectual"
+                            " brooder"
                         ]
                     },
                     {
@@ -2479,7 +2475,7 @@
                         ],
                         "description": "spiced",
                         "label": [
-                            "a spiced understudy"
+                            " understudy"
                         ]
                     },
                     {
@@ -2489,7 +2485,7 @@
                         ],
                         "description": "soft",
                         "label": [
-                            "a citrus-gilded charmer"
+                            " gilded one"
                         ]
                     },
                     {
@@ -2499,7 +2495,7 @@
                         ],
                         "description": "dark",
                         "label": [
-                            "a deep red romantic"
+                            " romantic"
                         ]
                     },
                     {
@@ -2509,7 +2505,7 @@
                         ],
                         "description": "intense",
                         "label": [
-                            "a meadow alchemist"
+                            " alchemist"
                         ]
                     },
                     {
@@ -2519,7 +2515,7 @@
                         ],
                         "description": "roasted",
                         "label": [
-                            "a midnight pick-me-up"
+                            " night owl"
                         ]
                     }
                 ],
@@ -2573,7 +2569,7 @@
                             "Night"
                         ],
                         "label": [
-                            "a front-porch poet"
+                            " poet"
                         ]
                     },
                     {
@@ -2586,7 +2582,7 @@
                             "Night"
                         ],
                         "label": [
-                            "a dry-humored contrarian"
+                            " contrarian"
                         ]
                     },
                     {
@@ -2599,7 +2595,7 @@
                             "Night"
                         ],
                         "label": [
-                            "a barefoot adventurer"
+                            " adventurer"
                         ]
                     },
                     {
@@ -2612,7 +2608,7 @@
                             "Night"
                         ],
                         "label": [
-                            "a desert night starter"
+                            " instigator"
                         ]
                     },
                     {
@@ -2625,7 +2621,7 @@
                             "Night"
                         ],
                         "label": [
-                            "a campfire whisperer"
+                            " wanderer"
                         ]
                     },
                     {
@@ -2638,7 +2634,7 @@
                             "Night"
                         ],
                         "label": [
-                            "a fireside philosopher"
+                            " philosopher"
                         ]
                     },
                     {
@@ -2651,7 +2647,7 @@
                             "Night"
                         ],
                         "label": [
-                            "a velvet-lined hedonist"
+                            " hedonist"
                         ]
                     },
                     {
@@ -2664,7 +2660,7 @@
                             "Night"
                         ],
                         "label": [
-                            "a brooding intellectual"
+                            " brooder"
                         ]
                     },
                     {
@@ -2677,7 +2673,7 @@
                             "Night"
                         ],
                         "label": [
-                            "a sun-drunk optimist"
+                            " optimist"
                         ]
                     },
                     {
@@ -2690,7 +2686,7 @@
                             "Night"
                         ],
                         "label": [
-                            "a velvet diplomat"
+                            " diplomat"
                         ]
                     },
                     {
@@ -2703,7 +2699,7 @@
                             "Night"
                         ],
                         "label": [
-                            "a cellar-aged storyteller"
+                            " archivist"
                         ]
                     },
                     {
@@ -2716,7 +2712,7 @@
                             "Night"
                         ],
                         "label": [
-                            "a port-side dreamer"
+                            " dreamer"
                         ]
                     },
                     {
@@ -2729,7 +2725,7 @@
                             "Night"
                         ],
                         "label": [
-                            "a sugar-dusted hedonist"
+                            " hedonist"
                         ]
                     },
                     {
@@ -2742,7 +2738,7 @@
                             "Night"
                         ],
                         "label": [
-                            "a meadow alchemist"
+                            " alchemist"
                         ]
                     },
                     {
@@ -2755,7 +2751,7 @@
                             "Night"
                         ],
                         "label": [
-                            "a slow-talking charmer"
+                            " charmer"
                         ]
                     }
                 ],
@@ -2767,7 +2763,7 @@
                         ],
                         "description": "classic",
                         "label": [
-                            "a retro sweetmaker"
+                            " traditionalist"
                         ]
                     },
                     {
@@ -2777,7 +2773,7 @@
                         ],
                         "description": "smooth",
                         "label": [
-                            "a smooth operator"
+                            " operator"
                         ]
                     },
                     {
@@ -2787,7 +2783,7 @@
                         ],
                         "description": "round",
                         "label": [
-                            "a golden people-pleaser"
+                            " golden child"
                         ]
                     },
                     {
@@ -2797,7 +2793,7 @@
                         ],
                         "description": "soft",
                         "label": [
-                            "a desert sweetener"
+                            " softener"
                         ]
                     },
                     {
@@ -2807,7 +2803,7 @@
                         ],
                         "description": "rich",
                         "label": [
-                            "a Canadian romantic"
+                            " romantic"
                         ]
                     },
                     {
@@ -2817,7 +2813,7 @@
                         ],
                         "description": "spiced",
                         "label": [
-                            "a spiced understudy"
+                            " understudy"
                         ]
                     },
                     {
@@ -2827,7 +2823,7 @@
                         ],
                         "description": "bright",
                         "label": [
-                            "a citrus-scented overthinker"
+                            " overthinker"
                         ]
                     },
                     {
@@ -2837,7 +2833,7 @@
                         ],
                         "description": "dark",
                         "label": [
-                            "a dark horse"
+                            " dark horse"
                         ]
                     },
                     {
@@ -2847,7 +2843,7 @@
                         ],
                         "description": "roasted",
                         "label": [
-                            "a midnight pick-me-up"
+                            " night owl"
                         ]
                     },
                     {
@@ -2857,7 +2853,7 @@
                         ],
                         "description": "deep",
                         "label": [
-                            "a brooding intellectual"
+                            " brooder"
                         ]
                     }
                 ],
@@ -2911,7 +2907,7 @@
                             "Night"
                         ],
                         "label": [
-                            "a botanical wanderer"
+                            " botanist"
                         ]
                     },
                     {
@@ -2924,7 +2920,7 @@
                             "Night"
                         ],
                         "label": [
-                            "a blank canvas with ambition"
+                            " shapeshifter"
                         ]
                     },
                     {
@@ -2937,7 +2933,7 @@
                             "Night"
                         ],
                         "label": [
-                            "a Scandinavian midnight sun"
+                            " norrner"
                         ]
                     },
                     {
@@ -2950,7 +2946,7 @@
                             "Night"
                         ],
                         "label": [
-                            "a gentle rule-bender"
+                            " rule-bender"
                         ]
                     },
                     {
@@ -2963,7 +2959,7 @@
                             "Night"
                         ],
                         "label": [
-                            "a silk-robed minimalist"
+                            " minimalist"
                         ]
                     },
                     {
@@ -2976,7 +2972,7 @@
                             "Night"
                         ],
                         "label": [
-                            "a desert night starter"
+                            " instigator"
                         ]
                     },
                     {
@@ -2989,7 +2985,7 @@
                             "Night"
                         ],
                         "label": [
-                            "a campfire whisperer"
+                            " wanderer"
                         ]
                     },
                     {
@@ -3002,7 +2998,7 @@
                             "Night"
                         ],
                         "label": [
-                            "a fireside philosopher"
+                            " philosopher"
                         ]
                     },
                     {
@@ -3015,7 +3011,7 @@
                             "Night"
                         ],
                         "label": [
-                            "a velvet-lined hedonist"
+                            " hedonist"
                         ]
                     },
                     {
@@ -3028,7 +3024,7 @@
                             "Night"
                         ],
                         "label": [
-                            "a barefoot adventurer"
+                            " adventurer"
                         ]
                     },
                     {
@@ -3041,7 +3037,7 @@
                             "Night"
                         ],
                         "label": [
-                            "a slow-talking charmer"
+                            " charmer"
                         ]
                     },
                     {
@@ -3054,7 +3050,7 @@
                             "Night"
                         ],
                         "label": [
-                            "a brooding intellectual"
+                            " brooder"
                         ]
                     },
                     {
@@ -3067,7 +3063,7 @@
                             "Night"
                         ],
                         "label": [
-                            "a sun-drunk optimist"
+                            " optimist"
                         ]
                     },
                     {
@@ -3080,7 +3076,7 @@
                             "Night"
                         ],
                         "label": [
-                            "a velvet diplomat"
+                            " diplomat"
                         ]
                     },
                     {
@@ -3093,7 +3089,7 @@
                             "Night"
                         ],
                         "label": [
-                            "a meadow alchemist"
+                            " alchemist"
                         ]
                     }
                 ],
@@ -3105,7 +3101,7 @@
                         ],
                         "description": "sharp",
                         "label": [
-                            "a poker-faced minimalist"
+                            " stoic"
                         ]
                     },
                     {
@@ -3115,7 +3111,7 @@
                         ],
                         "description": "round",
                         "label": [
-                            "a warm-hearted negotiator"
+                            " negotiator"
                         ]
                     },
                     {
@@ -3125,7 +3121,7 @@
                         ],
                         "description": "soft",
                         "label": [
-                            "a soft-spoken diplomat"
+                            " diplomat"
                         ]
                     },
                     {
@@ -3135,7 +3131,7 @@
                         ],
                         "description": "spiced",
                         "label": [
-                            "a spiced understudy"
+                            " understudy"
                         ]
                     },
                     {
@@ -3145,7 +3141,7 @@
                         ],
                         "description": "bright",
                         "label": [
-                            "a citrus-scented overthinker"
+                            " overthinker"
                         ]
                     },
                     {
@@ -3155,7 +3151,7 @@
                         ],
                         "description": "savory",
                         "label": [
-                            "a salty realist"
+                            " realist"
                         ]
                     },
                     {
@@ -3165,7 +3161,7 @@
                         ],
                         "description": "intense",
                         "label": [
-                            "a meadow alchemist"
+                            " alchemist"
                         ]
                     },
                     {
@@ -3175,7 +3171,7 @@
                         ],
                         "description": "deep",
                         "label": [
-                            "a brooding intellectual"
+                            " brooder"
                         ]
                     },
                     {
@@ -3185,17 +3181,17 @@
                         ],
                         "description": "soft",
                         "label": [
-                            "a deep red romantic"
+                            " romantic"
                         ]
                     },
                     {
-                        "name": "Absinthe",
+                        "name": "Absin",
                         "taste": [
                             "herbal"
                         ],
                         "description": "wild",
                         "label": [
-                            "a green-eyed provocateur"
+                            " instigator"
                         ]
                     }
                 ],

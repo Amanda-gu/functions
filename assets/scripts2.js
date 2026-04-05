@@ -134,7 +134,7 @@ let showCard = (data2) => {
 		// console.log('selected garnish', selectedGarnish)
 	
 		let cocktailLabel =	
-			selectedBase.label + ' ' + selectedMixer[0].label + ' ' + selectedMixer[1].label + selectedFamily.name
+			selectedBase.label + ' ' + selectedMixer[0].label + ' ' + selectedMixer[1].label + selectedFamily
 
 		let cocktailDescription = 
 					
