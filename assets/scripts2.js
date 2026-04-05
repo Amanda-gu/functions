@@ -10,13 +10,6 @@ let ingredientList = document.getElementById('ingredient-list')
 //what's inside the result card function
 let showCard = (data2) => {
 
-	//DOM, everything in the result card
-	let cocktailName = document.querySelector('#recipe-name')
-	let cocktailBase = document.querySelector('#base')
-	let cocktailMixers = document.querySelector('#mixers')
-	let cocktailGarnish = document.querySelector('#garnish')
-	
-
 	//how to get the users selected values: https://www.w3schools.com/JSREF/tryit.asp?filename=tryjsref_select_value   
 	// let name = document.querySelector('#recipe-name').value
 	let occasion = document.querySelector("#occasion").value
@@ -95,7 +88,7 @@ let showCard = (data2) => {
 			let mixGroup3 = mixer.taste.includes('spicy') || 
 							mixer.taste.includes('smoky') || 
 							mixer.taste.includes('unami')
-			console.log(mixer.name)
+
 
 			if (adventureScale <= 3) {
 							if (group1) {
@@ -129,32 +122,34 @@ let showCard = (data2) => {
 							} else if (group3) {
 							mix = mixGroup2
 							}
-						}
-						return mix //true or false for each line above
+			}
+			return mix //true or false for each line above
 			})
+
 		let mix1 = Math.floor(Math.random() * filterMixer.length)
 		let mix2 = Math.floor(Math.random() * filterMixer.length)		 
 	    let selectedMixer  = [filterMixer[mix1], filterMixer[mix2]]
 					//for me to see in console what is chosen
 		console.log('selected mixer', selectedMixer)
-					// console.log('selected garnish', selectedGarnish)
+		// console.log('selected garnish', selectedGarnish)
 	
-			
-			let cocktailDescription = 
+		let cocktailLabel =	
+			selectedBase.label + ' ' + selectedMixer[0].label + ' ' + selectedMixer[1].label + selectedFamily.name
+
+		let cocktailDescription = 
 					
 					selectedBase.description 
-
 					+ ' and ' +
-								
-					selectedMixer.description 
+					selectedMixer[0].description + ' and ' + selectedMixer[1].description
 					;
 
 				console.log('cocktail description:', cocktailDescription)
+				console.log('cocktail label:', cocktailLabel)
 
 			//add to html
 				let listItem =
 					`		
-							<h3 id="recipe-name">NAME</h4>
+							<h3 id="recipe-name">${cocktailLabel}</h4>
 							<p>${cocktailDescription}</p>
 
 							<h4>Base</h4>
@@ -166,7 +161,8 @@ let showCard = (data2) => {
 
 							<h4>Mixers</h4>
 							<ul>
-								<li>${selectedMixer?.name || ''}</li>
+								<li>${selectedMixer[0].name || ''}</li>
+								<li>${selectedMixer[1].name || ''}</li>
 							</ul>			
 					
 				`
