@@ -41,9 +41,9 @@ let showCard = (data2) => {
 		let family
 		if (alcoholScale <= 3) {
 			family = data2.light
-		} else if (alcoholScale <=3){
+		} else if (alcoholScale <=6){
 			family = data2.medium
-		} else if (alcoholScale <=3){
+		} else if (alcoholScale <=10){
 			family = data2.strong
 		}
 
@@ -60,140 +60,83 @@ let showCard = (data2) => {
 		let base = Math.floor(Math.random() * filterBase.length)	 
 			selectedBase = filterBase[base]
 			console.log('selected base:', selectedBase)
+			
 		
-		// if (alcoholScale <= 3) {
-		// 		let families = data2.light //light
-		// 		let selectedFamilyWrapper = families[Math.floor(Math.random() * families.length)] //light --> spritz
-		// 		selectedFamily = Object.values(selectedFamilyWrapper)[0]
-		// 		//turn object to arrayso i can slect a random object from the family 
-		// 		//resource: https://dev.to/awaisalwaisy/7-ways-to-convert-objects-into-array-in-javascript-35m4
-		// 		console.log(selectedFamily)
-				
-		// 		let filterBase = selectedFamily.base.filter(base => {
-		// 			   //Array.prototype(here is base from data) .filter()
-		// 			alcohol = base.occasion.includes(occasion)
-		// 			console.log('alcohol', alcohol) 
-		// 			return alcohol
-		// 		})
-		// 		let base = Math.floor(Math.random() * filterBase.length)	 
-		// 		selectedBase = filterBase[base]
-		// 		console.log('selected base:', selectedBase)
 
-		// 	} else if(alcoholScale <= 6){
-
-		// 		let families = data2.medium //light
-		// 		let selectedFamilyWrapper = families[Math.floor(Math.random() * families.length)] //light --> spritz
-		// 		selectedFamily = Object.values(selectedFamilyWrapper)[0]
-		// 		//turn object to arrayso i can slect a random object from the family 
-		// 		//resource: https://dev.to/awaisalwaisy/7-ways-to-convert-objects-into-array-in-javascript-35m4
-		// 		console.log(selectedFamily)
-				
-		// 		let filterBase = selectedFamily.base.filter(base => {
-		// 			   //Array.prototype(here is base from data) .filter()
-		// 			alcohol = base.occasion.includes(occasion)
-		// 			console.log('alcohol', alcohol) 
-		// 			return alcohol
-		// 		})
-		// 		let base = Math.floor(Math.random() * filterBase.length)	 
-		// 		selectedBase = filterBase[base]
-		// 		console.log('selected base:', selectedBase)
-
-		// 	} else if(alcoholScale <= 10){
-		// 		let families = data2.strong //light
-		// 		let selectedFamilyWrapper = families[Math.floor(Math.random() * families.length)] //light --> spritz
-		// 		selectedFamily = Object.values(selectedFamilyWrapper)[0]
-		// 		//turn object to arrayso i can slect a random object from the family 
-		// 		//resource: https://dev.to/awaisalwaisy/7-ways-to-convert-objects-into-array-in-javascript-35m4
-		// 		console.log(selectedFamily)
-				
-		// 		let filterBase = selectedFamily.base.filter(base => {
-		// 			   //Array.prototype(here is base from data) .filter()
-		// 			alcohol = base.occasion.includes(occasion)
-		// 			console.log('alcohol', alcohol) 
-		// 			return alcohol
-		// 		})
-		// 		let base = Math.floor(Math.random() * filterBase.length)
-		// 		let base2 = Math.floor(Math.random() * filterBase.length)	 
-		// 		selectedBase = [filterBase[base], filterBase[base2]]
-		// 		console.log('selected base:', selectedBase)
-
-		// 	} 
 //choose mixer base on the base
-			let filterMixer = selectedFamily.mixer.filter(mixer => {
-						let mix = ""
+		
+		let group1 = 	selectedBase.taste.includes('sweet') ||
+						selectedBase.taste.includes('acid') ||
+						selectedBase.taste.includes('fruity')
 
-						if (adventureScale <= 3) {
-							if (
-								selectedBase.taste.includes('sweet') ||
-								selectedBase.taste.includes('acid') ||
-								selectedBase.taste.includes('fruity')
-								) {
-							
-							mix = mixer.taste.includes('acid') || 
-									mixer.taste.includes('sweet') || 
-									mixer.taste.includes('fruity')
+		let group2 =  	selectedBase.taste.includes('salty') ||
+						selectedBase.taste.includes('bitter') ||
+						selectedBase.taste.includes('smoky') ||
+						selectedBase.taste.includes('spicy')
 
-								
-							} else if (
-								selectedBase.taste.includes('salty') ||
-								selectedBase.taste.includes('bitter') ||
-								selectedBase.taste.includes('smoky') ||
-								selectedBase.taste.includes('spicy')
-							) {
-							mix = mixer.taste.includes('umami') || 
-									mixer.taste.includes('bitter') || 
-									mixer.taste.includes('sweet') || 
-									mixer.taste.includes('fruity')
+		let group3 =  	selectedBase.taste.includes('umami') ||
+						selectedBase.taste.includes('herbal') ||
+						selectedBase.taste.includes('creamy')
 
-								
-							} else if (
-								selectedBase.taste.includes('umami') ||
-								selectedBase.taste.includes('herbal') ||
-								selectedBase.taste.includes('creamy')
-							) {
-							mix = mixer.taste.includes('acid') || 
-									mixer.taste.includes('sweet') || 
-									mixer.taste.includes('fruity')
+		
+	
+		let filterMixer = selectedFamily.mixer.filter(mixer => {
+			let mix = ""
 
-							}
-						} else if (adventureScale <= 6) {
-							if (
-								selectedBase.taste.includes('sweet') ||
-								selectedBase.taste.includes('acid') ||
-								selectedBase.taste.includes('fruity')
-								) {
-							mix = mixer.taste.includes('umami') || 
-									mixer.taste.includes('bitter') || 
-									mixer.taste.includes('salty')
+			let mixGroup1 = mixer.taste.includes('acid') || 
+							mixer.taste.includes('sweet') || 
+							mixer.taste.includes('fruity')
+		
+			let mixGroup2 = mixer.taste.includes('creamy') || 
+							mixer.taste.includes('bitter') || 
+							mixer.taste.includes('sweet') || 
+							mixer.taste.includes('fruity')
 
-							} else if (
-								selectedBase.taste.includes('salty') ||
-								selectedBase.taste.includes('bitter') ||
-								selectedBase.taste.includes('smoky')||
-								selectedBase.taste.includes('spicy')
-							) {
-							mix = mixer.taste.includes('umami') || 
-									mixer.taste.includes('acid') ||
-									mixer.taste.includes('fruity')
+			let mixGroup3 = mixer.taste.includes('spicy') || 
+							mixer.taste.includes('smoky') || 
+							mixer.taste.includes('unami')
+			console.log(mixer.name)
 
-							} else if (
-								selectedBase.taste.includes('umami') ||
-								selectedBase.taste.includes('herbal') ||
-								selectedBase.taste.includes('creamy')
-							) {
-							mix = mixer.taste.includes('smoky') || 
-									mixer.taste.includes('spicy') || 
-									mixer.taste.includes('salty')	
+			if (adventureScale <= 3) {
+							if (group1) {
+							mix = mixGroup1
+	
+							} else if (group2) {
+							mix = mixGroup2
+
+							} else if (group3) {
+							mix = mixGroup3
 							}
 
-						} 
+			} else if (adventureScale <= 6) {
+							if (group1) {
+							mix = mixGroup2
+	
+							} else if (group2) {
+							mix = mixGroup3
+
+							} else if (group3) {
+							mix = mixGroup1
+							}
+
+			} else if (adventureScale <= 10){ 
+							if (group1) {
+							mix = mixGroup3
+	
+							} else if (group2) {
+							mix = mixGroup1
+
+							} else if (group3) {
+							mix = mixGroup2
+							}
+						}
 						return mix //true or false for each line above
-					})
-					let mix1 = Math.floor(Math.random() * filterMixer.length)
-					let mix2 = Math.floor(Math.random() * filterMixer.length)		 
-					let selectedMixer  = [filterMixer[mix1], filterMixer[mix2]]
+			})
+		let mix1 = Math.floor(Math.random() * filterMixer.length)
+		let mix2 = Math.floor(Math.random() * filterMixer.length)		 
+	    let selectedMixer  = [filterMixer[mix1], filterMixer[mix2]]
 					//for me to see in console what is chosen
-					console.log('selected mixer', selectedMixer)
+		console.log('selected mixer', selectedMixer)
 					// console.log('selected garnish', selectedGarnish)
 	
 			
