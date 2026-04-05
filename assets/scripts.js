@@ -1,34 +1,3 @@
-// input(mvp):
-// name,
-// alcohol scale
-// adventure scale
-// occasion
-// weather condition
-
-// output(mvp)
-// name
-// description { base + mixer + garnish} piece together as a sentense?
-	//so it will be like: "Your cocktail is [base description/sweet], [mixer description/], and [garnish description]. Enjoy!"
-// base(s) <----- alc scale + occasion + weather condition(optional)
-// + 
-// mixers2  <----- adv scale + weather condition(optional)
-// + 
-// garnishes2 <----- adv scale + weather condition(optional)
-
-
-
-//initial logics
-// if alcohol scale is below 3 -> abv below 3 & one base
-// if alcohol scale is between 3-6 -> abv between 3-6 & one base
-// if alcohol scale is between 6-10 -> abv above 6 & two bases
-//if chose occasion, then assign the base
-
-
-//if adventure scale is below 3 -> mixer and garnish with similar taste profile as base
-//if adventure scale is between 3-6 -> mixer and garnish with different taste profile as base
-//if adventure scale is between 6-10 -> mixer and garnish with very different taste profile as base
-
-
 let mixButton = document.querySelector('#mix')
 let mixagainButton = document.querySelector('#mix-again')
 let resultCard = document.querySelector('#result-modal')
@@ -37,13 +6,6 @@ let ingredientList = document.getElementById('ingredient-list')
 
 //what's inside the result card function
 let showCard = (data) => {
-
-	//DOM, everything in the result card
-	let cocktailName = document.querySelector('#recipe-name')
-	let cocktailBase = document.querySelector('#base')
-	let cocktailMixers = document.querySelector('#mixers')
-	let cocktailGarnish = document.querySelector('#garnish')
-	
 
 	//how to get the users selected values: https://www.w3schools.com/JSREF/tryit.asp?filename=tryjsref_select_value   
 	// let name = document.querySelector('#recipe-name').value
@@ -57,409 +19,192 @@ let showCard = (data) => {
 	console.log('Adventure Scale:', adventureScale)
 
 
-		
-//this is just some research and thought process
-		//since i have 4 filters, i was not sure how i can make the code work	
-		//trying to understand boolean in js using if/else statements: https://claude.ai/share/e74a5c83-61c0-4e88-9b6f-27dc7947f5df
-		//filter(), https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter	
-		//how to filter in js: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter
-		//here is an example: https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_filter2
-		//i watched this tutorial on how to filter in js: https://www.youtube.com/watch?v=nKglx7dN7Ss	
-		//more about filter: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter
-		//also read about other filtering method like map and reduce and scores but not applying them now as they are too much to digest
-		//i decided to use filter and if/else to connect user input to my database. 
-
 
 //BASE
 
-		//i went to a tutoring sesstion where the tutor (jonathan wang) helped me understand how i can incorporate occasion into my filtering. 
-		// alcoholScale and adventureScale both affect the base selection, so occasion can just be nested in side the filterBase funciton
-
-		let filterBase = data.base.filter(base => {
-					   //Array.prototype(here is base from data) .filter()
-			let alcohol = ""
+		let alcohol = ""
 			//set an empty string
+		let selectedFamily
+		let selectedBase
+		let selectedBases
+		let selectedMixer
+		let familyName
+
+//put everythign in ranges so i dont repeat the code
+		let level
+		if (alcoholScale <= 3) {
+			level = data.light
+		} else if (alcoholScale <=6){
+			level = data.medium
+		} else if (alcoholScale <=10){
+			level = data.strong
+		}
+		console.log('level:', level)
+		//level is an array of families
+
+		selectedFamily = level[Math.floor(Math.random() * level.length)]
+		//select one of the items on the level array
 		
-			if (alcoholScale <= 3) {
-				alcohol = base.abv === 1
+		//here i need the name of the params/keys
+		//how to convert between object and array https://dev.to/awaisalwaisy/7-ways-to-convert-objects-into-array-in-javascript-35m4
+		familyName = Object.keys(selectedFamily)[0] 
+		//object.keys returns an array from the key, and here is only 1 item in the array, so use [0] to select it
+		//basically [0] turn the array back to an object(not key)
+		
+		familyData = selectedFamily[familyName]
+		//trouble shooting: familyData = selectedFamily.familyName is causing error in the filter()
+		//gemini chat: https://gemini.google.com/share/824c8b7d38df
+		//dot and bracket logic: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Property_accessors
 
-				if (occasion === 'Casual Weeknight') {
-					alcohol = base.occasion.includes('Casual Weeknight')
-				} else if (occasion === 'Celebrating Something') {
-					alcohol = base.occasion.includes('Celebration')
-				} else if (occasion === 'Dinner Party') {
-					alcohol = base.occasion.includes('Dinner Party')
-				} else if (occasion === 'Brunch') {
-					alcohol = base.occasion.includes('Brunch')
-				} else if (occasion === 'Weekend Fun') {
-					alcohol = base.occasion.includes('Weekend Fun')
-				} else if (occasion === 'Date Night') {
-					alcohol = base.occasion.includes('Date Night')
-				}
+		console.log('selectedfamily:',selectedFamily)
+		console.log('family name', familyName)
 
-
-				}else if (alcoholScale <= 6) {
-					//4 <= alcoholscale <= 6
-					alcohol = base.abv === 2
-					if (occasion === 'Flexible') {
-							alcohol = base.occasion.includes('All')
-						} else if (occasion === 'Celebrating Something') {
-							alcohol = base.occasion.includes('Celebration')
-						} else if (occasion === 'Dinner Party') {
-							alcohol = base.occasion.includes('Dinner Party')
-						} else if (occasion === 'Brunch') {
-							alcohol = base.occasion.includes('Brunch')
-						} else if (occasion === 'Weekend Fun') {
-							alcohol = base.occasion.includes('Weekend Fun')
-						} else if (occasion === 'Date Night') {
-							alcohol = base.occasion.includes('Date Night')
-						} else if (occasion === 'Casual Weeknight') {
-							alcohol = base.occasion.includes('Casual Weeknight')
-						}
-
-				}else if (alcoholScale <= 10) {
-					alcohol = base.abv === 3
-					if (occasion === 'Casual Weeknight') {
-					alcohol = base.occasion.includes('Casual Weeknight')
-					} else if (occasion === 'Celebrating Something') {
-						alcohol = base.occasion.includes('Celebration')
-					} else if (occasion === 'Dinner Party') {
-						alcohol = base.occasion.includes('Dinner Party')
-					} else if (occasion === 'Brunch') {
-						alcohol = base.occasion.includes('Brunch')
-					} else if (occasion === 'Weekend Fun') {
-						alcohol = base.occasion.includes('Weekend Fun')
-					} else if (occasion === 'Date Night') {
-						alcohol = base.occasion.includes('Date Night')
-					}
-				}
-
-				console.log('alcohol', alcohol) //true or false for each line above
+		//need to put[] on familyName because it's not a parameter it's a string now
+		let filterBase = familyData.base.filter(base => {
+				alcohol = base.occasion.includes(occasion)
+				console.log('alcohol', alcohol) 
 				return alcohol
-				//according to my tutor: best practice to return at the end of the function
+			})
+
+		let base1 = Math.floor(Math.random() * filterBase.length)	 
+		let base2 = Math.floor(Math.random() * filterBase.length)
+
+		if (alcoholScale <= 6){
+			
+			selectedBases = [filterBase[base1]]
+			console.log('selected base:', selectedBases[0])
+		} else if (6 < alcoholScale <= 10){
+				 
+			selectedBases = [filterBase[base1], filterBase[base2]]
+			console.log('selected bases', selectedBases)		
+		}
+			
+			
+
+		//family and base are chosen, below is for mixer selection 
+		//data here looks like: Light/Medium/Strong -> family -> base/mixer
+		for (let i = 0; i < selectedBases.length; i++) {
+					selectedBase = selectedBases[i]	
+					
+					let group1 = 	selectedBase.taste.includes('sweet') ||
+									selectedBase.taste.includes('acid') ||
+									selectedBase.taste.includes('fruity')
+
+					let group2 =  	selectedBase.taste.includes('salty') ||
+									selectedBase.taste.includes('bitter') ||
+									selectedBase.taste.includes('smoky') ||
+									selectedBase.taste.includes('spicy')
+
+					let group3 =  	selectedBase.taste.includes('umami') ||
+									selectedBase.taste.includes('herbal') ||
+									selectedBase.taste.includes('creamy')
+
 				
-			//reture here 
-		})
+					let filterMixer = familyData.mixer.filter(mixer => {
+						let mix = ""
 
-		//select one or 2 randomly
-//random selection example:https://codepen.io/thowell/pen/OGONYY
-//math.floor rounds things down https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/floor so it gives me a number that is not a decimal
+						let mixGroup1 = mixer.taste.includes('acid') || 
+										mixer.taste.includes('sweet') || 
+										mixer.taste.includes('fruity')
+					
+						let mixGroup2 = mixer.taste.includes('creamy') || 
+										mixer.taste.includes('bitter') || 
+										mixer.taste.includes('herbal') || 
+										mixer.taste.includes('fruity')
 
-//inside [] is a number and that number will locate the drink in my array filterBase
-//mathrandom() gives me a number between 0 and 1, and i multiply it by the length of my array, so the number will always brween 0 and my array length.
-//2 bases will be selected
-//random1, 2 will be a number
-		let random1 = Math.floor(Math.random() * filterBase.length)
-		let random2 = Math.floor(Math.random() * filterBase.length)		 
-		let selectedBases = ""
-		if  (alcoholScale <= 6) 
-				{
+						let mixGroup3 = mixer.taste.includes('spicy') || 
+										mixer.taste.includes('smoky') || 
+										mixer.taste.includes('unami')
 
-					selectedBases =[filterBase[random1]]
-					//need to select a single base from the list
-					//i thought this selectedBases =filterBase[random1] was an array but it is single item that breaks the forloop below so i was trying to understand what array, nodelist, and single item really means in code, https://chatgpt.com/share/69cd1390-1094-832c-b089-fbcc443e10b1
+
+						if (adventureScale <= 3) {
+										if (group1) {
+										mix = mixGroup1 || mixGroup2
+				
+										} else if (group2) {
+										mix = mixGroup2 || mixGroup1
+
+										} else if (group3) {
+										mix = mixGroup3 || mixGroup2
+										}
+
+						} else if (adventureScale <= 6) {
+										if (group1) {
+										mix = mixGroup2 || mixGroup3
+				
+										} else if (group2) {
+										mix = mixGroup3 || mixGroup1
+
+										} else if (group3) {
+										mix = mixGroup1 || mixGroup2
+										}
+
+						} else if (adventureScale <= 10){ 
+										if (group1) {
+										mix = mixGroup3 || mixGroup2
+				
+										} else if (group2) {
+										mix = mixGroup1 || mixGroup2
+
+										} else if (group3) {
+										mix = mixGroup2 || mixGroup3
+										}
+						}
+						return mix //true or false for each line above
+						})
+
+					let mix1 = Math.floor(Math.random() * filterMixer.length)
+					let mix2 = Math.floor(Math.random() * filterMixer.length)		 
+					selectedMixer = [filterMixer[mix1], filterMixer[mix2]]
+								//for me to see in console what is chosen
+					console.log('selected mixer', selectedMixer)
+					// console.log('selected garnish', selectedGarnish)
 				}
-
-				else if (alcoholScale <= 10) 
-				{
-					selectedBases = [filterBase[random1], filterBase[random2]]
-				}
-		console.log('selected base:', selectedBases)
-
-//MIXERs	
-	// my taste	set generated by gpt: ["sweet","acid","bitter","salty","umami","fruity","herbal","smoky","creamy", "spicy"]
-
-	//here is where the adventurous scale filters
-
-	//i have 4 filters, so i will use if/else to group them in to groups of 3 based on the adventure scale(what user inputs). within each adventurous group, its a group of 3 base on the taste profiles. for the final selection,i will select one randomly
-
-	//im applying the same filering logic for garnish
-
-	//since selectedBase can be more than one base
-	//1. tried using array.from it didnt work
-	//2. to target the item in the list, i tried the for loop template from https://developer.mozilla.org/en-US/docs/Web/API/NodeList		
-
-	//i++ means add 1, in my case, the max arrays in a list is 3, so i will either be 0,1,2
-	//i asked gemini to explain it to me https://gemini.google.com/share/cb86c74e30ad
-	for (let i = 0; i < selectedBases.length; i++) {
-		let selectedBase = selectedBases[i];
 		
-			console.log('selectedBase:',selectedBase)
-
-		// if (selectedBases.length > 1) {}
-			let filterMixer = data.mixer.filter(mixer => {
-				let mix = ""
-				if (adventureScale <= 3) {
-					if (
-						selectedBase.taste.includes('sweet') ||
-						selectedBase.taste.includes('acid') ||
-						selectedBase.taste.includes('fruity')
-						) {
-					
-					mix = mixer.taste.includes('acid') || 
-							mixer.taste.includes('sweet') || 
-							mixer.taste.includes('fruity')
-
-						
-					} else if (
-						selectedBase.taste.includes('salty') ||
-						selectedBase.taste.includes('bitter') ||
-						selectedBase.taste.includes('smoky') ||
-						selectedBase.taste.includes('spicy')
-					) {
-					mix = mixer.taste.includes('umami') || 
-							mixer.taste.includes('bitter') || 
-							mixer.taste.includes('sweet') || 
-							mixer.taste.includes('fruity')
-
-						
-					} else if (
-						selectedBase.taste.includes('umami') ||
-						selectedBase.taste.includes('herbal') ||
-						selectedBase.taste.includes('creamy')
-					) {
-					mix = mixer.taste.includes('acid') || 
-							mixer.taste.includes('sweet') || 
-							mixer.taste.includes('fruity')
-
-					}
-				} else if (adventureScale <= 6) {
-					if (
-						selectedBase.taste.includes('sweet') ||
-						selectedBase.taste.includes('acid') ||
-						selectedBase.taste.includes('fruity')
-						) {
-					mix = mixer.taste.includes('umami') || 
-							mixer.taste.includes('bitter') || 
-							mixer.taste.includes('salty')
-
-					} else if (
-						selectedBase.taste.includes('salty') ||
-						selectedBase.taste.includes('bitter') ||
-						selectedBase.taste.includes('smoky')||
-						selectedBase.taste.includes('spicy')
-					) {
-					mix = mixer.taste.includes('umami') || 
-							mixer.taste.includes('acid') ||
-							mixer.taste.includes('fruity')
-
-					} else if (
-						selectedBase.taste.includes('umami') ||
-						selectedBase.taste.includes('herbal') ||
-						selectedBase.taste.includes('creamy')
-					) {
-					mix = mixer.taste.includes('smoky') || 
-							mixer.taste.includes('spicy') || 
-							mixer.taste.includes('salty')	
-					}
-
-				} else if (adventureScale <= 10) {
-					if (
-						selectedBase.taste.includes('sweet') ||
-						selectedBase.taste.includes('acid') ||
-						selectedBase.taste.includes('fruity')
-						) {
-					mix = mixer.taste.includes('creamy') || 
-							mixer.taste.includes('bitter') || 
-							mixer.taste.includes('acid')	
-
-					} else if (
-						selectedBase.taste.includes('salty') ||
-						selectedBase.taste.includes('bitter') ||
-						selectedBase.taste.includes('smoky') ||
-						selectedBase.taste.includes('spicy')
-					) {
-					mix = mixer.taste.includes('acid') || 
-							mixer.taste.includes('creamy') || 
-							mixer.taste.includes('umami')
-
-					} else if (
-						selectedBase.taste.includes('umami') ||
-						selectedBase.taste.includes('herbal') ||
-						selectedBase.taste.includes('creamy')
-					) {
-					mix = mixer.taste.includes('spicy') || 
-							mixer.taste.includes('salty') || 
-							mixer.taste.includes('creamy')					
-					}
-				}
-				return mix //true or false for each line above
-			})
-
-	//Garnish copied pasted from mixer
-			let filterGarnish = data.garnish.filter(garnish => {
-				let gar = ""
-				if (adventureScale <= 3) {
-					if (
-						selectedBase.taste.includes('sweet') ||
-						selectedBase.taste.includes('acid') ||
-						selectedBase.taste.includes('fruity')
-						) {
-					
-					gar = garnish.taste.includes('acid') || 
-							garnish.taste.includes('sweet') || 
-							garnish.taste.includes('fruity')
-
-						
-					} else if (
-						selectedBase.taste.includes('salty') ||
-						selectedBase.taste.includes('bitter') ||
-						selectedBase.taste.includes('smoky') ||
-						selectedBase.taste.includes('spicy')
-					) {
-					gar = garnish.taste.includes('umami') || 
-							garnish.taste.includes('bitter') || 
-							garnish.taste.includes('sweet') || 
-							garnish.taste.includes('fruity')
-
-						
-					} else if (
-						selectedBase.taste.includes('umami') ||
-						selectedBase.taste.includes('herbal') ||
-						selectedBase.taste.includes('creamy')
-					) {
-					gar = garnish.taste.includes('acid') || 
-							garnish.taste.includes('sweet') || 
-							garnish.taste.includes('fruity')
-
-					}
-				} else if (adventureScale <= 6) {
-					if (
-						selectedBase.taste.includes('sweet') ||
-						selectedBase.taste.includes('acid') ||
-						selectedBase.taste.includes('fruity')
-						) {
-					gar = garnish.taste.includes('umami') || 
-							garnish.taste.includes('bitter') || 
-							garnish.taste.includes('salty')
-
-					} else if (
-						selectedBase.taste.includes('salty') ||
-						selectedBase.taste.includes('bitter') ||
-						selectedBase.taste.includes('smoky')||
-						selectedBase.taste.includes('spicy')
-					) {
-					gar = garnish.taste.includes('umami') || 
-							garnish.taste.includes('acid') ||
-							garnish.taste.includes('fruity')
-
-					} else if (
-						selectedBase.taste.includes('umami') ||
-						selectedBase.taste.includes('herbal') ||
-						selectedBase.taste.includes('creamy')
-					) {
-					gar = garnish.taste.includes('smoky') || 
-							garnish.taste.includes('spicy') || 
-							garnish.taste.includes('salty')	
-					}
-
-				} else if (adventureScale <= 10) {
-					if (
-						selectedBase.taste.includes('sweet') ||
-						selectedBase.taste.includes('acid') ||
-						selectedBase.taste.includes('fruity')
-						) {
-					gar = garnish.taste.includes('creamy') || 
-							garnish.taste.includes('bitter') || 
-							garnish.taste.includes('acid')	
-
-					} else if (
-						selectedBase.taste.includes('salty') ||
-						selectedBase.taste.includes('bitter') ||
-						selectedBase.taste.includes('smoky') ||
-						selectedBase.taste.includes('spicy')
-					) {
-					gar = garnish.taste.includes('acid') || 
-							garnish.taste.includes('creamy') || 
-							garnish.taste.includes('umami')
-
-					} else if (
-						selectedBase.taste.includes('umami') ||
-						selectedBase.taste.includes('herbal') ||
-						selectedBase.taste.includes('creamy')
-					) {
-					gar = garnish.taste.includes('spicy') || 
-							garnish.taste.includes('salty') || 
-							garnish.taste.includes('creamy')					
-					}
-				}
-				return gar
-			})
-
-		let mix1 = Math.floor(Math.random() * filterMixer.length)
-		let mix2 = Math.floor(Math.random() * filterMixer.length)
-		selectedMixer = [filterMixer[mix1], filterMixer[mix2]]
-
-		let gar1 = Math.floor(Math.random() * filterGarnish.length)
-		let gar2 = Math.floor(Math.random() * filterGarnish.length)
-		selectedGarnish = [filterGarnish[gar1], filterGarnish[gar2]]
-
-		//for me to see in console what is chosen
-		console.log('selected mixer', selectedMixer)
-		console.log('selected garnish', selectedGarnish)
-
-	}
-//diferences between || and ?? https://www.reddit.com/r/javascript/comments/1c2kf3q/askjs_javascript_operators_like_or_and_null/
-// || is OR, ?? runs when the previous value is null or undefined
-
-
-	let cocktailDescription = 	selectedBases.description ?? 
-	//?? only runs the rest if above's false, so when there is 2 bases, it runs the code below	  
-							
-								(selectedBases[0]?.description || '') 
-								//need to add () if ?? and || are in one line! https://chatgpt.com/share/69cd3900-2684-832f-938f-1c0fd70ef54f & https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Nullish_coalescing#:~:text=leftExpr%20??%20rightExpr-,Description,js%20Copy
-
-								 + ' and ' +
-								(selectedBases[1]?.description || '') 
-
-								+ ', with ' + 'a ' +
-								
-								selectedMixer[0].description 
-								+ ' and ' +
-								selectedMixer[1].description 
-								+ ' touch,'
-								+  ' and ' + 'a ' +
-								selectedGarnish[0].description 
-								+ ' yet ' +
-								selectedGarnish[1].description
-								+ ' finish. Cheers!';
-
-	console.log('cocktail description:', cocktailDescription)
-
-	//add everything to the card
+//choose mixer base on the base
 	
+		let cocktailLabel =	
+			selectedBases.label ??
+			(selectedBases.label || '') + ' ' +
+			(selectedBases.label || '') 
+			
+			+ ' ' + selectedMixer[0].label + ' ' + selectedMixer[1].label
 
+		let cocktailDescription = 
+					
+					selectedBases.description 
+					+ ' and ' +
+					selectedMixer[0].description + ' and ' + selectedMixer[1].description
+					;
 
-	let listItem =
-			`		
-					<h3 id="recipe-name">NAME</h4>
-					<p>${cocktailDescription}</p>
+				console.log('cocktail description:', cocktailDescription)
+				console.log('cocktail label:', cocktailLabel)
+
+		//add to html
+		let listItem =
+				`		
+					<h3 id="recipe-name">${cocktailLabel}</h4>
+						<p>${cocktailDescription}</p>
 
 					<h4>Base</h4>
 					<ul>
-						<li>${selectedBases?.name || ''}</li>
+						<li>${selectedBases.name || ''}</li>
 						<li>${selectedBases[0]?.name || ''}</li>
 						<li>${selectedBases[1]?.name || ''}</li>
 					</ul>
 
 					<h4>Mixers</h4>
 					<ul>
-						<li>${selectedMixer[0]?.name || ''}</li>
-						<li>${selectedMixer[1]?.name || ''}</li>
-					</ul>
-
-					<h4>Garnishes</h4>
-					<ul>
-						<li>${selectedGarnish[0]?.name || ''}</li>
-						<li>${selectedGarnish[1]?.name || ''}</li>
-					</ul>
-			
-		`
-		//innerHtml so it doesnt add to the list everytime i click
-	ingredientList.innerHTML = listItem
-
-
+						<li>${selectedMixer[0].name || ''}</li>
+						<li>${selectedMixer[1].name || ''}</li>
+					</ul>			
+					
+				`
+			//innerHtml so it doesnt add to the list everytime i click
+			ingredientList.innerHTML = listItem
 }
+
+
 
 
 //share template from MDN: https://developer.mozilla.org/en-US/docs/Web/API/Web_Share_API 
@@ -481,10 +226,6 @@ btn.addEventListener("click", async () => {
     resultPara.textContent = `Error: ${err}`;
   }
 });
-
-
-
-
 
 //click button show result modal
 
@@ -524,7 +265,12 @@ mixagainButton.addEventListener('click', () => { // “Listen” for clicks.
 	
 })
 
-
+fetch('./assets/data.json')
+	.then(response => response.json())
+	.then(data => {
+		showCard(data)
+		console.log(data)
+	})
 
 // Target your form.
 let formElement = document.querySelector('#some-form')
