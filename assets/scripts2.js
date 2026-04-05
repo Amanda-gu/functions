@@ -57,7 +57,7 @@ let showCard = (data2) => {
 
 		if (alcoholScale <= 6){
 			
-			selectedBases = filterBase[base1]
+			selectedBases = [filterBase[base1]]
 			console.log('selected base:', selectedBase)
 		} else if (6 < alcoholScale <= 10){
 				 
