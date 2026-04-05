@@ -2228,7 +2228,8 @@
                         ],
                         "description": "sharp",
                         "occasion": [
-                            "Night"
+                            "Night",
+                            "Flexible"
                         ],
                         "label": [
                             "botanist"
@@ -2241,7 +2242,8 @@
                         ],
                         "description": "rich",
                         "occasion": [
-                            "Night"
+                            "Night",
+                            "Flexible"
                         ],
                         "label": [
                             "poet"
@@ -2254,7 +2256,8 @@
                         ],
                         "description": "dry",
                         "occasion": [
-                            "Night"
+                            "Night",
+                            "Flexible"
                         ],
                         "label": [
                             "contrarian"
@@ -2267,7 +2270,8 @@
                         ],
                         "description": "dark",
                         "occasion": [
-                            "Night"
+                            "Night",
+                            "Flexible"
                         ],
                         "label": [
                             "adventurer"
@@ -2280,7 +2284,8 @@
                         ],
                         "description": "bold",
                         "occasion": [
-                            "Night"
+                            "Night",
+                            "Flexible"
                         ],
                         "label": [
                             "instigator"
@@ -2293,7 +2298,8 @@
                         ],
                         "description": "wild",
                         "occasion": [
-                            "Night"
+                            "Night",
+                            "Flexible"
                         ],
                         "label": [
                             "wanderer"
@@ -2306,7 +2312,8 @@
                         ],
                         "description": "round",
                         "occasion": [
-                            "Night"
+                            "Night",
+                            "Flexible"
                         ],
                         "label": [
                             "philosopher"
@@ -2319,7 +2326,8 @@
                         ],
                         "description": "lux",
                         "occasion": [
-                            "Night"
+                            "Night",
+                            "Flexible"
                         ],
                         "label": [
                             "hedonist"
@@ -2332,7 +2340,8 @@
                         ],
                         "description": "deep",
                         "occasion": [
-                            "Night"
+                            "Night",
+                            "Flexible"
                         ],
                         "label": [
                             "brooder"
@@ -2345,7 +2354,8 @@
                         ],
                         "description": "bright",
                         "occasion": [
-                            "Night"
+                            "Night",
+                            "Flexible"
                         ],
                         "label": [
                             "optimist"
@@ -2358,7 +2368,8 @@
                         ],
                         "description": "soft",
                         "occasion": [
-                            "Night"
+                            "Night",
+                            "Flexible"
                         ],
                         "label": [
                             "diplomat"
@@ -2371,7 +2382,8 @@
                         ],
                         "description": "dry",
                         "occasion": [
-                            "Night"
+                            "Night",
+                            "Flexible"
                         ],
                         "label": [
                             "archivist"
@@ -2384,7 +2396,8 @@
                         ],
                         "description": "rich",
                         "occasion": [
-                            "Night"
+                            "Night",
+                            "Flexible"
                         ],
                         "label": [
                             "dreamer"
@@ -2397,7 +2410,8 @@
                         ],
                         "description": "dense",
                         "occasion": [
-                            "Night"
+                            "Night",
+                            "Flexible"
                         ],
                         "label": [
                             "hedonist"
@@ -2410,7 +2424,8 @@
                         ],
                         "description": "intense",
                         "occasion": [
-                            "Night"
+                            "Night",
+                            "Flexible"
                         ],
                         "label": [
                             "alchemist"
@@ -2566,7 +2581,8 @@
                         ],
                         "description": "rich",
                         "occasion": [
-                            "Night"
+                            "Night",
+                            "Flexible"
                         ],
                         "label": [
                             "poet"
@@ -2579,7 +2595,8 @@
                         ],
                         "description": "dry",
                         "occasion": [
-                            "Night"
+                            "Night",
+                            "Flexible"
                         ],
                         "label": [
                             "contrarian"
@@ -2592,7 +2609,8 @@
                         ],
                         "description": "dark",
                         "occasion": [
-                            "Night"
+                            "Night",
+                            "Flexible"
                         ],
                         "label": [
                             "adventurer"
@@ -2605,7 +2623,8 @@
                         ],
                         "description": "bold",
                         "occasion": [
-                            "Night"
+                            "Night",
+                            "Flexible"
                         ],
                         "label": [
                             "instigator"
@@ -2618,7 +2637,8 @@
                         ],
                         "description": "intense",
                         "occasion": [
-                            "Night"
+                            "Night",
+                            "Flexible"
                         ],
                         "label": [
                             "wanderer"
@@ -2631,7 +2651,8 @@
                         ],
                         "description": "round",
                         "occasion": [
-                            "Night"
+                            "Night",
+                            "Flexible"
                         ],
                         "label": [
                             "philosopher"
@@ -2644,7 +2665,8 @@
                         ],
                         "description": "lux",
                         "occasion": [
-                            "Night"
+                            "Night",
+                            "Flexible"
                         ],
                         "label": [
                             "hedonist"
@@ -2657,7 +2679,8 @@
                         ],
                         "description": "deep",
                         "occasion": [
-                            "Night"
+                            "Night",
+                            "Flexible"
                         ],
                         "label": [
                             "brooder"
@@ -2670,7 +2693,8 @@
                         ],
                         "description": "light",
                         "occasion": [
-                            "Night"
+                            "Night",
+                            "Flexible"
                         ],
                         "label": [
                             "optimist"
@@ -2683,7 +2707,8 @@
                         ],
                         "description": "soft",
                         "occasion": [
-                            "Night"
+                            "Night",
+                            "Flexible"
                         ],
                         "label": [
                             "diplomat"
@@ -2696,7 +2721,8 @@
                         ],
                         "description": "dry",
                         "occasion": [
-                            "Night"
+                            "Night",
+                            "Flexible"
                         ],
                         "label": [
                             "archivist"
@@ -2709,7 +2735,8 @@
                         ],
                         "description": "rich",
                         "occasion": [
-                            "Night"
+                            "Night",
+                            "Flexible"
                         ],
                         "label": [
                             "dreamer"
@@ -2722,7 +2749,8 @@
                         ],
                         "description": "dense",
                         "occasion": [
-                            "Night"
+                            "Night",
+                            "Flexible"
                         ],
                         "label": [
                             "hedonist"
@@ -2735,7 +2763,8 @@
                         ],
                         "description": "intense",
                         "occasion": [
-                            "Night"
+                            "Night",
+                            "Flexible"
                         ],
                         "label": [
                             "alchemist"
@@ -2748,7 +2777,8 @@
                         ],
                         "description": "bold",
                         "occasion": [
-                            "Night"
+                            "Night",
+                            "Flexible"
                         ],
                         "label": [
                             "charmer"
@@ -2904,7 +2934,8 @@
                         ],
                         "description": "dry",
                         "occasion": [
-                            "Night"
+                            "Night",
+                            "Flexible"
                         ],
                         "label": [
                             "botanist"
@@ -2917,7 +2948,8 @@
                         ],
                         "description": "sharp",
                         "occasion": [
-                            "Night"
+                            "Night",
+                            "Flexible"
                         ],
                         "label": [
                             "shapeshifter"
@@ -2930,7 +2962,8 @@
                         ],
                         "description": "spiced",
                         "occasion": [
-                            "Night"
+                            "Night",
+                            "Flexible"
                         ],
                         "label": [
                             "northerner"
@@ -2943,7 +2976,8 @@
                         ],
                         "description": "soft",
                         "occasion": [
-                            "Night"
+                            "Night",
+                            "Flexible"
                         ],
                         "label": [
                             "rule-bender"
@@ -2956,7 +2990,8 @@
                         ],
                         "description": "smooth",
                         "occasion": [
-                            "Night"
+                            "Night",
+                            "Flexible"
                         ],
                         "label": [
                             "minimalist"
@@ -2969,7 +3004,8 @@
                         ],
                         "description": "bold",
                         "occasion": [
-                            "Night"
+                            "Night",
+                            "Flexible"
                         ],
                         "label": [
                             "instigator"
@@ -2982,7 +3018,8 @@
                         ],
                         "description": "intense",
                         "occasion": [
-                            "Night"
+                            "Night",
+                            "Flexible"
                         ],
                         "label": [
                             "wanderer"
@@ -2995,7 +3032,8 @@
                         ],
                         "description": "round",
                         "occasion": [
-                            "Night"
+                            "Night",
+                            "Flexible"
                         ],
                         "label": [
                             "philosopher"
@@ -3008,7 +3046,8 @@
                         ],
                         "description": "lux",
                         "occasion": [
-                            "Night"
+                            "Night",
+                            "Flexible"
                         ],
                         "label": [
                             "hedonist"
@@ -3021,7 +3060,8 @@
                         ],
                         "description": "soft",
                         "occasion": [
-                            "Night"
+                            "Night",
+                            "Flexible"
                         ],
                         "label": [
                             "adventurer"
@@ -3034,7 +3074,8 @@
                         ],
                         "description": "bold",
                         "occasion": [
-                            "Night"
+                            "Night",
+                            "Flexible"
                         ],
                         "label": [
                             "charmer"
@@ -3047,7 +3088,8 @@
                         ],
                         "description": "deep",
                         "occasion": [
-                            "Night"
+                            "Night",
+                            "Flexible"
                         ],
                         "label": [
                             "brooder"
@@ -3060,7 +3102,8 @@
                         ],
                         "description": "light",
                         "occasion": [
-                            "Night"
+                            "Night",
+                            "Flexible"
                         ],
                         "label": [
                             "optimist"
@@ -3073,7 +3116,8 @@
                         ],
                         "description": "soft",
                         "occasion": [
-                            "Night"
+                            "Night",
+                            "Flexible"
                         ],
                         "label": [
                             "diplomat"
@@ -3086,7 +3130,8 @@
                         ],
                         "description": "intense",
                         "occasion": [
-                            "Night"
+                            "Night",
+                            "Flexible"
                         ],
                         "label": [
                             "alchemist"

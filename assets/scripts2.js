@@ -29,8 +29,6 @@ let showCard = (data2) => {
 			//set an empty string
 		let selectedFamily
 		let selectedBase
-		let selectedBases
-		
 
 //put everythign in ranges so i dont repeat the code
 		let family
@@ -56,17 +54,7 @@ let showCard = (data2) => {
 			selectedBase = filterBase[base]
 			console.log('selected base:', selectedBase)
 			
-		// if (6 < alcoholScale <=10){
-		// 	let base1 = Math.floor(Math.random() * filterBase.length)	 
-		// 	let base2 = Math.floor(Math.random() * filterBase.length)	 
-		// 	selectedBases = [filterBase[base1], filterBase[base2]]
-		// 	console.log('selected base:', selectedBases)
-
-		// 	for (let i = 0; i < selectedBases.length; i++) {
-		// 		selectedBase = selectedBases[i];
-		// 	}
-
-		// }
+		
 
 //choose mixer base on the base
 		
@@ -103,35 +91,35 @@ let showCard = (data2) => {
 
 			if (adventureScale <= 3) {
 							if (group1) {
-							mix = mixGroup1
+							mix = mixGroup1 || mixGroup2
 	
 							} else if (group2) {
-							mix = mixGroup2
+							mix = mixGroup2 || mixGroup1
 
 							} else if (group3) {
-							mix = mixGroup3
+							mix = mixGroup3 || mixGroup1
 							}
 
 			} else if (adventureScale <= 6) {
 							if (group1) {
-							mix = mixGroup2
+							mix = mixGroup2 || mixGroup3
 	
 							} else if (group2) {
-							mix = mixGroup3
+							mix = mixGroup3 || mixGroup1
 
 							} else if (group3) {
-							mix = mixGroup1
+							mix = mixGroup1 || mixGroup2
 							}
 
 			} else if (adventureScale <= 10){ 
 							if (group1) {
-							mix = mixGroup3
+							mix = mixGroup3 || mixGroup2
 	
 							} else if (group2) {
-							mix = mixGroup1
+							mix = mixGroup1 || mixGroup3
 
 							} else if (group3) {
-							mix = mixGroup2
+							mix = mixGroup2 || mixGroup1
 							}
 			}
 			return mix //true or false for each line above
@@ -242,7 +230,12 @@ mixagainButton.addEventListener('click', () => { // “Listen” for clicks.
 	
 })
 
-
+fetch('./assets/data2.json')
+	.then(response => response.json())
+	.then(data2 => {
+		showCard(data2)
+		console.log(data2)
+	})
 
 // Target your form.
 let formElement = document.querySelector('#some-form')
