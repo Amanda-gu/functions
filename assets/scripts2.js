@@ -42,14 +42,15 @@ let showCard = (data) => {
 		console.log('level:', level)
 
 		selectedFamily = level[Math.floor(Math.random() * level.length)]
-		familyName = Object.keys(selectedFamily)[0]//get the string fromt the key, and family is array so [0] to select the family
+		familyName = Object.keys(selectedFamily)[0]
+		//get the string from the key, and family is array so [0] to select the family
 		// familyData = selectedFamily[familyName]
 
 		console.log('selectedfamily:',selectedFamily)
 		console.log('family name', familyName)
 
-		
-		let filterBase = level.familyName.base.filter(base => {
+		//need to put[] on familyName because it's not a parameter it's a string now
+		let filterBase = selectedFamily[familyName].base.filter(base => {
 				alcohol = base.occasion.includes(occasion)
 				console.log('alcohol', alcohol) 
 				return alcohol
@@ -61,11 +62,11 @@ let showCard = (data) => {
 		if (alcoholScale <= 6){
 			
 			selectedBases = [filterBase[base1]]
-			console.log('selected base:', selectedBases)
+			console.log('selected base:', selectedBases[0])
 		} else if (6 < alcoholScale <= 10){
 				 
 			selectedBases = [filterBase[base1], filterBase[base2]]
-			console.log('selected base:', selectedBases)		
+			console.log('selected bases', selectedBases)		
 		}
 			
 			
@@ -89,7 +90,7 @@ let showCard = (data) => {
 									selectedBase.taste.includes('creamy')
 
 				
-					let filterMixer = selectedFamily.mixer.filter(mixer => {
+					let filterMixer = selectedFamily[familyName].mixer.filter(mixer => {
 						let mix = ""
 
 						let mixGroup1 = mixer.taste.includes('acid') || 
