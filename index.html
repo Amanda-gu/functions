@@ -44,18 +44,8 @@
                     <label for="adv-scale">Ready for adventure?</label>
                     <input type="range" id="adv-scale" name="adv-scale" min="0" max="10" value="5">
                 </section>
-         
-            <!-- glasstype -->
-                <!-- <fieldset>
-                        <legend>Choose your glass</legend>
-                        <input checked id="first-option" name="other-option" type="radio" value="first">
-                        <label for="first-option">First</label>
-                        <input id="second-option" name="other-option" type="radio" value="second">
-                        <label for="second-option">Second</label>
-                        <input id="third-option" name="other-option" type="radio" value="third">
-                        <label for="third-option">Third</label>
-                </fieldset> -->
                 
+                <button id="mix" type="mix">Mix it</button>
             <!-- location -->    
                 <!-- <section> -->
                     <!-- geolocation api: https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API/Using_the_Geolocation_API-->
@@ -64,13 +54,11 @@
                     <p id="location"></p>
                 </section> -->
             <!-- buttons -->        
-                <section>
-                    <button id="mix" type="mix">Mix it</button>
-                </section>
             </section>
+          
         <!-- output -->    
-            <output>
-                <dialog id="result-modal">
+  
+            <dialog id="result-modal">
 
                     <h2 id="card-recipe-name"></h2>
 
@@ -83,8 +71,8 @@
                          <button id="close" type="close">close</button>
                     </section>
 
-                </dialog>
-            </output>
+            </dialog>
+
 
 		</form>
 
