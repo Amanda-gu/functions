@@ -265,12 +265,6 @@ mixagainButton.addEventListener('click', () => { // “Listen” for clicks.
 	
 })
 
-fetch('./assets/data.json')
-	.then(response => response.json())
-	.then(data => {
-		showCard(data)
-		console.log(data)
-	})
 
 // Target your form.
 let formElement = document.querySelector('#some-form')
