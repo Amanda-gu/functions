@@ -1543,7 +1543,9 @@
                         "description": "fresh"
                     }
                 ]
-            },
+            }
+        },
+        {
             "collins": {
                 "base": [
                     {
@@ -1881,7 +1883,9 @@
                         "description": "cool"
                     }
                 ]
-            },
+            }
+        },
+        {    
             "daisy": {
                 "base": [
                     {
@@ -2223,6 +2227,7 @@
             }
         }
     ],
+
     "strong": [
         {
             "negroni": {
@@ -2577,7 +2582,9 @@
                         "description": "smoky"
                     }
                 ]
-            },
+            }
+        },
+        {
             "old_fashioned": {
                 "base": [
                     {
@@ -2930,7 +2937,9 @@
                         "description": "aromatic"
                     }
                 ]
-            },
+            }
+        },
+        {
             "martini": {
                 "base": [
                     {
