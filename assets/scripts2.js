@@ -1,6 +1,3 @@
-
-
-
 let mixButton = document.querySelector('#mix')
 let mixagainButton = document.querySelector('#mix-again')
 let resultCard = document.querySelector('#result-modal')
@@ -58,14 +55,34 @@ let showCard = (data) => {
 		if (alcoholScale <= 6){
 			
 			selectedBases = [filterBase[base1]]
-			console.log('selected base:', selectedBase)
+			console.log('selected base:', selectedBases)
 		} else if (6 < alcoholScale <= 10){
 				 
 			selectedBases = [filterBase[base1], filterBase[base2]]
-			console.log('selected base:', selectedBases)
-			
-		
+			console.log('selected base:', selectedBases)		
 		}
+			
+		// let familyName = Object.keys(family)
+		let familyName = Object.keys(selectedFamily).map(key => selectedFamily[key]);
+		console.log('selected family:', familyName)	
+
+		switch(family) {
+			case 'light':
+			console.log('selected family:', familyName)		
+			break;
+			
+			case 'medium':
+			console.log('selected family:', familyName)		
+			break;
+			
+			case 'strong':
+			console.log('selected family:', familyName)		
+			break
+			default:	
+		}
+
+		//family and base are chosen, below is for mixer selection 
+		//data here looks like: Light/Medium/Strong -> family -> base/mixer
 		for (let i = 0; i < selectedBases.length; i++) {
 					selectedBase = selectedBases[i]	
 					
