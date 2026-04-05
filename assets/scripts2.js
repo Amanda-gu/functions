@@ -29,32 +29,31 @@ let showCard = (data2) => {
 	console.log('Adventure Scale:', adventureScale)
 
 
-		
-//this is just some research and thought process
-		//since i have 4 filters, i was not sure how i can make the code work	
-		//trying to understand boolean in js using if/else statements: https://claude.ai/share/e74a5c83-61c0-4e88-9b6f-27dc7947f5df
-		//filter(), https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter	
-		//how to filter in js: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter
-		//here is an example: https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_filter2
-		//i watched this tutorial on how to filter in js: https://www.youtube.com/watch?v=nKglx7dN7Ss	
-		//more about filter: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter
-		//also read about other filtering method like map and reduce and scores but not applying them now as they are too much to digest
-		//i decided to use filter and if/else to connect user input to my database. 
-
-
-
 
 //BASE
 
 	let alcohol = ""
 			//set an empty string
+		let selectedFamily
+		let selectedBase
+
+		let range
+		if (alcoholScale <= 3) {
+			range = data2.light
+		} else if (alcoholScale <=3){
+			range = data2.medium
+		} else if (alcoholScale <=3){
+			range = data2.strong
+		}
 		
-			if (alcoholScale <= 3) {
+		
+		if (alcoholScale <= 3) {
 				let families = data2.light //light
 				let selectedFamilyWrapper = families[Math.floor(Math.random() * families.length)] //light --> spritz
-				let selectedFamily = Object.values(selectedFamilyWrapper)[0]//turn object to array https://dev.to/awaisalwaisy/7-ways-to-convert-objects-into-array-in-javascript-35m4
+				selectedFamily = Object.values(selectedFamilyWrapper)[0]
+				//turn object to arrayso i can slect a random object from the family 
+				//resource: https://dev.to/awaisalwaisy/7-ways-to-convert-objects-into-array-in-javascript-35m4
 				console.log(selectedFamily)
-
 				
 				let filterBase = selectedFamily.base.filter(base => {
 					   //Array.prototype(here is base from data) .filter()
@@ -62,15 +61,53 @@ let showCard = (data2) => {
 					console.log('alcohol', alcohol) 
 					return alcohol
 				})
-				let random1 = Math.floor(Math.random() * filterBase.length)	 
-				let selectedBase = filterBase[random1]
+				let base = Math.floor(Math.random() * filterBase.length)	 
+				selectedBase = filterBase[base]
 				console.log('selected base:', selectedBase)
-			//choose mixer base on the base
-	
 
-		// if (selectedBases.length > 1) {}
-				let filterMixer = selectedFamily.mixer.filter(mixer => {
+			} else if(alcoholScale <= 6){
+
+				let families = data2.medium //light
+				let selectedFamilyWrapper = families[Math.floor(Math.random() * families.length)] //light --> spritz
+				selectedFamily = Object.values(selectedFamilyWrapper)[0]
+				//turn object to arrayso i can slect a random object from the family 
+				//resource: https://dev.to/awaisalwaisy/7-ways-to-convert-objects-into-array-in-javascript-35m4
+				console.log(selectedFamily)
+				
+				let filterBase = selectedFamily.base.filter(base => {
+					   //Array.prototype(here is base from data) .filter()
+					alcohol = base.occasion.includes(occasion)
+					console.log('alcohol', alcohol) 
+					return alcohol
+				})
+				let base = Math.floor(Math.random() * filterBase.length)	 
+				selectedBase = filterBase[base]
+				console.log('selected base:', selectedBase)
+
+			} else if(alcoholScale <= 10){
+				let families = data2.strong //light
+				let selectedFamilyWrapper = families[Math.floor(Math.random() * families.length)] //light --> spritz
+				selectedFamily = Object.values(selectedFamilyWrapper)[0]
+				//turn object to arrayso i can slect a random object from the family 
+				//resource: https://dev.to/awaisalwaisy/7-ways-to-convert-objects-into-array-in-javascript-35m4
+				console.log(selectedFamily)
+				
+				let filterBase = selectedFamily.base.filter(base => {
+					   //Array.prototype(here is base from data) .filter()
+					alcohol = base.occasion.includes(occasion)
+					console.log('alcohol', alcohol) 
+					return alcohol
+				})
+				let base = Math.floor(Math.random() * filterBase.length)
+				let base2 = Math.floor(Math.random() * filterBase.length)	 
+				selectedBase = [filterBase[base], filterBase[base2]]
+				console.log('selected base:', selectedBase)
+
+			} 
+//choose mixer base on the base
+			let filterMixer = selectedFamily.mixer.filter(mixer => {
 						let mix = ""
+
 						if (adventureScale <= 3) {
 							if (
 								selectedBase.taste.includes('sweet') ||
@@ -138,23 +175,26 @@ let showCard = (data2) => {
 						} 
 						return mix //true or false for each line above
 					})
-					let mix1 = Math.floor(Math.random() * filterMixer.length)	 
-					let selectedMixer  = filterMixer[mix1]
+					let mix1 = Math.floor(Math.random() * filterMixer.length)
+					let mix2 = Math.floor(Math.random() * filterMixer.length)		 
+					let selectedMixer  = [filterMixer[mix1], filterMixer[mix2]]
 					//for me to see in console what is chosen
 					console.log('selected mixer', selectedMixer)
 					// console.log('selected garnish', selectedGarnish)
 	
-					let cocktailDescription = 
+			
+			let cocktailDescription = 
 					
-								selectedBase.description 
+					selectedBase.description 
 
-								+ ', with ' + 'a ' +
+					+ ' and ' +
 								
-								selectedMixer.description 
-								;
+					selectedMixer.description 
+					;
 
-			console.log('cocktail description:', cocktailDescription)
+				console.log('cocktail description:', cocktailDescription)
 
+			//add to html
 				let listItem =
 					`		
 							<h3 id="recipe-name">NAME</h4>
@@ -170,14 +210,11 @@ let showCard = (data2) => {
 							<h4>Mixers</h4>
 							<ul>
 								<li>${selectedMixer?.name || ''}</li>
-							</ul>
-
-							
+							</ul>			
 					
 				`
 				//innerHtml so it doesnt add to the list everytime i click
-			ingredientList.innerHTML = listItem
-			} 
+				ingredientList.innerHTML = listItem
 
 			
 
@@ -241,9 +278,9 @@ mixagainButton.addEventListener('click', () => { // “Listen” for clicks.
    //fetch in the click so it only fetches when the button is clicked
 	fetch('./assets/data2.json')
 	.then(response => response.json())
-	.then(data => {
+	.then(data2 => {
 		showCard(data2)
-		console.log(data)
+		console.log(data2)
 	})
 	
 })
