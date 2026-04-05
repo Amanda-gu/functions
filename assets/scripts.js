@@ -168,7 +168,7 @@ let showCard = (data) => {
 			(selectedBases.label || '') + ' ' +
 			(selectedBases.label || '') 
 			
-			+ ' ' + selectedMixer[0].label[0] + ' ' + selectedMixer[1].label[0]
+			+ ' ' + selectedMixer[0].label + ' ' + selectedMixer[1].label
 
 		let cocktailDescription = 
 					
