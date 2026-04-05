@@ -32,78 +32,92 @@ let showCard = (data2) => {
 
 //BASE
 
-	let alcohol = ""
+		let alcohol = ""
 			//set an empty string
 		let selectedFamily
 		let selectedBase
 
-		let range
+//put everythign in ranges so i dont repeat the code
+		let family
 		if (alcoholScale <= 3) {
-			range = data2.light
+			family = data2.light
 		} else if (alcoholScale <=3){
-			range = data2.medium
+			family = data2.medium
 		} else if (alcoholScale <=3){
-			range = data2.strong
+			family = data2.strong
 		}
+
+		let selectedFamilyWrapper = family[Math.floor(Math.random() * family.length)]
+		selectedFamily = Object.values(selectedFamilyWrapper)[0]	
+		//turn object to array so i can select any object(now array) from the family, but here there is only one item in the array, so [0]
+		//resource: https://dev.to/awaisalwaisy/7-ways-to-convert-objects-into-array-in-javascript-35m4
+		let filterBase = selectedFamily.base.filter(base => {
+				alcohol = base.occasion.includes(occasion)
+				console.log('alcohol', alcohol) 
+				return alcohol
+			})
+
+		let base = Math.floor(Math.random() * filterBase.length)	 
+			selectedBase = filterBase[base]
+			console.log('selected base:', selectedBase)
 		
-		
-		if (alcoholScale <= 3) {
-				let families = data2.light //light
-				let selectedFamilyWrapper = families[Math.floor(Math.random() * families.length)] //light --> spritz
-				selectedFamily = Object.values(selectedFamilyWrapper)[0]
-				//turn object to arrayso i can slect a random object from the family 
-				//resource: https://dev.to/awaisalwaisy/7-ways-to-convert-objects-into-array-in-javascript-35m4
-				console.log(selectedFamily)
+		// if (alcoholScale <= 3) {
+		// 		let families = data2.light //light
+		// 		let selectedFamilyWrapper = families[Math.floor(Math.random() * families.length)] //light --> spritz
+		// 		selectedFamily = Object.values(selectedFamilyWrapper)[0]
+		// 		//turn object to arrayso i can slect a random object from the family 
+		// 		//resource: https://dev.to/awaisalwaisy/7-ways-to-convert-objects-into-array-in-javascript-35m4
+		// 		console.log(selectedFamily)
 				
-				let filterBase = selectedFamily.base.filter(base => {
-					   //Array.prototype(here is base from data) .filter()
-					alcohol = base.occasion.includes(occasion)
-					console.log('alcohol', alcohol) 
-					return alcohol
-				})
-				let base = Math.floor(Math.random() * filterBase.length)	 
-				selectedBase = filterBase[base]
-				console.log('selected base:', selectedBase)
+		// 		let filterBase = selectedFamily.base.filter(base => {
+		// 			   //Array.prototype(here is base from data) .filter()
+		// 			alcohol = base.occasion.includes(occasion)
+		// 			console.log('alcohol', alcohol) 
+		// 			return alcohol
+		// 		})
+		// 		let base = Math.floor(Math.random() * filterBase.length)	 
+		// 		selectedBase = filterBase[base]
+		// 		console.log('selected base:', selectedBase)
 
-			} else if(alcoholScale <= 6){
+		// 	} else if(alcoholScale <= 6){
 
-				let families = data2.medium //light
-				let selectedFamilyWrapper = families[Math.floor(Math.random() * families.length)] //light --> spritz
-				selectedFamily = Object.values(selectedFamilyWrapper)[0]
-				//turn object to arrayso i can slect a random object from the family 
-				//resource: https://dev.to/awaisalwaisy/7-ways-to-convert-objects-into-array-in-javascript-35m4
-				console.log(selectedFamily)
+		// 		let families = data2.medium //light
+		// 		let selectedFamilyWrapper = families[Math.floor(Math.random() * families.length)] //light --> spritz
+		// 		selectedFamily = Object.values(selectedFamilyWrapper)[0]
+		// 		//turn object to arrayso i can slect a random object from the family 
+		// 		//resource: https://dev.to/awaisalwaisy/7-ways-to-convert-objects-into-array-in-javascript-35m4
+		// 		console.log(selectedFamily)
 				
-				let filterBase = selectedFamily.base.filter(base => {
-					   //Array.prototype(here is base from data) .filter()
-					alcohol = base.occasion.includes(occasion)
-					console.log('alcohol', alcohol) 
-					return alcohol
-				})
-				let base = Math.floor(Math.random() * filterBase.length)	 
-				selectedBase = filterBase[base]
-				console.log('selected base:', selectedBase)
+		// 		let filterBase = selectedFamily.base.filter(base => {
+		// 			   //Array.prototype(here is base from data) .filter()
+		// 			alcohol = base.occasion.includes(occasion)
+		// 			console.log('alcohol', alcohol) 
+		// 			return alcohol
+		// 		})
+		// 		let base = Math.floor(Math.random() * filterBase.length)	 
+		// 		selectedBase = filterBase[base]
+		// 		console.log('selected base:', selectedBase)
 
-			} else if(alcoholScale <= 10){
-				let families = data2.strong //light
-				let selectedFamilyWrapper = families[Math.floor(Math.random() * families.length)] //light --> spritz
-				selectedFamily = Object.values(selectedFamilyWrapper)[0]
-				//turn object to arrayso i can slect a random object from the family 
-				//resource: https://dev.to/awaisalwaisy/7-ways-to-convert-objects-into-array-in-javascript-35m4
-				console.log(selectedFamily)
+		// 	} else if(alcoholScale <= 10){
+		// 		let families = data2.strong //light
+		// 		let selectedFamilyWrapper = families[Math.floor(Math.random() * families.length)] //light --> spritz
+		// 		selectedFamily = Object.values(selectedFamilyWrapper)[0]
+		// 		//turn object to arrayso i can slect a random object from the family 
+		// 		//resource: https://dev.to/awaisalwaisy/7-ways-to-convert-objects-into-array-in-javascript-35m4
+		// 		console.log(selectedFamily)
 				
-				let filterBase = selectedFamily.base.filter(base => {
-					   //Array.prototype(here is base from data) .filter()
-					alcohol = base.occasion.includes(occasion)
-					console.log('alcohol', alcohol) 
-					return alcohol
-				})
-				let base = Math.floor(Math.random() * filterBase.length)
-				let base2 = Math.floor(Math.random() * filterBase.length)	 
-				selectedBase = [filterBase[base], filterBase[base2]]
-				console.log('selected base:', selectedBase)
+		// 		let filterBase = selectedFamily.base.filter(base => {
+		// 			   //Array.prototype(here is base from data) .filter()
+		// 			alcohol = base.occasion.includes(occasion)
+		// 			console.log('alcohol', alcohol) 
+		// 			return alcohol
+		// 		})
+		// 		let base = Math.floor(Math.random() * filterBase.length)
+		// 		let base2 = Math.floor(Math.random() * filterBase.length)	 
+		// 		selectedBase = [filterBase[base], filterBase[base2]]
+		// 		console.log('selected base:', selectedBase)
 
-			} 
+		// 	} 
 //choose mixer base on the base
 			let filterMixer = selectedFamily.mixer.filter(mixer => {
 						let mix = ""
