@@ -40,14 +40,16 @@ let showCard = (data) => {
 			level = data.strong
 		}
 		console.log('level:', level)
+		//level is an array of families
 
 		selectedFamily = level[Math.floor(Math.random() * level.length)]
+		//select one of the items on the level array
 		
 		//here i need the name of the params/keys
 		//how to convert between object and array https://dev.to/awaisalwaisy/7-ways-to-convert-objects-into-array-in-javascript-35m4
 		familyName = Object.keys(selectedFamily)[0] 
 		//object.keys returns an array from the key, and here is only 1 item in the array, so use [0] to select it
-		//basically turn the array back to an object(not key)
+		//basically [0] turn the array back to an object(not key)
 		familyData = selectedFamily[familyName]
 		//trouble shooting: familyData = selectedFamily.familyName is causing error in the filter()
 		//gemini chat: https://gemini.google.com/share/824c8b7d38df
