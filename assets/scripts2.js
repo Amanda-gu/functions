@@ -153,8 +153,6 @@ let showCard = (data) => {
 				}
 		
 //choose mixer base on the base
-		
-
 	
 		let cocktailLabel =	
 			selectedBases.label ??
