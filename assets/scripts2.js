@@ -29,6 +29,7 @@ let showCard = (data2) => {
 			//set an empty string
 		let selectedFamily
 		let selectedBase
+		let selectedBases
 
 //put everythign in ranges so i dont repeat the code
 		let family
@@ -54,7 +55,15 @@ let showCard = (data2) => {
 			selectedBase = filterBase[base]
 			console.log('selected base:', selectedBase)
 			
-		
+		if (6 < alcoholScale <=10){
+			let base1 = Math.floor(Math.random() * filterBase.length)	 
+			let base2 = Math.floor(Math.random() * filterBase.length)	 
+			selectedBases = [filterBase[base1], filterBase[base2]]
+			console.log('selected base:', selectedBases)		
+		}
+		for (let i = 0; i < selectedBases.length; i++) {
+					selectedBase = selectedBases[i];
+				}
 
 //choose mixer base on the base
 		
