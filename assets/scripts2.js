@@ -8,7 +8,7 @@ let ingredientList = document.getElementById('ingredient-list')
 
 
 //what's inside the result card function
-let showCard = (data2) => {
+let showCard = (data) => {
 
 	//how to get the users selected values: https://www.w3schools.com/JSREF/tryit.asp?filename=tryjsref_select_value   
 	// let name = document.querySelector('#recipe-name').value
@@ -35,11 +35,11 @@ let showCard = (data2) => {
 //put everythign in ranges so i dont repeat the code
 		let family
 		if (alcoholScale <= 3) {
-			family = data2.light
+			family = data.light
 		} else if (alcoholScale <=6){
-			family = data2.medium
+			family = data.medium
 		} else if (alcoholScale <=10){
-			family = data2.strong
+			family = data.strong
 		}
 
 		let selectedFamilyWrapper = family[Math.floor(Math.random() * family.length)]
@@ -221,9 +221,9 @@ mixButton.addEventListener('click', () => { // “Listen” for clicks.
    //fetch in the click so it only fetches when the button is clicked
 	fetch('./assets/data2.json')
 	.then(response => response.json())
-	.then(data2 => {
-		showCard(data2)
-		console.log(data2)
+	.then(data => {
+		showCard(data)
+		console.log(data)
 	})
 	
 })
@@ -243,18 +243,18 @@ mixagainButton.addEventListener('click', () => { // “Listen” for clicks.
    //fetch in the click so it only fetches when the button is clicked
 	fetch('./assets/data2.json')
 	.then(response => response.json())
-	.then(data2 => {
-		showCard(data2)
-		console.log(data2)
+	.then(data => {
+		showCard(data)
+		console.log(data)
 	})
 	
 })
 
-fetch('./assets/data2.json')
+fetch('./assets/data.json')
 	.then(response => response.json())
-	.then(data2 => {
-		showCard(data2)
-		console.log(data2)
+	.then(data => {
+		showCard(data)
+		console.log(data)
 	})
 
 // Target your form.
