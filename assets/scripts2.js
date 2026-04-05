@@ -43,14 +43,15 @@ let showCard = (data) => {
 
 		selectedFamily = level[Math.floor(Math.random() * level.length)]
 		familyName = Object.keys(selectedFamily)[0]
-		//get the string from the key, and family is array so [0] to select the family
-		// familyData = selectedFamily[familyName]
+		//how to convert between object and array https://dev.to/awaisalwaisy/7-ways-to-convert-objects-into-array-in-javascript-35m4
+		//get the string from the key, and selectedFamily is array so [0] to select the family
+		familyData = selectedFamily[familyName]
 
 		console.log('selectedfamily:',selectedFamily)
 		console.log('family name', familyName)
 
 		//need to put[] on familyName because it's not a parameter it's a string now
-		let filterBase = selectedFamily[familyName].base.filter(base => {
+		let filterBase = familyData.base.filter(base => {
 				alcohol = base.occasion.includes(occasion)
 				console.log('alcohol', alcohol) 
 				return alcohol
@@ -90,7 +91,7 @@ let showCard = (data) => {
 									selectedBase.taste.includes('creamy')
 
 				
-					let filterMixer = selectedFamily[familyName].mixer.filter(mixer => {
+					let filterMixer = familyData.mixer.filter(mixer => {
 						let mix = ""
 
 						let mixGroup1 = mixer.taste.includes('acid') || 
