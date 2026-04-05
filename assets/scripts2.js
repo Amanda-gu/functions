@@ -29,6 +29,8 @@ let showCard = (data2) => {
 			//set an empty string
 		let selectedFamily
 		let selectedBase
+		let selectedBases
+		
 
 //put everythign in ranges so i dont repeat the code
 		let family
@@ -54,7 +56,17 @@ let showCard = (data2) => {
 			selectedBase = filterBase[base]
 			console.log('selected base:', selectedBase)
 			
-		
+		// if (6 < alcoholScale <=10){
+		// 	let base1 = Math.floor(Math.random() * filterBase.length)	 
+		// 	let base2 = Math.floor(Math.random() * filterBase.length)	 
+		// 	selectedBases = [filterBase[base1], filterBase[base2]]
+		// 	console.log('selected base:', selectedBases)
+
+		// 	for (let i = 0; i < selectedBases.length; i++) {
+		// 		selectedBase = selectedBases[i];
+		// 	}
+
+		// }
 
 //choose mixer base on the base
 		
@@ -71,7 +83,6 @@ let showCard = (data2) => {
 						selectedBase.taste.includes('herbal') ||
 						selectedBase.taste.includes('creamy')
 
-		
 	
 		let filterMixer = selectedFamily.mixer.filter(mixer => {
 			let mix = ""
@@ -168,9 +179,6 @@ let showCard = (data2) => {
 				`
 			//innerHtml so it doesnt add to the list everytime i click
 			ingredientList.innerHTML = listItem
-
-			
-
 }
 
 
@@ -203,7 +211,7 @@ mixButton.addEventListener('click', () => { // “Listen” for clicks.
 	resultCard.showModal()
 	
    //fetch in the click so it only fetches when the button is clicked
-	fetch('./assets/data.json')
+	fetch('./assets/data2.json')
 	.then(response => response.json())
 	.then(data2 => {
 		showCard(data2)
@@ -233,14 +241,6 @@ mixagainButton.addEventListener('click', () => { // “Listen” for clicks.
 	})
 	
 })
-
-	fetch('./assets/data2.json')
-	.then(response => response.json())
-	.then(data => {
-		showCard(data)
-		console.log(data)
-	})
-	
 
 
 
