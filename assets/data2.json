@@ -1,379 +1,3242 @@
-{   "light":
-        [
-        { "spritz": {
-            "base": [
-                { "name": "Gin", "taste": ["herbal","bitter"], "description": "fresh", "occasion": ["Flexible","Brunch"] },
-                { "name": "Aperitif", "taste": ["bitter","fruity"], "description": "playful", "occasion": ["Flexible","Brunch"] },
-                { "name": "Vermouth", "taste": ["herbal","sweet"], "description": "soft", "occasion": ["Flexible","Casual Weeknight"] },
-                { "name": "White Wine", "taste": ["acid","fruity"], "description": "crisp", "occasion": ["Flexible","Brunch"] },
-                { "name": "Rosé", "taste": ["fruity","acid"], "description": "light", "occasion": ["Flexible","Weekend Fun"] },
-                { "name": "Prosecco", "taste": ["fruity","acid"], "description": "bubbly", "occasion": ["Flexible","Celebrating something"] },
-                { "name": "Champagne", "taste": ["acid"], "description": "elegant", "occasion": ["Flexible","Celebrating something"] },
-                { "name": "Lillet", "taste": ["fruity","herbal"], "description": "perfumed", "occasion": ["Flexible","Date Night"] },
-                { "name": "Sherry", "taste": ["umami","bitter"], "description": "savory", "occasion": ["Flexible","Dinner Party"] },
-                { "name": "Cider", "taste": ["fruity","sweet"], "description": "orchard", "occasion": ["Flexible","Weekend Fun"] },
-                { "name": "Sake", "taste": ["umami"], "description": "silky", "occasion": ["Flexible","Dinner Party"] },
-                { "name": "Soju", "taste": ["sweet"], "description": "light", "occasion": ["Flexible","Casual Weeknight"] },
-                { "name": "Pisco", "taste": ["fruity","herbal"], "description": "aromatic", "occasion": ["Flexible","Date Night"] },
-                { "name": "Amaro (light)", "taste": ["bitter","herbal"], "description": "gentle", "occasion": ["Flexible","Dinner Party"] },
-                { "name": "Fruit Liqueur", "taste": ["sweet","fruity"], "description": "juicy", "occasion": ["Flexible","Weekend Fun"] }
-            ],
-            "mixer": [
-                { "name": "Tonic Water", "taste": ["bitter","acid"], "description": "crisp", "occasion": ["Flexible"] },
-                { "name": "Soda Water", "taste": ["salty"], "description": "light", "occasion": ["Flexible"] },
-                { "name": "Sparkling Water", "taste": ["salty"], "description": "airy", "occasion": ["Flexible"] },
-                { "name": "Lemon Soda", "taste": ["acid","sweet"], "description": "zippy", "occasion": ["Flexible"] },
-                { "name": "Orange Juice", "taste": ["fruity","acid"], "description": "bright", "occasion": ["Flexible","Brunch"] },
-                { "name": "Grapefruit Juice", "taste": ["bitter","acid"], "description": "sharp", "occasion": ["Flexible"] },
-                { "name": "Cranberry Juice", "taste": ["acid","fruity"], "description": "tart", "occasion": ["Flexible"] },
-                { "name": "Pineapple Juice", "taste": ["sweet","fruity"], "description": "tropical", "occasion": ["Flexible"] },
-                { "name": "Iced Tea", "taste": ["bitter"], "description": "cool", "occasion": ["Flexible"] },
-                { "name": "Coconut Water", "taste": ["sweet"], "description": "hydrating", "occasion": ["Flexible"] }
-            ],
-            "garnish": [
-                { "name": "Orange Slice", "taste": ["fruity"], "description": "bright", "occasion": ["Flexible"] },
-                { "name": "Lemon Twist", "taste": ["acid"], "description": "zesty", "occasion": ["Flexible"] },
-                { "name": "Mint Sprig", "taste": ["herbal"], "description": "cool", "occasion": ["Flexible"] },
-                { "name": "Strawberry", "taste": ["sweet","fruity"], "description": "playful", "occasion": ["Flexible"] },
-                { "name": "Cucumber Slice", "taste": ["umami"], "description": "refreshing", "occasion": ["Flexible"] }
-            ]
-        }},
-
-        {"punch": {
-            "base": [
-                { "name": "Rum", "taste": ["sweet","fruity"], "description": "warm", "occasion": ["Flexible","Weekend Fun"] },
-                { "name": "Brandy", "taste": ["fruity","sweet"], "description": "round", "occasion": ["Flexible","Dinner Party"] },
-                { "name": "Gin", "taste": ["herbal"], "description": "bright", "occasion": ["Flexible"] },
-                { "name": "Vodka", "taste": ["sweet"], "description": "neutral", "occasion": ["Flexible"] },
-                { "name": "Tequila", "taste": ["smoky"], "description": "lively", "occasion": ["Flexible"] },
-                { "name": "Cachaça", "taste": ["herbal"], "description": "funky", "occasion": ["Flexible"] },
-                { "name": "Fruit Liqueur", "taste": ["sweet","fruity"], "description": "juicy", "occasion": ["Flexible"] },
-                { "name": "Amaro", "taste": ["bitter"], "description": "deep", "occasion": ["Flexible"] },
-                { "name": "Vermouth", "taste": ["herbal"], "description": "soft", "occasion": ["Flexible"] },
-                { "name": "Sherry", "taste": ["umami"], "description": "dry", "occasion": ["Flexible"] },
-                { "name": "Wine", "taste": ["acid"], "description": "light", "occasion": ["Flexible"] },
-                { "name": "Rosé", "taste": ["fruity"], "description": "easy", "occasion": ["Flexible"] },
-                { "name": "Sake", "taste": ["umami"], "description": "smooth", "occasion": ["Flexible"] },
-                { "name": "Soju", "taste": ["sweet"], "description": "soft", "occasion": ["Flexible"] },
-                { "name": "Pisco", "taste": ["fruity"], "description": "aromatic", "occasion": ["Flexible"] }
-            ],
-            "mixer": [
-                { "name": "Fruit Juice", "taste": ["fruity","acid"], "description": "juicy", "occasion": ["Flexible"] },
-                { "name": "Soda Water", "taste": ["salty"], "description": "light", "occasion": ["Flexible"] },
-                { "name": "Ginger Ale", "taste": ["sweet"], "description": "soft", "occasion": ["Flexible"] },
-                { "name": "Cola", "taste": ["sweet"], "description": "familiar", "occasion": ["Flexible"] },
-                { "name": "Lemonade", "taste": ["acid","sweet"], "description": "bright", "occasion": ["Flexible"] },
-                { "name": "Iced Tea", "taste": ["bitter"], "description": "cool", "occasion": ["Flexible"] },
-                { "name": "Coconut Water", "taste": ["sweet"], "description": "smooth", "occasion": ["Flexible"] },
-                { "name": "Apple Juice", "taste": ["sweet"], "description": "cozy", "occasion": ["Flexible"] },
-                { "name": "Cranberry Juice", "taste": ["acid"], "description": "tart", "occasion": ["Flexible"] },
-                { "name": "Pineapple Juice", "taste": ["sweet"], "description": "tropical", "occasion": ["Flexible"] }
-            ],
-            "garnish": [
-                { "name": "Seasonal Fruit", "taste": ["fruity"], "description": "festive", "occasion": ["Flexible"] },
-                { "name": "Mint", "taste": ["herbal"], "description": "fresh", "occasion": ["Flexible"] },
-                { "name": "Citrus Wheel", "taste": ["acid"], "description": "bright", "occasion": ["Flexible"] },
-                { "name": "Berries", "taste": ["sweet"], "description": "juicy", "occasion": ["Flexible"] },
-                { "name": "Edible Flower", "taste": ["herbal"], "description": "pretty", "occasion": ["Flexible"] }
-            ]
-        }},
-
-        {"highbFlexible": {
-            "base": [
-                { "name": "Whiskey", "taste": ["smoky","sweet"], "description": "smooth", "occasion": ["Flexible","Casual Weeknight"] },
-                { "name": "Vodka", "taste": ["sweet"], "description": "neutral", "occasion": ["Flexible"] },
-                { "name": "Gin", "taste": ["herbal"], "description": "crisp", "occasion": ["Flexible"] },
-                { "name": "Rum", "taste": ["sweet"], "description": "easy", "occasion": ["Flexible"] },
-                { "name": "Tequila", "taste": ["smoky"], "description": "bold", "occasion": ["Flexible"] },
-                { "name": "Mezcal", "taste": ["smoky"], "description": "wild", "occasion": ["Flexible"] },
-                { "name": "Brandy", "taste": ["fruity"], "description": "round", "occasion": ["Flexible"] },
-                { "name": "Soju", "taste": ["sweet"], "description": "light", "occasion": ["Flexible"] },
-                { "name": "Sake", "taste": ["umami"], "description": "smooth", "occasion": ["Flexible"] },
-                { "name": "Amaro", "taste": ["bitter"], "description": "complex", "occasion": ["Flexible"] },
-                { "name": "Vermouth", "taste": ["herbal"], "description": "soft", "occasion": ["Flexible"] },
-                { "name": "Cachaça", "taste": ["herbal"], "description": "bright", "occasion": ["Flexible"] },
-                { "name": "Pisco", "taste": ["fruity"], "description": "aromatic", "occasion": ["Flexible"] },
-                { "name": "Fruit Liqueur", "taste": ["sweet"], "description": "playful", "occasion": ["Flexible"] },
-                { "name": "Aperitif", "taste": ["bitter"], "description": "light", "occasion": ["Flexible"] }
-            ],
-            "mixer": [
-                { "name": "Soda Water", "taste": ["salty"], "description": "crisp", "occasion": ["Flexible"] },
-                { "name": "Ginger Beer", "taste": ["sweet"], "description": "zingy", "occasion": ["Flexible"] },
-                { "name": "Tonic Water", "taste": ["bitter"], "description": "sharp", "occasion": ["Flexible"] },
-                { "name": "Cola", "taste": ["sweet"], "description": "classic", "occasion": ["Flexible"] },
-                { "name": "Lemon Soda", "taste": ["acid"], "description": "zippy", "occasion": ["Flexible"] },
-                { "name": "Orange Soda", "taste": ["sweet"], "description": "bright", "occasion": ["Flexible"] },
-                { "name": "Iced Tea", "taste": ["bitter"], "description": "cool", "occasion": ["Flexible"] },
-                { "name": "Coconut Water", "taste": ["sweet"], "description": "smooth", "occasion": ["Flexible"] },
-                { "name": "Apple Juice", "taste": ["sweet"], "description": "mellow", "occasion": ["Flexible"] },
-                { "name": "Grapefruit Soda", "taste": ["bitter","acid"], "description": "crisp", "occasion": ["Flexible"] }
-            ],
-            "garnish": [
-                { "name": "Lime Wedge", "taste": ["acid"], "description": "zesty", "occasion": ["Flexible"] },
-                { "name": "Lemon Wheel", "taste": ["acid"], "description": "bright", "occasion": ["Flexible"] },
-                { "name": "Mint Sprig", "taste": ["herbal"], "description": "cool", "occasion": ["Flexible"] },
-                { "name": "Cherry", "taste": ["sweet"], "description": "classic", "occasion": ["Flexible"] },
-                { "name": "Orange Peel", "taste": ["fruity"], "description": "aromatic", "occasion": ["Flexible"] }
-            ]
-        }}
-        
-        ],
-    
-    
-    
-    "medium":
-        [
-        {"sour": {
-            "base": [
-                        { "name": "Vodka", "taste": ["clean"], "description": "neutral", "occasion": ["Flexible"] },
-                        { "name": "Gin", "taste": ["herbal"], "description": "bright", "occasion": ["Flexible"] },
-                        { "name": "Rum", "taste": ["sweet"], "description": "soft", "occasion": ["Flexible"] },
-                        { "name": "Tequila", "taste": ["earthy"], "description": "lively", "occasion": ["Flexible"] },
-                        { "name": "Whiskey", "taste": ["smoky","sweet"], "description": "warm", "occasion": ["Flexible"] },
-                        { "name": "Brandy", "taste": ["fruity"], "description": "round", "occasion": ["Flexible"] },
-                        { "name": "Pisco", "taste": ["floral"], "description": "aromatic", "occasion": ["Flexible"] },
-                        { "name": "Cachaça", "taste": ["grassy"], "description": "fresh", "occasion": ["Flexible"] },
-                        { "name": "Mezcal", "taste": ["smoky"], "description": "bold", "occasion": ["Flexible"] },
-                        { "name": "Soju", "taste": ["clean"], "description": "light", "occasion": ["Flexible"] },
-                        { "name": "Sake", "taste": ["umami"], "description": "smooth", "occasion": ["Flexible"] },
-                        { "name": "Fruit Liqueur", "taste": ["sweet"], "description": "juicy", "occasion": ["Flexible"] },
-                        { "name": "Aperitif", "taste": ["bitter"], "description": "playful", "occasion": ["Flexible"] },
-                        { "name": "Amaro", "taste": ["bitter"], "description": "deep", "occasion": ["Flexible"] },
-                        { "name": "Vermouth", "taste": ["herbal"], "description": "soft", "occasion": ["Flexible"] }
-                    ],
-
-                    "mixer": [
-                        { "name": "Lemon Juice", "taste": ["acid"], "description": "sharp" },
-                        { "name": "Lime Juice", "taste": ["acid"], "description": "zesty" },
-                        { "name": "Simple Syrup", "taste": ["sweet"], "description": "smooth" },
-                        { "name": "Honey", "taste": ["sweet"], "description": "round" },
-                        { "name": "Agave", "taste": ["sweet"], "description": "soft" },
-                        { "name": "Orange Juice", "taste": ["fruity"], "description": "bright" },
-                        { "name": "Pineapple Juice", "taste": ["sweet"], "description": "tropical" },
-                        { "name": "Cranberry Juice", "taste": ["acid"], "description": "tart" },
-                        { "name": "Egg White", "taste": ["creamy"], "description": "silky" },
-                        { "name": "Bitters", "taste": ["bitter"], "description": "spiced" }
-                    ],
-
-                    "garnish": [
-                        { "name": "Lemon Wheel", "taste": ["acid"], "description": "bright" },
-                        { "name": "Lime Wheel", "taste": ["acid"], "description": "zesty" },
-                        { "name": "Cherry", "taste": ["sweet"], "description": "classic" },
-                        { "name": "Orange Slice", "taste": ["fruity"], "description": "soft" },
-                        { "name": "Mint Sprig", "taste": ["herbal"], "description": "fresh" }
-                    ]
+{
+    "light": [
+        {
+            "spritz": {
+                "base": [
+                    {
+                        "name": "Gin",
+                        "taste": [
+                            "herbal",
+                            "bitter"
+                        ],
+                        "description": "fresh",
+                        "occasion": [
+                            "Flexible",
+                            "Brunch"
+                        ],
+                        "label": [
+                            "a botanical wanderer"
+                        ]
                     },
-
-        "collins": {
-            "base": [
-                        { "name": "Gin", "taste": ["herbal"], "description": "crisp", "occasion": ["Flexible"] },
-                        { "name": "Vodka", "taste": ["clean"], "description": "neutral", "occasion": ["Flexible"] },
-                        { "name": "Rum", "taste": ["sweet"], "description": "light", "occasion": ["Flexible"] },
-                        { "name": "Tequila", "taste": ["earthy"], "description": "bright", "occasion": ["Flexible"] },
-                        { "name": "Whiskey", "taste": ["smoky"], "description": "smooth", "occasion": ["Flexible"] },
-                        { "name": "Brandy", "taste": ["fruity"], "description": "round", "occasion": ["Flexible"] },
-                        { "name": "Pisco", "taste": ["floral"], "description": "aromatic", "occasion": ["Flexible"] },
-                        { "name": "Cachaça", "taste": ["grassy"], "description": "fresh", "occasion": ["Flexible"] },
-                        { "name": "Soju", "taste": ["clean"], "description": "soft", "occasion": ["Flexible"] },
-                        { "name": "Sake", "taste": ["umami"], "description": "smooth", "occasion": ["Flexible"] },
-                        { "name": "Fruit Liqueur", "taste": ["sweet"], "description": "playful", "occasion": ["Flexible"] },
-                        { "name": "Aperitif", "taste": ["bitter"], "description": "light", "occasion": ["Flexible"] },
-                        { "name": "Amaro", "taste": ["bitter"], "description": "complex", "occasion": ["Flexible"] },
-                        { "name": "Vermouth", "taste": ["herbal"], "description": "soft", "occasion": ["Flexible"] },
-                        { "name": "Mezcal", "taste": ["smoky"], "description": "bold", "occasion": ["Flexible"] }
-                    ],
-
-                    "mixer": [
-                        { "name": "Soda Water", "taste": ["clean"], "description": "light" },
-                        { "name": "Lemon Juice", "taste": ["acid"], "description": "bright" },
-                        { "name": "Simple Syrup", "taste": ["sweet"], "description": "smooth" },
-                        { "name": "Honey", "taste": ["sweet"], "description": "round" },
-                        { "name": "Agave", "taste": ["sweet"], "description": "soft" },
-                        { "name": "Lime Juice", "taste": ["acid"], "description": "zesty" },
-                        { "name": "Orange Juice", "taste": ["fruity"], "description": "soft" },
-                        { "name": "Grapefruit Juice", "taste": ["bitter"], "description": "sharp" },
-                        { "name": "Bitters", "taste": ["bitter"], "description": "spiced" },
-                        { "name": "Iced Tea", "taste": ["bitter"], "description": "cool" }
-                    ],
-
-                    "garnish": [
-                        { "name": "Lemon Wheel", "taste": ["acid"], "description": "bright" },
-                        { "name": "Cherry", "taste": ["sweet"], "description": "classic" },
-                        { "name": "Orange Slice", "taste": ["fruity"], "description": "soft" },
-                        { "name": "Mint", "taste": ["herbal"], "description": "fresh" },
-                        { "name": "Cucumber", "taste": ["clean"], "description": "cool" }
-                    ]
+                    {
+                        "name": "Aperitif",
+                        "taste": [
+                            "bitter",
+                            "fruity"
+                        ],
+                        "description": "playful",
+                        "occasion": [
+                            "Flexible",
+                            "Brunch"
+                        ],
+                        "label": [
+                            "a sun-drunk optimist"
+                        ]
                     },
-
-        "daisy": {
-            "base": [
-                        { "name": "Tequila", "taste": ["earthy"], "description": "lively", "occasion": ["Flexible"] },
-                        { "name": "Gin", "taste": ["herbal"], "description": "bright", "occasion": ["Flexible"] },
-                        { "name": "Vodka", "taste": ["clean"], "description": "neutral", "occasion": ["Flexible"] },
-                        { "name": "Rum", "taste": ["sweet"], "description": "soft", "occasion": ["Flexible"] },
-                        { "name": "Whiskey", "taste": ["smoky"], "description": "warm", "occasion": ["Flexible"] },
-                        { "name": "Brandy", "taste": ["fruity"], "description": "round", "occasion": ["Flexible"] },
-                        { "name": "Pisco", "taste": ["floral"], "description": "aromatic", "occasion": ["Flexible"] },
-                        { "name": "Cachaça", "taste": ["grassy"], "description": "fresh", "occasion": ["Flexible"] },
-                        { "name": "Soju", "taste": ["clean"], "description": "light", "occasion": ["Flexible"] },
-                        { "name": "Sake", "taste": ["umami"], "description": "smooth", "occasion": ["Flexible"] },
-                        { "name": "Fruit Liqueur", "taste": ["sweet"], "description": "juicy", "occasion": ["Flexible"] },
-                        { "name": "Aperitif", "taste": ["bitter"], "description": "playful", "occasion": ["Flexible"] },
-                        { "name": "Amaro", "taste": ["bitter"], "description": "deep", "occasion": ["Flexible"] },
-                        { "name": "Vermouth", "taste": ["herbal"], "description": "soft", "occasion": ["Flexible"] },
-                        { "name": "Mezcal", "taste": ["smoky"], "description": "bold", "occasion": ["Flexible"] }
-                    ],
-
-                    "mixer": [
-                        { "name": "Lime Juice", "taste": ["acid"], "description": "zesty" },
-                        { "name": "Lemon Juice", "taste": ["acid"], "description": "sharp" },
-                        { "name": "Orange Liqueur", "taste": ["sweet","fruity"], "description": "bright" },
-                        { "name": "Simple Syrup", "taste": ["sweet"], "description": "smooth" },
-                        { "name": "Agave", "taste": ["sweet"], "description": "soft" },
-                        { "name": "Honey", "taste": ["sweet"], "description": "round" },
-                        { "name": "Cranberry Juice", "taste": ["acid"], "description": "tart" },
-                        { "name": "Pineapple Juice", "taste": ["sweet"], "description": "tropical" },
-                        { "name": "Grapefruit Juice", "taste": ["bitter"], "description": "sharp" },
-                        { "name": "Bitters", "taste": ["bitter"], "description": "spiced" }
-                    ],
-
-                    "garnish": [
-                        { "name": "Salt Rim", "taste": ["salty"], "description": "sharp" },
-                        { "name": "Lime Wheel", "taste": ["acid"], "description": "zesty" },
-                        { "name": "Orange Slice", "taste": ["fruity"], "description": "bright" },
-                        { "name": "Cherry", "taste": ["sweet"], "description": "classic" },
-                        { "name": "Mint", "taste": ["herbal"], "description": "fresh" }
-                    ]
+                    {
+                        "name": "Vermouth",
+                        "taste": [
+                            "herbal",
+                            "sweet"
+                        ],
+                        "description": "soft",
+                        "occasion": [
+                            "Flexible",
+                            "Casual Weeknight"
+                        ],
+                        "label": [
+                            "a velvet diplomat"
+                        ]
+                    },
+                    {
+                        "name": "White Wine",
+                        "taste": [
+                            "acid",
+                            "fruity"
+                        ],
+                        "description": "crisp",
+                        "occasion": [
+                            "Flexible",
+                            "Brunch"
+                        ],
+                        "label": [
+                            "a crisp conversationalist"
+                        ]
+                    },
+                    {
+                        "name": "Ros\u00e9",
+                        "taste": [
+                            "fruity",
+                            "acid"
+                        ],
+                        "description": "light",
+                        "occasion": [
+                            "Flexible",
+                            "Weekend Fun"
+                        ],
+                        "label": [
+                            "a golden-hour regular"
+                        ]
+                    },
+                    {
+                        "name": "Prosecco",
+                        "taste": [
+                            "fruity",
+                            "acid"
+                        ],
+                        "description": "bubbly",
+                        "occasion": [
+                            "Flexible",
+                            "Celebrating something"
+                        ],
+                        "label": [
+                            "a spontaneous toaster"
+                        ]
+                    },
+                    {
+                        "name": "Champagne",
+                        "taste": [
+                            "acid"
+                        ],
+                        "description": "elegant",
+                        "occasion": [
+                            "Flexible",
+                            "Celebrating something"
+                        ],
+                        "label": [
+                            "a chandelier in a glass"
+                        ]
+                    },
+                    {
+                        "name": "Lillet",
+                        "taste": [
+                            "fruity",
+                            "herbal"
+                        ],
+                        "description": "perfumed",
+                        "occasion": [
+                            "Flexible",
+                            "Date Night"
+                        ],
+                        "label": [
+                            "a floral overachiever"
+                        ]
+                    },
+                    {
+                        "name": "Sherry",
+                        "taste": [
+                            "umami",
+                            "bitter"
+                        ],
+                        "description": "savory",
+                        "occasion": [
+                            "Flexible",
+                            "Dinner Party"
+                        ],
+                        "label": [
+                            "a cellar-aged storyteller"
+                        ]
+                    },
+                    {
+                        "name": "Cider",
+                        "taste": [
+                            "fruity",
+                            "sweet"
+                        ],
+                        "description": "orchard",
+                        "occasion": [
+                            "Flexible",
+                            "Weekend Fun"
+                        ],
+                        "label": [
+                            "an orchard escapee"
+                        ]
+                    },
+                    {
+                        "name": "Sake",
+                        "taste": [
+                            "umami"
+                        ],
+                        "description": "silky",
+                        "occasion": [
+                            "Flexible",
+                            "Dinner Party"
+                        ],
+                        "label": [
+                            "a silk-robed minimalist"
+                        ]
+                    },
+                    {
+                        "name": "Soju",
+                        "taste": [
+                            "sweet"
+                        ],
+                        "description": "light",
+                        "occasion": [
+                            "Flexible",
+                            "Casual Weeknight"
+                        ],
+                        "label": [
+                            "a gentle rule-bender"
+                        ]
+                    },
+                    {
+                        "name": "Pisco",
+                        "taste": [
+                            "fruity",
+                            "herbal"
+                        ],
+                        "description": "aromatic",
+                        "occasion": [
+                            "Flexible",
+                            "Date Night"
+                        ],
+                        "label": [
+                            "a high-altitude romantic"
+                        ]
+                    },
+                    {
+                        "name": "Amaro (light)",
+                        "taste": [
+                            "bitter",
+                            "herbal"
+                        ],
+                        "description": "gentle",
+                        "occasion": [
+                            "Flexible",
+                            "Dinner Party"
+                        ],
+                        "label": [
+                            "a bitter optimist"
+                        ]
+                    },
+                    {
+                        "name": "Fruit Liqueur",
+                        "taste": [
+                            "sweet",
+                            "fruity"
+                        ],
+                        "description": "juicy",
+                        "occasion": [
+                            "Flexible",
+                            "Weekend Fun"
+                        ],
+                        "label": [
+                            "a sugar-dusted hedonist"
+                        ]
                     }
-                }
-        ],
-
-"strong":
-       [ {
-        "negroni": {
-            "base": [
-                        { "name": "Gin", "taste": ["herbal"], "description": "sharp", "occasion": ["Night"] },
-                        { "name": "Bourbon", "taste": ["sweet"], "description": "rich", "occasion": ["Night"] },
-                        { "name": "Rye", "taste": ["spicy"], "description": "dry", "occasion": ["Night"] },
-                        { "name": "Rum", "taste": ["sweet"], "description": "dark", "occasion": ["Night"] },
-                        { "name": "Tequila", "taste": ["earthy"], "description": "bold", "occasion": ["Night"] },
-                        { "name": "Mezcal", "taste": ["smoky"], "description": "wild", "occasion": ["Night"] },
-                        { "name": "Brandy", "taste": ["fruity"], "description": "round", "occasion": ["Night"] },
-                        { "name": "Cognac", "taste": ["fruity"], "description": "lux", "occasion": ["Night"] },
-                        { "name": "Amaro", "taste": ["bitter"], "description": "deep", "occasion": ["Night"] },
-                        { "name": "Aperitif", "taste": ["bitter"], "description": "bright", "occasion": ["Night"] },
-                        { "name": "Vermouth", "taste": ["herbal"], "description": "soft", "occasion": ["Night"] },
-                        { "name": "Sherry", "taste": ["nutty"], "description": "dry", "occasion": ["Night"] },
-                        { "name": "Port", "taste": ["sweet"], "description": "rich", "occasion": ["Night"] },
-                        { "name": "Fruit Liqueur", "taste": ["sweet"], "description": "dense", "occasion": ["Night"] },
-                        { "name": "Herbal Liqueur", "taste": ["herbal"], "description": "intense", "occasion": ["Night"] }
-                    ],
-
-                    "mixer": [
-                        { "name": "Sweet Vermouth", "taste": ["sweet"], "description": "round" },
-                        { "name": "Dry Vermouth", "taste": ["dry"], "description": "sharp" },
-                        { "name": "Campari", "taste": ["bitter"], "description": "bold" },
-                        { "name": "Aperitif", "taste": ["bitter"], "description": "bright" },
-                        { "name": "Amaro", "taste": ["bitter"], "description": "deep" },
-                        { "name": "Bitters", "taste": ["bitter"], "description": "spiced" },
-                        { "name": "Orange Liqueur", "taste": ["sweet"], "description": "soft" },
-                        { "name": "Cherry Liqueur", "taste": ["sweet"], "description": "dark" },
-                        { "name": "Herbal Liqueur", "taste": ["herbal"], "description": "intense" },
-                        { "name": "Coffee Liqueur", "taste": ["bitter"], "description": "roasted" }
-                    ],
-
-                    "garnish": [
-                        { "name": "Orange Peel", "taste": ["fruity"], "description": "aromatic" },
-                        { "name": "Cherry", "taste": ["sweet"], "description": "classic" },
-                        { "name": "Lemon Twist", "taste": ["acid"], "description": "bright" },
-                        { "name": "Olive", "taste": ["salty"], "description": "savory" },
-                        { "name": "Flamed Peel", "taste": ["fruity"], "description": "smoky" }
-                    ]
+                ],
+                "mixer": [
+                    {
+                        "name": "Tonic Water",
+                        "taste": [
+                            "bitter",
+                            "acid"
+                        ],
+                        "description": "crisp",
+                        "occasion": [
+                            "Flexible"
+                        ],
+                        "label": [
+                            "a bitter socialite"
+                        ]
                     },
-
-        "old_fashioned": {
-            "base": [
-                        { "name": "Bourbon", "taste": ["sweet"], "description": "rich", "occasion": ["Night"] },
-                        { "name": "Rye", "taste": ["spicy"], "description": "dry", "occasion": ["Night"] },
-                        { "name": "Rum", "taste": ["sweet"], "description": "dark", "occasion": ["Night"] },
-                        { "name": "Tequila", "taste": ["earthy"], "description": "bold", "occasion": ["Night"] },
-                        { "name": "Mezcal", "taste": ["smoky"], "description": "intense", "occasion": ["Night"] },
-                        { "name": "Brandy", "taste": ["fruity"], "description": "round", "occasion": ["Night"] },
-                        { "name": "Cognac", "taste": ["fruity"], "description": "lux", "occasion": ["Night"] },
-                        { "name": "Amaro", "taste": ["bitter"], "description": "deep", "occasion": ["Night"] },
-                        { "name": "Aperitif", "taste": ["bitter"], "description": "light", "occasion": ["Night"] },
-                        { "name": "Vermouth", "taste": ["herbal"], "description": "soft", "occasion": ["Night"] },
-                        { "name": "Sherry", "taste": ["nutty"], "description": "dry", "occasion": ["Night"] },
-                        { "name": "Port", "taste": ["sweet"], "description": "rich", "occasion": ["Night"] },
-                        { "name": "Fruit Liqueur", "taste": ["sweet"], "description": "dense", "occasion": ["Night"] },
-                        { "name": "Herbal Liqueur", "taste": ["herbal"], "description": "intense", "occasion": ["Night"] },
-                        { "name": "Whiskey", "taste": ["smoky"], "description": "bold", "occasion": ["Night"] }
-                    ],
-
-                    "mixer": [
-                        { "name": "Sugar Cube", "taste": ["sweet"], "description": "classic" },
-                        { "name": "Simple Syrup", "taste": ["sweet"], "description": "smooth" },
-                        { "name": "Honey", "taste": ["sweet"], "description": "round" },
-                        { "name": "Agave", "taste": ["sweet"], "description": "soft" },
-                        { "name": "Maple Syrup", "taste": ["sweet"], "description": "rich" },
-                        { "name": "Bitters", "taste": ["bitter"], "description": "spiced" },
-                        { "name": "Orange Bitters", "taste": ["bitter"], "description": "bright" },
-                        { "name": "Chocolate Bitters", "taste": ["bitter"], "description": "dark" },
-                        { "name": "Coffee Liqueur", "taste": ["bitter"], "description": "roasted" },
-                        { "name": "Amaro", "taste": ["bitter"], "description": "deep" }
-                    ],
-
-                    "garnish": [
-                        { "name": "Orange Peel", "taste": ["fruity"], "description": "aromatic" },
-                        { "name": "Cherry", "taste": ["sweet"], "description": "classic" },
-                        { "name": "Lemon Twist", "taste": ["acid"], "description": "bright" },
-                        { "name": "Cinnamon Stick", "taste": ["spicy"], "description": "warm" },
-                        { "name": "Star Anise", "taste": ["spicy"], "description": "aromatic" }
-                    ]
+                    {
+                        "name": "Soda Water",
+                        "taste": [
+                            "salty"
+                        ],
+                        "description": "light",
+                        "occasion": [
+                            "Flexible"
+                        ],
+                        "label": [
+                            "a neutral peacekeeper"
+                        ]
                     },
-
-        "martini": {
-            "base": [
-                        { "name": "Gin", "taste": ["herbal"], "description": "dry", "occasion": ["Night"] },
-                        { "name": "Vodka", "taste": ["clean"], "description": "sharp", "occasion": ["Night"] },
-                        { "name": "Aquavit", "taste": ["herbal"], "description": "spiced", "occasion": ["Night"] },
-                        { "name": "Soju", "taste": ["clean"], "description": "soft", "occasion": ["Night"] },
-                        { "name": "Sake", "taste": ["umami"], "description": "smooth", "occasion": ["Night"] },
-                        { "name": "Tequila", "taste": ["earthy"], "description": "bold", "occasion": ["Night"] },
-                        { "name": "Mezcal", "taste": ["smoky"], "description": "intense", "occasion": ["Night"] },
-                        { "name": "Brandy", "taste": ["fruity"], "description": "round", "occasion": ["Night"] },
-                        { "name": "Cognac", "taste": ["fruity"], "description": "lux", "occasion": ["Night"] },
-                        { "name": "Rum", "taste": ["sweet"], "description": "soft", "occasion": ["Night"] },
-                        { "name": "Whiskey", "taste": ["smoky"], "description": "bold", "occasion": ["Night"] },
-                        { "name": "Amaro", "taste": ["bitter"], "description": "deep", "occasion": ["Night"] },
-                        { "name": "Aperitif", "taste": ["bitter"], "description": "light", "occasion": ["Night"] },
-                        { "name": "Vermouth", "taste": ["herbal"], "description": "soft", "occasion": ["Night"] },
-                        { "name": "Herbal Liqueur", "taste": ["herbal"], "description": "intense", "occasion": ["Night"] }
-                    ],
-
-                    "mixer": [
-                        { "name": "Dry Vermouth", "taste": ["dry"], "description": "sharp" },
-                        { "name": "Sweet Vermouth", "taste": ["sweet"], "description": "round" },
-                        { "name": "Bianco Vermouth", "taste": ["sweet"], "description": "soft" },
-                        { "name": "Bitters", "taste": ["bitter"], "description": "spiced" },
-                        { "name": "Orange Bitters", "taste": ["bitter"], "description": "bright" },
-                        { "name": "Olive Brine", "taste": ["salty"], "description": "savory" },
-                        { "name": "Herbal Liqueur", "taste": ["herbal"], "description": "intense" },
-                        { "name": "Amaro", "taste": ["bitter"], "description": "deep" },
-                        { "name": "Cherry Liqueur", "taste": ["sweet"], "description": "soft" },
-                        { "name": "Absinthe", "taste": ["herbal"], "description": "wild" }
-                    ],
-
-                    "garnish": [
-                        { "name": "Olive", "taste": ["salty"], "description": "classic" },
-                        { "name": "Lemon Twist", "taste": ["acid"], "description": "bright" },
-                        { "name": "Orange Peel", "taste": ["fruity"], "description": "aromatic" },
-                        { "name": "Onion", "taste": ["savory"], "description": "sharp" },
-                        { "name": "Cherry", "taste": ["sweet"], "description": "playful" }
-                    ]
+                    {
+                        "name": "Sparkling Water",
+                        "taste": [
+                            "salty"
+                        ],
+                        "description": "airy",
+                        "occasion": [
+                            "Flexible"
+                        ],
+                        "label": [
+                            "an airy minimalist"
+                        ]
+                    },
+                    {
+                        "name": "Lemon Soda",
+                        "taste": [
+                            "acid",
+                            "sweet"
+                        ],
+                        "description": "zippy",
+                        "occasion": [
+                            "Flexible"
+                        ],
+                        "label": [
+                            "a tart attention-seeker"
+                        ]
+                    },
+                    {
+                        "name": "Orange Juice",
+                        "taste": [
+                            "fruity",
+                            "acid"
+                        ],
+                        "description": "bright",
+                        "occasion": [
+                            "Flexible",
+                            "Brunch"
+                        ],
+                        "label": [
+                            "a breakfast rule-breaker"
+                        ]
+                    },
+                    {
+                        "name": "Grapefruit Juice",
+                        "taste": [
+                            "bitter",
+                            "acid"
+                        ],
+                        "description": "sharp",
+                        "occasion": [
+                            "Flexible"
+                        ],
+                        "label": [
+                            "a sharp-tongued morning person"
+                        ]
+                    },
+                    {
+                        "name": "Cranberry Juice",
+                        "taste": [
+                            "acid",
+                            "fruity"
+                        ],
+                        "description": "tart",
+                        "occasion": [
+                            "Flexible"
+                        ],
+                        "label": [
+                            "a tart little troublemaker"
+                        ]
+                    },
+                    {
+                        "name": "Pineapple Juice",
+                        "taste": [
+                            "sweet",
+                            "fruity"
+                        ],
+                        "description": "tropical",
+                        "occasion": [
+                            "Flexible"
+                        ],
+                        "label": [
+                            "a tropical oversharer"
+                        ]
+                    },
+                    {
+                        "name": "Iced Tea",
+                        "taste": [
+                            "bitter"
+                        ],
+                        "description": "cool",
+                        "occasion": [
+                            "Flexible"
+                        ],
+                        "label": [
+                            "a porch-sitting philosopher"
+                        ]
+                    },
+                    {
+                        "name": "Coconut Water",
+                        "taste": [
+                            "sweet"
+                        ],
+                        "description": "hydrating",
+                        "occasion": [
+                            "Flexible"
+                        ],
+                        "label": [
+                            "a hydrated idealist"
+                        ]
                     }
-                }
-]
-
-
+                ],
+                "garnish": [
+                    {
+                        "name": "Orange Slice",
+                        "taste": [
+                            "fruity"
+                        ],
+                        "description": "bright",
+                        "occasion": [
+                            "Flexible"
+                        ]
+                    },
+                    {
+                        "name": "Lemon Twist",
+                        "taste": [
+                            "acid"
+                        ],
+                        "description": "zesty",
+                        "occasion": [
+                            "Flexible"
+                        ]
+                    },
+                    {
+                        "name": "Mint Sprig",
+                        "taste": [
+                            "herbal"
+                        ],
+                        "description": "cool",
+                        "occasion": [
+                            "Flexible"
+                        ]
+                    },
+                    {
+                        "name": "Strawberry",
+                        "taste": [
+                            "sweet",
+                            "fruity"
+                        ],
+                        "description": "playful",
+                        "occasion": [
+                            "Flexible"
+                        ]
+                    },
+                    {
+                        "name": "Cucumber Slice",
+                        "taste": [
+                            "umami"
+                        ],
+                        "description": "refreshing",
+                        "occasion": [
+                            "Flexible"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "punch": {
+                "base": [
+                    {
+                        "name": "Rum",
+                        "taste": [
+                            "sweet",
+                            "fruity"
+                        ],
+                        "description": "warm",
+                        "occasion": [
+                            "Flexible",
+                            "Weekend Fun"
+                        ],
+                        "label": [
+                            "a barefoot adventurer"
+                        ]
+                    },
+                    {
+                        "name": "Brandy",
+                        "taste": [
+                            "fruity",
+                            "sweet"
+                        ],
+                        "description": "round",
+                        "occasion": [
+                            "Flexible",
+                            "Dinner Party"
+                        ],
+                        "label": [
+                            "a fireside philosopher"
+                        ]
+                    },
+                    {
+                        "name": "Gin",
+                        "taste": [
+                            "herbal"
+                        ],
+                        "description": "bright",
+                        "occasion": [
+                            "Flexible"
+                        ],
+                        "label": [
+                            "a botanical wanderer"
+                        ]
+                    },
+                    {
+                        "name": "Vodka",
+                        "taste": [
+                            "sweet"
+                        ],
+                        "description": "neutral",
+                        "occasion": [
+                            "Flexible"
+                        ],
+                        "label": [
+                            "a blank canvas with ambition"
+                        ]
+                    },
+                    {
+                        "name": "Tequila",
+                        "taste": [
+                            "smoky"
+                        ],
+                        "description": "lively",
+                        "occasion": [
+                            "Flexible"
+                        ],
+                        "label": [
+                            "a desert night starter"
+                        ]
+                    },
+                    {
+                        "name": "Cacha\u00e7a",
+                        "taste": [
+                            "herbal"
+                        ],
+                        "description": "funky",
+                        "occasion": [
+                            "Flexible"
+                        ],
+                        "label": [
+                            "a barefoot carnival dancer"
+                        ]
+                    },
+                    {
+                        "name": "Fruit Liqueur",
+                        "taste": [
+                            "sweet",
+                            "fruity"
+                        ],
+                        "description": "juicy",
+                        "occasion": [
+                            "Flexible"
+                        ],
+                        "label": [
+                            "a sugar-dusted hedonist"
+                        ]
+                    },
+                    {
+                        "name": "Amaro",
+                        "taste": [
+                            "bitter"
+                        ],
+                        "description": "deep",
+                        "occasion": [
+                            "Flexible"
+                        ],
+                        "label": [
+                            "a brooding intellectual"
+                        ]
+                    },
+                    {
+                        "name": "Vermouth",
+                        "taste": [
+                            "herbal"
+                        ],
+                        "description": "soft",
+                        "occasion": [
+                            "Flexible"
+                        ],
+                        "label": [
+                            "a velvet diplomat"
+                        ]
+                    },
+                    {
+                        "name": "Sherry",
+                        "taste": [
+                            "umami"
+                        ],
+                        "description": "dry",
+                        "occasion": [
+                            "Flexible"
+                        ],
+                        "label": [
+                            "a cellar-aged storyteller"
+                        ]
+                    },
+                    {
+                        "name": "Wine",
+                        "taste": [
+                            "acid"
+                        ],
+                        "description": "light",
+                        "occasion": [
+                            "Flexible"
+                        ],
+                        "label": [
+                            "a table-setting traditionalist"
+                        ]
+                    },
+                    {
+                        "name": "Ros\u00e9",
+                        "taste": [
+                            "fruity"
+                        ],
+                        "description": "easy",
+                        "occasion": [
+                            "Flexible"
+                        ],
+                        "label": [
+                            "a golden-hour regular"
+                        ]
+                    },
+                    {
+                        "name": "Sake",
+                        "taste": [
+                            "umami"
+                        ],
+                        "description": "smooth",
+                        "occasion": [
+                            "Flexible"
+                        ],
+                        "label": [
+                            "a silk-robed minimalist"
+                        ]
+                    },
+                    {
+                        "name": "Soju",
+                        "taste": [
+                            "sweet"
+                        ],
+                        "description": "soft",
+                        "occasion": [
+                            "Flexible"
+                        ],
+                        "label": [
+                            "a gentle rule-bender"
+                        ]
+                    },
+                    {
+                        "name": "Pisco",
+                        "taste": [
+                            "fruity"
+                        ],
+                        "description": "aromatic",
+                        "occasion": [
+                            "Flexible"
+                        ],
+                        "label": [
+                            "a high-altitude romantic"
+                        ]
+                    }
+                ],
+                "mixer": [
+                    {
+                        "name": "Fruit Juice",
+                        "taste": [
+                            "fruity",
+                            "acid"
+                        ],
+                        "description": "juicy",
+                        "occasion": [
+                            "Flexible"
+                        ],
+                        "label": [
+                            "a sun-ripened shapeshifter"
+                        ]
+                    },
+                    {
+                        "name": "Soda Water",
+                        "taste": [
+                            "salty"
+                        ],
+                        "description": "light",
+                        "occasion": [
+                            "Flexible"
+                        ],
+                        "label": [
+                            "a neutral peacekeeper"
+                        ]
+                    },
+                    {
+                        "name": "Ginger Ale",
+                        "taste": [
+                            "sweet"
+                        ],
+                        "description": "soft",
+                        "occasion": [
+                            "Flexible"
+                        ],
+                        "label": [
+                            "a gentle fizz merchant"
+                        ]
+                    },
+                    {
+                        "name": "Cola",
+                        "taste": [
+                            "sweet"
+                        ],
+                        "description": "familiar",
+                        "occasion": [
+                            "Flexible"
+                        ],
+                        "label": [
+                            "a crowd-pleasing classic"
+                        ]
+                    },
+                    {
+                        "name": "Lemonade",
+                        "taste": [
+                            "acid",
+                            "sweet"
+                        ],
+                        "description": "bright",
+                        "occasion": [
+                            "Flexible"
+                        ],
+                        "label": [
+                            "a backyard classic"
+                        ]
+                    },
+                    {
+                        "name": "Iced Tea",
+                        "taste": [
+                            "bitter"
+                        ],
+                        "description": "cool",
+                        "occasion": [
+                            "Flexible"
+                        ],
+                        "label": [
+                            "a porch-sitting philosopher"
+                        ]
+                    },
+                    {
+                        "name": "Coconut Water",
+                        "taste": [
+                            "sweet"
+                        ],
+                        "description": "smooth",
+                        "occasion": [
+                            "Flexible"
+                        ],
+                        "label": [
+                            "a hydrated idealist"
+                        ]
+                    },
+                    {
+                        "name": "Apple Juice",
+                        "taste": [
+                            "sweet"
+                        ],
+                        "description": "cozy",
+                        "occasion": [
+                            "Flexible"
+                        ],
+                        "label": [
+                            "a nostalgic softie"
+                        ]
+                    },
+                    {
+                        "name": "Cranberry Juice",
+                        "taste": [
+                            "acid"
+                        ],
+                        "description": "tart",
+                        "occasion": [
+                            "Flexible"
+                        ],
+                        "label": [
+                            "a tart little troublemaker"
+                        ]
+                    },
+                    {
+                        "name": "Pineapple Juice",
+                        "taste": [
+                            "sweet"
+                        ],
+                        "description": "tropical",
+                        "occasion": [
+                            "Flexible"
+                        ],
+                        "label": [
+                            "a tropical oversharer"
+                        ]
+                    }
+                ],
+                "garnish": [
+                    {
+                        "name": "Seasonal Fruit",
+                        "taste": [
+                            "fruity"
+                        ],
+                        "description": "festive",
+                        "occasion": [
+                            "Flexible"
+                        ]
+                    },
+                    {
+                        "name": "Mint",
+                        "taste": [
+                            "herbal"
+                        ],
+                        "description": "fresh",
+                        "occasion": [
+                            "Flexible"
+                        ]
+                    },
+                    {
+                        "name": "Citrus Wheel",
+                        "taste": [
+                            "acid"
+                        ],
+                        "description": "bright",
+                        "occasion": [
+                            "Flexible"
+                        ]
+                    },
+                    {
+                        "name": "Berries",
+                        "taste": [
+                            "sweet"
+                        ],
+                        "description": "juicy",
+                        "occasion": [
+                            "Flexible"
+                        ]
+                    },
+                    {
+                        "name": "Edible Flower",
+                        "taste": [
+                            "herbal"
+                        ],
+                        "description": "pretty",
+                        "occasion": [
+                            "Flexible"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "highbFlexible": {
+                "base": [
+                    {
+                        "name": "Whiskey",
+                        "taste": [
+                            "smoky",
+                            "sweet"
+                        ],
+                        "description": "smooth",
+                        "occasion": [
+                            "Flexible",
+                            "Casual Weeknight"
+                        ],
+                        "label": [
+                            "a slow-talking charmer"
+                        ]
+                    },
+                    {
+                        "name": "Vodka",
+                        "taste": [
+                            "sweet"
+                        ],
+                        "description": "neutral",
+                        "occasion": [
+                            "Flexible"
+                        ],
+                        "label": [
+                            "a blank canvas with ambition"
+                        ]
+                    },
+                    {
+                        "name": "Gin",
+                        "taste": [
+                            "herbal"
+                        ],
+                        "description": "crisp",
+                        "occasion": [
+                            "Flexible"
+                        ],
+                        "label": [
+                            "a botanical wanderer"
+                        ]
+                    },
+                    {
+                        "name": "Rum",
+                        "taste": [
+                            "sweet"
+                        ],
+                        "description": "easy",
+                        "occasion": [
+                            "Flexible"
+                        ],
+                        "label": [
+                            "a barefoot adventurer"
+                        ]
+                    },
+                    {
+                        "name": "Tequila",
+                        "taste": [
+                            "smoky"
+                        ],
+                        "description": "bold",
+                        "occasion": [
+                            "Flexible"
+                        ],
+                        "label": [
+                            "a desert night starter"
+                        ]
+                    },
+                    {
+                        "name": "Mezcal",
+                        "taste": [
+                            "smoky"
+                        ],
+                        "description": "wild",
+                        "occasion": [
+                            "Flexible"
+                        ],
+                        "label": [
+                            "a campfire whisperer"
+                        ]
+                    },
+                    {
+                        "name": "Brandy",
+                        "taste": [
+                            "fruity"
+                        ],
+                        "description": "round",
+                        "occasion": [
+                            "Flexible"
+                        ],
+                        "label": [
+                            "a fireside philosopher"
+                        ]
+                    },
+                    {
+                        "name": "Soju",
+                        "taste": [
+                            "sweet"
+                        ],
+                        "description": "light",
+                        "occasion": [
+                            "Flexible"
+                        ],
+                        "label": [
+                            "a gentle rule-bender"
+                        ]
+                    },
+                    {
+                        "name": "Sake",
+                        "taste": [
+                            "umami"
+                        ],
+                        "description": "smooth",
+                        "occasion": [
+                            "Flexible"
+                        ],
+                        "label": [
+                            "a silk-robed minimalist"
+                        ]
+                    },
+                    {
+                        "name": "Amaro",
+                        "taste": [
+                            "bitter"
+                        ],
+                        "description": "complex",
+                        "occasion": [
+                            "Flexible"
+                        ],
+                        "label": [
+                            "a brooding intellectual"
+                        ]
+                    },
+                    {
+                        "name": "Vermouth",
+                        "taste": [
+                            "herbal"
+                        ],
+                        "description": "soft",
+                        "occasion": [
+                            "Flexible"
+                        ],
+                        "label": [
+                            "a velvet diplomat"
+                        ]
+                    },
+                    {
+                        "name": "Cacha\u00e7a",
+                        "taste": [
+                            "herbal"
+                        ],
+                        "description": "bright",
+                        "occasion": [
+                            "Flexible"
+                        ],
+                        "label": [
+                            "a barefoot carnival dancer"
+                        ]
+                    },
+                    {
+                        "name": "Pisco",
+                        "taste": [
+                            "fruity"
+                        ],
+                        "description": "aromatic",
+                        "occasion": [
+                            "Flexible"
+                        ],
+                        "label": [
+                            "a high-altitude romantic"
+                        ]
+                    },
+                    {
+                        "name": "Fruit Liqueur",
+                        "taste": [
+                            "sweet"
+                        ],
+                        "description": "playful",
+                        "occasion": [
+                            "Flexible"
+                        ],
+                        "label": [
+                            "a sugar-dusted hedonist"
+                        ]
+                    },
+                    {
+                        "name": "Aperitif",
+                        "taste": [
+                            "bitter"
+                        ],
+                        "description": "light",
+                        "occasion": [
+                            "Flexible"
+                        ],
+                        "label": [
+                            "a sun-drunk optimist"
+                        ]
+                    }
+                ],
+                "mixer": [
+                    {
+                        "name": "Soda Water",
+                        "taste": [
+                            "salty"
+                        ],
+                        "description": "crisp",
+                        "occasion": [
+                            "Flexible"
+                        ],
+                        "label": [
+                            "a neutral peacekeeper"
+                        ]
+                    },
+                    {
+                        "name": "Ginger Beer",
+                        "taste": [
+                            "sweet"
+                        ],
+                        "description": "zingy",
+                        "occasion": [
+                            "Flexible"
+                        ],
+                        "label": [
+                            "a spicy extrovert"
+                        ]
+                    },
+                    {
+                        "name": "Tonic Water",
+                        "taste": [
+                            "bitter"
+                        ],
+                        "description": "sharp",
+                        "occasion": [
+                            "Flexible"
+                        ],
+                        "label": [
+                            "a bitter socialite"
+                        ]
+                    },
+                    {
+                        "name": "Cola",
+                        "taste": [
+                            "sweet"
+                        ],
+                        "description": "classic",
+                        "occasion": [
+                            "Flexible"
+                        ],
+                        "label": [
+                            "a crowd-pleasing classic"
+                        ]
+                    },
+                    {
+                        "name": "Lemon Soda",
+                        "taste": [
+                            "acid"
+                        ],
+                        "description": "zippy",
+                        "occasion": [
+                            "Flexible"
+                        ],
+                        "label": [
+                            "a tart attention-seeker"
+                        ]
+                    },
+                    {
+                        "name": "Orange Soda",
+                        "taste": [
+                            "sweet"
+                        ],
+                        "description": "bright",
+                        "occasion": [
+                            "Flexible"
+                        ],
+                        "label": [
+                            "a candy-bright enthusiast"
+                        ]
+                    },
+                    {
+                        "name": "Iced Tea",
+                        "taste": [
+                            "bitter"
+                        ],
+                        "description": "cool",
+                        "occasion": [
+                            "Flexible"
+                        ],
+                        "label": [
+                            "a porch-sitting philosopher"
+                        ]
+                    },
+                    {
+                        "name": "Coconut Water",
+                        "taste": [
+                            "sweet"
+                        ],
+                        "description": "smooth",
+                        "occasion": [
+                            "Flexible"
+                        ],
+                        "label": [
+                            "a hydrated idealist"
+                        ]
+                    },
+                    {
+                        "name": "Apple Juice",
+                        "taste": [
+                            "sweet"
+                        ],
+                        "description": "mellow",
+                        "occasion": [
+                            "Flexible"
+                        ],
+                        "label": [
+                            "a nostalgic softie"
+                        ]
+                    },
+                    {
+                        "name": "Grapefruit Soda",
+                        "taste": [
+                            "bitter",
+                            "acid"
+                        ],
+                        "description": "crisp",
+                        "occasion": [
+                            "Flexible"
+                        ],
+                        "label": [
+                            "a bitter-sweet flirt"
+                        ]
+                    }
+                ],
+                "garnish": [
+                    {
+                        "name": "Lime Wedge",
+                        "taste": [
+                            "acid"
+                        ],
+                        "description": "zesty",
+                        "occasion": [
+                            "Flexible"
+                        ]
+                    },
+                    {
+                        "name": "Lemon Wheel",
+                        "taste": [
+                            "acid"
+                        ],
+                        "description": "bright",
+                        "occasion": [
+                            "Flexible"
+                        ]
+                    },
+                    {
+                        "name": "Mint Sprig",
+                        "taste": [
+                            "herbal"
+                        ],
+                        "description": "cool",
+                        "occasion": [
+                            "Flexible"
+                        ]
+                    },
+                    {
+                        "name": "Cherry",
+                        "taste": [
+                            "sweet"
+                        ],
+                        "description": "classic",
+                        "occasion": [
+                            "Flexible"
+                        ]
+                    },
+                    {
+                        "name": "Orange Peel",
+                        "taste": [
+                            "fruity"
+                        ],
+                        "description": "aromatic",
+                        "occasion": [
+                            "Flexible"
+                        ]
+                    }
+                ]
+            }
+        }
+    ],
+    "medium": [
+        {
+            "sour": {
+                "base": [
+                    {
+                        "name": "Vodka",
+                        "taste": [
+                            "clean"
+                        ],
+                        "description": "neutral",
+                        "occasion": [
+                            "Flexible"
+                        ],
+                        "label": [
+                            "a blank canvas with ambition"
+                        ]
+                    },
+                    {
+                        "name": "Gin",
+                        "taste": [
+                            "herbal"
+                        ],
+                        "description": "bright",
+                        "occasion": [
+                            "Flexible"
+                        ],
+                        "label": [
+                            "a botanical wanderer"
+                        ]
+                    },
+                    {
+                        "name": "Rum",
+                        "taste": [
+                            "sweet"
+                        ],
+                        "description": "soft",
+                        "occasion": [
+                            "Flexible"
+                        ],
+                        "label": [
+                            "a barefoot adventurer"
+                        ]
+                    },
+                    {
+                        "name": "Tequila",
+                        "taste": [
+                            "earthy"
+                        ],
+                        "description": "lively",
+                        "occasion": [
+                            "Flexible"
+                        ],
+                        "label": [
+                            "a desert night starter"
+                        ]
+                    },
+                    {
+                        "name": "Whiskey",
+                        "taste": [
+                            "smoky",
+                            "sweet"
+                        ],
+                        "description": "warm",
+                        "occasion": [
+                            "Flexible"
+                        ],
+                        "label": [
+                            "a slow-talking charmer"
+                        ]
+                    },
+                    {
+                        "name": "Brandy",
+                        "taste": [
+                            "fruity"
+                        ],
+                        "description": "round",
+                        "occasion": [
+                            "Flexible"
+                        ],
+                        "label": [
+                            "a fireside philosopher"
+                        ]
+                    },
+                    {
+                        "name": "Pisco",
+                        "taste": [
+                            "floral"
+                        ],
+                        "description": "aromatic",
+                        "occasion": [
+                            "Flexible"
+                        ],
+                        "label": [
+                            "a high-altitude romantic"
+                        ]
+                    },
+                    {
+                        "name": "Cacha\u00e7a",
+                        "taste": [
+                            "grassy"
+                        ],
+                        "description": "fresh",
+                        "occasion": [
+                            "Flexible"
+                        ],
+                        "label": [
+                            "a barefoot carnival dancer"
+                        ]
+                    },
+                    {
+                        "name": "Mezcal",
+                        "taste": [
+                            "smoky"
+                        ],
+                        "description": "bold",
+                        "occasion": [
+                            "Flexible"
+                        ],
+                        "label": [
+                            "a campfire whisperer"
+                        ]
+                    },
+                    {
+                        "name": "Soju",
+                        "taste": [
+                            "clean"
+                        ],
+                        "description": "light",
+                        "occasion": [
+                            "Flexible"
+                        ],
+                        "label": [
+                            "a gentle rule-bender"
+                        ]
+                    },
+                    {
+                        "name": "Sake",
+                        "taste": [
+                            "umami"
+                        ],
+                        "description": "smooth",
+                        "occasion": [
+                            "Flexible"
+                        ],
+                        "label": [
+                            "a silk-robed minimalist"
+                        ]
+                    },
+                    {
+                        "name": "Fruit Liqueur",
+                        "taste": [
+                            "sweet"
+                        ],
+                        "description": "juicy",
+                        "occasion": [
+                            "Flexible"
+                        ],
+                        "label": [
+                            "a sugar-dusted hedonist"
+                        ]
+                    },
+                    {
+                        "name": "Aperitif",
+                        "taste": [
+                            "bitter"
+                        ],
+                        "description": "playful",
+                        "occasion": [
+                            "Flexible"
+                        ],
+                        "label": [
+                            "a sun-drunk optimist"
+                        ]
+                    },
+                    {
+                        "name": "Amaro",
+                        "taste": [
+                            "bitter"
+                        ],
+                        "description": "deep",
+                        "occasion": [
+                            "Flexible"
+                        ],
+                        "label": [
+                            "a brooding intellectual"
+                        ]
+                    },
+                    {
+                        "name": "Vermouth",
+                        "taste": [
+                            "herbal"
+                        ],
+                        "description": "soft",
+                        "occasion": [
+                            "Flexible"
+                        ],
+                        "label": [
+                            "a velvet diplomat"
+                        ]
+                    }
+                ],
+                "mixer": [
+                    {
+                        "name": "Lemon Juice",
+                        "taste": [
+                            "acid"
+                        ],
+                        "description": "sharp",
+                        "label": [
+                            "a bright little acidhead"
+                        ]
+                    },
+                    {
+                        "name": "Lime Juice",
+                        "taste": [
+                            "acid"
+                        ],
+                        "description": "zesty",
+                        "label": [
+                            "a zesty overperformer"
+                        ]
+                    },
+                    {
+                        "name": "Simple Syrup",
+                        "taste": [
+                            "sweet"
+                        ],
+                        "description": "smooth",
+                        "label": [
+                            "a smooth operator"
+                        ]
+                    },
+                    {
+                        "name": "Honey",
+                        "taste": [
+                            "sweet"
+                        ],
+                        "description": "round",
+                        "label": [
+                            "a golden people-pleaser"
+                        ]
+                    },
+                    {
+                        "name": "Agave",
+                        "taste": [
+                            "sweet"
+                        ],
+                        "description": "soft",
+                        "label": [
+                            "a desert sweetener"
+                        ]
+                    },
+                    {
+                        "name": "Orange Juice",
+                        "taste": [
+                            "fruity"
+                        ],
+                        "description": "bright",
+                        "label": [
+                            "a breakfast rule-breaker"
+                        ]
+                    },
+                    {
+                        "name": "Pineapple Juice",
+                        "taste": [
+                            "sweet"
+                        ],
+                        "description": "tropical",
+                        "label": [
+                            "a tropical oversharer"
+                        ]
+                    },
+                    {
+                        "name": "Cranberry Juice",
+                        "taste": [
+                            "acid"
+                        ],
+                        "description": "tart",
+                        "label": [
+                            "a tart little troublemaker"
+                        ]
+                    },
+                    {
+                        "name": "Egg White",
+                        "taste": [
+                            "creamy"
+                        ],
+                        "description": "silky",
+                        "label": [
+                            "a silky mood-setter"
+                        ]
+                    },
+                    {
+                        "name": "Bitters",
+                        "taste": [
+                            "bitter"
+                        ],
+                        "description": "spiced",
+                        "label": [
+                            "a spiced understudy"
+                        ]
+                    }
+                ],
+                "garnish": [
+                    {
+                        "name": "Lemon Wheel",
+                        "taste": [
+                            "acid"
+                        ],
+                        "description": "bright"
+                    },
+                    {
+                        "name": "Lime Wheel",
+                        "taste": [
+                            "acid"
+                        ],
+                        "description": "zesty"
+                    },
+                    {
+                        "name": "Cherry",
+                        "taste": [
+                            "sweet"
+                        ],
+                        "description": "classic"
+                    },
+                    {
+                        "name": "Orange Slice",
+                        "taste": [
+                            "fruity"
+                        ],
+                        "description": "soft"
+                    },
+                    {
+                        "name": "Mint Sprig",
+                        "taste": [
+                            "herbal"
+                        ],
+                        "description": "fresh"
+                    }
+                ]
+            },
+            "collins": {
+                "base": [
+                    {
+                        "name": "Gin",
+                        "taste": [
+                            "herbal"
+                        ],
+                        "description": "crisp",
+                        "occasion": [
+                            "Flexible"
+                        ],
+                        "label": [
+                            "a botanical wanderer"
+                        ]
+                    },
+                    {
+                        "name": "Vodka",
+                        "taste": [
+                            "clean"
+                        ],
+                        "description": "neutral",
+                        "occasion": [
+                            "Flexible"
+                        ],
+                        "label": [
+                            "a blank canvas with ambition"
+                        ]
+                    },
+                    {
+                        "name": "Rum",
+                        "taste": [
+                            "sweet"
+                        ],
+                        "description": "light",
+                        "occasion": [
+                            "Flexible"
+                        ],
+                        "label": [
+                            "a barefoot adventurer"
+                        ]
+                    },
+                    {
+                        "name": "Tequila",
+                        "taste": [
+                            "earthy"
+                        ],
+                        "description": "bright",
+                        "occasion": [
+                            "Flexible"
+                        ],
+                        "label": [
+                            "a desert night starter"
+                        ]
+                    },
+                    {
+                        "name": "Whiskey",
+                        "taste": [
+                            "smoky"
+                        ],
+                        "description": "smooth",
+                        "occasion": [
+                            "Flexible"
+                        ],
+                        "label": [
+                            "a slow-talking charmer"
+                        ]
+                    },
+                    {
+                        "name": "Brandy",
+                        "taste": [
+                            "fruity"
+                        ],
+                        "description": "round",
+                        "occasion": [
+                            "Flexible"
+                        ],
+                        "label": [
+                            "a fireside philosopher"
+                        ]
+                    },
+                    {
+                        "name": "Pisco",
+                        "taste": [
+                            "floral"
+                        ],
+                        "description": "aromatic",
+                        "occasion": [
+                            "Flexible"
+                        ],
+                        "label": [
+                            "a high-altitude romantic"
+                        ]
+                    },
+                    {
+                        "name": "Cacha\u00e7a",
+                        "taste": [
+                            "grassy"
+                        ],
+                        "description": "fresh",
+                        "occasion": [
+                            "Flexible"
+                        ],
+                        "label": [
+                            "a barefoot carnival dancer"
+                        ]
+                    },
+                    {
+                        "name": "Soju",
+                        "taste": [
+                            "clean"
+                        ],
+                        "description": "soft",
+                        "occasion": [
+                            "Flexible"
+                        ],
+                        "label": [
+                            "a gentle rule-bender"
+                        ]
+                    },
+                    {
+                        "name": "Sake",
+                        "taste": [
+                            "umami"
+                        ],
+                        "description": "smooth",
+                        "occasion": [
+                            "Flexible"
+                        ],
+                        "label": [
+                            "a silk-robed minimalist"
+                        ]
+                    },
+                    {
+                        "name": "Fruit Liqueur",
+                        "taste": [
+                            "sweet"
+                        ],
+                        "description": "playful",
+                        "occasion": [
+                            "Flexible"
+                        ],
+                        "label": [
+                            "a sugar-dusted hedonist"
+                        ]
+                    },
+                    {
+                        "name": "Aperitif",
+                        "taste": [
+                            "bitter"
+                        ],
+                        "description": "light",
+                        "occasion": [
+                            "Flexible"
+                        ],
+                        "label": [
+                            "a sun-drunk optimist"
+                        ]
+                    },
+                    {
+                        "name": "Amaro",
+                        "taste": [
+                            "bitter"
+                        ],
+                        "description": "complex",
+                        "occasion": [
+                            "Flexible"
+                        ],
+                        "label": [
+                            "a brooding intellectual"
+                        ]
+                    },
+                    {
+                        "name": "Vermouth",
+                        "taste": [
+                            "herbal"
+                        ],
+                        "description": "soft",
+                        "occasion": [
+                            "Flexible"
+                        ],
+                        "label": [
+                            "a velvet diplomat"
+                        ]
+                    },
+                    {
+                        "name": "Mezcal",
+                        "taste": [
+                            "smoky"
+                        ],
+                        "description": "bold",
+                        "occasion": [
+                            "Flexible"
+                        ],
+                        "label": [
+                            "a campfire whisperer"
+                        ]
+                    }
+                ],
+                "mixer": [
+                    {
+                        "name": "Soda Water",
+                        "taste": [
+                            "clean"
+                        ],
+                        "description": "light",
+                        "label": [
+                            "a neutral peacekeeper"
+                        ]
+                    },
+                    {
+                        "name": "Lemon Juice",
+                        "taste": [
+                            "acid"
+                        ],
+                        "description": "bright",
+                        "label": [
+                            "a bright little acidhead"
+                        ]
+                    },
+                    {
+                        "name": "Simple Syrup",
+                        "taste": [
+                            "sweet"
+                        ],
+                        "description": "smooth",
+                        "label": [
+                            "a smooth operator"
+                        ]
+                    },
+                    {
+                        "name": "Honey",
+                        "taste": [
+                            "sweet"
+                        ],
+                        "description": "round",
+                        "label": [
+                            "a golden people-pleaser"
+                        ]
+                    },
+                    {
+                        "name": "Agave",
+                        "taste": [
+                            "sweet"
+                        ],
+                        "description": "soft",
+                        "label": [
+                            "a desert sweetener"
+                        ]
+                    },
+                    {
+                        "name": "Lime Juice",
+                        "taste": [
+                            "acid"
+                        ],
+                        "description": "zesty",
+                        "label": [
+                            "a zesty overperformer"
+                        ]
+                    },
+                    {
+                        "name": "Orange Juice",
+                        "taste": [
+                            "fruity"
+                        ],
+                        "description": "soft",
+                        "label": [
+                            "a breakfast rule-breaker"
+                        ]
+                    },
+                    {
+                        "name": "Grapefruit Juice",
+                        "taste": [
+                            "bitter"
+                        ],
+                        "description": "sharp",
+                        "label": [
+                            "a sharp-tongued morning person"
+                        ]
+                    },
+                    {
+                        "name": "Bitters",
+                        "taste": [
+                            "bitter"
+                        ],
+                        "description": "spiced",
+                        "label": [
+                            "a spiced understudy"
+                        ]
+                    },
+                    {
+                        "name": "Iced Tea",
+                        "taste": [
+                            "bitter"
+                        ],
+                        "description": "cool",
+                        "label": [
+                            "a porch-sitting philosopher"
+                        ]
+                    }
+                ],
+                "garnish": [
+                    {
+                        "name": "Lemon Wheel",
+                        "taste": [
+                            "acid"
+                        ],
+                        "description": "bright"
+                    },
+                    {
+                        "name": "Cherry",
+                        "taste": [
+                            "sweet"
+                        ],
+                        "description": "classic"
+                    },
+                    {
+                        "name": "Orange Slice",
+                        "taste": [
+                            "fruity"
+                        ],
+                        "description": "soft"
+                    },
+                    {
+                        "name": "Mint",
+                        "taste": [
+                            "herbal"
+                        ],
+                        "description": "fresh"
+                    },
+                    {
+                        "name": "Cucumber",
+                        "taste": [
+                            "clean"
+                        ],
+                        "description": "cool"
+                    }
+                ]
+            },
+            "daisy": {
+                "base": [
+                    {
+                        "name": "Tequila",
+                        "taste": [
+                            "earthy"
+                        ],
+                        "description": "lively",
+                        "occasion": [
+                            "Flexible"
+                        ],
+                        "label": [
+                            "a desert night starter"
+                        ]
+                    },
+                    {
+                        "name": "Gin",
+                        "taste": [
+                            "herbal"
+                        ],
+                        "description": "bright",
+                        "occasion": [
+                            "Flexible"
+                        ],
+                        "label": [
+                            "a botanical wanderer"
+                        ]
+                    },
+                    {
+                        "name": "Vodka",
+                        "taste": [
+                            "clean"
+                        ],
+                        "description": "neutral",
+                        "occasion": [
+                            "Flexible"
+                        ],
+                        "label": [
+                            "a blank canvas with ambition"
+                        ]
+                    },
+                    {
+                        "name": "Rum",
+                        "taste": [
+                            "sweet"
+                        ],
+                        "description": "soft",
+                        "occasion": [
+                            "Flexible"
+                        ],
+                        "label": [
+                            "a barefoot adventurer"
+                        ]
+                    },
+                    {
+                        "name": "Whiskey",
+                        "taste": [
+                            "smoky"
+                        ],
+                        "description": "warm",
+                        "occasion": [
+                            "Flexible"
+                        ],
+                        "label": [
+                            "a slow-talking charmer"
+                        ]
+                    },
+                    {
+                        "name": "Brandy",
+                        "taste": [
+                            "fruity"
+                        ],
+                        "description": "round",
+                        "occasion": [
+                            "Flexible"
+                        ],
+                        "label": [
+                            "a fireside philosopher"
+                        ]
+                    },
+                    {
+                        "name": "Pisco",
+                        "taste": [
+                            "floral"
+                        ],
+                        "description": "aromatic",
+                        "occasion": [
+                            "Flexible"
+                        ],
+                        "label": [
+                            "a high-altitude romantic"
+                        ]
+                    },
+                    {
+                        "name": "Cacha\u00e7a",
+                        "taste": [
+                            "grassy"
+                        ],
+                        "description": "fresh",
+                        "occasion": [
+                            "Flexible"
+                        ],
+                        "label": [
+                            "a barefoot carnival dancer"
+                        ]
+                    },
+                    {
+                        "name": "Soju",
+                        "taste": [
+                            "clean"
+                        ],
+                        "description": "light",
+                        "occasion": [
+                            "Flexible"
+                        ],
+                        "label": [
+                            "a gentle rule-bender"
+                        ]
+                    },
+                    {
+                        "name": "Sake",
+                        "taste": [
+                            "umami"
+                        ],
+                        "description": "smooth",
+                        "occasion": [
+                            "Flexible"
+                        ],
+                        "label": [
+                            "a silk-robed minimalist"
+                        ]
+                    },
+                    {
+                        "name": "Fruit Liqueur",
+                        "taste": [
+                            "sweet"
+                        ],
+                        "description": "juicy",
+                        "occasion": [
+                            "Flexible"
+                        ],
+                        "label": [
+                            "a sugar-dusted hedonist"
+                        ]
+                    },
+                    {
+                        "name": "Aperitif",
+                        "taste": [
+                            "bitter"
+                        ],
+                        "description": "playful",
+                        "occasion": [
+                            "Flexible"
+                        ],
+                        "label": [
+                            "a sun-drunk optimist"
+                        ]
+                    },
+                    {
+                        "name": "Amaro",
+                        "taste": [
+                            "bitter"
+                        ],
+                        "description": "deep",
+                        "occasion": [
+                            "Flexible"
+                        ],
+                        "label": [
+                            "a brooding intellectual"
+                        ]
+                    },
+                    {
+                        "name": "Vermouth",
+                        "taste": [
+                            "herbal"
+                        ],
+                        "description": "soft",
+                        "occasion": [
+                            "Flexible"
+                        ],
+                        "label": [
+                            "a velvet diplomat"
+                        ]
+                    },
+                    {
+                        "name": "Mezcal",
+                        "taste": [
+                            "smoky"
+                        ],
+                        "description": "bold",
+                        "occasion": [
+                            "Flexible"
+                        ],
+                        "label": [
+                            "a campfire whisperer"
+                        ]
+                    }
+                ],
+                "mixer": [
+                    {
+                        "name": "Lime Juice",
+                        "taste": [
+                            "acid"
+                        ],
+                        "description": "zesty",
+                        "label": [
+                            "a zesty overperformer"
+                        ]
+                    },
+                    {
+                        "name": "Lemon Juice",
+                        "taste": [
+                            "acid"
+                        ],
+                        "description": "sharp",
+                        "label": [
+                            "a bright little acidhead"
+                        ]
+                    },
+                    {
+                        "name": "Orange Liqueur",
+                        "taste": [
+                            "sweet",
+                            "fruity"
+                        ],
+                        "description": "bright",
+                        "label": [
+                            "a citrus-gilded charmer"
+                        ]
+                    },
+                    {
+                        "name": "Simple Syrup",
+                        "taste": [
+                            "sweet"
+                        ],
+                        "description": "smooth",
+                        "label": [
+                            "a smooth operator"
+                        ]
+                    },
+                    {
+                        "name": "Agave",
+                        "taste": [
+                            "sweet"
+                        ],
+                        "description": "soft",
+                        "label": [
+                            "a desert sweetener"
+                        ]
+                    },
+                    {
+                        "name": "Honey",
+                        "taste": [
+                            "sweet"
+                        ],
+                        "description": "round",
+                        "label": [
+                            "a golden people-pleaser"
+                        ]
+                    },
+                    {
+                        "name": "Cranberry Juice",
+                        "taste": [
+                            "acid"
+                        ],
+                        "description": "tart",
+                        "label": [
+                            "a tart little troublemaker"
+                        ]
+                    },
+                    {
+                        "name": "Pineapple Juice",
+                        "taste": [
+                            "sweet"
+                        ],
+                        "description": "tropical",
+                        "label": [
+                            "a tropical oversharer"
+                        ]
+                    },
+                    {
+                        "name": "Grapefruit Juice",
+                        "taste": [
+                            "bitter"
+                        ],
+                        "description": "sharp",
+                        "label": [
+                            "a sharp-tongued morning person"
+                        ]
+                    },
+                    {
+                        "name": "Bitters",
+                        "taste": [
+                            "bitter"
+                        ],
+                        "description": "spiced",
+                        "label": [
+                            "a spiced understudy"
+                        ]
+                    }
+                ],
+                "garnish": [
+                    {
+                        "name": "Salt Rim",
+                        "taste": [
+                            "salty"
+                        ],
+                        "description": "sharp"
+                    },
+                    {
+                        "name": "Lime Wheel",
+                        "taste": [
+                            "acid"
+                        ],
+                        "description": "zesty"
+                    },
+                    {
+                        "name": "Orange Slice",
+                        "taste": [
+                            "fruity"
+                        ],
+                        "description": "bright"
+                    },
+                    {
+                        "name": "Cherry",
+                        "taste": [
+                            "sweet"
+                        ],
+                        "description": "classic"
+                    },
+                    {
+                        "name": "Mint",
+                        "taste": [
+                            "herbal"
+                        ],
+                        "description": "fresh"
+                    }
+                ]
+            }
+        }
+    ],
+    "strong": [
+        {
+            "negroni": {
+                "base": [
+                    {
+                        "name": "Gin",
+                        "taste": [
+                            "herbal"
+                        ],
+                        "description": "sharp",
+                        "occasion": [
+                            "Night"
+                        ],
+                        "label": [
+                            "a botanical wanderer"
+                        ]
+                    },
+                    {
+                        "name": "Bourbon",
+                        "taste": [
+                            "sweet"
+                        ],
+                        "description": "rich",
+                        "occasion": [
+                            "Night"
+                        ],
+                        "label": [
+                            "a front-porch poet"
+                        ]
+                    },
+                    {
+                        "name": "Rye",
+                        "taste": [
+                            "spicy"
+                        ],
+                        "description": "dry",
+                        "occasion": [
+                            "Night"
+                        ],
+                        "label": [
+                            "a dry-humored contrarian"
+                        ]
+                    },
+                    {
+                        "name": "Rum",
+                        "taste": [
+                            "sweet"
+                        ],
+                        "description": "dark",
+                        "occasion": [
+                            "Night"
+                        ],
+                        "label": [
+                            "a barefoot adventurer"
+                        ]
+                    },
+                    {
+                        "name": "Tequila",
+                        "taste": [
+                            "earthy"
+                        ],
+                        "description": "bold",
+                        "occasion": [
+                            "Night"
+                        ],
+                        "label": [
+                            "a desert night starter"
+                        ]
+                    },
+                    {
+                        "name": "Mezcal",
+                        "taste": [
+                            "smoky"
+                        ],
+                        "description": "wild",
+                        "occasion": [
+                            "Night"
+                        ],
+                        "label": [
+                            "a campfire whisperer"
+                        ]
+                    },
+                    {
+                        "name": "Brandy",
+                        "taste": [
+                            "fruity"
+                        ],
+                        "description": "round",
+                        "occasion": [
+                            "Night"
+                        ],
+                        "label": [
+                            "a fireside philosopher"
+                        ]
+                    },
+                    {
+                        "name": "Cognac",
+                        "taste": [
+                            "fruity"
+                        ],
+                        "description": "lux",
+                        "occasion": [
+                            "Night"
+                        ],
+                        "label": [
+                            "a velvet-lined hedonist"
+                        ]
+                    },
+                    {
+                        "name": "Amaro",
+                        "taste": [
+                            "bitter"
+                        ],
+                        "description": "deep",
+                        "occasion": [
+                            "Night"
+                        ],
+                        "label": [
+                            "a brooding intellectual"
+                        ]
+                    },
+                    {
+                        "name": "Aperitif",
+                        "taste": [
+                            "bitter"
+                        ],
+                        "description": "bright",
+                        "occasion": [
+                            "Night"
+                        ],
+                        "label": [
+                            "a sun-drunk optimist"
+                        ]
+                    },
+                    {
+                        "name": "Vermouth",
+                        "taste": [
+                            "herbal"
+                        ],
+                        "description": "soft",
+                        "occasion": [
+                            "Night"
+                        ],
+                        "label": [
+                            "a velvet diplomat"
+                        ]
+                    },
+                    {
+                        "name": "Sherry",
+                        "taste": [
+                            "nutty"
+                        ],
+                        "description": "dry",
+                        "occasion": [
+                            "Night"
+                        ],
+                        "label": [
+                            "a cellar-aged storyteller"
+                        ]
+                    },
+                    {
+                        "name": "Port",
+                        "taste": [
+                            "sweet"
+                        ],
+                        "description": "rich",
+                        "occasion": [
+                            "Night"
+                        ],
+                        "label": [
+                            "a port-side dreamer"
+                        ]
+                    },
+                    {
+                        "name": "Fruit Liqueur",
+                        "taste": [
+                            "sweet"
+                        ],
+                        "description": "dense",
+                        "occasion": [
+                            "Night"
+                        ],
+                        "label": [
+                            "a sugar-dusted hedonist"
+                        ]
+                    },
+                    {
+                        "name": "Herbal Liqueur",
+                        "taste": [
+                            "herbal"
+                        ],
+                        "description": "intense",
+                        "occasion": [
+                            "Night"
+                        ],
+                        "label": [
+                            "a meadow alchemist"
+                        ]
+                    }
+                ],
+                "mixer": [
+                    {
+                        "name": "Sweet Vermouth",
+                        "taste": [
+                            "sweet"
+                        ],
+                        "description": "round",
+                        "label": [
+                            "a warm-hearted negotiator"
+                        ]
+                    },
+                    {
+                        "name": "Dry Vermouth",
+                        "taste": [
+                            "dry"
+                        ],
+                        "description": "sharp",
+                        "label": [
+                            "a poker-faced minimalist"
+                        ]
+                    },
+                    {
+                        "name": "Campari",
+                        "taste": [
+                            "bitter"
+                        ],
+                        "description": "bold",
+                        "label": [
+                            "a bitter red provocateur"
+                        ]
+                    },
+                    {
+                        "name": "Aperitif",
+                        "taste": [
+                            "bitter"
+                        ],
+                        "description": "bright",
+                        "label": [
+                            "a sun-drunk optimist"
+                        ]
+                    },
+                    {
+                        "name": "Amaro",
+                        "taste": [
+                            "bitter"
+                        ],
+                        "description": "deep",
+                        "label": [
+                            "a brooding intellectual"
+                        ]
+                    },
+                    {
+                        "name": "Bitters",
+                        "taste": [
+                            "bitter"
+                        ],
+                        "description": "spiced",
+                        "label": [
+                            "a spiced understudy"
+                        ]
+                    },
+                    {
+                        "name": "Orange Liqueur",
+                        "taste": [
+                            "sweet"
+                        ],
+                        "description": "soft",
+                        "label": [
+                            "a citrus-gilded charmer"
+                        ]
+                    },
+                    {
+                        "name": "Cherry Liqueur",
+                        "taste": [
+                            "sweet"
+                        ],
+                        "description": "dark",
+                        "label": [
+                            "a deep red romantic"
+                        ]
+                    },
+                    {
+                        "name": "Herbal Liqueur",
+                        "taste": [
+                            "herbal"
+                        ],
+                        "description": "intense",
+                        "label": [
+                            "a meadow alchemist"
+                        ]
+                    },
+                    {
+                        "name": "Coffee Liqueur",
+                        "taste": [
+                            "bitter"
+                        ],
+                        "description": "roasted",
+                        "label": [
+                            "a midnight pick-me-up"
+                        ]
+                    }
+                ],
+                "garnish": [
+                    {
+                        "name": "Orange Peel",
+                        "taste": [
+                            "fruity"
+                        ],
+                        "description": "aromatic"
+                    },
+                    {
+                        "name": "Cherry",
+                        "taste": [
+                            "sweet"
+                        ],
+                        "description": "classic"
+                    },
+                    {
+                        "name": "Lemon Twist",
+                        "taste": [
+                            "acid"
+                        ],
+                        "description": "bright"
+                    },
+                    {
+                        "name": "Olive",
+                        "taste": [
+                            "salty"
+                        ],
+                        "description": "savory"
+                    },
+                    {
+                        "name": "Flamed Peel",
+                        "taste": [
+                            "fruity"
+                        ],
+                        "description": "smoky"
+                    }
+                ]
+            },
+            "old_fashioned": {
+                "base": [
+                    {
+                        "name": "Bourbon",
+                        "taste": [
+                            "sweet"
+                        ],
+                        "description": "rich",
+                        "occasion": [
+                            "Night"
+                        ],
+                        "label": [
+                            "a front-porch poet"
+                        ]
+                    },
+                    {
+                        "name": "Rye",
+                        "taste": [
+                            "spicy"
+                        ],
+                        "description": "dry",
+                        "occasion": [
+                            "Night"
+                        ],
+                        "label": [
+                            "a dry-humored contrarian"
+                        ]
+                    },
+                    {
+                        "name": "Rum",
+                        "taste": [
+                            "sweet"
+                        ],
+                        "description": "dark",
+                        "occasion": [
+                            "Night"
+                        ],
+                        "label": [
+                            "a barefoot adventurer"
+                        ]
+                    },
+                    {
+                        "name": "Tequila",
+                        "taste": [
+                            "earthy"
+                        ],
+                        "description": "bold",
+                        "occasion": [
+                            "Night"
+                        ],
+                        "label": [
+                            "a desert night starter"
+                        ]
+                    },
+                    {
+                        "name": "Mezcal",
+                        "taste": [
+                            "smoky"
+                        ],
+                        "description": "intense",
+                        "occasion": [
+                            "Night"
+                        ],
+                        "label": [
+                            "a campfire whisperer"
+                        ]
+                    },
+                    {
+                        "name": "Brandy",
+                        "taste": [
+                            "fruity"
+                        ],
+                        "description": "round",
+                        "occasion": [
+                            "Night"
+                        ],
+                        "label": [
+                            "a fireside philosopher"
+                        ]
+                    },
+                    {
+                        "name": "Cognac",
+                        "taste": [
+                            "fruity"
+                        ],
+                        "description": "lux",
+                        "occasion": [
+                            "Night"
+                        ],
+                        "label": [
+                            "a velvet-lined hedonist"
+                        ]
+                    },
+                    {
+                        "name": "Amaro",
+                        "taste": [
+                            "bitter"
+                        ],
+                        "description": "deep",
+                        "occasion": [
+                            "Night"
+                        ],
+                        "label": [
+                            "a brooding intellectual"
+                        ]
+                    },
+                    {
+                        "name": "Aperitif",
+                        "taste": [
+                            "bitter"
+                        ],
+                        "description": "light",
+                        "occasion": [
+                            "Night"
+                        ],
+                        "label": [
+                            "a sun-drunk optimist"
+                        ]
+                    },
+                    {
+                        "name": "Vermouth",
+                        "taste": [
+                            "herbal"
+                        ],
+                        "description": "soft",
+                        "occasion": [
+                            "Night"
+                        ],
+                        "label": [
+                            "a velvet diplomat"
+                        ]
+                    },
+                    {
+                        "name": "Sherry",
+                        "taste": [
+                            "nutty"
+                        ],
+                        "description": "dry",
+                        "occasion": [
+                            "Night"
+                        ],
+                        "label": [
+                            "a cellar-aged storyteller"
+                        ]
+                    },
+                    {
+                        "name": "Port",
+                        "taste": [
+                            "sweet"
+                        ],
+                        "description": "rich",
+                        "occasion": [
+                            "Night"
+                        ],
+                        "label": [
+                            "a port-side dreamer"
+                        ]
+                    },
+                    {
+                        "name": "Fruit Liqueur",
+                        "taste": [
+                            "sweet"
+                        ],
+                        "description": "dense",
+                        "occasion": [
+                            "Night"
+                        ],
+                        "label": [
+                            "a sugar-dusted hedonist"
+                        ]
+                    },
+                    {
+                        "name": "Herbal Liqueur",
+                        "taste": [
+                            "herbal"
+                        ],
+                        "description": "intense",
+                        "occasion": [
+                            "Night"
+                        ],
+                        "label": [
+                            "a meadow alchemist"
+                        ]
+                    },
+                    {
+                        "name": "Whiskey",
+                        "taste": [
+                            "smoky"
+                        ],
+                        "description": "bold",
+                        "occasion": [
+                            "Night"
+                        ],
+                        "label": [
+                            "a slow-talking charmer"
+                        ]
+                    }
+                ],
+                "mixer": [
+                    {
+                        "name": "Sugar Cube",
+                        "taste": [
+                            "sweet"
+                        ],
+                        "description": "classic",
+                        "label": [
+                            "a retro sweetmaker"
+                        ]
+                    },
+                    {
+                        "name": "Simple Syrup",
+                        "taste": [
+                            "sweet"
+                        ],
+                        "description": "smooth",
+                        "label": [
+                            "a smooth operator"
+                        ]
+                    },
+                    {
+                        "name": "Honey",
+                        "taste": [
+                            "sweet"
+                        ],
+                        "description": "round",
+                        "label": [
+                            "a golden people-pleaser"
+                        ]
+                    },
+                    {
+                        "name": "Agave",
+                        "taste": [
+                            "sweet"
+                        ],
+                        "description": "soft",
+                        "label": [
+                            "a desert sweetener"
+                        ]
+                    },
+                    {
+                        "name": "Maple Syrup",
+                        "taste": [
+                            "sweet"
+                        ],
+                        "description": "rich",
+                        "label": [
+                            "a Canadian romantic"
+                        ]
+                    },
+                    {
+                        "name": "Bitters",
+                        "taste": [
+                            "bitter"
+                        ],
+                        "description": "spiced",
+                        "label": [
+                            "a spiced understudy"
+                        ]
+                    },
+                    {
+                        "name": "Orange Bitters",
+                        "taste": [
+                            "bitter"
+                        ],
+                        "description": "bright",
+                        "label": [
+                            "a citrus-scented overthinker"
+                        ]
+                    },
+                    {
+                        "name": "Chocolate Bitters",
+                        "taste": [
+                            "bitter"
+                        ],
+                        "description": "dark",
+                        "label": [
+                            "a dark horse"
+                        ]
+                    },
+                    {
+                        "name": "Coffee Liqueur",
+                        "taste": [
+                            "bitter"
+                        ],
+                        "description": "roasted",
+                        "label": [
+                            "a midnight pick-me-up"
+                        ]
+                    },
+                    {
+                        "name": "Amaro",
+                        "taste": [
+                            "bitter"
+                        ],
+                        "description": "deep",
+                        "label": [
+                            "a brooding intellectual"
+                        ]
+                    }
+                ],
+                "garnish": [
+                    {
+                        "name": "Orange Peel",
+                        "taste": [
+                            "fruity"
+                        ],
+                        "description": "aromatic"
+                    },
+                    {
+                        "name": "Cherry",
+                        "taste": [
+                            "sweet"
+                        ],
+                        "description": "classic"
+                    },
+                    {
+                        "name": "Lemon Twist",
+                        "taste": [
+                            "acid"
+                        ],
+                        "description": "bright"
+                    },
+                    {
+                        "name": "Cinnamon Stick",
+                        "taste": [
+                            "spicy"
+                        ],
+                        "description": "warm"
+                    },
+                    {
+                        "name": "Star Anise",
+                        "taste": [
+                            "spicy"
+                        ],
+                        "description": "aromatic"
+                    }
+                ]
+            },
+            "martini": {
+                "base": [
+                    {
+                        "name": "Gin",
+                        "taste": [
+                            "herbal"
+                        ],
+                        "description": "dry",
+                        "occasion": [
+                            "Night"
+                        ],
+                        "label": [
+                            "a botanical wanderer"
+                        ]
+                    },
+                    {
+                        "name": "Vodka",
+                        "taste": [
+                            "clean"
+                        ],
+                        "description": "sharp",
+                        "occasion": [
+                            "Night"
+                        ],
+                        "label": [
+                            "a blank canvas with ambition"
+                        ]
+                    },
+                    {
+                        "name": "Aquavit",
+                        "taste": [
+                            "herbal"
+                        ],
+                        "description": "spiced",
+                        "occasion": [
+                            "Night"
+                        ],
+                        "label": [
+                            "a Scandinavian midnight sun"
+                        ]
+                    },
+                    {
+                        "name": "Soju",
+                        "taste": [
+                            "clean"
+                        ],
+                        "description": "soft",
+                        "occasion": [
+                            "Night"
+                        ],
+                        "label": [
+                            "a gentle rule-bender"
+                        ]
+                    },
+                    {
+                        "name": "Sake",
+                        "taste": [
+                            "umami"
+                        ],
+                        "description": "smooth",
+                        "occasion": [
+                            "Night"
+                        ],
+                        "label": [
+                            "a silk-robed minimalist"
+                        ]
+                    },
+                    {
+                        "name": "Tequila",
+                        "taste": [
+                            "earthy"
+                        ],
+                        "description": "bold",
+                        "occasion": [
+                            "Night"
+                        ],
+                        "label": [
+                            "a desert night starter"
+                        ]
+                    },
+                    {
+                        "name": "Mezcal",
+                        "taste": [
+                            "smoky"
+                        ],
+                        "description": "intense",
+                        "occasion": [
+                            "Night"
+                        ],
+                        "label": [
+                            "a campfire whisperer"
+                        ]
+                    },
+                    {
+                        "name": "Brandy",
+                        "taste": [
+                            "fruity"
+                        ],
+                        "description": "round",
+                        "occasion": [
+                            "Night"
+                        ],
+                        "label": [
+                            "a fireside philosopher"
+                        ]
+                    },
+                    {
+                        "name": "Cognac",
+                        "taste": [
+                            "fruity"
+                        ],
+                        "description": "lux",
+                        "occasion": [
+                            "Night"
+                        ],
+                        "label": [
+                            "a velvet-lined hedonist"
+                        ]
+                    },
+                    {
+                        "name": "Rum",
+                        "taste": [
+                            "sweet"
+                        ],
+                        "description": "soft",
+                        "occasion": [
+                            "Night"
+                        ],
+                        "label": [
+                            "a barefoot adventurer"
+                        ]
+                    },
+                    {
+                        "name": "Whiskey",
+                        "taste": [
+                            "smoky"
+                        ],
+                        "description": "bold",
+                        "occasion": [
+                            "Night"
+                        ],
+                        "label": [
+                            "a slow-talking charmer"
+                        ]
+                    },
+                    {
+                        "name": "Amaro",
+                        "taste": [
+                            "bitter"
+                        ],
+                        "description": "deep",
+                        "occasion": [
+                            "Night"
+                        ],
+                        "label": [
+                            "a brooding intellectual"
+                        ]
+                    },
+                    {
+                        "name": "Aperitif",
+                        "taste": [
+                            "bitter"
+                        ],
+                        "description": "light",
+                        "occasion": [
+                            "Night"
+                        ],
+                        "label": [
+                            "a sun-drunk optimist"
+                        ]
+                    },
+                    {
+                        "name": "Vermouth",
+                        "taste": [
+                            "herbal"
+                        ],
+                        "description": "soft",
+                        "occasion": [
+                            "Night"
+                        ],
+                        "label": [
+                            "a velvet diplomat"
+                        ]
+                    },
+                    {
+                        "name": "Herbal Liqueur",
+                        "taste": [
+                            "herbal"
+                        ],
+                        "description": "intense",
+                        "occasion": [
+                            "Night"
+                        ],
+                        "label": [
+                            "a meadow alchemist"
+                        ]
+                    }
+                ],
+                "mixer": [
+                    {
+                        "name": "Dry Vermouth",
+                        "taste": [
+                            "dry"
+                        ],
+                        "description": "sharp",
+                        "label": [
+                            "a poker-faced minimalist"
+                        ]
+                    },
+                    {
+                        "name": "Sweet Vermouth",
+                        "taste": [
+                            "sweet"
+                        ],
+                        "description": "round",
+                        "label": [
+                            "a warm-hearted negotiator"
+                        ]
+                    },
+                    {
+                        "name": "Bianco Vermouth",
+                        "taste": [
+                            "sweet"
+                        ],
+                        "description": "soft",
+                        "label": [
+                            "a soft-spoken diplomat"
+                        ]
+                    },
+                    {
+                        "name": "Bitters",
+                        "taste": [
+                            "bitter"
+                        ],
+                        "description": "spiced",
+                        "label": [
+                            "a spiced understudy"
+                        ]
+                    },
+                    {
+                        "name": "Orange Bitters",
+                        "taste": [
+                            "bitter"
+                        ],
+                        "description": "bright",
+                        "label": [
+                            "a citrus-scented overthinker"
+                        ]
+                    },
+                    {
+                        "name": "Olive Brine",
+                        "taste": [
+                            "salty"
+                        ],
+                        "description": "savory",
+                        "label": [
+                            "a salty realist"
+                        ]
+                    },
+                    {
+                        "name": "Herbal Liqueur",
+                        "taste": [
+                            "herbal"
+                        ],
+                        "description": "intense",
+                        "label": [
+                            "a meadow alchemist"
+                        ]
+                    },
+                    {
+                        "name": "Amaro",
+                        "taste": [
+                            "bitter"
+                        ],
+                        "description": "deep",
+                        "label": [
+                            "a brooding intellectual"
+                        ]
+                    },
+                    {
+                        "name": "Cherry Liqueur",
+                        "taste": [
+                            "sweet"
+                        ],
+                        "description": "soft",
+                        "label": [
+                            "a deep red romantic"
+                        ]
+                    },
+                    {
+                        "name": "Absinthe",
+                        "taste": [
+                            "herbal"
+                        ],
+                        "description": "wild",
+                        "label": [
+                            "a green-eyed provocateur"
+                        ]
+                    }
+                ],
+                "garnish": [
+                    {
+                        "name": "Olive",
+                        "taste": [
+                            "salty"
+                        ],
+                        "description": "classic"
+                    },
+                    {
+                        "name": "Lemon Twist",
+                        "taste": [
+                            "acid"
+                        ],
+                        "description": "bright"
+                    },
+                    {
+                        "name": "Orange Peel",
+                        "taste": [
+                            "fruity"
+                        ],
+                        "description": "aromatic"
+                    },
+                    {
+                        "name": "Onion",
+                        "taste": [
+                            "savory"
+                        ],
+                        "description": "sharp"
+                    },
+                    {
+                        "name": "Cherry",
+                        "taste": [
+                            "sweet"
+                        ],
+                        "description": "playful"
+                    }
+                ]
+            }
+        }
+    ]
 }
