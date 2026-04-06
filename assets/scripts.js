@@ -182,28 +182,35 @@ let showCard = (data) => {
 		//add to html
 		let listItem =
 				`		
-					<h3 id="recipe-name">${cocktailLabel}</h4>
-						<p>${cocktailDescription}</p>
+					<h3 id="recipe-name">${cocktailLabel}</h3>
+						<p id="recipe-description">${cocktailDescription}</p>
 
-					<h4>Base</h4>
-					<ul id="recipe-base">
-						<li>${selectedBases.name || ''}</li>
-						<li>${selectedBases[0]?.name || ''}</li>
-						<li>${selectedBases[1]?.name || ''}</li>
-					</ul>
+					<section id="base-section">
+						<h4>Base</h4>
+						<ul id="recipe-base">
+							<li>${selectedBases.name || ''}</li>
+							<li>${selectedBases[0]?.name || ''}</li>
+							<li>${selectedBases[1]?.name || ''}</li>
+						</ul>
+					</section>
 
-					<h4 id="recipe-mixers">Mixers</h4>
-					<ul>
-						<li>${selectedMixer[0].name || ''}</li>
-						<li>${selectedMixer[1].name || ''}</li>
-					</ul>
-					
+					<section id="mixer-section">
+						<h4 id="recipe-mixers">Mixers</h4>
+						<ul>
+							<li>${selectedMixer[0].name || ''}</li>
+							<li>${selectedMixer[1].name || ''}</li>
+						</ul>
+					</section>
 
-					<section id="scales">
-					<h4>Strength</h4>
-						<p>${alcoholScale}</p>
-					<h4>Adventure</h4>
-						<p>${adventureScale}</p>
+					<section id="scales-section">
+						<section id="alc-section">
+							<h4>Strength</h4>
+							<p>${alcoholScale}</p>
+						</section>
+						<section id="adv-section">
+							<h4>Adventure</h4>
+							<p>${adventureScale}</p>
+						</section>
 					</section>
 					
 				`
