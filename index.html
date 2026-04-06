@@ -13,54 +13,58 @@
     </head>
 
     <body>
-		
-		<h1>Mixology Lab</h1>
-        <h2>Create your own recipe</h2>
+            <section id="intro">
+                <hgroup>
+                    <h1>Mixology Lab</h1>
+                    <h2>Create your own recipe</h2>
+                </hgroup>
 
-		<form id="some-form">
-            <section id="input">
-           
-            <!-- dropdown -->
-                <section>
-                    <label for="occasion">What is the vibe?</label>
-                    <select id="occasion" name="occasion">
-                        <option>Brunch</option>
-                        <option>Casual Weeknight</option>
-                        <option>Weekend Fun</option>
-                        <option>Dinner Party</option>
-                        <option>Celebrating something</option>
-                        <option>Date Night</option>
-                        <option>Flexible</option>
-                    </select>
-                </section>
+                <form>
+                    <section id="input">
+                    
+                        <!-- dropdown -->
+                            <section>
+                                <label for="occasion">What is the vibe?</label>
+                                <select id="occasion" name="occasion">
+                                    <option>Brunch</option>
+                                    <option>Casual Weeknight</option>
+                                    <option>Weekend Fun</option>
+                                    <option>Dinner Party</option>
+                                    <option>Celebrating something</option>
+                                    <option>Date Night</option>
+                                    <option>Flexible</option>
+                                </select>
+                            </section>
 
-            <!-- 2 sliders -->    
-                <section>
-                    <label for="alc-scale">Something light or a little stronger?</label>
-                    <input type="range" id="alc-scale" name="alc-scale" min="0" max="10" value="5">
-                </section>
+                        <!-- 2 sliders -->    
+                            <section>
+                                <label for="alc-scale">Something light or a little stronger?</label>
+                                <input type="range" id="alc-scale" name="alc-scale" min="0" max="10" value="5">
+                            </section>
 
-                <section>
-                    <label for="adv-scale">Ready for adventure?</label>
-                    <input type="range" id="adv-scale" name="adv-scale" min="0" max="10" value="5">
-                </section>
-                
-                <button id="mix" type="mix">Mix it</button>
-            <!-- location -->    
-                <!-- <section> -->
-                    <!-- geolocation api: https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API/Using_the_Geolocation_API-->
-                    <!-- live example: https://www.w3schools.com/html/tryit.asp?filename=tryhtml5_geolocation -->
-                    <!-- <button id="find-me">Make it match the weather</button>
-                    <p id="location"></p>
-                </section> -->
-            <!-- buttons -->        
-            </section>
-          
+                            <section>
+                                <label for="adv-scale">Ready for adventure?</label>
+                                <input type="range" id="adv-scale" name="adv-scale" min="0" max="10" value="5">
+                            </section>
+                    </section>
+                    
+                    <button id="mix" type="mix">Mix it</button>
+                <!-- location -->    
+                    <!-- <section> -->
+                        <!-- geolocation api: https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API/Using_the_Geolocation_API-->
+                        <!-- live example: https://www.w3schools.com/html/tryit.asp?filename=tryhtml5_geolocation -->
+                        <!-- <button id="find-me">Make it match the weather</button>
+                        <p id="location"></p>
+                    </section> -->
+                <!-- buttons -->                    
+                </form>
+        </section>
+
         <!-- output -->    
   
-            <dialog id="result-modal">
+        <dialog id="result-modal">
 
-                    <h2 id="card-recipe-name"></h2>
+                <h2 id="card-recipe-name"></h2>
 
                     <section id="ingredient-list">
                     </section>
@@ -71,12 +75,6 @@
                          <button id="close" type="close">close</button>
                     </section>
 
-            </dialog>
-
-
-		</form>
-
-
-
+        </dialog>
 	</body>
 </html>
