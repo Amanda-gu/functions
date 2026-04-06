@@ -18,8 +18,10 @@
 
 	--primary-color: #000000;
 	--secondary-color: #ecece9;
+	--third-color: #dbdbd3;
+	--forth-color: #8b8b8b;
 
-	font-size: 130%;
+	font-size: 120%;
 
 }
 body {
@@ -29,7 +31,8 @@ body {
 	height: 100vh;
 	display: flex; 
 	align-items: center;
-	
+	background-color: var(--secondary-color);
+
 	.main-cta, .secondary-cta {
 		border-radius: var(--border-radius);
 		padding-inline: var(--size-2);
@@ -51,13 +54,87 @@ body {
 }
 
 
+#intro, #intro form, #intro form #input section{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+
 #intro {
 	width: 90%;
 	margin: auto;
 	padding: var(--size-3);
 	border-radius: var(--border-radius);
-	border: var(--border-style);
-	background-color: var(--secondary-color);
+	gap: var(--size-4);
+	/* border: var(--border-style); */
+	hgroup{
+
+		display: flex;
+		flex-direction: column;
+		gap: var(--size-1);
+
+		h1{
+			font-family: var(--font-deco);
+			font-size: var(--size-4);
+			line-height: var(--size-4);
+		}
+
+		h2{
+			font-size: var(--size-2);
+			line-height: var(--size-2);
+			opacity: 0.8;
+		}
+	}
+
+	form {
+		#input{
+			gap: var(--size-3);
+			border: var(--border-style);
+			padding: var(--size-1);
+		
+			section{
+				gap: var(--size-1);
+
+				label{
+					font-family: var(--font-mono);
+					text-transform: uppercase;
+					font-size: var(--size-0);
+					color: var(--forth-color);
+					text-align: center;
+				}
+
+				#occasion, #alc-scale, #adv-scale{
+					background-color: var(--third-color);
+					width: 100%;
+				}
+
+				#occasion{
+					text-align: center;
+					font-size: var(--size-1);
+					padding: var(--size-0);
+				}
+
+
+				/* styling the thumb: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_rangeslider */
+				#alc-scale::-webkit-slider-thumb, #adv-scale::-webkit-slider-thumb {
+						appearance: none;
+						width: var(--size-3);
+						height: var(--size-1);
+						background: var(--primary-color);
+						cursor: pointer;
+					}
+			}
+		}
+		
+	}
+
+	@media (width > 1000px) {
+		width: 60%;
+	}
+
+
 }
 
 form {
@@ -75,6 +152,40 @@ form {
 	
 }
 
+#glass-bg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	
+	object-fit: cover;
+	z-index: -1;
+	
+	
+	img{
+		width: 47vw;
+		height: auto;
+	}
+	
+	
+	@media (width > 600px) {
+		
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+		padding-inline: calc(var(--size-4)*5);
+		column-gap: calc(var(--size-4) * 3);
+		row-gap: calc(var(--size-4) * 2);
+
+		img{
+			width: 7vw;
+			height: auto;
+		}
+	}
+
+}
 
 dialog{
 
@@ -83,7 +194,7 @@ dialog{
 	align-items: center;
 	justify-content: center;
 	gap: var(--size-2);
-	background-color: var(--secondary-color);
+	background-color: var(--third-color);
 	pointer-events: none;
 	padding: var(--size-1);
 
@@ -94,6 +205,7 @@ dialog{
 		width: 60%;
 		pointer-events: none;
 		z-index: -1;
+		opacity: 0.4;
 	}
 
 	#card{
@@ -139,7 +251,7 @@ dialog{
 		font-size: var(--size-0);
 		line-height: var(--size-2);
 		text-transform: uppercase;
-		opacity: 0.8;
+		color: var(--forth-color);
 	}
 
 	
@@ -154,6 +266,14 @@ dialog{
 	@media (width > 600px) {
 		&[open] {
 			height: 100vh;
+		}
+
+		#glass{
+			position: absolute;
+			top: 10%;
+			height: 80%;
+			pointer-events: none;
+			z-index: -1;
 		}
 
 	}
