@@ -28,6 +28,7 @@ let showCard = (data) => {
 		let selectedBase
 		let selectedBases
 		let selectedMixer
+		let selectedGarnish
 		let familyName
 
 //put everythign in ranges so i dont repeat the code
@@ -152,11 +153,66 @@ let showCard = (data) => {
 						return mix //true or false for each line above
 						})
 
+					let filterGarnish = familyData.garnish.filter(garnish => {
+						let gar = ""
+
+						let garGroup1 = garnish.taste.includes('acid') || 
+										garnish.taste.includes('sweet') || 
+										garnish.taste.includes('fruity')
+					
+						let garGroup2 = garnish.taste.includes('creamy') || 
+										garnish.taste.includes('bitter') || 
+										garnish.taste.includes('herbal') || 
+										garnish.taste.includes('fruity')
+
+						let garGroup3 = garnish.taste.includes('spicy') || 
+										garnish.taste.includes('smoky') || 
+										garnish.taste.includes('unami')
+
+
+						if (adventureScale <= 3) {
+										if (group1) {
+										gar = garGroup1 || garGroup2
+				
+										} else if (group2) {
+										gar = garGroup2 || garGroup1
+
+										} else if (group3) {
+										gar = garGroup3 || garGroup2
+										}
+
+						} else if (adventureScale <= 6) {
+										if (group1) {
+										gar = garGroup2 || garGroup3
+				
+										} else if (group2) {
+										gar = garGroup3 || garGroup1
+
+										} else if (group3) {
+										gar = garGroup1 || garGroup2
+										}
+
+						} else if (adventureScale <= 10){ 
+										if (group1) {
+										gar = garGroup3 || garGroup2
+				
+										} else if (group2) {
+										gar = garGroup1 || garGroup2
+
+										} else if (group3) {
+										gar = garGroup2 || garGroup3
+										}
+						}
+						return gar //true or false for each line above
+						})
+
 					let mix1 = Math.floor(Math.random() * filterMixer.length)
 					let mix2 = Math.floor(Math.random() * filterMixer.length)		 
 					selectedMixer = [filterMixer[mix1], filterMixer[mix2]]
 								//for me to see in console what is chosen
+					selectedGarnish = filterGarnish[Math.floor(Math.random() * filterGarnish.length)]
 					console.log('selected mixer', selectedMixer)
+					console.log('selected garnish', selectedGarnish)
 					// console.log('selected garnish', selectedGarnish)
 				}
 		
@@ -199,6 +255,13 @@ let showCard = (data) => {
 						<ul>
 							<li>${selectedMixer[0].name || ''}</li>
 							<li>${selectedMixer[1].name || ''}</li>
+						</ul>
+					</section>
+
+					<section id="garnish-section">
+						<h3 id="recipe-garnish">Garnish</h3>
+						<ul>
+							<li>${selectedGarnish.name || ''}</li>
 						</ul>
 					</section>
 

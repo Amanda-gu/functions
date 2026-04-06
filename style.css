@@ -7,10 +7,10 @@
 	--size-1: 1rem;
 	--size-2: calc((var(--size-1) * 1.2));
 	--size-3: calc((var(--size-1) * 1.8));
-	--size-4: calc((var(--size-1) * 2v));
+	--size-4: calc((var(--size-1) * 2));
 
 	--border-radius:0 ;
-	--border-style: dashed var(--primary-color) 0.1rem;
+	--border-style: dashed var(--primary-color) 0.08rem;
 
 	--font-mono: "attribute-mono", sans-serif;
 	--font-serif: "legitima", serif;
@@ -19,7 +19,7 @@
 	--primary-color: #000000;
 	--secondary-color: #ecece9;
 
-	font-size: 120%;
+	font-size: 130%;
 
 }
 body {
@@ -111,9 +111,11 @@ dialog{
 				font-family: var(--font-mono);
 				font-size: var(--size-0);
 				line-height: var(--size-2);
+				text-transform: uppercase;
+				opacity: 0.5;
 			}
 
-			#base-section, #mixer-section, #scales-section{
+			#base-section, #mixer-section,#garnish-section, #scales-section{
 				display: flex;
 				flex-direction: column;
 				gap: 0;
