@@ -29,26 +29,27 @@ body {
 	height: 100vh;
 	display: flex; 
 	align-items: center;
+	
+	.main-cta, .secondary-cta {
+		border-radius: var(--border-radius);
+		padding-inline: var(--size-2);
+		padding-block: var(--size-0);
+		width: fit-content;
+		font-weight: bold;
+	}
+	
+	.main-cta {
+		background-color: var(--primary-color);
+		color: var(--secondary-color);
+	}
+	
+	.secondary-cta{
+		background-color: var(--secondary-color);
+		border: var(--border-style);
+		color: var(--primary-color);
+	}
 }
 
-.main-cta, .secondary-cta {
-	border-radius: var(--border-radius);
-	padding-inline: var(--size-2);
-	padding-block: var(--size-0);
-	width: fit-content;
-	font-weight: bold;
-}
-
-.main-cta {
-	background-color: var(--primary-color);
-	color: var(--secondary-color);
-}
-
-.secondary-cta{
-	background-color: var(--secondary-color);
-	border: var(--border-style);
-	color: var(--primary-color);
-}
 
 #intro {
 	width: 90%;
