@@ -7,12 +7,15 @@
                         "name": "Gin",
                         "taste": [
                             "herbal",
-                            "bitter"
+                            "bitter",
+                            "floral"
                         ],
                         "description": "fresh",
                         "occasion": [
                             "Flexible",
-                            "Brunch"
+                            "Brunch",
+                            "Weekend Fun",
+                            "Date Night"
                         ],
                         "label": "botanist"
                     },
@@ -20,12 +23,14 @@
                         "name": "Aperitif",
                         "taste": [
                             "bitter",
-                            "fruity"
+                            "fruity",
+                            "herbal"
                         ],
                         "description": "playful",
                         "occasion": [
                             "Flexible",
-                            "Brunch"
+                            "Brunch",
+                            "Weekend Fun"
                         ],
                         "label": "optimist"
                     },
@@ -33,12 +38,14 @@
                         "name": "Vermouth",
                         "taste": [
                             "herbal",
-                            "sweet"
+                            "sweet",
+                            "spicy"
                         ],
                         "description": "soft",
                         "occasion": [
                             "Flexible",
-                            "Casual Weeknight"
+                            "Casual Weeknight",
+                            "Date Night"
                         ],
                         "label": "diplomat"
                     },
@@ -46,25 +53,29 @@
                         "name": "White Wine",
                         "taste": [
                             "acid",
-                            "fruity"
+                            "fruity",
+                            "floral"
                         ],
                         "description": "crisp",
                         "occasion": [
                             "Flexible",
-                            "Brunch"
+                            "Brunch",
+                            "Dinner Party"
                         ],
                         "label": "orator"
                     },
                     {
-                        "name": "Rosé",
+                        "name": "Ros\u00e9",
                         "taste": [
                             "fruity",
-                            "acid"
+                            "acid",
+                            "floral"
                         ],
                         "description": "light",
                         "occasion": [
                             "Flexible",
-                            "Weekend Fun"
+                            "Weekend Fun",
+                            "Brunch"
                         ],
                         "label": "dusk"
                     },
@@ -72,12 +83,14 @@
                         "name": "Prosecco",
                         "taste": [
                             "fruity",
-                            "acid"
+                            "acid",
+                            "floral"
                         ],
                         "description": "bubbly",
                         "occasion": [
                             "Flexible",
-                            "Celebrating something"
+                            "Celebrating something",
+                            "Brunch"
                         ],
                         "label": "toaster"
                     },
@@ -85,12 +98,14 @@
                         "name": "Champagne",
                         "taste": [
                             "acid",
-                            "fruity"
+                            "fruity",
+                            "floral"
                         ],
                         "description": "elegant",
                         "occasion": [
                             "Flexible",
-                            "Celebrating something"
+                            "Celebrating something",
+                            "Date Night"
                         ],
                         "label": "chandelier"
                     },
@@ -98,12 +113,14 @@
                         "name": "Lillet",
                         "taste": [
                             "fruity",
-                            "herbal"
+                            "herbal",
+                            "floral"
                         ],
                         "description": "perfumed",
                         "occasion": [
                             "Flexible",
-                            "Date Night"
+                            "Date Night",
+                            "Dinner Party"
                         ],
                         "label": "romantic"
                     },
@@ -111,12 +128,14 @@
                         "name": "Sherry",
                         "taste": [
                             "umami",
-                            "bitter"
+                            "bitter",
+                            "nutty"
                         ],
                         "description": "savory",
                         "occasion": [
                             "Flexible",
-                            "Dinner Party"
+                            "Dinner Party",
+                            "Casual Weeknight"
                         ],
                         "label": "archivist"
                     },
@@ -124,12 +143,14 @@
                         "name": "Cider",
                         "taste": [
                             "fruity",
-                            "sweet"
+                            "sweet",
+                            "acid"
                         ],
                         "description": "orchard",
                         "occasion": [
                             "Flexible",
-                            "Weekend Fun"
+                            "Weekend Fun",
+                            "Brunch"
                         ],
                         "label": "escapee"
                     },
@@ -137,12 +158,14 @@
                         "name": "Sake",
                         "taste": [
                             "umami",
-                            "clean"
+                            "clean",
+                            "floral"
                         ],
                         "description": "silky",
                         "occasion": [
                             "Flexible",
-                            "Dinner Party"
+                            "Dinner Party",
+                            "Date Night"
                         ],
                         "label": "pared"
                     },
@@ -150,12 +173,14 @@
                         "name": "Soju",
                         "taste": [
                             "sweet",
-                            "clean"
+                            "clean",
+                            "floral"
                         ],
                         "description": "light",
                         "occasion": [
                             "Flexible",
-                            "Casual Weeknight"
+                            "Casual Weeknight",
+                            "Weekend Fun"
                         ],
                         "label": "maverick"
                     },
@@ -163,12 +188,14 @@
                         "name": "Pisco",
                         "taste": [
                             "fruity",
-                            "herbal"
+                            "herbal",
+                            "floral"
                         ],
                         "description": "aromatic",
                         "occasion": [
                             "Flexible",
-                            "Date Night"
+                            "Date Night",
+                            "Dinner Party"
                         ],
                         "label": "idealist"
                     },
@@ -176,12 +203,14 @@
                         "name": "Amaro (light)",
                         "taste": [
                             "bitter",
-                            "herbal"
+                            "herbal",
+                            "spicy"
                         ],
                         "description": "gentle",
                         "occasion": [
                             "Flexible",
-                            "Dinner Party"
+                            "Dinner Party",
+                            "Casual Weeknight"
                         ],
                         "label": "skeptic"
                     },
@@ -189,12 +218,14 @@
                         "name": "Fruit Liqueur",
                         "taste": [
                             "sweet",
-                            "fruity"
+                            "fruity",
+                            "floral"
                         ],
                         "description": "juicy",
                         "occasion": [
                             "Flexible",
-                            "Weekend Fun"
+                            "Weekend Fun",
+                            "Celebrating something"
                         ],
                         "label": "hedonist"
                     }
@@ -204,7 +235,8 @@
                         "name": "Tonic Water",
                         "taste": [
                             "bitter",
-                            "acid"
+                            "acid",
+                            "herbal"
                         ],
                         "description": "crisp",
                         "occasion": [
@@ -216,7 +248,8 @@
                         "name": "Soda Water",
                         "taste": [
                             "salty",
-                            "clean"
+                            "clean",
+                            "acid"
                         ],
                         "description": "light",
                         "occasion": [
@@ -228,7 +261,8 @@
                         "name": "Sparkling Water",
                         "taste": [
                             "salty",
-                            "clean"
+                            "clean",
+                            "acid"
                         ],
                         "description": "airy",
                         "occasion": [
@@ -240,7 +274,8 @@
                         "name": "Lemon Soda",
                         "taste": [
                             "acid",
-                            "sweet"
+                            "sweet",
+                            "fruity"
                         ],
                         "description": "zippy",
                         "occasion": [
@@ -252,7 +287,8 @@
                         "name": "Orange Juice",
                         "taste": [
                             "fruity",
-                            "acid"
+                            "acid",
+                            "sweet"
                         ],
                         "description": "bright",
                         "occasion": [
@@ -265,7 +301,8 @@
                         "name": "Grapefruit Juice",
                         "taste": [
                             "bitter",
-                            "acid"
+                            "acid",
+                            "fruity"
                         ],
                         "description": "sharp",
                         "occasion": [
@@ -277,7 +314,8 @@
                         "name": "Cranberry Juice",
                         "taste": [
                             "acid",
-                            "fruity"
+                            "fruity",
+                            "sweet"
                         ],
                         "description": "tart",
                         "occasion": [
@@ -289,7 +327,8 @@
                         "name": "Pineapple Juice",
                         "taste": [
                             "sweet",
-                            "fruity"
+                            "fruity",
+                            "acid"
                         ],
                         "description": "tropical",
                         "occasion": [
@@ -301,7 +340,8 @@
                         "name": "Iced Tea",
                         "taste": [
                             "bitter",
-                            "sweet"
+                            "sweet",
+                            "herbal"
                         ],
                         "description": "cool",
                         "occasion": [
@@ -313,7 +353,8 @@
                         "name": "Coconut Water",
                         "taste": [
                             "sweet",
-                            "fruity"
+                            "fruity",
+                            "clean"
                         ],
                         "description": "hydrating",
                         "occasion": [
@@ -327,7 +368,8 @@
                         "name": "Orange Slice",
                         "taste": [
                             "fruity",
-                            "acid"
+                            "acid",
+                            "sweet"
                         ],
                         "description": "bright",
                         "occasion": [
@@ -338,7 +380,8 @@
                         "name": "Lemon Twist",
                         "taste": [
                             "acid",
-                            "fruity"
+                            "fruity",
+                            "bitter"
                         ],
                         "description": "zesty",
                         "occasion": [
@@ -349,7 +392,8 @@
                         "name": "Mint Sprig",
                         "taste": [
                             "herbal",
-                            "sweet"
+                            "sweet",
+                            "floral"
                         ],
                         "description": "cool",
                         "occasion": [
@@ -360,7 +404,8 @@
                         "name": "Strawberry",
                         "taste": [
                             "sweet",
-                            "fruity"
+                            "fruity",
+                            "acid"
                         ],
                         "description": "playful",
                         "occasion": [
@@ -371,7 +416,8 @@
                         "name": "Cucumber Slice",
                         "taste": [
                             "umami",
-                            "clean"
+                            "clean",
+                            "herbal"
                         ],
                         "description": "refreshing",
                         "occasion": [
@@ -388,12 +434,14 @@
                         "name": "Rum",
                         "taste": [
                             "sweet",
-                            "fruity"
+                            "fruity",
+                            "caramel"
                         ],
                         "description": "warm",
                         "occasion": [
                             "Flexible",
-                            "Weekend Fun"
+                            "Weekend Fun",
+                            "Casual Weeknight"
                         ],
                         "label": "rover"
                     },
@@ -401,12 +449,14 @@
                         "name": "Brandy",
                         "taste": [
                             "fruity",
-                            "sweet"
+                            "sweet",
+                            "caramel"
                         ],
                         "description": "round",
                         "occasion": [
                             "Flexible",
-                            "Dinner Party"
+                            "Dinner Party",
+                            "Date Night"
                         ],
                         "label": "sage"
                     },
@@ -414,11 +464,14 @@
                         "name": "Gin",
                         "taste": [
                             "herbal",
-                            "bitter"
+                            "bitter",
+                            "floral"
                         ],
                         "description": "bright",
                         "occasion": [
-                            "Flexible"
+                            "Flexible",
+                            "Weekend Fun",
+                            "Date Night"
                         ],
                         "label": "botanist"
                     },
@@ -426,11 +479,14 @@
                         "name": "Vodka",
                         "taste": [
                             "sweet",
-                            "clean"
+                            "clean",
+                            "fruity"
                         ],
                         "description": "neutral",
                         "occasion": [
-                            "Flexible"
+                            "Flexible",
+                            "Weekend Fun",
+                            "Casual Weeknight"
                         ],
                         "label": "flux"
                     },
@@ -438,23 +494,29 @@
                         "name": "Tequila",
                         "taste": [
                             "smoky",
-                            "herbal"
+                            "herbal",
+                            "earthy"
                         ],
                         "description": "lively",
                         "occasion": [
-                            "Flexible"
+                            "Flexible",
+                            "Weekend Fun",
+                            "Casual Weeknight"
                         ],
                         "label": "spark"
                     },
                     {
-                        "name": "Cachaça",
+                        "name": "Cacha\u00e7a",
                         "taste": [
                             "herbal",
-                            "sweet"
+                            "sweet",
+                            "grassy"
                         ],
                         "description": "funky",
                         "occasion": [
-                            "Flexible"
+                            "Flexible",
+                            "Brunch",
+                            "Weekend Fun"
                         ],
                         "label": "dancer"
                     },
@@ -462,11 +524,14 @@
                         "name": "Fruit Liqueur",
                         "taste": [
                             "sweet",
-                            "fruity"
+                            "fruity",
+                            "floral"
                         ],
                         "description": "juicy",
                         "occasion": [
-                            "Flexible"
+                            "Flexible",
+                            "Weekend Fun",
+                            "Celebrating something"
                         ],
                         "label": "hedonist"
                     },
@@ -474,11 +539,14 @@
                         "name": "Amaro",
                         "taste": [
                             "bitter",
-                            "herbal"
+                            "herbal",
+                            "spicy"
                         ],
                         "description": "deep",
                         "occasion": [
-                            "Flexible"
+                            "Flexible",
+                            "Dinner Party",
+                            "Date Night"
                         ],
                         "label": "brooder"
                     },
@@ -486,11 +554,14 @@
                         "name": "Vermouth",
                         "taste": [
                             "herbal",
-                            "sweet"
+                            "sweet",
+                            "spicy"
                         ],
                         "description": "soft",
                         "occasion": [
-                            "Flexible"
+                            "Flexible",
+                            "Casual Weeknight",
+                            "Date Night"
                         ],
                         "label": "diplomat"
                     },
@@ -498,11 +569,14 @@
                         "name": "Sherry",
                         "taste": [
                             "umami",
-                            "sweet"
+                            "sweet",
+                            "nutty"
                         ],
                         "description": "dry",
                         "occasion": [
-                            "Flexible"
+                            "Flexible",
+                            "Dinner Party",
+                            "Casual Weeknight"
                         ],
                         "label": "archivist"
                     },
@@ -510,23 +584,29 @@
                         "name": "Wine",
                         "taste": [
                             "acid",
-                            "fruity"
+                            "fruity",
+                            "earthy"
                         ],
                         "description": "light",
                         "occasion": [
-                            "Flexible"
+                            "Flexible",
+                            "Dinner Party",
+                            "Celebrating something"
                         ],
                         "label": "anchor"
                     },
                     {
-                        "name": "Rosé",
+                        "name": "Ros\u00e9",
                         "taste": [
                             "fruity",
-                            "acid"
+                            "acid",
+                            "floral"
                         ],
                         "description": "easy",
                         "occasion": [
-                            "Flexible"
+                            "Flexible",
+                            "Weekend Fun",
+                            "Brunch"
                         ],
                         "label": "dusk"
                     },
@@ -534,11 +614,14 @@
                         "name": "Sake",
                         "taste": [
                             "umami",
-                            "clean"
+                            "clean",
+                            "floral"
                         ],
                         "description": "smooth",
                         "occasion": [
-                            "Flexible"
+                            "Flexible",
+                            "Dinner Party",
+                            "Date Night"
                         ],
                         "label": "pared"
                     },
@@ -546,11 +629,14 @@
                         "name": "Soju",
                         "taste": [
                             "sweet",
-                            "clean"
+                            "clean",
+                            "floral"
                         ],
                         "description": "soft",
                         "occasion": [
-                            "Flexible"
+                            "Flexible",
+                            "Casual Weeknight",
+                            "Weekend Fun"
                         ],
                         "label": "maverick"
                     },
@@ -558,11 +644,14 @@
                         "name": "Pisco",
                         "taste": [
                             "fruity",
-                            "herbal"
+                            "herbal",
+                            "floral"
                         ],
                         "description": "aromatic",
                         "occasion": [
-                            "Flexible"
+                            "Flexible",
+                            "Date Night",
+                            "Dinner Party"
                         ],
                         "label": "idealist"
                     }
@@ -572,7 +661,8 @@
                         "name": "Fruit Juice",
                         "taste": [
                             "fruity",
-                            "acid"
+                            "acid",
+                            "sweet"
                         ],
                         "description": "juicy",
                         "occasion": [
@@ -584,7 +674,8 @@
                         "name": "Soda Water",
                         "taste": [
                             "salty",
-                            "clean"
+                            "clean",
+                            "acid"
                         ],
                         "description": "light",
                         "occasion": [
@@ -596,7 +687,8 @@
                         "name": "Ginger Ale",
                         "taste": [
                             "sweet",
-                            "spicy"
+                            "spicy",
+                            "acid"
                         ],
                         "description": "soft",
                         "occasion": [
@@ -608,7 +700,8 @@
                         "name": "Cola",
                         "taste": [
                             "sweet",
-                            "bitter"
+                            "bitter",
+                            "spicy"
                         ],
                         "description": "familiar",
                         "occasion": [
@@ -620,7 +713,8 @@
                         "name": "Lemonade",
                         "taste": [
                             "acid",
-                            "sweet"
+                            "sweet",
+                            "fruity"
                         ],
                         "description": "bright",
                         "occasion": [
@@ -632,7 +726,8 @@
                         "name": "Iced Tea",
                         "taste": [
                             "bitter",
-                            "sweet"
+                            "sweet",
+                            "herbal"
                         ],
                         "description": "cool",
                         "occasion": [
@@ -644,7 +739,8 @@
                         "name": "Coconut Water",
                         "taste": [
                             "sweet",
-                            "fruity"
+                            "fruity",
+                            "clean"
                         ],
                         "description": "smooth",
                         "occasion": [
@@ -656,7 +752,8 @@
                         "name": "Apple Juice",
                         "taste": [
                             "sweet",
-                            "fruity"
+                            "fruity",
+                            "acid"
                         ],
                         "description": "cozy",
                         "occasion": [
@@ -668,7 +765,8 @@
                         "name": "Cranberry Juice",
                         "taste": [
                             "acid",
-                            "fruity"
+                            "fruity",
+                            "sweet"
                         ],
                         "description": "tart",
                         "occasion": [
@@ -680,7 +778,8 @@
                         "name": "Pineapple Juice",
                         "taste": [
                             "sweet",
-                            "acid"
+                            "acid",
+                            "fruity"
                         ],
                         "description": "tropical",
                         "occasion": [
@@ -694,7 +793,8 @@
                         "name": "Seasonal Fruit",
                         "taste": [
                             "fruity",
-                            "acid"
+                            "acid",
+                            "sweet"
                         ],
                         "description": "festive",
                         "occasion": [
@@ -705,7 +805,8 @@
                         "name": "Mint",
                         "taste": [
                             "herbal",
-                            "sweet"
+                            "sweet",
+                            "floral"
                         ],
                         "description": "fresh",
                         "occasion": [
@@ -716,7 +817,8 @@
                         "name": "Citrus Wheel",
                         "taste": [
                             "acid",
-                            "fruity"
+                            "fruity",
+                            "bitter"
                         ],
                         "description": "bright",
                         "occasion": [
@@ -727,7 +829,8 @@
                         "name": "Berries",
                         "taste": [
                             "sweet",
-                            "acid"
+                            "acid",
+                            "fruity"
                         ],
                         "description": "juicy",
                         "occasion": [
@@ -738,7 +841,8 @@
                         "name": "Edible Flower",
                         "taste": [
                             "herbal",
-                            "fruity"
+                            "fruity",
+                            "floral"
                         ],
                         "description": "pretty",
                         "occasion": [
@@ -755,12 +859,14 @@
                         "name": "Whiskey",
                         "taste": [
                             "smoky",
-                            "sweet"
+                            "sweet",
+                            "caramel"
                         ],
                         "description": "smooth",
                         "occasion": [
                             "Flexible",
-                            "Casual Weeknight"
+                            "Casual Weeknight",
+                            "Weekend Fun"
                         ],
                         "label": "charmer"
                     },
@@ -768,11 +874,14 @@
                         "name": "Vodka",
                         "taste": [
                             "sweet",
-                            "clean"
+                            "clean",
+                            "fruity"
                         ],
                         "description": "neutral",
                         "occasion": [
-                            "Flexible"
+                            "Flexible",
+                            "Weekend Fun",
+                            "Casual Weeknight"
                         ],
                         "label": "flux"
                     },
@@ -780,11 +889,14 @@
                         "name": "Gin",
                         "taste": [
                             "herbal",
-                            "bitter"
+                            "bitter",
+                            "floral"
                         ],
                         "description": "crisp",
                         "occasion": [
-                            "Flexible"
+                            "Flexible",
+                            "Weekend Fun",
+                            "Date Night"
                         ],
                         "label": "botanist"
                     },
@@ -792,11 +904,14 @@
                         "name": "Rum",
                         "taste": [
                             "sweet",
-                            "fruity"
+                            "fruity",
+                            "caramel"
                         ],
                         "description": "easy",
                         "occasion": [
-                            "Flexible"
+                            "Flexible",
+                            "Weekend Fun",
+                            "Casual Weeknight"
                         ],
                         "label": "rover"
                     },
@@ -804,11 +919,14 @@
                         "name": "Tequila",
                         "taste": [
                             "smoky",
-                            "herbal"
+                            "herbal",
+                            "earthy"
                         ],
                         "description": "bold",
                         "occasion": [
-                            "Flexible"
+                            "Flexible",
+                            "Weekend Fun",
+                            "Casual Weeknight"
                         ],
                         "label": "spark"
                     },
@@ -816,11 +934,14 @@
                         "name": "Mezcal",
                         "taste": [
                             "smoky",
-                            "herbal"
+                            "herbal",
+                            "earthy"
                         ],
                         "description": "wild",
                         "occasion": [
-                            "Flexible"
+                            "Flexible",
+                            "Date Night",
+                            "Dinner Party"
                         ],
                         "label": "wanderer"
                     },
@@ -828,11 +949,14 @@
                         "name": "Brandy",
                         "taste": [
                             "fruity",
-                            "sweet"
+                            "sweet",
+                            "caramel"
                         ],
                         "description": "round",
                         "occasion": [
-                            "Flexible"
+                            "Flexible",
+                            "Dinner Party",
+                            "Date Night"
                         ],
                         "label": "sage"
                     },
@@ -840,11 +964,14 @@
                         "name": "Soju",
                         "taste": [
                             "sweet",
-                            "clean"
+                            "clean",
+                            "floral"
                         ],
                         "description": "light",
                         "occasion": [
-                            "Flexible"
+                            "Flexible",
+                            "Casual Weeknight",
+                            "Weekend Fun"
                         ],
                         "label": "maverick"
                     },
@@ -852,11 +979,14 @@
                         "name": "Sake",
                         "taste": [
                             "umami",
-                            "clean"
+                            "clean",
+                            "floral"
                         ],
                         "description": "smooth",
                         "occasion": [
-                            "Flexible"
+                            "Flexible",
+                            "Dinner Party",
+                            "Date Night"
                         ],
                         "label": "pared"
                     },
@@ -864,11 +994,14 @@
                         "name": "Amaro",
                         "taste": [
                             "bitter",
-                            "herbal"
+                            "herbal",
+                            "spicy"
                         ],
                         "description": "complex",
                         "occasion": [
-                            "Flexible"
+                            "Flexible",
+                            "Dinner Party",
+                            "Date Night"
                         ],
                         "label": "brooder"
                     },
@@ -876,23 +1009,29 @@
                         "name": "Vermouth",
                         "taste": [
                             "herbal",
-                            "sweet"
+                            "sweet",
+                            "spicy"
                         ],
                         "description": "soft",
                         "occasion": [
-                            "Flexible"
+                            "Flexible",
+                            "Casual Weeknight",
+                            "Date Night"
                         ],
                         "label": "diplomat"
                     },
                     {
-                        "name": "Cachaça",
+                        "name": "Cacha\u00e7a",
                         "taste": [
                             "herbal",
-                            "sweet"
+                            "sweet",
+                            "grassy"
                         ],
                         "description": "bright",
                         "occasion": [
-                            "Flexible"
+                            "Flexible",
+                            "Brunch",
+                            "Weekend Fun"
                         ],
                         "label": "dancer"
                     },
@@ -900,11 +1039,14 @@
                         "name": "Pisco",
                         "taste": [
                             "fruity",
-                            "herbal"
+                            "herbal",
+                            "floral"
                         ],
                         "description": "aromatic",
                         "occasion": [
-                            "Flexible"
+                            "Flexible",
+                            "Date Night",
+                            "Dinner Party"
                         ],
                         "label": "idealist"
                     },
@@ -912,11 +1054,14 @@
                         "name": "Fruit Liqueur",
                         "taste": [
                             "sweet",
-                            "fruity"
+                            "fruity",
+                            "floral"
                         ],
                         "description": "playful",
                         "occasion": [
-                            "Flexible"
+                            "Flexible",
+                            "Weekend Fun",
+                            "Celebrating something"
                         ],
                         "label": "hedonist"
                     },
@@ -924,11 +1069,14 @@
                         "name": "Aperitif",
                         "taste": [
                             "bitter",
-                            "fruity"
+                            "fruity",
+                            "herbal"
                         ],
                         "description": "light",
                         "occasion": [
-                            "Flexible"
+                            "Flexible",
+                            "Brunch",
+                            "Weekend Fun"
                         ],
                         "label": "optimist"
                     }
@@ -938,7 +1086,8 @@
                         "name": "Soda Water",
                         "taste": [
                             "salty",
-                            "clean"
+                            "clean",
+                            "acid"
                         ],
                         "description": "crisp",
                         "occasion": [
@@ -950,7 +1099,8 @@
                         "name": "Ginger Beer",
                         "taste": [
                             "sweet",
-                            "spicy"
+                            "spicy",
+                            "acid"
                         ],
                         "description": "zingy",
                         "occasion": [
@@ -962,7 +1112,8 @@
                         "name": "Tonic Water",
                         "taste": [
                             "bitter",
-                            "acid"
+                            "acid",
+                            "herbal"
                         ],
                         "description": "sharp",
                         "occasion": [
@@ -974,7 +1125,8 @@
                         "name": "Cola",
                         "taste": [
                             "sweet",
-                            "bitter"
+                            "bitter",
+                            "spicy"
                         ],
                         "description": "classic",
                         "occasion": [
@@ -986,7 +1138,8 @@
                         "name": "Lemon Soda",
                         "taste": [
                             "acid",
-                            "sweet"
+                            "sweet",
+                            "fruity"
                         ],
                         "description": "zippy",
                         "occasion": [
@@ -998,7 +1151,8 @@
                         "name": "Orange Soda",
                         "taste": [
                             "sweet",
-                            "fruity"
+                            "fruity",
+                            "acid"
                         ],
                         "description": "bright",
                         "occasion": [
@@ -1010,7 +1164,8 @@
                         "name": "Iced Tea",
                         "taste": [
                             "bitter",
-                            "sweet"
+                            "sweet",
+                            "herbal"
                         ],
                         "description": "cool",
                         "occasion": [
@@ -1022,7 +1177,8 @@
                         "name": "Coconut Water",
                         "taste": [
                             "sweet",
-                            "fruity"
+                            "fruity",
+                            "clean"
                         ],
                         "description": "smooth",
                         "occasion": [
@@ -1034,7 +1190,8 @@
                         "name": "Apple Juice",
                         "taste": [
                             "sweet",
-                            "fruity"
+                            "fruity",
+                            "acid"
                         ],
                         "description": "mellow",
                         "occasion": [
@@ -1046,7 +1203,8 @@
                         "name": "Grapefruit Soda",
                         "taste": [
                             "bitter",
-                            "acid"
+                            "acid",
+                            "fruity"
                         ],
                         "description": "crisp",
                         "occasion": [
@@ -1060,7 +1218,8 @@
                         "name": "Lime Wedge",
                         "taste": [
                             "acid",
-                            "fruity"
+                            "fruity",
+                            "bitter"
                         ],
                         "description": "zesty",
                         "occasion": [
@@ -1071,7 +1230,8 @@
                         "name": "Lemon Wheel",
                         "taste": [
                             "acid",
-                            "fruity"
+                            "fruity",
+                            "bitter"
                         ],
                         "description": "bright",
                         "occasion": [
@@ -1082,7 +1242,8 @@
                         "name": "Mint Sprig",
                         "taste": [
                             "herbal",
-                            "sweet"
+                            "sweet",
+                            "floral"
                         ],
                         "description": "cool",
                         "occasion": [
@@ -1093,7 +1254,8 @@
                         "name": "Cherry",
                         "taste": [
                             "sweet",
-                            "fruity"
+                            "fruity",
+                            "herbal"
                         ],
                         "description": "classic",
                         "occasion": [
@@ -1104,7 +1266,8 @@
                         "name": "Orange Peel",
                         "taste": [
                             "fruity",
-                            "acid"
+                            "acid",
+                            "bitter"
                         ],
                         "description": "aromatic",
                         "occasion": [
@@ -1123,11 +1286,14 @@
                         "name": "Vodka",
                         "taste": [
                             "clean",
-                            "fruity"
+                            "fruity",
+                            "sweet"
                         ],
                         "description": "neutral",
                         "occasion": [
-                            "Flexible"
+                            "Flexible",
+                            "Weekend Fun",
+                            "Casual Weeknight"
                         ],
                         "label": "flux"
                     },
@@ -1135,11 +1301,14 @@
                         "name": "Gin",
                         "taste": [
                             "herbal",
-                            "bitter"
+                            "bitter",
+                            "floral"
                         ],
                         "description": "bright",
                         "occasion": [
-                            "Flexible"
+                            "Flexible",
+                            "Weekend Fun",
+                            "Date Night"
                         ],
                         "label": "botanist"
                     },
@@ -1147,11 +1316,14 @@
                         "name": "Rum",
                         "taste": [
                             "sweet",
-                            "fruity"
+                            "fruity",
+                            "caramel"
                         ],
                         "description": "soft",
                         "occasion": [
-                            "Flexible"
+                            "Flexible",
+                            "Weekend Fun",
+                            "Casual Weeknight"
                         ],
                         "label": "rover"
                     },
@@ -1159,11 +1331,14 @@
                         "name": "Tequila",
                         "taste": [
                             "earthy",
-                            "herbal"
+                            "herbal",
+                            "smoky"
                         ],
                         "description": "lively",
                         "occasion": [
-                            "Flexible"
+                            "Flexible",
+                            "Weekend Fun",
+                            "Casual Weeknight"
                         ],
                         "label": "spark"
                     },
@@ -1171,11 +1346,14 @@
                         "name": "Whiskey",
                         "taste": [
                             "smoky",
-                            "sweet"
+                            "sweet",
+                            "caramel"
                         ],
                         "description": "warm",
                         "occasion": [
-                            "Flexible"
+                            "Flexible",
+                            "Casual Weeknight",
+                            "Weekend Fun"
                         ],
                         "label": "charmer"
                     },
@@ -1183,11 +1361,14 @@
                         "name": "Brandy",
                         "taste": [
                             "fruity",
-                            "sweet"
+                            "sweet",
+                            "caramel"
                         ],
                         "description": "round",
                         "occasion": [
-                            "Flexible"
+                            "Flexible",
+                            "Dinner Party",
+                            "Date Night"
                         ],
                         "label": "sage"
                     },
@@ -1195,23 +1376,29 @@
                         "name": "Pisco",
                         "taste": [
                             "floral",
-                            "herbal"
+                            "herbal",
+                            "fruity"
                         ],
                         "description": "aromatic",
                         "occasion": [
-                            "Flexible"
+                            "Flexible",
+                            "Date Night",
+                            "Dinner Party"
                         ],
                         "label": "idealist"
                     },
                     {
-                        "name": "Cachaça",
+                        "name": "Cacha\u00e7a",
                         "taste": [
                             "grassy",
-                            "sweet"
+                            "sweet",
+                            "herbal"
                         ],
                         "description": "fresh",
                         "occasion": [
-                            "Flexible"
+                            "Flexible",
+                            "Brunch",
+                            "Weekend Fun"
                         ],
                         "label": "dancer"
                     },
@@ -1219,11 +1406,14 @@
                         "name": "Mezcal",
                         "taste": [
                             "smoky",
-                            "herbal"
+                            "herbal",
+                            "earthy"
                         ],
                         "description": "bold",
                         "occasion": [
-                            "Flexible"
+                            "Flexible",
+                            "Date Night",
+                            "Dinner Party"
                         ],
                         "label": "wanderer"
                     },
@@ -1231,11 +1421,14 @@
                         "name": "Soju",
                         "taste": [
                             "clean",
-                            "fruity"
+                            "fruity",
+                            "floral"
                         ],
                         "description": "light",
                         "occasion": [
-                            "Flexible"
+                            "Flexible",
+                            "Casual Weeknight",
+                            "Weekend Fun"
                         ],
                         "label": "maverick"
                     },
@@ -1243,11 +1436,14 @@
                         "name": "Sake",
                         "taste": [
                             "umami",
-                            "clean"
+                            "clean",
+                            "floral"
                         ],
                         "description": "smooth",
                         "occasion": [
-                            "Flexible"
+                            "Flexible",
+                            "Dinner Party",
+                            "Date Night"
                         ],
                         "label": "pared"
                     },
@@ -1255,11 +1451,14 @@
                         "name": "Fruit Liqueur",
                         "taste": [
                             "sweet",
-                            "fruity"
+                            "fruity",
+                            "floral"
                         ],
                         "description": "juicy",
                         "occasion": [
-                            "Flexible"
+                            "Flexible",
+                            "Weekend Fun",
+                            "Celebrating something"
                         ],
                         "label": "hedonist"
                     },
@@ -1267,11 +1466,14 @@
                         "name": "Aperitif",
                         "taste": [
                             "bitter",
-                            "fruity"
+                            "fruity",
+                            "herbal"
                         ],
                         "description": "playful",
                         "occasion": [
-                            "Flexible"
+                            "Flexible",
+                            "Brunch",
+                            "Weekend Fun"
                         ],
                         "label": "optimist"
                     },
@@ -1279,11 +1481,14 @@
                         "name": "Amaro",
                         "taste": [
                             "bitter",
-                            "herbal"
+                            "herbal",
+                            "spicy"
                         ],
                         "description": "deep",
                         "occasion": [
-                            "Flexible"
+                            "Flexible",
+                            "Dinner Party",
+                            "Date Night"
                         ],
                         "label": "brooder"
                     },
@@ -1291,11 +1496,14 @@
                         "name": "Vermouth",
                         "taste": [
                             "herbal",
-                            "sweet"
+                            "sweet",
+                            "spicy"
                         ],
                         "description": "soft",
                         "occasion": [
-                            "Flexible"
+                            "Flexible",
+                            "Casual Weeknight",
+                            "Date Night"
                         ],
                         "label": "diplomat"
                     }
@@ -1305,7 +1513,8 @@
                         "name": "Lemon Juice",
                         "taste": [
                             "acid",
-                            "fruity"
+                            "fruity",
+                            "sweet"
                         ],
                         "description": "sharp",
                         "label": "purist"
@@ -1314,7 +1523,8 @@
                         "name": "Lime Juice",
                         "taste": [
                             "acid",
-                            "fruity"
+                            "fruity",
+                            "bitter"
                         ],
                         "description": "zesty",
                         "label": "striver"
@@ -1323,7 +1533,8 @@
                         "name": "Simple Syrup",
                         "taste": [
                             "sweet",
-                            "fruity"
+                            "fruity",
+                            "floral"
                         ],
                         "description": "smooth",
                         "label": "pivot"
@@ -1332,7 +1543,8 @@
                         "name": "Honey",
                         "taste": [
                             "sweet",
-                            "floral"
+                            "floral",
+                            "earthy"
                         ],
                         "description": "round",
                         "label": "gilded"
@@ -1341,7 +1553,8 @@
                         "name": "Agave",
                         "taste": [
                             "sweet",
-                            "herbal"
+                            "herbal",
+                            "earthy"
                         ],
                         "description": "soft",
                         "label": "mellow"
@@ -1350,7 +1563,8 @@
                         "name": "Orange Juice",
                         "taste": [
                             "fruity",
-                            "acid"
+                            "acid",
+                            "sweet"
                         ],
                         "description": "bright",
                         "label": "sprinter"
@@ -1359,7 +1573,8 @@
                         "name": "Pineapple Juice",
                         "taste": [
                             "sweet",
-                            "acid"
+                            "acid",
+                            "fruity"
                         ],
                         "description": "tropical",
                         "label": "verbose"
@@ -1368,7 +1583,8 @@
                         "name": "Cranberry Juice",
                         "taste": [
                             "acid",
-                            "fruity"
+                            "fruity",
+                            "sweet"
                         ],
                         "description": "tart",
                         "label": "agitator"
@@ -1377,7 +1593,8 @@
                         "name": "Egg White",
                         "taste": [
                             "creamy",
-                            "clean"
+                            "clean",
+                            "sweet"
                         ],
                         "description": "silky",
                         "label": "hush"
@@ -1386,7 +1603,8 @@
                         "name": "Bitters",
                         "taste": [
                             "bitter",
-                            "spicy"
+                            "spicy",
+                            "herbal"
                         ],
                         "description": "spiced",
                         "label": "shadow"
@@ -1397,7 +1615,8 @@
                         "name": "Lemon Wheel",
                         "taste": [
                             "acid",
-                            "fruity"
+                            "fruity",
+                            "bitter"
                         ],
                         "description": "bright"
                     },
@@ -1405,7 +1624,8 @@
                         "name": "Lime Wheel",
                         "taste": [
                             "acid",
-                            "fruity"
+                            "fruity",
+                            "bitter"
                         ],
                         "description": "zesty"
                     },
@@ -1413,7 +1633,8 @@
                         "name": "Cherry",
                         "taste": [
                             "sweet",
-                            "fruity"
+                            "fruity",
+                            "herbal"
                         ],
                         "description": "classic"
                     },
@@ -1421,7 +1642,8 @@
                         "name": "Orange Slice",
                         "taste": [
                             "fruity",
-                            "acid"
+                            "acid",
+                            "sweet"
                         ],
                         "description": "soft"
                     },
@@ -1429,7 +1651,8 @@
                         "name": "Mint Sprig",
                         "taste": [
                             "herbal",
-                            "sweet"
+                            "sweet",
+                            "floral"
                         ],
                         "description": "fresh"
                     }
@@ -1443,11 +1666,14 @@
                         "name": "Gin",
                         "taste": [
                             "herbal",
-                            "bitter"
+                            "bitter",
+                            "floral"
                         ],
                         "description": "crisp",
                         "occasion": [
-                            "Flexible"
+                            "Flexible",
+                            "Weekend Fun",
+                            "Date Night"
                         ],
                         "label": "botanist"
                     },
@@ -1455,11 +1681,14 @@
                         "name": "Vodka",
                         "taste": [
                             "clean",
-                            "fruity"
+                            "fruity",
+                            "sweet"
                         ],
                         "description": "neutral",
                         "occasion": [
-                            "Flexible"
+                            "Flexible",
+                            "Weekend Fun",
+                            "Casual Weeknight"
                         ],
                         "label": "flux"
                     },
@@ -1467,11 +1696,14 @@
                         "name": "Rum",
                         "taste": [
                             "sweet",
-                            "fruity"
+                            "fruity",
+                            "caramel"
                         ],
                         "description": "light",
                         "occasion": [
-                            "Flexible"
+                            "Flexible",
+                            "Weekend Fun",
+                            "Casual Weeknight"
                         ],
                         "label": "rover"
                     },
@@ -1479,11 +1711,14 @@
                         "name": "Tequila",
                         "taste": [
                             "earthy",
-                            "herbal"
+                            "herbal",
+                            "smoky"
                         ],
                         "description": "bright",
                         "occasion": [
-                            "Flexible"
+                            "Flexible",
+                            "Weekend Fun",
+                            "Casual Weeknight"
                         ],
                         "label": "spark"
                     },
@@ -1491,11 +1726,14 @@
                         "name": "Whiskey",
                         "taste": [
                             "smoky",
-                            "sweet"
+                            "sweet",
+                            "caramel"
                         ],
                         "description": "smooth",
                         "occasion": [
-                            "Flexible"
+                            "Flexible",
+                            "Casual Weeknight",
+                            "Weekend Fun"
                         ],
                         "label": "charmer"
                     },
@@ -1503,11 +1741,14 @@
                         "name": "Brandy",
                         "taste": [
                             "fruity",
-                            "sweet"
+                            "sweet",
+                            "caramel"
                         ],
                         "description": "round",
                         "occasion": [
-                            "Flexible"
+                            "Flexible",
+                            "Dinner Party",
+                            "Date Night"
                         ],
                         "label": "sage"
                     },
@@ -1515,23 +1756,29 @@
                         "name": "Pisco",
                         "taste": [
                             "floral",
-                            "herbal"
+                            "herbal",
+                            "fruity"
                         ],
                         "description": "aromatic",
                         "occasion": [
-                            "Flexible"
+                            "Flexible",
+                            "Date Night",
+                            "Dinner Party"
                         ],
                         "label": "idealist"
                     },
                     {
-                        "name": "Cachaça",
+                        "name": "Cacha\u00e7a",
                         "taste": [
                             "grassy",
-                            "sweet"
+                            "sweet",
+                            "herbal"
                         ],
                         "description": "fresh",
                         "occasion": [
-                            "Flexible"
+                            "Flexible",
+                            "Brunch",
+                            "Weekend Fun"
                         ],
                         "label": "dancer"
                     },
@@ -1539,11 +1786,14 @@
                         "name": "Soju",
                         "taste": [
                             "clean",
-                            "fruity"
+                            "fruity",
+                            "floral"
                         ],
                         "description": "soft",
                         "occasion": [
-                            "Flexible"
+                            "Flexible",
+                            "Casual Weeknight",
+                            "Weekend Fun"
                         ],
                         "label": "maverick"
                     },
@@ -1551,11 +1801,14 @@
                         "name": "Sake",
                         "taste": [
                             "umami",
-                            "clean"
+                            "clean",
+                            "floral"
                         ],
                         "description": "smooth",
                         "occasion": [
-                            "Flexible"
+                            "Flexible",
+                            "Dinner Party",
+                            "Date Night"
                         ],
                         "label": "pared"
                     },
@@ -1563,11 +1816,14 @@
                         "name": "Fruit Liqueur",
                         "taste": [
                             "sweet",
-                            "fruity"
+                            "fruity",
+                            "floral"
                         ],
                         "description": "playful",
                         "occasion": [
-                            "Flexible"
+                            "Flexible",
+                            "Weekend Fun",
+                            "Celebrating something"
                         ],
                         "label": "hedonist"
                     },
@@ -1575,11 +1831,14 @@
                         "name": "Aperitif",
                         "taste": [
                             "bitter",
-                            "fruity"
+                            "fruity",
+                            "herbal"
                         ],
                         "description": "light",
                         "occasion": [
-                            "Flexible"
+                            "Flexible",
+                            "Brunch",
+                            "Weekend Fun"
                         ],
                         "label": "optimist"
                     },
@@ -1587,11 +1846,14 @@
                         "name": "Amaro",
                         "taste": [
                             "bitter",
-                            "herbal"
+                            "herbal",
+                            "spicy"
                         ],
                         "description": "complex",
                         "occasion": [
-                            "Flexible"
+                            "Flexible",
+                            "Dinner Party",
+                            "Date Night"
                         ],
                         "label": "brooder"
                     },
@@ -1599,11 +1861,14 @@
                         "name": "Vermouth",
                         "taste": [
                             "herbal",
-                            "sweet"
+                            "sweet",
+                            "spicy"
                         ],
                         "description": "soft",
                         "occasion": [
-                            "Flexible"
+                            "Flexible",
+                            "Casual Weeknight",
+                            "Date Night"
                         ],
                         "label": "diplomat"
                     },
@@ -1611,11 +1876,14 @@
                         "name": "Mezcal",
                         "taste": [
                             "smoky",
-                            "herbal"
+                            "herbal",
+                            "earthy"
                         ],
                         "description": "bold",
                         "occasion": [
-                            "Flexible"
+                            "Flexible",
+                            "Date Night",
+                            "Dinner Party"
                         ],
                         "label": "wanderer"
                     }
@@ -1625,7 +1893,8 @@
                         "name": "Soda Water",
                         "taste": [
                             "clean",
-                            "fruity"
+                            "fruity",
+                            "acid"
                         ],
                         "description": "light",
                         "label": "arbiter"
@@ -1634,7 +1903,8 @@
                         "name": "Lemon Juice",
                         "taste": [
                             "acid",
-                            "fruity"
+                            "fruity",
+                            "sweet"
                         ],
                         "description": "bright",
                         "label": "purist"
@@ -1643,7 +1913,8 @@
                         "name": "Simple Syrup",
                         "taste": [
                             "sweet",
-                            "fruity"
+                            "fruity",
+                            "floral"
                         ],
                         "description": "smooth",
                         "label": "pivot"
@@ -1652,7 +1923,8 @@
                         "name": "Honey",
                         "taste": [
                             "sweet",
-                            "floral"
+                            "floral",
+                            "earthy"
                         ],
                         "description": "round",
                         "label": "gilded"
@@ -1661,7 +1933,8 @@
                         "name": "Agave",
                         "taste": [
                             "sweet",
-                            "herbal"
+                            "herbal",
+                            "earthy"
                         ],
                         "description": "soft",
                         "label": "mellow"
@@ -1670,7 +1943,8 @@
                         "name": "Lime Juice",
                         "taste": [
                             "acid",
-                            "fruity"
+                            "fruity",
+                            "bitter"
                         ],
                         "description": "zesty",
                         "label": "striver"
@@ -1679,7 +1953,8 @@
                         "name": "Orange Juice",
                         "taste": [
                             "fruity",
-                            "acid"
+                            "acid",
+                            "sweet"
                         ],
                         "description": "soft",
                         "label": "sprinter"
@@ -1688,7 +1963,8 @@
                         "name": "Grapefruit Juice",
                         "taste": [
                             "bitter",
-                            "acid"
+                            "acid",
+                            "fruity"
                         ],
                         "description": "sharp",
                         "label": "realist"
@@ -1697,7 +1973,8 @@
                         "name": "Bitters",
                         "taste": [
                             "bitter",
-                            "spicy"
+                            "spicy",
+                            "herbal"
                         ],
                         "description": "spiced",
                         "label": "shadow"
@@ -1706,7 +1983,8 @@
                         "name": "Iced Tea",
                         "taste": [
                             "bitter",
-                            "sweet"
+                            "sweet",
+                            "herbal"
                         ],
                         "description": "cool",
                         "label": "simmer"
@@ -1717,7 +1995,8 @@
                         "name": "Lemon Wheel",
                         "taste": [
                             "acid",
-                            "fruity"
+                            "fruity",
+                            "bitter"
                         ],
                         "description": "bright"
                     },
@@ -1725,7 +2004,8 @@
                         "name": "Cherry",
                         "taste": [
                             "sweet",
-                            "fruity"
+                            "fruity",
+                            "herbal"
                         ],
                         "description": "classic"
                     },
@@ -1733,7 +2013,8 @@
                         "name": "Orange Slice",
                         "taste": [
                             "fruity",
-                            "acid"
+                            "acid",
+                            "sweet"
                         ],
                         "description": "soft"
                     },
@@ -1741,7 +2022,8 @@
                         "name": "Mint",
                         "taste": [
                             "herbal",
-                            "sweet"
+                            "sweet",
+                            "floral"
                         ],
                         "description": "fresh"
                     },
@@ -1749,7 +2031,8 @@
                         "name": "Cucumber",
                         "taste": [
                             "clean",
-                            "sweet"
+                            "sweet",
+                            "herbal"
                         ],
                         "description": "cool"
                     }
@@ -1763,11 +2046,14 @@
                         "name": "Tequila",
                         "taste": [
                             "earthy",
-                            "herbal"
+                            "herbal",
+                            "smoky"
                         ],
                         "description": "lively",
                         "occasion": [
-                            "Flexible"
+                            "Flexible",
+                            "Weekend Fun",
+                            "Casual Weeknight"
                         ],
                         "label": "spark"
                     },
@@ -1775,11 +2061,14 @@
                         "name": "Gin",
                         "taste": [
                             "herbal",
-                            "bitter"
+                            "bitter",
+                            "floral"
                         ],
                         "description": "bright",
                         "occasion": [
-                            "Flexible"
+                            "Flexible",
+                            "Weekend Fun",
+                            "Date Night"
                         ],
                         "label": "botanist"
                     },
@@ -1787,11 +2076,14 @@
                         "name": "Vodka",
                         "taste": [
                             "clean",
-                            "fruity"
+                            "fruity",
+                            "sweet"
                         ],
                         "description": "neutral",
                         "occasion": [
-                            "Flexible"
+                            "Flexible",
+                            "Weekend Fun",
+                            "Casual Weeknight"
                         ],
                         "label": "flux"
                     },
@@ -1799,11 +2091,14 @@
                         "name": "Rum",
                         "taste": [
                             "sweet",
-                            "fruity"
+                            "fruity",
+                            "caramel"
                         ],
                         "description": "soft",
                         "occasion": [
-                            "Flexible"
+                            "Flexible",
+                            "Weekend Fun",
+                            "Casual Weeknight"
                         ],
                         "label": "rover"
                     },
@@ -1811,11 +2106,14 @@
                         "name": "Whiskey",
                         "taste": [
                             "smoky",
-                            "sweet"
+                            "sweet",
+                            "caramel"
                         ],
                         "description": "warm",
                         "occasion": [
-                            "Flexible"
+                            "Flexible",
+                            "Casual Weeknight",
+                            "Weekend Fun"
                         ],
                         "label": "charmer"
                     },
@@ -1823,11 +2121,14 @@
                         "name": "Brandy",
                         "taste": [
                             "fruity",
-                            "sweet"
+                            "sweet",
+                            "caramel"
                         ],
                         "description": "round",
                         "occasion": [
-                            "Flexible"
+                            "Flexible",
+                            "Dinner Party",
+                            "Date Night"
                         ],
                         "label": "sage"
                     },
@@ -1835,23 +2136,29 @@
                         "name": "Pisco",
                         "taste": [
                             "floral",
-                            "herbal"
+                            "herbal",
+                            "fruity"
                         ],
                         "description": "aromatic",
                         "occasion": [
-                            "Flexible"
+                            "Flexible",
+                            "Date Night",
+                            "Dinner Party"
                         ],
                         "label": "idealist"
                     },
                     {
-                        "name": "Cachaça",
+                        "name": "Cacha\u00e7a",
                         "taste": [
                             "grassy",
-                            "sweet"
+                            "sweet",
+                            "herbal"
                         ],
                         "description": "fresh",
                         "occasion": [
-                            "Flexible"
+                            "Flexible",
+                            "Brunch",
+                            "Weekend Fun"
                         ],
                         "label": "dancer"
                     },
@@ -1859,11 +2166,14 @@
                         "name": "Soju",
                         "taste": [
                             "clean",
-                            "fruity"
+                            "fruity",
+                            "floral"
                         ],
                         "description": "light",
                         "occasion": [
-                            "Flexible"
+                            "Flexible",
+                            "Casual Weeknight",
+                            "Weekend Fun"
                         ],
                         "label": "maverick"
                     },
@@ -1871,11 +2181,14 @@
                         "name": "Sake",
                         "taste": [
                             "umami",
-                            "clean"
+                            "clean",
+                            "floral"
                         ],
                         "description": "smooth",
                         "occasion": [
-                            "Flexible"
+                            "Flexible",
+                            "Dinner Party",
+                            "Date Night"
                         ],
                         "label": "pared"
                     },
@@ -1883,11 +2196,14 @@
                         "name": "Fruit Liqueur",
                         "taste": [
                             "sweet",
-                            "fruity"
+                            "fruity",
+                            "floral"
                         ],
                         "description": "juicy",
                         "occasion": [
-                            "Flexible"
+                            "Flexible",
+                            "Weekend Fun",
+                            "Celebrating something"
                         ],
                         "label": "hedonist"
                     },
@@ -1895,11 +2211,14 @@
                         "name": "Aperitif",
                         "taste": [
                             "bitter",
-                            "fruity"
+                            "fruity",
+                            "herbal"
                         ],
                         "description": "playful",
                         "occasion": [
-                            "Flexible"
+                            "Flexible",
+                            "Brunch",
+                            "Weekend Fun"
                         ],
                         "label": "optimist"
                     },
@@ -1907,11 +2226,14 @@
                         "name": "Amaro",
                         "taste": [
                             "bitter",
-                            "herbal"
+                            "herbal",
+                            "spicy"
                         ],
                         "description": "deep",
                         "occasion": [
-                            "Flexible"
+                            "Flexible",
+                            "Dinner Party",
+                            "Date Night"
                         ],
                         "label": "brooder"
                     },
@@ -1919,11 +2241,14 @@
                         "name": "Vermouth",
                         "taste": [
                             "herbal",
-                            "sweet"
+                            "sweet",
+                            "spicy"
                         ],
                         "description": "soft",
                         "occasion": [
-                            "Flexible"
+                            "Flexible",
+                            "Casual Weeknight",
+                            "Date Night"
                         ],
                         "label": "diplomat"
                     },
@@ -1931,11 +2256,14 @@
                         "name": "Mezcal",
                         "taste": [
                             "smoky",
-                            "herbal"
+                            "herbal",
+                            "earthy"
                         ],
                         "description": "bold",
                         "occasion": [
-                            "Flexible"
+                            "Flexible",
+                            "Date Night",
+                            "Dinner Party"
                         ],
                         "label": "wanderer"
                     }
@@ -1945,7 +2273,8 @@
                         "name": "Lime Juice",
                         "taste": [
                             "acid",
-                            "fruity"
+                            "fruity",
+                            "bitter"
                         ],
                         "description": "zesty",
                         "label": "striver"
@@ -1954,7 +2283,8 @@
                         "name": "Lemon Juice",
                         "taste": [
                             "acid",
-                            "fruity"
+                            "fruity",
+                            "sweet"
                         ],
                         "description": "sharp",
                         "label": "purist"
@@ -1963,7 +2293,8 @@
                         "name": "Orange Liqueur",
                         "taste": [
                             "sweet",
-                            "fruity"
+                            "fruity",
+                            "bitter"
                         ],
                         "description": "bright",
                         "label": "gilded"
@@ -1972,7 +2303,8 @@
                         "name": "Simple Syrup",
                         "taste": [
                             "sweet",
-                            "fruity"
+                            "fruity",
+                            "floral"
                         ],
                         "description": "smooth",
                         "label": "pivot"
@@ -1981,7 +2313,8 @@
                         "name": "Agave",
                         "taste": [
                             "sweet",
-                            "herbal"
+                            "herbal",
+                            "earthy"
                         ],
                         "description": "soft",
                         "label": "mellow"
@@ -1990,7 +2323,8 @@
                         "name": "Honey",
                         "taste": [
                             "sweet",
-                            "floral"
+                            "floral",
+                            "earthy"
                         ],
                         "description": "round",
                         "label": "gilded"
@@ -1999,7 +2333,8 @@
                         "name": "Cranberry Juice",
                         "taste": [
                             "acid",
-                            "fruity"
+                            "fruity",
+                            "sweet"
                         ],
                         "description": "tart",
                         "label": "agitator"
@@ -2008,7 +2343,8 @@
                         "name": "Pineapple Juice",
                         "taste": [
                             "sweet",
-                            "acid"
+                            "acid",
+                            "fruity"
                         ],
                         "description": "tropical",
                         "label": "verbose"
@@ -2017,7 +2353,8 @@
                         "name": "Grapefruit Juice",
                         "taste": [
                             "bitter",
-                            "acid"
+                            "acid",
+                            "fruity"
                         ],
                         "description": "sharp",
                         "label": "realist"
@@ -2026,7 +2363,8 @@
                         "name": "Bitters",
                         "taste": [
                             "bitter",
-                            "spicy"
+                            "spicy",
+                            "herbal"
                         ],
                         "description": "spiced",
                         "label": "shadow"
@@ -2037,7 +2375,8 @@
                         "name": "Salt Rim",
                         "taste": [
                             "salty",
-                            "bitter"
+                            "bitter",
+                            "umami"
                         ],
                         "description": "sharp"
                     },
@@ -2045,7 +2384,8 @@
                         "name": "Lime Wheel",
                         "taste": [
                             "acid",
-                            "fruity"
+                            "fruity",
+                            "bitter"
                         ],
                         "description": "zesty"
                     },
@@ -2053,7 +2393,8 @@
                         "name": "Orange Slice",
                         "taste": [
                             "fruity",
-                            "acid"
+                            "acid",
+                            "sweet"
                         ],
                         "description": "bright"
                     },
@@ -2061,7 +2402,8 @@
                         "name": "Cherry",
                         "taste": [
                             "sweet",
-                            "fruity"
+                            "fruity",
+                            "herbal"
                         ],
                         "description": "classic"
                     },
@@ -2069,7 +2411,8 @@
                         "name": "Mint",
                         "taste": [
                             "herbal",
-                            "sweet"
+                            "sweet",
+                            "floral"
                         ],
                         "description": "fresh"
                     }
@@ -2085,12 +2428,15 @@
                         "name": "Gin",
                         "taste": [
                             "herbal",
-                            "bitter"
+                            "bitter",
+                            "floral"
                         ],
                         "description": "sharp",
                         "occasion": [
                             "Night",
-                            "Flexible"
+                            "Flexible",
+                            "Weekend Fun",
+                            "Date Night"
                         ],
                         "label": "botanist"
                     },
@@ -2098,7 +2444,8 @@
                         "name": "Bourbon",
                         "taste": [
                             "sweet",
-                            "smoky"
+                            "smoky",
+                            "caramel"
                         ],
                         "description": "rich",
                         "occasion": [
@@ -2111,7 +2458,8 @@
                         "name": "Rye",
                         "taste": [
                             "spicy",
-                            "bitter"
+                            "bitter",
+                            "earthy"
                         ],
                         "description": "dry",
                         "occasion": [
@@ -2124,12 +2472,15 @@
                         "name": "Rum",
                         "taste": [
                             "sweet",
-                            "fruity"
+                            "fruity",
+                            "caramel"
                         ],
                         "description": "dark",
                         "occasion": [
                             "Night",
-                            "Flexible"
+                            "Flexible",
+                            "Weekend Fun",
+                            "Casual Weeknight"
                         ],
                         "label": "rover"
                     },
@@ -2137,12 +2488,15 @@
                         "name": "Tequila",
                         "taste": [
                             "earthy",
-                            "herbal"
+                            "herbal",
+                            "smoky"
                         ],
                         "description": "bold",
                         "occasion": [
                             "Night",
-                            "Flexible"
+                            "Flexible",
+                            "Weekend Fun",
+                            "Casual Weeknight"
                         ],
                         "label": "spark"
                     },
@@ -2150,12 +2504,15 @@
                         "name": "Mezcal",
                         "taste": [
                             "smoky",
-                            "herbal"
+                            "herbal",
+                            "earthy"
                         ],
                         "description": "wild",
                         "occasion": [
                             "Night",
-                            "Flexible"
+                            "Flexible",
+                            "Date Night",
+                            "Dinner Party"
                         ],
                         "label": "wanderer"
                     },
@@ -2163,12 +2520,15 @@
                         "name": "Brandy",
                         "taste": [
                             "fruity",
-                            "sweet"
+                            "sweet",
+                            "caramel"
                         ],
                         "description": "round",
                         "occasion": [
                             "Night",
-                            "Flexible"
+                            "Flexible",
+                            "Dinner Party",
+                            "Date Night"
                         ],
                         "label": "sage"
                     },
@@ -2176,12 +2536,15 @@
                         "name": "Cognac",
                         "taste": [
                             "fruity",
-                            "sweet"
+                            "sweet",
+                            "floral"
                         ],
                         "description": "lux",
                         "occasion": [
                             "Night",
-                            "Flexible"
+                            "Flexible",
+                            "Date Night",
+                            "Dinner Party"
                         ],
                         "label": "hedonist"
                     },
@@ -2189,12 +2552,15 @@
                         "name": "Amaro",
                         "taste": [
                             "bitter",
-                            "herbal"
+                            "herbal",
+                            "spicy"
                         ],
                         "description": "deep",
                         "occasion": [
                             "Night",
-                            "Flexible"
+                            "Flexible",
+                            "Dinner Party",
+                            "Date Night"
                         ],
                         "label": "brooder"
                     },
@@ -2202,12 +2568,15 @@
                         "name": "Aperitif",
                         "taste": [
                             "bitter",
-                            "fruity"
+                            "fruity",
+                            "herbal"
                         ],
                         "description": "bright",
                         "occasion": [
                             "Night",
-                            "Flexible"
+                            "Flexible",
+                            "Brunch",
+                            "Weekend Fun"
                         ],
                         "label": "optimist"
                     },
@@ -2215,12 +2584,15 @@
                         "name": "Vermouth",
                         "taste": [
                             "herbal",
-                            "sweet"
+                            "sweet",
+                            "spicy"
                         ],
                         "description": "soft",
                         "occasion": [
                             "Night",
-                            "Flexible"
+                            "Flexible",
+                            "Casual Weeknight",
+                            "Date Night"
                         ],
                         "label": "diplomat"
                     },
@@ -2228,12 +2600,15 @@
                         "name": "Sherry",
                         "taste": [
                             "nutty",
-                            "sweet"
+                            "sweet",
+                            "umami"
                         ],
                         "description": "dry",
                         "occasion": [
                             "Night",
-                            "Flexible"
+                            "Flexible",
+                            "Dinner Party",
+                            "Casual Weeknight"
                         ],
                         "label": "archivist"
                     },
@@ -2241,7 +2616,8 @@
                         "name": "Port",
                         "taste": [
                             "sweet",
-                            "fruity"
+                            "fruity",
+                            "earthy"
                         ],
                         "description": "rich",
                         "occasion": [
@@ -2254,12 +2630,15 @@
                         "name": "Fruit Liqueur",
                         "taste": [
                             "sweet",
-                            "fruity"
+                            "fruity",
+                            "floral"
                         ],
                         "description": "dense",
                         "occasion": [
                             "Night",
-                            "Flexible"
+                            "Flexible",
+                            "Weekend Fun",
+                            "Celebrating something"
                         ],
                         "label": "hedonist"
                     },
@@ -2267,7 +2646,8 @@
                         "name": "Herbal Liqueur",
                         "taste": [
                             "herbal",
-                            "bitter"
+                            "bitter",
+                            "spicy"
                         ],
                         "description": "intense",
                         "occasion": [
@@ -2282,7 +2662,8 @@
                         "name": "Sweet Vermouth",
                         "taste": [
                             "sweet",
-                            "herbal"
+                            "herbal",
+                            "spicy"
                         ],
                         "description": "round",
                         "label": "broker"
@@ -2291,7 +2672,8 @@
                         "name": "Dry Vermouth",
                         "taste": [
                             "dry",
-                            "herbal"
+                            "herbal",
+                            "floral"
                         ],
                         "description": "sharp",
                         "label": "stoic"
@@ -2300,7 +2682,8 @@
                         "name": "Campari",
                         "taste": [
                             "bitter",
-                            "fruity"
+                            "fruity",
+                            "herbal"
                         ],
                         "description": "bold",
                         "label": "catalyst"
@@ -2309,7 +2692,8 @@
                         "name": "Aperitif",
                         "taste": [
                             "bitter",
-                            "fruity"
+                            "fruity",
+                            "herbal"
                         ],
                         "description": "bright",
                         "label": "optimist"
@@ -2318,7 +2702,8 @@
                         "name": "Amaro",
                         "taste": [
                             "bitter",
-                            "herbal"
+                            "herbal",
+                            "spicy"
                         ],
                         "description": "deep",
                         "label": "brooder"
@@ -2327,7 +2712,8 @@
                         "name": "Bitters",
                         "taste": [
                             "bitter",
-                            "spicy"
+                            "spicy",
+                            "herbal"
                         ],
                         "description": "spiced",
                         "label": "shadow"
@@ -2336,7 +2722,8 @@
                         "name": "Orange Liqueur",
                         "taste": [
                             "sweet",
-                            "fruity"
+                            "fruity",
+                            "bitter"
                         ],
                         "description": "soft",
                         "label": "gilded"
@@ -2345,7 +2732,8 @@
                         "name": "Cherry Liqueur",
                         "taste": [
                             "sweet",
-                            "fruity"
+                            "fruity",
+                            "herbal"
                         ],
                         "description": "dark",
                         "label": "romantic"
@@ -2354,7 +2742,8 @@
                         "name": "Herbal Liqueur",
                         "taste": [
                             "herbal",
-                            "bitter"
+                            "bitter",
+                            "spicy"
                         ],
                         "description": "intense",
                         "label": "alchemist"
@@ -2363,7 +2752,8 @@
                         "name": "Coffee Liqueur",
                         "taste": [
                             "bitter",
-                            "sweet"
+                            "sweet",
+                            "earthy"
                         ],
                         "description": "roasted",
                         "label": "nocturnal"
@@ -2374,7 +2764,8 @@
                         "name": "Orange Peel",
                         "taste": [
                             "fruity",
-                            "acid"
+                            "acid",
+                            "bitter"
                         ],
                         "description": "aromatic"
                     },
@@ -2382,7 +2773,8 @@
                         "name": "Cherry",
                         "taste": [
                             "sweet",
-                            "fruity"
+                            "fruity",
+                            "herbal"
                         ],
                         "description": "classic"
                     },
@@ -2390,7 +2782,8 @@
                         "name": "Lemon Twist",
                         "taste": [
                             "acid",
-                            "fruity"
+                            "fruity",
+                            "bitter"
                         ],
                         "description": "bright"
                     },
@@ -2398,7 +2791,8 @@
                         "name": "Olive",
                         "taste": [
                             "salty",
-                            "bitter"
+                            "bitter",
+                            "umami"
                         ],
                         "description": "savory"
                     },
@@ -2406,7 +2800,8 @@
                         "name": "Flamed Peel",
                         "taste": [
                             "fruity",
-                            "bitter"
+                            "bitter",
+                            "herbal"
                         ],
                         "description": "smoky"
                     }
@@ -2420,7 +2815,8 @@
                         "name": "Bourbon",
                         "taste": [
                             "sweet",
-                            "smoky"
+                            "smoky",
+                            "caramel"
                         ],
                         "description": "rich",
                         "occasion": [
@@ -2433,7 +2829,8 @@
                         "name": "Rye",
                         "taste": [
                             "spicy",
-                            "bitter"
+                            "bitter",
+                            "earthy"
                         ],
                         "description": "dry",
                         "occasion": [
@@ -2446,12 +2843,15 @@
                         "name": "Rum",
                         "taste": [
                             "sweet",
-                            "fruity"
+                            "fruity",
+                            "caramel"
                         ],
                         "description": "dark",
                         "occasion": [
                             "Night",
-                            "Flexible"
+                            "Flexible",
+                            "Weekend Fun",
+                            "Casual Weeknight"
                         ],
                         "label": "rover"
                     },
@@ -2459,12 +2859,15 @@
                         "name": "Tequila",
                         "taste": [
                             "earthy",
-                            "herbal"
+                            "herbal",
+                            "smoky"
                         ],
                         "description": "bold",
                         "occasion": [
                             "Night",
-                            "Flexible"
+                            "Flexible",
+                            "Weekend Fun",
+                            "Casual Weeknight"
                         ],
                         "label": "spark"
                     },
@@ -2472,12 +2875,15 @@
                         "name": "Mezcal",
                         "taste": [
                             "smoky",
-                            "herbal"
+                            "herbal",
+                            "earthy"
                         ],
                         "description": "intense",
                         "occasion": [
                             "Night",
-                            "Flexible"
+                            "Flexible",
+                            "Date Night",
+                            "Dinner Party"
                         ],
                         "label": "wanderer"
                     },
@@ -2485,12 +2891,15 @@
                         "name": "Brandy",
                         "taste": [
                             "fruity",
-                            "sweet"
+                            "sweet",
+                            "caramel"
                         ],
                         "description": "round",
                         "occasion": [
                             "Night",
-                            "Flexible"
+                            "Flexible",
+                            "Dinner Party",
+                            "Date Night"
                         ],
                         "label": "sage"
                     },
@@ -2498,12 +2907,15 @@
                         "name": "Cognac",
                         "taste": [
                             "fruity",
-                            "sweet"
+                            "sweet",
+                            "floral"
                         ],
                         "description": "lux",
                         "occasion": [
                             "Night",
-                            "Flexible"
+                            "Flexible",
+                            "Date Night",
+                            "Dinner Party"
                         ],
                         "label": "hedonist"
                     },
@@ -2511,12 +2923,15 @@
                         "name": "Amaro",
                         "taste": [
                             "bitter",
-                            "herbal"
+                            "herbal",
+                            "spicy"
                         ],
                         "description": "deep",
                         "occasion": [
                             "Night",
-                            "Flexible"
+                            "Flexible",
+                            "Dinner Party",
+                            "Date Night"
                         ],
                         "label": "brooder"
                     },
@@ -2524,12 +2939,15 @@
                         "name": "Aperitif",
                         "taste": [
                             "bitter",
-                            "fruity"
+                            "fruity",
+                            "herbal"
                         ],
                         "description": "light",
                         "occasion": [
                             "Night",
-                            "Flexible"
+                            "Flexible",
+                            "Brunch",
+                            "Weekend Fun"
                         ],
                         "label": "optimist"
                     },
@@ -2537,12 +2955,15 @@
                         "name": "Vermouth",
                         "taste": [
                             "herbal",
-                            "sweet"
+                            "sweet",
+                            "spicy"
                         ],
                         "description": "soft",
                         "occasion": [
                             "Night",
-                            "Flexible"
+                            "Flexible",
+                            "Casual Weeknight",
+                            "Date Night"
                         ],
                         "label": "diplomat"
                     },
@@ -2550,12 +2971,15 @@
                         "name": "Sherry",
                         "taste": [
                             "nutty",
-                            "sweet"
+                            "sweet",
+                            "umami"
                         ],
                         "description": "dry",
                         "occasion": [
                             "Night",
-                            "Flexible"
+                            "Flexible",
+                            "Dinner Party",
+                            "Casual Weeknight"
                         ],
                         "label": "archivist"
                     },
@@ -2563,7 +2987,8 @@
                         "name": "Port",
                         "taste": [
                             "sweet",
-                            "fruity"
+                            "fruity",
+                            "earthy"
                         ],
                         "description": "rich",
                         "occasion": [
@@ -2576,12 +3001,15 @@
                         "name": "Fruit Liqueur",
                         "taste": [
                             "sweet",
-                            "fruity"
+                            "fruity",
+                            "floral"
                         ],
                         "description": "dense",
                         "occasion": [
                             "Night",
-                            "Flexible"
+                            "Flexible",
+                            "Weekend Fun",
+                            "Celebrating something"
                         ],
                         "label": "hedonist"
                     },
@@ -2589,7 +3017,8 @@
                         "name": "Herbal Liqueur",
                         "taste": [
                             "herbal",
-                            "bitter"
+                            "bitter",
+                            "spicy"
                         ],
                         "description": "intense",
                         "occasion": [
@@ -2602,12 +3031,15 @@
                         "name": "Whiskey",
                         "taste": [
                             "smoky",
-                            "sweet"
+                            "sweet",
+                            "caramel"
                         ],
                         "description": "bold",
                         "occasion": [
                             "Night",
-                            "Flexible"
+                            "Flexible",
+                            "Casual Weeknight",
+                            "Weekend Fun"
                         ],
                         "label": "charmer"
                     }
@@ -2617,7 +3049,8 @@
                         "name": "Sugar Cube",
                         "taste": [
                             "sweet",
-                            "caramel"
+                            "caramel",
+                            "fruity"
                         ],
                         "description": "classic",
                         "label": "anchor"
@@ -2626,7 +3059,8 @@
                         "name": "Simple Syrup",
                         "taste": [
                             "sweet",
-                            "fruity"
+                            "fruity",
+                            "floral"
                         ],
                         "description": "smooth",
                         "label": "pivot"
@@ -2635,7 +3069,8 @@
                         "name": "Honey",
                         "taste": [
                             "sweet",
-                            "floral"
+                            "floral",
+                            "earthy"
                         ],
                         "description": "round",
                         "label": "gilded"
@@ -2644,7 +3079,8 @@
                         "name": "Agave",
                         "taste": [
                             "sweet",
-                            "herbal"
+                            "herbal",
+                            "earthy"
                         ],
                         "description": "soft",
                         "label": "mellow"
@@ -2653,7 +3089,8 @@
                         "name": "Maple Syrup",
                         "taste": [
                             "sweet",
-                            "caramel"
+                            "caramel",
+                            "earthy"
                         ],
                         "description": "rich",
                         "label": "romantic"
@@ -2662,7 +3099,8 @@
                         "name": "Bitters",
                         "taste": [
                             "bitter",
-                            "spicy"
+                            "spicy",
+                            "herbal"
                         ],
                         "description": "spiced",
                         "label": "shadow"
@@ -2671,7 +3109,8 @@
                         "name": "Orange Bitters",
                         "taste": [
                             "bitter",
-                            "fruity"
+                            "fruity",
+                            "herbal"
                         ],
                         "description": "bright",
                         "label": "overthinker"
@@ -2680,7 +3119,8 @@
                         "name": "Chocolate Bitters",
                         "taste": [
                             "bitter",
-                            "sweet"
+                            "sweet",
+                            "herbal"
                         ],
                         "description": "dark",
                         "label": "wildcard"
@@ -2689,7 +3129,8 @@
                         "name": "Coffee Liqueur",
                         "taste": [
                             "bitter",
-                            "sweet"
+                            "sweet",
+                            "earthy"
                         ],
                         "description": "roasted",
                         "label": "nocturnal"
@@ -2698,7 +3139,8 @@
                         "name": "Amaro",
                         "taste": [
                             "bitter",
-                            "herbal"
+                            "herbal",
+                            "spicy"
                         ],
                         "description": "deep",
                         "label": "brooder"
@@ -2709,7 +3151,8 @@
                         "name": "Orange Peel",
                         "taste": [
                             "fruity",
-                            "acid"
+                            "acid",
+                            "bitter"
                         ],
                         "description": "aromatic"
                     },
@@ -2717,7 +3160,8 @@
                         "name": "Cherry",
                         "taste": [
                             "sweet",
-                            "fruity"
+                            "fruity",
+                            "herbal"
                         ],
                         "description": "classic"
                     },
@@ -2725,7 +3169,8 @@
                         "name": "Lemon Twist",
                         "taste": [
                             "acid",
-                            "fruity"
+                            "fruity",
+                            "bitter"
                         ],
                         "description": "bright"
                     },
@@ -2733,7 +3178,8 @@
                         "name": "Cinnamon Stick",
                         "taste": [
                             "spicy",
-                            "sweet"
+                            "sweet",
+                            "herbal"
                         ],
                         "description": "warm"
                     },
@@ -2741,7 +3187,8 @@
                         "name": "Star Anise",
                         "taste": [
                             "spicy",
-                            "herbal"
+                            "herbal",
+                            "bitter"
                         ],
                         "description": "aromatic"
                     }
@@ -2755,12 +3202,15 @@
                         "name": "Gin",
                         "taste": [
                             "herbal",
-                            "bitter"
+                            "bitter",
+                            "floral"
                         ],
                         "description": "dry",
                         "occasion": [
                             "Night",
-                            "Flexible"
+                            "Flexible",
+                            "Weekend Fun",
+                            "Date Night"
                         ],
                         "label": "botanist"
                     },
@@ -2768,12 +3218,15 @@
                         "name": "Vodka",
                         "taste": [
                             "clean",
-                            "fruity"
+                            "fruity",
+                            "sweet"
                         ],
                         "description": "sharp",
                         "occasion": [
                             "Night",
-                            "Flexible"
+                            "Flexible",
+                            "Weekend Fun",
+                            "Casual Weeknight"
                         ],
                         "label": "flux"
                     },
@@ -2781,7 +3234,8 @@
                         "name": "Aquavit",
                         "taste": [
                             "herbal",
-                            "spicy"
+                            "spicy",
+                            "earthy"
                         ],
                         "description": "spiced",
                         "occasion": [
@@ -2794,12 +3248,15 @@
                         "name": "Soju",
                         "taste": [
                             "clean",
-                            "fruity"
+                            "fruity",
+                            "floral"
                         ],
                         "description": "soft",
                         "occasion": [
                             "Night",
-                            "Flexible"
+                            "Flexible",
+                            "Casual Weeknight",
+                            "Weekend Fun"
                         ],
                         "label": "maverick"
                     },
@@ -2807,12 +3264,15 @@
                         "name": "Sake",
                         "taste": [
                             "umami",
-                            "clean"
+                            "clean",
+                            "floral"
                         ],
                         "description": "smooth",
                         "occasion": [
                             "Night",
-                            "Flexible"
+                            "Flexible",
+                            "Dinner Party",
+                            "Date Night"
                         ],
                         "label": "pared"
                     },
@@ -2820,12 +3280,15 @@
                         "name": "Tequila",
                         "taste": [
                             "earthy",
-                            "herbal"
+                            "herbal",
+                            "smoky"
                         ],
                         "description": "bold",
                         "occasion": [
                             "Night",
-                            "Flexible"
+                            "Flexible",
+                            "Weekend Fun",
+                            "Casual Weeknight"
                         ],
                         "label": "spark"
                     },
@@ -2833,12 +3296,15 @@
                         "name": "Mezcal",
                         "taste": [
                             "smoky",
-                            "herbal"
+                            "herbal",
+                            "earthy"
                         ],
                         "description": "intense",
                         "occasion": [
                             "Night",
-                            "Flexible"
+                            "Flexible",
+                            "Date Night",
+                            "Dinner Party"
                         ],
                         "label": "wanderer"
                     },
@@ -2846,12 +3312,15 @@
                         "name": "Brandy",
                         "taste": [
                             "fruity",
-                            "sweet"
+                            "sweet",
+                            "caramel"
                         ],
                         "description": "round",
                         "occasion": [
                             "Night",
-                            "Flexible"
+                            "Flexible",
+                            "Dinner Party",
+                            "Date Night"
                         ],
                         "label": "sage"
                     },
@@ -2859,12 +3328,15 @@
                         "name": "Cognac",
                         "taste": [
                             "fruity",
-                            "sweet"
+                            "sweet",
+                            "floral"
                         ],
                         "description": "lux",
                         "occasion": [
                             "Night",
-                            "Flexible"
+                            "Flexible",
+                            "Date Night",
+                            "Dinner Party"
                         ],
                         "label": "hedonist"
                     },
@@ -2872,12 +3344,15 @@
                         "name": "Rum",
                         "taste": [
                             "sweet",
-                            "fruity"
+                            "fruity",
+                            "caramel"
                         ],
                         "description": "soft",
                         "occasion": [
                             "Night",
-                            "Flexible"
+                            "Flexible",
+                            "Weekend Fun",
+                            "Casual Weeknight"
                         ],
                         "label": "rover"
                     },
@@ -2885,12 +3360,15 @@
                         "name": "Whiskey",
                         "taste": [
                             "smoky",
-                            "sweet"
+                            "sweet",
+                            "caramel"
                         ],
                         "description": "bold",
                         "occasion": [
                             "Night",
-                            "Flexible"
+                            "Flexible",
+                            "Casual Weeknight",
+                            "Weekend Fun"
                         ],
                         "label": "charmer"
                     },
@@ -2898,12 +3376,15 @@
                         "name": "Amaro",
                         "taste": [
                             "bitter",
-                            "herbal"
+                            "herbal",
+                            "spicy"
                         ],
                         "description": "deep",
                         "occasion": [
                             "Night",
-                            "Flexible"
+                            "Flexible",
+                            "Dinner Party",
+                            "Date Night"
                         ],
                         "label": "brooder"
                     },
@@ -2911,12 +3392,15 @@
                         "name": "Aperitif",
                         "taste": [
                             "bitter",
-                            "fruity"
+                            "fruity",
+                            "herbal"
                         ],
                         "description": "light",
                         "occasion": [
                             "Night",
-                            "Flexible"
+                            "Flexible",
+                            "Brunch",
+                            "Weekend Fun"
                         ],
                         "label": "optimist"
                     },
@@ -2924,12 +3408,15 @@
                         "name": "Vermouth",
                         "taste": [
                             "herbal",
-                            "sweet"
+                            "sweet",
+                            "spicy"
                         ],
                         "description": "soft",
                         "occasion": [
                             "Night",
-                            "Flexible"
+                            "Flexible",
+                            "Casual Weeknight",
+                            "Date Night"
                         ],
                         "label": "diplomat"
                     },
@@ -2937,7 +3424,8 @@
                         "name": "Herbal Liqueur",
                         "taste": [
                             "herbal",
-                            "bitter"
+                            "bitter",
+                            "spicy"
                         ],
                         "description": "intense",
                         "occasion": [
@@ -2952,7 +3440,8 @@
                         "name": "Dry Vermouth",
                         "taste": [
                             "dry",
-                            "herbal"
+                            "herbal",
+                            "floral"
                         ],
                         "description": "sharp",
                         "label": "stoic"
@@ -2961,7 +3450,8 @@
                         "name": "Sweet Vermouth",
                         "taste": [
                             "sweet",
-                            "herbal"
+                            "herbal",
+                            "spicy"
                         ],
                         "description": "round",
                         "label": "broker"
@@ -2970,7 +3460,8 @@
                         "name": "Bianco Vermouth",
                         "taste": [
                             "sweet",
-                            "herbal"
+                            "herbal",
+                            "floral"
                         ],
                         "description": "soft",
                         "label": "diplomat"
@@ -2979,7 +3470,8 @@
                         "name": "Bitters",
                         "taste": [
                             "bitter",
-                            "spicy"
+                            "spicy",
+                            "herbal"
                         ],
                         "description": "spiced",
                         "label": "shadow"
@@ -2988,7 +3480,8 @@
                         "name": "Orange Bitters",
                         "taste": [
                             "bitter",
-                            "fruity"
+                            "fruity",
+                            "herbal"
                         ],
                         "description": "bright",
                         "label": "overthinker"
@@ -2997,7 +3490,8 @@
                         "name": "Olive Brine",
                         "taste": [
                             "salty",
-                            "bitter"
+                            "bitter",
+                            "umami"
                         ],
                         "description": "savory",
                         "label": "realist"
@@ -3006,7 +3500,8 @@
                         "name": "Herbal Liqueur",
                         "taste": [
                             "herbal",
-                            "bitter"
+                            "bitter",
+                            "spicy"
                         ],
                         "description": "intense",
                         "label": "alchemist"
@@ -3015,7 +3510,8 @@
                         "name": "Amaro",
                         "taste": [
                             "bitter",
-                            "herbal"
+                            "herbal",
+                            "spicy"
                         ],
                         "description": "deep",
                         "label": "brooder"
@@ -3024,7 +3520,8 @@
                         "name": "Cherry Liqueur",
                         "taste": [
                             "sweet",
-                            "fruity"
+                            "fruity",
+                            "herbal"
                         ],
                         "description": "soft",
                         "label": "romantic"
@@ -3033,7 +3530,8 @@
                         "name": "Absinthe",
                         "taste": [
                             "herbal",
-                            "spicy"
+                            "spicy",
+                            "bitter"
                         ],
                         "description": "wild",
                         "label": "spark"
@@ -3044,7 +3542,8 @@
                         "name": "Olive",
                         "taste": [
                             "salty",
-                            "bitter"
+                            "bitter",
+                            "umami"
                         ],
                         "description": "classic"
                     },
@@ -3052,7 +3551,8 @@
                         "name": "Lemon Twist",
                         "taste": [
                             "acid",
-                            "fruity"
+                            "fruity",
+                            "bitter"
                         ],
                         "description": "bright"
                     },
@@ -3060,7 +3560,8 @@
                         "name": "Orange Peel",
                         "taste": [
                             "fruity",
-                            "acid"
+                            "acid",
+                            "bitter"
                         ],
                         "description": "aromatic"
                     },
@@ -3068,7 +3569,8 @@
                         "name": "Onion",
                         "taste": [
                             "savory",
-                            "acid"
+                            "acid",
+                            "umami"
                         ],
                         "description": "sharp"
                     },
@@ -3076,7 +3578,8 @@
                         "name": "Cherry",
                         "taste": [
                             "sweet",
-                            "fruity"
+                            "fruity",
+                            "herbal"
                         ],
                         "description": "playful"
                     }
