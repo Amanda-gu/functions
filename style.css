@@ -86,11 +86,11 @@ dialog{
 	pointer-events: none;
 	padding: var(--size-1);
 
+
 	#glass{
 		position: absolute;
-	
+		top: 10%;
 		width: 60%;
-		height: 60%;
 		pointer-events: none;
 		z-index: -1;
 	}
@@ -145,10 +145,18 @@ dialog{
 
 	&[open] { 
 		display: flex;
-		width: 100vw;
-		height: 100vh;
 		pointer-events: visible;
+		width: 100vw;
+
 	}
+	
+	@media (width > 600px) {
+		&[open] {
+			height: 100vh;
+		}
+
+	}
+
 	&::backdrop {
 		background-color: rgb(0 0 0 / 66%); /* A dark overlay. */
 		pointer-events: none; /* Let clicks pass through to our `document` listener. */
