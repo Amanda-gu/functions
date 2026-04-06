@@ -9,8 +9,8 @@
 	--size-3: calc((var(--size-1) * 1.8));
 	--size-4: calc((var(--size-1) * 2v));
 
-	--border-radius: var(--size-1);
-	--border-style: solid var(--primary-color) 0.1rem;
+	--border-radius: 0.3rem;
+	--border-style: dashed var(--primary-color) 0.1rem;
 
 	--font-mono: "attribute-mono", sans-serif;
 	--font-serif: "legitima", serif;
@@ -42,11 +42,11 @@ body {
 .main-cta {
 	background-color: var(--primary-color);
 	color: var(--secondary-color);
-	border: var(--border-style);
 }
 
 .secondary-cta{
 	background-color: var(--secondary-color);
+	border: var(--border-style);
 	color: var(--primary-color);
 }
 
@@ -54,6 +54,7 @@ body {
 	width: 90%;
 	margin: auto;
 	padding: var(--size-3);
+	border-radius: var(--border-radius);
 	border: var(--border-style);
 	background-color: var(--secondary-color);
 }
@@ -77,42 +78,46 @@ form {
 dialog{
 
 	display: none;
+	flex-direction: column; 
+	align-items: center;
+	gap: var(--size-3);
 	background-color: var(--secondary-color);
 	pointer-events: none;
-	padding: var(--size-3);
+	padding: var(--size-1);
 
-	#ingredient-list{
-		display: flex;
-		flex-direction: column;
-		gap: var(--size-2);
-		padding-block: var(--size-2);
-
-
-		#recipe-name{
-			line-height: var(--size-3);
-			text-transform: capitalize;
-		}
-
-		#recipe-description{
-			text-transform: uppercase;
-		}
-
-		h4{
-			font-family: var(--font-mono);
-			font-size: var(--size-0);
-			line-height: var(--size-2);
-		}
-
-		#base-section, #mixer-section, #scales-section{
+	#card{
+		border: var(--border-style);
+		padding: var(--size-1);
+		
+		#ingredient-list{
 			display: flex;
 			flex-direction: column;
-			gap: calc(var(--size-0) * 0.8);
-		}
+			gap: var(--size-2);
 
-		#scales-section{
-			display: flex;
-			flex-direction: row;
-			gap: var(--size-1);
+			#recipe-name{
+				font-family: var(--font-deco);
+				font-size: var(--size-3);
+				line-height: var(--size-3);
+				text-transform: capitalize;
+			}
+
+			h3{
+				font-family: var(--font-mono);
+				font-size: var(--size-0);
+				line-height: var(--size-2);
+			}
+
+			#base-section, #mixer-section, #scales-section{
+				display: flex;
+				flex-direction: column;
+				gap: 0;
+			}
+
+			#scales-section{
+				display: flex;
+				flex-direction: row;
+				gap: var(--size-1);
+			}
 		}
 	}
 
@@ -120,8 +125,6 @@ dialog{
 
 	&[open] { 
 		display: flex;
-		flex-direction: column; 
-		align-items: center;
 		width: 100vw;
 		height: 100vh;
 		pointer-events: visible;
@@ -132,9 +135,4 @@ dialog{
 	}
 
 
-	#recipe-name
-	{
-		font-family: var(--font-deco);
-		font-size: var(--size-3);
-	}
 }

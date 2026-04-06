@@ -182,11 +182,11 @@ let showCard = (data) => {
 		//add to html
 		let listItem =
 				`		
-					<h3 id="recipe-name">${cocktailLabel}</h3>
+					<h2 id="recipe-name">${cocktailLabel}</h2>
 						<p id="recipe-description">${cocktailDescription}</p>
 
 					<section id="base-section">
-						<h4>Base</h4>
+						<h3>Base</h3>
 						<ul id="recipe-base">
 							<li>${selectedBases.name || ''}</li>
 							<li>${selectedBases[0]?.name || ''}</li>
@@ -195,7 +195,7 @@ let showCard = (data) => {
 					</section>
 
 					<section id="mixer-section">
-						<h4 id="recipe-mixers">Mixers</h4>
+						<h3 id="recipe-mixers">Mixers</h3>
 						<ul>
 							<li>${selectedMixer[0].name || ''}</li>
 							<li>${selectedMixer[1].name || ''}</li>
@@ -204,11 +204,11 @@ let showCard = (data) => {
 
 					<section id="scales-section">
 						<section id="alc-section">
-							<h4>Strength</h4>
+							<h3>Strength</h3>
 							<p>${alcoholScale}</p>
 						</section>
 						<section id="adv-section">
-							<h4>Adventure</h4>
+							<h3>Adventure</h3>
 							<p>${adventureScale}</p>
 						</section>
 					</section>
