@@ -9,7 +9,7 @@
 	--size-3: calc((var(--size-1) * 1.8));
 	--size-4: calc((var(--size-1) * 2v));
 
-	--border-radius: 0.3rem;
+	--border-radius:0 ;
 	--border-style: dashed var(--primary-color) 0.1rem;
 
 	--font-mono: "attribute-mono", sans-serif;
@@ -80,6 +80,7 @@ dialog{
 	display: none;
 	flex-direction: column; 
 	align-items: center;
+	justify-content: center;
 	gap: var(--size-3);
 	background-color: var(--secondary-color);
 	pointer-events: none;
@@ -101,6 +102,11 @@ dialog{
 				text-transform: capitalize;
 			}
 
+			#recipe-description{
+				border-bottom: var(--border-style);
+				padding-block-end: var(--size-1);
+			}
+
 			h3{
 				font-family: var(--font-mono);
 				font-size: var(--size-0);
@@ -117,6 +123,8 @@ dialog{
 				display: flex;
 				flex-direction: row;
 				gap: var(--size-1);
+				border-top: var(--border-style);
+				padding-block-start: var(--size-1);
 			}
 		}
 	}
