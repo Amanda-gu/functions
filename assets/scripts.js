@@ -196,7 +196,15 @@ let showCard = (data) => {
 					<ul>
 						<li>${selectedMixer[0].name || ''}</li>
 						<li>${selectedMixer[1].name || ''}</li>
-					</ul>			
+					</ul>
+					
+
+					<section id="scales">
+					<h4>Strength</h4>
+						<p>${alcoholScale}</p>
+					<h4>Adventure</h4>
+						<p>${adventureScale}</p>
+					</section>
 					
 				`
 			//innerHtml so it doesnt add to the list everytime i click

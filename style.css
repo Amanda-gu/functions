@@ -12,17 +12,19 @@
 	--border-radius: var(--size-1);
 	--border-style: solid var(--primary-color) 0.1rem;
 
-	--font-serif-mono: "narkiss-asaf-variable", sans-serif;
+	--font-mono: "attribute-mono", sans-serif;
 	--font-serif: "legitima", serif;
 	--font-deco: "rafaella", sans-serif;
 
 	--primary-color: #000000;
 	--secondary-color: #ecece9;
 
+	font-size: 120%;
+
 }
 body {
     font-family: var(--font-serif);
-	font-size: var(--size-2);
+	font-size: var(--size-1);
 	padding: var(--spacing);
 	height: 100vh;
 	display: flex; 
@@ -49,7 +51,7 @@ body {
 }
 
 #intro {
-	width: 60%;
+	width: 90%;
 	margin: auto;
 	padding: var(--size-3);
 	border: var(--border-style);
@@ -73,21 +75,38 @@ form {
 
 
 dialog{
-	opacity: 0;
+
+	display: none;
 	background-color: var(--secondary-color);
 	pointer-events: none;
+	padding: var(--size-3);
 
-	/* center it */
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	translate: -50% -50%;
+	#ingredient-list{
+		display: flex;
+		flex-direction: column;
+		gap: var(--size-2);
+		padding-block: var(--size-2);
 
-	width: 100vw;
-	height: 100vh;
+
+		#recipe-name{
+			line-height: var(--size-3);
+			text-transform: capitalize;
+		}
+
+		h4{
+			font-family: var(--font-mono);
+			font-size: var(--size-0);
+		}
+	}
+
+	
 
 	&[open] { 
-		opacity: 1;
+		display: flex;
+		flex-direction: column; 
+		align-items: center;
+		width: 100vw;
+		height: 100vh;
 		pointer-events: visible;
 	}
 	&::backdrop {
