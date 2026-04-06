@@ -81,15 +81,16 @@ dialog{
 	flex-direction: column; 
 	align-items: center;
 	justify-content: center;
-	gap: var(--size-3);
+	gap: var(--size-2);
 	background-color: var(--secondary-color);
 	pointer-events: none;
 	padding: var(--size-1);
 
 	#glass{
 		position: absolute;
-		width: 100%;
-		height: 100%;
+	
+		width: 60%;
+		height: 60%;
 		pointer-events: none;
 		z-index: -1;
 	}
@@ -115,14 +116,6 @@ dialog{
 				padding-block-end: var(--size-1);
 			}
 
-			h3{
-				font-family: var(--font-mono);
-				font-size: var(--size-0);
-				line-height: var(--size-2);
-				text-transform: uppercase;
-				opacity: 0.5;
-			}
-
 			#base-section, #mixer-section,#garnish-section, #scales-section{
 				display: flex;
 				flex-direction: column;
@@ -137,6 +130,15 @@ dialog{
 				padding-block-start: var(--size-1);
 			}
 		}
+	}
+
+	#close, #card #ingredient-list h3{
+		font-family: var(--font-mono);
+		font-family: var(--font-mono);
+		font-size: var(--size-0);
+		line-height: var(--size-2);
+		text-transform: uppercase;
+		opacity: 0.8;
 	}
 
 	
