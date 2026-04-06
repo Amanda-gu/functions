@@ -199,18 +199,18 @@ dialog{
 	padding: var(--size-1);
 
 
+	
 	#glass{
-		position: absolute;
-		top: 10%;
-		width: 60%;
+		/* position: absolute; */
+		height: 30%;
 		pointer-events: none;
 		z-index: -1;
-		opacity: 0.4;
+		opacity: 0.6;
 	}
-
 	#card{
 		border: var(--border-style);
 		padding: var(--size-1);
+	
 		
 		#ingredient-list{
 			display: flex;
