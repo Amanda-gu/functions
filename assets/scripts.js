@@ -73,8 +73,7 @@ let showCard = (data) => {
 			
 			selectedBases = [filterBase[base1]]
 			console.log('selected base:', selectedBases[0])
-		} else if (6 < alcoholScale <= 10){
-				 
+		} else if (6 < alcoholScale <= 10){	 
 			selectedBases = [filterBase[base1], filterBase[base2]]
 			console.log('selected bases', selectedBases)		
 		}
@@ -168,13 +167,13 @@ let showCard = (data) => {
 			(selectedBases.label || '') + ' ' +
 			(selectedBases.label || '') 
 			
-			+ ' ' + selectedMixer[0].label + ' ' + selectedMixer[1].label
+			+ ' ' + selectedMixer[0].label + ' ' + selectedMixer[1].label + ' ' + familyName
 
 		let cocktailDescription = 
 					
-					selectedBases.description 
-					+ ' and ' +
-					selectedMixer[0].description + ' and ' + selectedMixer[1].description
+					selectedBases.description ?? (selectedBases[0].description || '')
+					+ ', ' +
+					(selectedMixer[0].description || '') + ' and ' + (selectedMixer[1].description || '')
 					;
 
 				console.log('cocktail description:', cocktailDescription)
@@ -187,13 +186,13 @@ let showCard = (data) => {
 						<p>${cocktailDescription}</p>
 
 					<h4>Base</h4>
-					<ul>
+					<ul id="recipe-base">
 						<li>${selectedBases.name || ''}</li>
 						<li>${selectedBases[0]?.name || ''}</li>
 						<li>${selectedBases[1]?.name || ''}</li>
 					</ul>
 
-					<h4>Mixers</h4>
+					<h4 id="recipe-mixers">Mixers</h4>
 					<ul>
 						<li>${selectedMixer[0].name || ''}</li>
 						<li>${selectedMixer[1].name || ''}</li>
