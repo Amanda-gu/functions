@@ -216,21 +216,24 @@ let showCard = (data) => {
 				}
 	
 		cocktailLabel =	
-			selectedBases.label ??
-			(selectedBases.label || '') + ' ' +
-			(selectedBases.label || '') 
 			
-			+ ' ' + selectedMixer[0].label + ' ' + selectedMixer[1].label + ' ' + familyName
+			(selectedBases.label || '') + ' ' +(selectedBases.label || '') 
+			+ ' ' + 
+			selectedMixer[0].label 
+			+ ' ' + 
+			selectedMixer[1].label 
+			+ ' ' + 
+			familyName
 
 		cocktailDescription = 
 					
-					selectedBases.description ?? (selectedBases[0].description || '')
-					+ ', ' +
-					(selectedMixer[0].description || '') + ' and ' + (selectedMixer[1].description || '')
-					;
+			selectedBases.description ?? (selectedBases[0].description || '')
+				+ ', ' +
+			(selectedMixer[0].description || '') + ' and ' + (selectedMixer[1].description || '')
+			;
 
-				console.log('cocktail description:', cocktailDescription)
-				console.log('cocktail label:', cocktailLabel)
+			console.log('cocktail description:', cocktailDescription)
+			console.log('cocktail label:', cocktailLabel)
 
 		//add to html
 		let listItem =
@@ -328,10 +331,8 @@ let showCard = (data) => {
 				//what i learned: turn it into canvas so i can get the image from the canvas
 			
 			const shareData = {
-				text: "I made a cocktail with Mixed Signals! Check it out:",
-				title: cocktailLabel,
-				text: cocktailDescription,
-				text: "Create your own cocktail recipe with Mixed Signals.",
+				title: "I made a" + cocktailLabel + " with Mixed Signals!",
+				text: "You can try it out too with this link:",
 				url: "https://amanda-gu.github.io/functions/"
 			}
 			console.log('share data', shareData)
