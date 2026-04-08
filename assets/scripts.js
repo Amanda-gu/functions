@@ -286,8 +286,7 @@ let showCard = (data) => {
 			
 	//SHARE	
 		//maybe i turn it into an image first then i share the image?
-		const btn = document.querySelector("#share");
-		const resultPara = document.querySelector(".result");
+		const btn = document.querySelector("#share")
 			
 		// btn.addEventListener("click", async () => {
 		// 		//turn html elemetns into image: https://www.youtube.com/watch?v=rIubDKHy0js
@@ -334,9 +333,11 @@ let showCard = (data) => {
 				//what i learned: turn it into canvas so i can get the image from the canvas
 			
 			const shareData = {
+				text: "I made a cocktail with Mixed Signals! Check it out:",
 				title: cocktailLabel,
-				text: "Check out this cocktail recipe I got from the Mixed Signals!",
-				text: cocktailDescription
+				text: cocktailDescription,
+				text: "Create your own cocktail recipe with Mixed Signals.",
+				url: "https://amanda-gu.github.io/functions/"
 			}
 			console.log('share data', shareData)
 				//share template from MDN: https://developer.mozilla.org/en-US/docs/Web/API/Web_Share_API 			
@@ -344,9 +345,8 @@ let showCard = (data) => {
 		
 			try {
 				navigator.share(shareData);
-				resultPara.textContent = "MDN shared successfully"
 			} catch (err) {
-				resultPara.textContent = `Error: ${err}`
+				console.error()
 				}})
 }
 
