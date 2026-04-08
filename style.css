@@ -44,6 +44,8 @@ body {
 	.main-cta {
 		background-color: var(--primary-color);
 		color: var(--secondary-color);
+		text-align: center;
+		
 	}
 	
 	.secondary-cta{
@@ -64,18 +66,23 @@ body {
 
 #intro {
 	width: 90%;
+
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	gap: var(--size-4);
 	margin: auto;
+
 	padding: var(--size-1);
 	border-radius: var(--border-radius);
-	gap: var(--size-4);
-	/* border: var(--border-style); */
 	hgroup{
 
 		display: flex;
 		flex-direction: column;
 		gap: var(--size-1);
-
+		
 		h1{
+			text-align: center;
 			font-family: var(--font-deco);
 			font-size: var(--size-4);
 			line-height: var(--size-4);
@@ -87,13 +94,20 @@ body {
 			opacity: 0.8;
 		}
 	}
-
 	form {
-		#input{
-			gap: var(--size-3);
-			border: var(--border-style);
-			padding: var(--size-1);
+		display: flex;
+		flex-direction: column;
+		gap: var(--size-2);
+		align-items: stretch;
 		
+		#input{
+			display: grid;
+			gap: var(--size-2);
+			border: var(--border-style);
+			border-radius: var(--border-radius);
+			padding: var(--size-1);
+			padding-block: var(--size-2);
+
 			section{
 				gap: var(--size-1);
 
@@ -125,31 +139,22 @@ body {
 						background: var(--primary-color);
 						cursor: pointer;
 					}
+
 			}
+		}
+
+		#mix{
+			width: 100%;
+
 		}
 		
 	}
 
-	@media (width > 1000px) {
+	@media (width > 700px) {
 		width: 60%;
 	}
 
 
-}
-
-form {
-	display: flex;
-	flex-direction: column;
-	gap: var(--size-2);
-	
-	#input{
-		border-radius: var(--border-radius);
-		display: grid;
-		gap: var(--size-2);
-		padding-block: var(--size-2);
-		height: fit-content;
-	}
-	
 }
 
 #glass-bg {
@@ -193,18 +198,20 @@ form {
 
 }
 
+
 dialog{
 	height: max-content;
 	min-height: 100vh;
+
 	display: none;
 	flex-direction: column; 
 	align-items: center;
 	justify-content: center;
+
 	gap: var(--size-2);
 	background-color: var(--third-color);
 	pointer-events: none;
 	padding: var(--size-1);
-
 
 	
 	#glass{
@@ -215,9 +222,13 @@ dialog{
 		opacity: 0.6;
 	}
 	#card{
+		width: 90%;
 		border: var(--border-style);
 		padding: var(--size-1);
 			
+		@media (width > 700px) {
+			width: 60%;
+		}
 		#ingredient-list{
 			display: flex;
 			flex-direction: column;
