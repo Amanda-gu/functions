@@ -72,19 +72,16 @@ let showCard = (data) => {
 		let base1 = Math.floor(Math.random() * filterBase.length)	 
 		let base2 = Math.floor(Math.random() * filterBase.length)
 
-		if (alcoholScale <= 6){
-			
+		if (alcoholScale <= 6){			
 			selectedBases = [filterBase[base1]]
 			console.log('selected base:', selectedBases[0])
 		} else if (6 < alcoholScale <= 10){	 
 			selectedBases = [filterBase[base1], filterBase[base2]]
 			console.log('selected bases', selectedBases)		
 		}
-			
-			
 
-		//family and base are chosen, below is for mixer selection 
-		//data here looks like: Light/Medium/Strong -> family -> base/mixer
+	//family and base are chosen, below is for mixer and garnish selection 
+	//data here looks like: Light/Medium/Strong -> family -> base/mixer
 		for (let i = 0; i < selectedBases.length; i++) {
 					selectedBase = selectedBases[i]	
 					
@@ -217,8 +214,6 @@ let showCard = (data) => {
 					console.log('selected garnish', selectedGarnish)
 					// console.log('selected garnish', selectedGarnish)
 				}
-		
-//choose mixer base on the base
 	
 		cocktailLabel =	
 			selectedBases.label ??
