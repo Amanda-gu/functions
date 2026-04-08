@@ -331,8 +331,8 @@ let showCard = (data) => {
 				//what i learned: turn it into canvas so i can get the image from the canvas
 			
 			const shareData = {
-				title: "I made a" + cocktailLabel + " with Mixed Signals!",
-				text: "You can try it out too with this link:",
+				title: "Mixed Signals Cocktail Recipe",
+				text: "I made a" + cocktailLabel + " with Mixed Signals!" + " You can try it out too with this link:",
 				url: "https://amanda-gu.github.io/functions/"
 			}
 			console.log('share data', shareData)
