@@ -281,28 +281,42 @@ let showCard = (data) => {
 			ingredientList.innerHTML = listItem
 }
 
-
-
-
-//share template from MDN: https://developer.mozilla.org/en-US/docs/Web/API/Web_Share_API 
-const shareData = {
-  title: `${cocktailLabel}`,
-  text: "Check out this cocktail recipe I got from the Mixed Signals!",
-  url: "https://amanda-gu.github.io/functions/",
-};
-
+//maybe i turn it into an image first then i share the image?
+//turn html elemetns into image: https://www.youtube.com/watch?v=rIubDKHy0js
 const btn = document.querySelector("#share");
 const resultPara = document.querySelector(".result");
 
-// Share must be triggered by "user activation"
 btn.addEventListener("click", async () => {
-  try {
-    await navigator.share(shareData);
-    resultPara.textContent = "MDN shared successfully";
-  } catch (err) {
-    resultPara.textContent = `Error: ${err}`;
-  }
+	html2canvas(ingredientList).then(canvas => {
+	let recipeURL = canvas.toDataURL("image/png")
+	const shareData = {
+		  title: `${cocktailLabel}`,
+		  text: "Check out this cocktail recipe I got from the Mixed Signals!",
+		  files: [
+				new File([recipeURL], 'image.png', {
+				type: 'image/png',
+				}),
+				//https://web.dev/patterns/files/share-files#js
+			]
+		  //files is an ARRAY of File objects representing files to be shared. See below for shareable file types
+		}
+	if (navigator.canShare(data)) {
+		try {
+			navigator.share(shareData);
+			resultPara.textContent = "MDN shared successfully"
+		} catch (err) {
+			resultPara.textContent = `Error: ${err}`
+			}}
+  })
 });
+
+
+//share template from MDN: https://developer.mozilla.org/en-US/docs/Web/API/Web_Share_API 
+
+
+// Share must be triggered by "user activation"
+// btn.addEventListener("click", async () => {
+// });
 
 //click button show result modal
 
