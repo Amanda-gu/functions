@@ -30,6 +30,8 @@ let showCard = (data) => {
 		let selectedMixer
 		let selectedGarnish
 		let familyName
+		let cocktailLabel
+		let cocktailDescription
 
 //put everythign in ranges so i dont repeat the code
 		let level
@@ -218,14 +220,14 @@ let showCard = (data) => {
 		
 //choose mixer base on the base
 	
-		let cocktailLabel =	
+		cocktailLabel =	
 			selectedBases.label ??
 			(selectedBases.label || '') + ' ' +
 			(selectedBases.label || '') 
 			
 			+ ' ' + selectedMixer[0].label + ' ' + selectedMixer[1].label + ' ' + familyName
 
-		let cocktailDescription = 
+		cocktailDescription = 
 					
 					selectedBases.description ?? (selectedBases[0].description || '')
 					+ ', ' +
@@ -279,44 +281,55 @@ let showCard = (data) => {
 				`
 			//innerHtml so it doesnt add to the list everytime i click
 			ingredientList.innerHTML = listItem
+			
+			
+			
+	//SHARE	
+		//maybe i turn it into an image first then i share the image?
+		const btn = document.querySelector("#share");
+		const resultPara = document.querySelector(".result");
+			
+		btn.addEventListener("click", async () => {
+				//turn html elemetns into image: https://www.youtube.com/watch?v=rIubDKHy0js
+				//what i learned: turn it into canvas so i can get the image from the canvas
+				html2canvas(ingredientList).then(canvas => {
+				let recipeURL = canvas.toDataURL("image/png")
+
+				canvas.toBlob(function(blob) {
+					let recipeBlob = URL.createObjectURL(blob)
+
+					recipeURL.src = recipeBlob;
+					console.log('image URL', recipeBlob)
+
+				const shareData = {
+					title: `${cocktailLabel}`,
+					text: "Check out this cocktail recipe I got from the Mixed Signals!",
+					files: 
+						[new File([recipeBlob], 
+							"my recipe.png", 
+						{ type: "image/png" })]
+							
+							// i referenced this link for sharing files https://web.dev/patterns/files/share-files#js
+							// trouble shoot why above code is not working: https://chatgpt.com/share/69d6828e-7360-8327-83e1-29deb4cbe844
+							// what i learned: toDataURL returns NOT an actual file but a text string of base64(binary data), toBlob object representing the image contained in the canvas
+							//  files is an ARRAY of File objects representing files to be shared. See below for shareable file types
+				}
+				console.log('share data', shareData)
+					//share template from MDN: https://developer.mozilla.org/en-US/docs/Web/API/Web_Share_API 			
+					// Share must be triggered by "user activation"
+			
+				try {
+					navigator.share(shareData);
+					resultPara.textContent = "MDN shared successfully"
+				} catch (err) {
+					resultPara.textContent = `Error: ${err}`
+					}})
+				})
+			
+		});
 }
 
-//maybe i turn it into an image first then i share the image?
-const btn = document.querySelector("#share");
-const resultPara = document.querySelector(".result");
 
-btn.addEventListener("click", async () => {
-	//turn html elemetns into image: https://www.youtube.com/watch?v=rIubDKHy0js
-	//what i learned: turn it into canvas so i can get the image from the canvas
-	html2canvas(ingredientList).then(canvas => {
-	let recipeURL = canvas.toDataUrl("image/png")
-	// canvas.toBlob(function(recipeBlob) {
-	// 	recipeURL = URL.createObjectURL(recipeBlob)
-	// })
-	const shareData = {
-		  title: `${cocktailLabel}`,
-		  text: "Check out this cocktail recipe I got from the Mixed Signals!",
-		  URL: recipeURL
-		// i referenced this link for sharing files https://web.dev/patterns/files/share-files#js
-		// trouble shoot why above code is not working: https://chatgpt.com/share/69d6828e-7360-8327-83e1-29deb4cbe844
-		// what i learned: toDataURL returns NOT an actual file but a text string of base64(binary data), toBlob object representing the image contained in the canvas
-		//  files is an ARRAY of File objects representing files to be shared. See below for shareable file types
-		}
-	//share template from MDN: https://developer.mozilla.org/en-US/docs/Web/API/Web_Share_API 			
-	// Share must be triggered by "user activation"
-	if (navigator.canShare(data)) {
-		try {
-			navigator.share(shareData);
-			resultPara.textContent = "MDN shared successfully"
-		} catch (err) {
-			resultPara.textContent = `Error: ${err}`
-			}}
-  })
-});
-
-
-// btn.addEventListener("click", async () => {
-// });
 
 //click button show result modal
 
