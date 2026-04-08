@@ -286,8 +286,8 @@ let showCard = (data) => {
 
 //share template from MDN: https://developer.mozilla.org/en-US/docs/Web/API/Web_Share_API 
 const shareData = {
-  title: "Mixology Lab",
-  text: "Create Your Own Recipe",
+  title: `${cocktailLabel}`,
+  text: "Check out this cocktail recipe I got from the Mixed Signals!",
   url: "https://amanda-gu.github.io/functions/",
 };
 
