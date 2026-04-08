@@ -287,6 +287,7 @@ const resultPara = document.querySelector(".result");
 
 btn.addEventListener("click", async () => {
 	//turn html elemetns into image: https://www.youtube.com/watch?v=rIubDKHy0js
+	//what i learned: turn it into canvas so i can get the image from the canvas
 	html2canvas(ingredientList).then(canvas => {
 	let recipeBlob = canvas.toBlob("image/png")
 	const shareData = {
@@ -300,7 +301,7 @@ btn.addEventListener("click", async () => {
 			]
 		// i referenced this link for sharing files https://web.dev/patterns/files/share-files#js
 		// trouble shoot why above code is not working: https://chatgpt.com/share/69d6828e-7360-8327-83e1-29deb4cbe844
-		// what i learned: toDataURL returns NOT an actual file but a text string of base64(binary data)
+		// what i learned: toDataURL returns NOT an actual file but a text string of base64(binary data), toBlob object representing the image contained in the canvas
 		//  files is an ARRAY of File objects representing files to be shared. See below for shareable file types
 		}
 	//share template from MDN: https://developer.mozilla.org/en-US/docs/Web/API/Web_Share_API 			
