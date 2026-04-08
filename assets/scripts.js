@@ -282,24 +282,29 @@ let showCard = (data) => {
 }
 
 //maybe i turn it into an image first then i share the image?
-//turn html elemetns into image: https://www.youtube.com/watch?v=rIubDKHy0js
 const btn = document.querySelector("#share");
 const resultPara = document.querySelector(".result");
 
 btn.addEventListener("click", async () => {
+	//turn html elemetns into image: https://www.youtube.com/watch?v=rIubDKHy0js
 	html2canvas(ingredientList).then(canvas => {
-	let recipeURL = canvas.toDataURL("image/png")
+	let recipeBlob = canvas.toBlob("image/png")
 	const shareData = {
 		  title: `${cocktailLabel}`,
 		  text: "Check out this cocktail recipe I got from the Mixed Signals!",
 		  files: [
-				new File([recipeURL], 'image.png', {
-				type: 'image/png',
+				new File([recipeBlob], 
+					'my recipe.png', 
+					{type: 'image/png'
 				}),
-				//https://web.dev/patterns/files/share-files#js
 			]
-		  //files is an ARRAY of File objects representing files to be shared. See below for shareable file types
+		// i referenced this link for sharing files https://web.dev/patterns/files/share-files#js
+		// trouble shoot why above code is not working: https://chatgpt.com/share/69d6828e-7360-8327-83e1-29deb4cbe844
+		// what i learned: toDataURL returns NOT an actual file but a text string of base64(binary data)
+		//  files is an ARRAY of File objects representing files to be shared. See below for shareable file types
 		}
+	//share template from MDN: https://developer.mozilla.org/en-US/docs/Web/API/Web_Share_API 			
+	// Share must be triggered by "user activation"
 	if (navigator.canShare(data)) {
 		try {
 			navigator.share(shareData);
@@ -311,10 +316,6 @@ btn.addEventListener("click", async () => {
 });
 
 
-//share template from MDN: https://developer.mozilla.org/en-US/docs/Web/API/Web_Share_API 
-
-
-// Share must be triggered by "user activation"
 // btn.addEventListener("click", async () => {
 // });
 
