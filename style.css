@@ -101,7 +101,7 @@ body {
 		
 		#input{
 			display: grid;
-			gap: var(--size-3);
+			gap: var(--size-4);
 			border: var(--border-style);
 			border-radius: var(--border-radius);
 			padding: var(--size-1);
@@ -115,11 +115,10 @@ body {
 					font-family: var(--font-mono);
 					text-transform: uppercase;
 					font-size: var(--size-0);
-					color: var(--forth-color);
 					text-align: center;
 				}
 
-				#occasion, #alc-scale, #adv-scale{
+				#occasion, .slider #alc-scale, .slider #adv-scale{
 					background-color: var(--third-color);
 					width: 100%;
 				}
@@ -140,18 +139,23 @@ body {
 						cursor: pointer;
 					}
 
+					.slider{
+						width: 100%;
+						display: flex;
+						flex-direction: column;
+						gap: calc(var(--size-0)*0.5);
+		
+						#alc-micro-copy, #adv-micro-copy{
+							display: flex;
+							flex-direction: row;
+							width: 100%;
+							justify-content: space-between;
+							font-size: var(--size-0);
+							color: var(--forth-color);
+						}
+					}
 			}
 
-			.slider{
-				#alc-micro-copy, #adv-micro-copy{
-					display: flex;
-					flex-direction: row;
-					width: 100%;
-					justify-content: space-between;
-					font-size: var(--size-0);
-					color: var(--forth-color);
-				}
-			}
 		}
 
 
@@ -225,13 +229,7 @@ dialog{
 	pointer-events: none;
 
 	
-	#glass{
-		position: absolute;
-		height: 60%;
-		pointer-events: none;
-		z-index: -1;
-		opacity: 0.6;
-	}
+	
 	#card{
 		border: var(--border-style);
 		padding: var(--size-1);
@@ -240,39 +238,61 @@ dialog{
 			width: clamp(20rem, 50vw, 26rem);
 	
 		}
-			
-
+		
 		#ingredient-list{
 			display: flex;
 			flex-direction: column;
 			gap: var(--size-2);
-
+			
 			#recipe-name{
 				font-family: var(--font-deco);
 				font-size: var(--size-3);
 				line-height: var(--size-3);
 				text-transform: capitalize;
 			}
-
+			
 			#recipe-description{
 				border-bottom: var(--border-style);
 				padding-block-end: var(--size-1);
 			}
-
-			#base-section, #mixer-section,#garnish-section, #scales-section{
-				display: flex;
-				flex-direction: column;
-				gap: 0;
-			}
-
-			#scales-section{
+			#ingredients-img{
+				
 				display: flex;
 				flex-direction: row;
-				gap: var(--size-1);
-				border-top: var(--border-style);
-				padding-block-start: var(--size-1);
+				width: 100%;
+				justify-content: space-between;
+				
+				#glass{
+					height: 100%;
+					width: clamp(8rem, 20%, 20rem);
+					pointer-events: none;
+					z-index: -1;
+					opacity: 0.6;
+				}
+	
+				#ingredients{
+					display: flex;
+					flex-direction: column;
+					gap: var(--size-2);
+	
+					#base-section, #mixer-section,#garnish-section, #scales-section{
+						display: flex;
+						flex-direction: column;
+						gap: 0;
+					}
+				}
+	
 			}
+			#scales-section{
+					display: flex;
+					flex-direction: row;
+					gap: var(--size-1);
+					border-top: var(--border-style);
+					padding-block-start: var(--size-1);
+				}
+
 		}
+
 	}
 
 	#close, #card #ingredient-list h3{

@@ -240,29 +240,33 @@ let showCard = (data) => {
 				`		
 					<h2 id="recipe-name">${cocktailLabel}</h2>
 						<p id="recipe-description">${cocktailDescription}</p>
+					<section id="ingredients-img">
+						<section id="ingredients">
+							<section id="base-section">
+								<h3>Base</h3>
+								<ul id="recipe-base">
+									<li>${selectedBases.name || ''}</li>
+									<li>${selectedBases[0]?.name || ''}</li>
+									<li>${selectedBases[1]?.name || ''}</li>
+								</ul>
+							</section>
 
-					<section id="base-section">
-						<h3>Base</h3>
-						<ul id="recipe-base">
-							<li>${selectedBases.name || ''}</li>
-							<li>${selectedBases[0]?.name || ''}</li>
-							<li>${selectedBases[1]?.name || ''}</li>
-						</ul>
-					</section>
+							<section id="mixer-section">
+								<h3 id="recipe-mixers">Mixers</h3>
+								<ul>
+									<li>${selectedMixer[0].name || ''}</li>
+									<li>${selectedMixer[1].name || ''}</li>
+								</ul>
+							</section>
 
-					<section id="mixer-section">
-						<h3 id="recipe-mixers">Mixers</h3>
-						<ul>
-							<li>${selectedMixer[0].name || ''}</li>
-							<li>${selectedMixer[1].name || ''}</li>
-						</ul>
-					</section>
-
-					<section id="garnish-section">
-						<h3 id="recipe-garnish">Garnish</h3>
-						<ul>
-							<li>${selectedGarnish.name || ''}</li>
-						</ul>
+							<section id="garnish-section">
+								<h3 id="recipe-garnish">Garnish</h3>
+								<ul>
+									<li>${selectedGarnish.name || ''}</li>
+								</ul>
+							</section>
+						</section>
+						 <img id="glass" src="assets/glasses/margarita.svg">
 					</section>
 
 					<section id="scales-section">
