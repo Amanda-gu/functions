@@ -44,8 +44,7 @@ body {
 	.main-cta {
 		background-color: var(--primary-color);
 		color: var(--secondary-color);
-		text-align: center;
-		
+		text-align: center;	
 	}
 	
 	.secondary-cta{
@@ -68,8 +67,6 @@ body {
 }
 
 #intro {
-	width: 90%;
-
 	display: flex;
 	flex-direction: column;
 	align-items: stretch;
@@ -100,15 +97,16 @@ body {
 		display: flex;
 		flex-direction: column;
 		gap: var(--size-2);
-		align-items: stretch;
+		align-items: center;
 		
 		#input{
 			display: grid;
-			gap: var(--size-2);
+			gap: var(--size-3);
 			border: var(--border-style);
 			border-radius: var(--border-radius);
 			padding: var(--size-1);
 			padding-block: var(--size-2);
+			width: 100%;
 
 			section{
 				gap: var(--size-1);
@@ -156,19 +154,20 @@ body {
 			}
 		}
 
-		#mix{
-			width: 100%;
 
-		}
 		
 	}
 
 	@media (width > 700px) {
-		width: 60%;
-	}
+		form{
 
+			width: clamp(20rem, 50vw, 26rem);
+		}
+		}
 
 }
+
+
 
 #glass-bg {
 	position: absolute;
@@ -234,13 +233,15 @@ dialog{
 		opacity: 0.6;
 	}
 	#card{
-		width: 90%;
 		border: var(--border-style);
 		padding: var(--size-1);
-			
+
 		@media (width > 700px) {
-			width: 60%;
+			width: clamp(20rem, 50vw, 26rem);
+	
 		}
+			
+
 		#ingredient-list{
 			display: flex;
 			flex-direction: column;
@@ -276,11 +277,18 @@ dialog{
 
 	#close, #card #ingredient-list h3{
 		font-family: var(--font-mono);
-		font-family: var(--font-mono);
 		font-size: var(--size-0);
 		line-height: var(--size-2);
 		text-transform: uppercase;
 		color: var(--forth-color);
+	}
+
+	#close{
+		font-family: var(--font-serif);
+		text-transform: capitalize;
+		font-size: var(--size-1);
+		text-decoration: underline;
+		color: var(--color);
 	}
 
 	
