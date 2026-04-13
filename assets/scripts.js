@@ -230,7 +230,7 @@ let showCard = (data) => {
 					
 			selectedBases.description ?? (selectedBases[0].description || '')
 				+ ', ' +
-			(selectedMixer[0].description || '') + ' and ' + (selectedMixer[1].description || '')
+			(selectedMixer[0].description || '') + ', ' + (selectedMixer[1].description || '')
 			;
 
 			console.log('cocktail description:', cocktailDescription)

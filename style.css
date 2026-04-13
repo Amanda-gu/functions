@@ -122,12 +122,57 @@ body {
 					background-color: var(--third-color);
 					width: 100%;
 				}
-
+				
+				#occasion, #occasion option{
+					display: flex;
+					justify-content: center;
+					padding: var(--size-0);
+				}
 				#occasion{
 					text-align: center;
 					font-size: var(--size-1);
-					padding: var(--size-0);
+					
+					
+					option {
+						background-color: var(--color);
+						gap: var(--size-1);
+						transition: 0.4s;
+						}
+
+					option:hover,
+					option:focus {
+						background: var(--secondary-color);
+						}
+					option::checkmark {
+							display: none;
+						}
+					
 				}
+
+				#occasion,
+					::picker(select) {
+					appearance: base-select;
+					}
+				#occasion::picker-icon {
+					/* background-image: url('assets/carrot_down.svg'); */
+					transition: 0.4s rotate;
+					margin-inline-start: var(--size-0);
+					}
+
+				#occasion:open::picker-icon {
+					rotate: 180deg;
+					}
+					
+					::picker(select) {
+						border: var(--border-style);
+						border-radius: var(--border-radius);
+						left: anchor(10%);
+
+					}
+
+
+
+				/* style the select ui: https://developer.mozilla.org/en-US/play?uuid=51fcdd98e419e205bd92f567e58e5957123a6df8&state=tVbdiuM2FH6Vg4aFTBtPnGEoU20mtLSUvSzsVcEXK0vHsTayJCRlkswyj1DaQi96t8%2FQm9K%2BTl%2BgfYRiy%2FI487dkoIYQSzrfOZ%2FO%2BXTkD6QOjSKULCrjmmWhARa2%2BwNYKFaigsq4q4JYDJlHhTwUZPm2ewGLgS5mnVWCRBOQ4j4krgMsyk0IRg%2FjAYOCGx1Qh%2BVidn9mAM8G9DBlbJBGwzVTG7wqSEGW3ytkHqGnwlqai1k0Wz4F42xMsiVlmQaumPdXBZHc6IIAc5JltRQC9VVBgttgQZb%2Ffvz598WsNb9DLw%2FhMVbWJaogy29YiIDRvj5BT5jVy%2Bn9cRy9b83qWHo1a3xA93KKfx1H8U2MdyxNXku%2BRv1ymr8eWegY71ialfT1yzl%2BPI7jd9LXxxL0mq3x5Qx%2FPI7h2zba8xRTx4j9a9Y2sMWsb2hkSrj3hJJoMi00pbati5vEmVP40MKYtcgc0xwplMxj37peF%2Fq20J9Fm9LsMi9vpF5RKI0T6LLS7KJJodtOGu0qo0NWsUaqPYWCvEF1jUFyVpApFORrJ5lqXz3TPvPoZJVclEbso4utFKGmMM%2FzV6%2FbsWVCdHFzmOd21801bJf1dheXd5NuJXVrxzbBDNzOR8y8vEEK87Nzh00ysHFdSG8V21OoFEZ%2FK2ZpCtlZxlthTLKSIetbdQdhSq50m7%2BKAkcd0CVs35MjFYU7CvO4NF6ImaVwbnfgjZICTkT3dM5LxtcrZzZaUDjB7jlM0JCe4Jj2spUJhfzswh%2BSoLW5RjcdhpXhG98TGIcYQg8sk36yVucRwY0yjsLJl93zaHRwJrCAB46MRf2It2hJYX6ZC1xFxOOiTanSRvee%2B6P6RDHfb3yQ1T5VK65kPjAX7op9HhP4%2F5cicqWVdD5kpsrC3uJ4X5ljQm48hUu763455KmIPVaxT0BzyBM8QZ9L5TjkvVDahMkjUQ%2FhpQnBNA8LQnWoE2JihDh9qLRtLZM8BlTSaMrU4xq1atMcVP%2FsTksHB%2F6LeOABAu5C27ooBCeblnUNnFlgytasbHvVWKfDh9jY8SCuB1vlNfI1ilH8LcpVHdqeqcSBabRtmFtH615u81EnyxRWgaZm1h61XroF%2Bfu3X%2F7586eCPHdCjGVchj3tlHMoRKZUPJlMKbPNhPTcYSrBwdl8wmXfu77qzo%2FUq8yHvepl%2BAz%2BAanbZ%2FgHYylwpviEaV4bN4kKO4XPYW53px2%2Bz1Bcn%2BevThOvjbXGBQ%2FaBJg8ccEN%2BhV7SkusjMNEc5TqH8zGQenM1qMDYTD67APAuyd8vzvrihN9dR2yVIyv%2B6k7CWf96rZGFvpVa1KdKrlD0c%2FGreb9yEVZpWGXq4v%2BwuxF3t1Fo2uocz30J4fNgL7JpBbpSkpFIVPyvv14IFMSamyQUKLaoOT2Pw%3D%3D&srcPrefix=%2Fen-US%2Fdocs%2FLearn_web_development%2FExtensions%2FForms%2FCustomizable_select%2F */
 
 
 				/* styling the thumb: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_rangeslider */
@@ -251,6 +296,7 @@ dialog{
 			display: flex;
 			flex-direction: column;
 			gap: var(--size-2);
+			height: max-content;
 			
 			#recipe-name{
 				font-family: var(--font-deco);
@@ -262,6 +308,7 @@ dialog{
 			#recipe-description{
 				border-bottom: var(--border-style);
 				padding-block-end: var(--size-1);
+				text-transform: capitalize;
 			}
 
 			#ingredients-img{
