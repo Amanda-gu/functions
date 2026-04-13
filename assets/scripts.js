@@ -214,7 +214,8 @@ let showCard = (data) => {
 					console.log('selected garnish', selectedGarnish)
 					// console.log('selected garnish', selectedGarnish)
 				}
-	
+
+
 		cocktailLabel =	
 			
 			(selectedBases.label || '') + ' ' +(selectedBases.label || '') 
@@ -235,6 +236,7 @@ let showCard = (data) => {
 			console.log('cocktail description:', cocktailDescription)
 			console.log('cocktail label:', cocktailLabel)
 
+		
 		//add to html
 		let listItem =
 				`		
@@ -266,7 +268,8 @@ let showCard = (data) => {
 								</ul>
 							</section>
 						</section>
-						 <img id="glass" src="assets/glasses/margarita.svg">
+
+						 <img id="glass" src="assets/glasses/${familyName}.svg">
 					</section>
 
 					<section id="scales-section">
