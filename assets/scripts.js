@@ -275,11 +275,11 @@ let showCard = (data) => {
 					<section id="scales-section">
 						<section id="alc-section">
 							<h3>Strength</h3>
-							<p>${alcoholScale}</p>
+							<p>${alcoholScale}/10</p>
 						</section>
 						<section id="adv-section">
 							<h3>Adventure</h3>
-							<p>${adventureScale}</p>
+							<p>${adventureScale}/10</p>
 						</section>
 					</section>
 					

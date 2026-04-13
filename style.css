@@ -263,10 +263,11 @@ dialog{
 				border-bottom: var(--border-style);
 				padding-block-end: var(--size-1);
 			}
+
 			#ingredients-img{
 				height: min-content;
-				
 				display: flex;
+				align-items: center;
 				justify-content: space-between;
 	
 				
