@@ -134,14 +134,15 @@ body {
 					
 					
 					option {
-						background-color: var(--color);
+						background-color: var(--secondary-color);
 						gap: var(--size-1);
 						transition: 0.4s;
 						}
 
 					option:hover,
 					option:focus {
-						background: var(--secondary-color);
+						background: var(--primary-color);
+						color: var(--secondary-color);
 						}
 					option::checkmark {
 							display: none;
@@ -166,8 +167,7 @@ body {
 					::picker(select) {
 						border: var(--border-style);
 						border-radius: var(--border-radius);
-						left: anchor(10%);
-
+						/* left: anchor(10%); */
 					}
 
 
@@ -197,6 +197,7 @@ body {
 							width: 100%;
 							font-size: var(--size-0);
 							color: var(--forth-color);
+							
 
 							p:nth-child(2){
 								text-align: center;
@@ -364,7 +365,7 @@ dialog{
 		text-transform: capitalize;
 		font-size: var(--size-1);
 		text-decoration: underline;
-		color: var(--color);
+		color: var(--primary-color);
 	}
 
 	
