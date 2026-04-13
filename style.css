@@ -247,6 +247,7 @@ body {
 	img{
 		width: 60vw;
 		object-fit: fill;
+		opacity: 0.1;
 	}
 	
 	
@@ -320,10 +321,9 @@ dialog{
 	
 				
 				#glass{
-					max-height: 10rem;
+					max-height: 12rem;
 					pointer-events: none;
 					z-index: -1;
-					opacity: 0.6;
 				}
 	
 				#ingredients{
