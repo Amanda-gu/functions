@@ -256,15 +256,14 @@ dialog{
 				padding-block-end: var(--size-1);
 			}
 			#ingredients-img{
+				height: min-content;
 				
 				display: flex;
-				flex-direction: row;
-				width: 100%;
 				justify-content: space-between;
+	
 				
 				#glass{
-					height: 100%;
-					width: clamp(8rem, 20%, 20rem);
+					max-height: 10rem;
 					pointer-events: none;
 					z-index: -1;
 					opacity: 0.6;
@@ -274,6 +273,7 @@ dialog{
 					display: flex;
 					flex-direction: column;
 					gap: var(--size-2);
+					height: max-content;
 	
 					#base-section, #mixer-section,#garnish-section, #scales-section{
 						display: flex;
