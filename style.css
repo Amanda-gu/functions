@@ -162,7 +162,7 @@ body {
 		
 	}
 
-	@media (width > 700px) {
+	@media (width > 400px) {
 		form{
 
 			width: clamp(20rem, 50vw, 26rem);
@@ -233,8 +233,9 @@ dialog{
 	#card{
 		border: var(--border-style);
 		padding: var(--size-1);
+		width: 100%;
 
-		@media (width > 700px) {
+		@media (width > 400px) {
 			width: clamp(20rem, 50vw, 26rem);
 	
 		}

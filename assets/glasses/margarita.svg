@@ -1,6 +1,6 @@
 <svg width="1278" height="1796" viewBox="0 0 1278 1796" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g filter="url(#filter0_nfg_29_30)">
-<path d="M600.383 679.164C270.59 679.164 60.2803 418.972 60.2803 10.7H1216.55C1216.55 398.206 1032.72 652.576 673.652 677.296V1711.63L1000.94 1768.82C1010.57 1770.5 1009.34 1784.7 999.559 1784.7H637.017H274.476C264.694 1784.7 263.494 1770.5 273.13 1768.81L600.382 1711.63L600.383 679.164Z" fill="url(#paint0_linear_29_30)"/>
+<path d="M600.383 679.164C270.59 679.164 60.2803 418.972 60.2803 10.7H1216.55C1216.55 398.206 1032.72 652.576 673.652 677.296V1711.63L1000.94 1768.82C1010.57 1770.5 1009.34 1784.7 999.559 1784.7H637.017H274.476C264.694 1784.7 263.494 1770.5 273.13 1768.81L600.382 1711.63L600.383 679.164Z" fill="url(#paint0_linear_29_30)" fill-opacity="0.8"/>
 </g>
 <defs>
 <filter id="filter0_nfg_29_30" x="49.5803" y="1.23978e-05" width="1177.67" height="1795.4" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
@@ -28,7 +28,7 @@
 <feMergeNode in="displacedImage"/>
 </feMerge>
 </filter>
-<linearGradient id="paint0_linear_29_30" x1="638.416" y1="-710.111" x2="638.416" y2="2008.37" gradientUnits="userSpaceOnUse">
+<linearGradient id="paint0_linear_29_30" x1="638.415" y1="10.7" x2="638.415" y2="1784.7" gradientUnits="userSpaceOnUse">
 <stop stop-color="white"/>
 <stop offset="1" stop-color="#F6F5F3"/>
 </linearGradient>
