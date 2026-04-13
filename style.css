@@ -146,12 +146,19 @@ body {
 						gap: calc(var(--size-0)*0.5);
 		
 						#alc-micro-copy, #adv-micro-copy{
-							display: flex;
-							flex-direction: row;
+							display: grid;
+							grid-template-columns: repeat(3, 1fr);
+							justify-content: center;
 							width: 100%;
-							justify-content: space-between;
 							font-size: var(--size-0);
 							color: var(--forth-color);
+
+							p:nth-child(2){
+								text-align: center;
+							}
+							p:nth-child(3){
+								text-align: right;
+							}
 						}
 					}
 			}
