@@ -1,0 +1,33 @@
+<svg width="1278" height="1774" viewBox="0 0 1278 1774" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_nfg_29_51)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M86.3447 250.53V777.399C86.3447 827.842 107.987 862.27 130.477 898.047C154.801 936.742 180.117 977.015 180.117 1040.83V1304.27C394.636 1319.14 517.68 1326.67 639 1326.93C760.32 1326.67 883.364 1318.95 1097.88 1304.08V1040.65C1097.88 976.831 1123.2 936.558 1147.52 897.863C1170.01 862.086 1191.66 827.657 1191.66 777.215V254.578C1191.66 252.207 1189.66 250.431 1187.29 250.531C974.616 259.513 807.189 264.242 639 264.318C469.661 264.241 301.095 259.634 86.3447 250.53ZM247.091 861.12C247.091 1149.47 403.589 1276.22 648.303 1276.22C893.016 1276.22 1040.81 1114.58 1040.81 882.755C1040.81 650.929 910.606 445.587 661.875 445.587C413.144 445.587 247.091 572.774 247.091 861.12Z" fill="white"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M639 1326.93C760.32 1326.67 883.364 1318.95 1097.88 1304.08V1452.5C1097.88 1473.87 1081.71 1491.77 1060.46 1493.94C868.765 1513.5 753.121 1523.22 639 1523.47C518.325 1523.21 395.947 1512.53 183.746 1490.66C181.706 1490.45 180.117 1488.73 180.117 1486.68V1304.27C394.636 1319.14 517.68 1326.67 639 1326.93Z" fill="#ECECEC"/>
+</g>
+<defs>
+<filter id="filter0_nfg_29_51" x="75.6447" y="239.827" width="1126.71" height="1294.35" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feTurbulence type="fractalNoise" baseFrequency="0.21276596188545227 0.21276596188545227" stitchTiles="stitch" numOctaves="3" result="noise" seed="1145" />
+<feComponentTransfer in="noise" result="coloredNoise1">
+<feFuncR type="linear" slope="2" intercept="-0.5" />
+<feFuncG type="linear" slope="2" intercept="-0.5" />
+<feFuncB type="linear" slope="2" intercept="-0.5" />
+<feFuncA type="discrete" tableValues="1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 "/>
+</feComponentTransfer>
+<feComposite operator="in" in2="shape" in="coloredNoise1" result="noise1Clipped" />
+<feComponentTransfer in="noise1Clipped" result="color1">
+<feFuncA type="table" tableValues="0 0.15" />
+</feComponentTransfer>
+<feMerge result="effect1_noise_29_51">
+<feMergeNode in="shape" />
+<feMergeNode in="color1" />
+</feMerge>
+<feGaussianBlur stdDeviation="5.35" result="effect2_foregroundBlur_29_51"/>
+<feTurbulence type="fractalNoise" baseFrequency="0.10309278219938278 0.10309278219938278" numOctaves="3" seed="3824" />
+<feDisplacementMap in="effect2_foregroundBlur_29_51" scale="8" xChannelSelector="R" yChannelSelector="G" result="displacedImage" width="100%" height="100%" />
+<feMerge result="effect3_texture_29_51">
+<feMergeNode in="displacedImage"/>
+</feMerge>
+</filter>
+</defs>
+</svg>
