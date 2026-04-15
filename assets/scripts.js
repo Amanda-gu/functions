@@ -2,7 +2,7 @@ let mixButton = document.querySelector('#mix')
 let mixagainButton = document.querySelector('#mix-again')
 let resultCard = document.querySelector('#result-modal')
 let ingredientList = document.getElementById('ingredient-list')
-
+let highlightClass= 'highlight'
 
 //what's inside the result card function
 let showCard = (data) => {
@@ -12,6 +12,10 @@ let showCard = (data) => {
 	let occasion = document.querySelector("#occasion").value
 	let alcoholScale = document.querySelector("#alc-scale").value
 	let adventureScale = document.querySelector("#adv-scale").value
+
+	
+	ingredientList.classList.add(highlightClass)
+
 
 	//need to see user input in console
 	console.log(occasion)
