@@ -3,8 +3,12 @@ let mixButton = document.querySelector('#mix')
 let mixagainButton = document.querySelector('#mix-again')
 let resultCard = document.querySelector('#result-modal')
 let ingredientList = document.getElementById('ingredient-list')
-let highlightClass= 'highlight'
 let dialogCard = document.querySelector('#card')
+let shareBtn = document.querySelector("#share")
+
+let highlightClass= 'highlight'
+let hideClass= 'hide'
+let showClass= 'show'
 
 //what's inside the result card function
 let showCard = (data) => {
@@ -105,8 +109,12 @@ let showCard = (data) => {
 					<p>Adjust your selections or mix again.</p>
 				</section>
 			`
+			shareBtn.classList.remove(showClass)
+			shareBtn.classList.add(hideClass)
 			return // Stop the rest of the function from running
 		}
+		shareBtn.classList.remove(hideClass)
+		shareBtn.classList.add(showClass)
 
 	//family and base are chosen, below is for mixer and garnish selection 
 	//data here looks like: Light/Medium/Strong -> family -> base/mixer
@@ -324,45 +332,45 @@ let showCard = (data) => {
 			
 	//SHARE	
 		//maybe i turn it into an image first then i share the image?
-		const shareBtn = document.querySelector("#share")
+	
 			
 		shareBtn.addEventListener("click", async () => {
 				//turn html elemetns into image: https://www.youtube.com/watch?v=rIubDKHy0js
 				//what i learned: turn it into canvas so i can get the image from the canvas
 				html2canvas(ingredientList).then(canvas => {
 
-				canvas.toBlob(function(blob) {
+					canvas.toBlob(function(blob) {
 
-					// const recipeBlob = URL.createObjectURL(blob)
-           			// console.log('image URL', recipeBlob)
+						// const recipeBlob = URL.createObjectURL(blob)
+						// console.log('image URL', recipeBlob)
 
-					const shareData = {
-						title: `${cocktailLabel}`,
-						text: "Check out this cocktail recipe I got from the Mixed Signals!",
-						url: "https://amanda-gu.github.io/functions/",
-						files: 
-							[new File([blob], 
-								"my recipe.png", 
-							{ type: "image/png" })]
+						const shareData = {
+							title: `${cocktailLabel}`,
+							text: "Check out this cocktail recipe I got from the Mixed Signals!",
+							url: "https://amanda-gu.github.io/functions/",
+							files: 
+								[new File([blob], 
+									"my recipe.png", 
+								{ type: "image/png" })]
 
-							// i referenced this link for sharing files https://web.dev/patterns/files/share-files#js
-							// trouble shoot why above code is not working: https://chatgpt.com/share/69d6828e-7360-8327-83e1-29deb4cbe844
-							// what i learned: toDataURL returns NOT an actual file but a text string of base64(binary data), toBlob object representing the image contained in the canvas
-							//
-							//  files is an ARRAY of File objects representing files to be shared. 
-					}
-
-					try {
-						navigator.share(shareData);
-					} catch (err) {
-						console.error()
+								// i referenced this link for sharing files https://web.dev/patterns/files/share-files#js
+								// trouble shoot why above code is not working: https://chatgpt.com/share/69d6828e-7360-8327-83e1-29deb4cbe844
+								// what i learned: toDataURL returns NOT an actual file but a text string of base64(binary data), toBlob object representing the image contained in the canvas
+								//
+								//  files is an ARRAY of File objects representing files to be shared. 
 						}
-					console.log('share data', shareData)
 
-					//share template from MDN: https://developer.mozilla.org/en-US/docs/Web/API/Web_Share_API 			
-					// Share must be triggered by "user activation"
-			
-				})
+						try {
+							navigator.share(shareData);
+						} catch (err) {
+							console.error()
+							}
+						console.log('share data', shareData)
+
+						//share template from MDN: https://developer.mozilla.org/en-US/docs/Web/API/Web_Share_API 			
+						// Share must be triggered by "user activation"
+				
+					})
 				})
 			
 		})

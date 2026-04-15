@@ -50,6 +50,13 @@ body {
 	.secondary-cta{
 		background-color: var(--secondary-color);
 		color: var(--primary-color);
+
+		&.hide{
+			display: none;
+		}
+		&.show{
+			display: inline;
+		}
 	}
 }
 
