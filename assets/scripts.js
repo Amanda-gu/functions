@@ -68,14 +68,21 @@ let showCard = (data) => {
 				console.log('alcohol', alcohol) 
 				return alcohol
 			})
+			
+						// let base1 = Math.floor(Math.random() * filterBase.length)	 
+						// let base2 = Math.floor(Math.random() * filterBase.length)
 
-		let base1 = Math.floor(Math.random() * filterBase.length)	 
-		let base2 = Math.floor(Math.random() * filterBase.length)
+			
+			let base =Array.from(filterBase.keys()) 
+					base.sort(() => Math.random()  - 0.5)	 
+					//get the number array first, so the 2 numbers are always different
+					let base1 = base[0]
+					let base2 = base[1]
 
 		if (alcoholScale <= 6){			
 			selectedBases = [filterBase[base1]]
 			console.log('selected base:', selectedBases[0])
-		} else if (6 < alcoholScale <= 10){	 
+		} else if (alcoholScale > 6 && alcoholScale <= 10){	 
 			selectedBases = [filterBase[base1], filterBase[base2]]
 			console.log('selected bases', selectedBases)		
 		}
@@ -213,11 +220,11 @@ let showCard = (data) => {
 					let mix2 = mix[1]
 					selectedMixer = [filterMixer[mix1], filterMixer[mix2]]
 
-								//for me to see in console what is chosen
 					selectedGarnish = filterGarnish[Math.floor(Math.random() * filterGarnish.length)]
+					
+					//for me to see in console what is chosen
 					console.log('selected mixer', selectedMixer)
 					console.log('selected garnish', selectedGarnish)
-					// console.log('selected garnish', selectedGarnish)
 				}
 
 
@@ -368,6 +375,7 @@ let showCard = (data) => {
 mixButton.addEventListener('click', () => { // “Listen” for clicks.	
 
 	resultCard.showModal()
+	ingredientList.classList.add(highlightClass)
 	
    //fetch in the click so it only fetches when the button is clicked
 	fetch('./assets/data.json')
@@ -390,7 +398,7 @@ let closeButton = document.getElementById('close')
 //mix again
 
 mixagainButton.addEventListener('click', () => { // “Listen” for clicks.	
-
+	ingredientList.classList.add(highlightClass)
    //fetch in the click so it only fetches when the button is clicked
 	fetch('./assets/data.json')
 	.then(response => response.json())

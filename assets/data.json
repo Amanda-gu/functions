@@ -1443,6 +1443,7 @@
                         "occasion": [
                             "Flexible",
                             "Dinner Party",
+                            "Celebrating something",
                             "Date Night"
                         ],
                         "label": "pared"
@@ -2652,7 +2653,8 @@
                         "description": "intense",
                         "occasion": [
                             "Night",
-                            "Flexible"
+                            "Celebrating something",
+                            "Flexible" 
                         ],
                         "label": "alchemist"
                     }
