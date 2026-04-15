@@ -10,14 +10,14 @@
 	--size-4: calc((var(--size-1) * 2));
 
 	--border-radius:0 ;
-	--border-style: dashed var(--primary-color) 0.08rem;
+	--border-style: dashed var(--primary-color) 0.06rem;
 
 	--font-mono: "attribute-mono", sans-serif;
 	--font-serif: "legitima", serif;
 	--font-deco: "rafaella", sans-serif;
 
 	--primary-color: #000000;
-	--secondary-color: #ecece9;
+	--secondary-color: #edede7;
 	--third-color: #dbdbd3;
 	--forth-color: #8b8b8b;
 
@@ -49,7 +49,6 @@ body {
 	
 	.secondary-cta{
 		background-color: var(--secondary-color);
-		/* border: var(--border-style); */
 		color: var(--primary-color);
 	}
 }
@@ -309,13 +308,10 @@ dialog{
 			height: max-content;
 
 			
-
-			
-			
 			#recipe-name, #recipe-description{
 				text-transform: capitalize;
 			}
-			#recipe-name{
+			h2{
 				font-family: var(--font-deco);
 				font-size: var(--size-3);
 				line-height: var(--size-3);
@@ -361,12 +357,34 @@ dialog{
 					padding-block-start: var(--size-1);
 				}
 				
+				
+			#error-state{
+				background-color: var(--primary-color);
+				color: var(--secondary-color);
+
+				padding: var(--size-1);
+				margin: calc(var(--size-1)* -1);
+				
+				display: flex;
+				flex-direction: column;
+				gap: var(--size-2);
+				
+				#error-state, p{
+					color: var(--forth-color);
+				}
+				#error-statement{
+					color: var(--forth-color);
+					font-family: var(--font-serif);
+					text-transform: none;
+					font-size: var(--size-2);
+				}
+
+			}
 
 		}
+}
 
-	}
-
-	#close, #card #ingredient-list h3{
+	#close, #card #ingredient-list h3, #card #ingredient-list #error-state p{
 		font-family: var(--font-mono);
 		font-size: var(--size-0);
 		line-height: var(--size-2);
