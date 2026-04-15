@@ -338,11 +338,13 @@ let showCard = (data) => {
 				//turn html elemetns into image: https://www.youtube.com/watch?v=rIubDKHy0js
 				//what i learned: turn it into canvas so i can get the image from the canvas
 				html2canvas(ingredientList).then(canvas => {
+					//give it a size
+					//asked chat gpt in this thread:  https://chatgpt.com/share/69d6828e-7360-8327-83e1-29deb4cbe844
+					//i cant change the size of blob because its raw data.
+					canvas.width = 1080
+					canvas.height = 1920
 
 					canvas.toBlob(function(blob) {
-
-						// const recipeBlob = URL.createObjectURL(blob)
-						// console.log('image URL', recipeBlob)
 
 						const shareData = {
 							title: `${cocktailLabel}`,
@@ -395,6 +397,8 @@ let showCard = (data) => {
 		// 		console.error()
 		// 		}})
 }
+
+
 
 
 //click button show result modal

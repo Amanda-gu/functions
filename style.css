@@ -404,7 +404,7 @@ dialog{
 		font-family: var(--font-serif);
 		text-transform: capitalize;
 		font-size: var(--size-1);
-		text-decoration: underline;
+		border-bottom: var(--border-style);
 		color: var(--primary-color);
 	}
 
