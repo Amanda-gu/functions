@@ -331,9 +331,10 @@ dialog{
 				padding-block-end: var(--size-1);
 			}
 
-			#glass{
+			#mobile-glass{
 					position: absolute;
 					height: 100%;
+					scale: 0.85;
 					opacity: 0.6;
 					pointer-events: none;
 					z-index: -1;
@@ -347,11 +348,18 @@ dialog{
 				justify-content: space-between;
 	
 				
-				/* #glass{
+				#desktop-glass{
 					max-height: 12rem;
 					pointer-events: none;
 					z-index: 1;
-				} */
+					opacity: 0;
+				}
+				@media (width > 600px) {
+					#desktop-glass{
+						opacity: 1;
+					}
+				}
+
 				
 	
 				#ingredients{
@@ -433,9 +441,8 @@ dialog{
 			height: 100vh;
 		}
 
-		#glass{
-			/* height: 90%; */
-
+		#mobile-glass{
+			display: none;
 		}
 
 	}
