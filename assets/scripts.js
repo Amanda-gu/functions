@@ -391,8 +391,8 @@ let showCard = (data) => {
 
 mixButton.addEventListener('click', () => { // “Listen” for clicks.	
 
-	resultCard.showModal()
 	ingredientList.classList.add(highlightClass)
+	resultCard.showModal()
 	
    //fetch in the click so it only fetches when the button is clicked
 	fetch('./assets/data.json')
@@ -415,7 +415,7 @@ let closeButton = document.getElementById('close')
 //mix again
 
 mixagainButton.addEventListener('click', () => { // “Listen” for clicks.	
-	ingredientList.classList.add(highlightClass)
+	ingredientList.classList.toggle(highlightClass)
    //fetch in the click so it only fetches when the button is clicked
 	fetch('./assets/data.json')
 	.then(response => response.json())
