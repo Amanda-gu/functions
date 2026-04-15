@@ -252,7 +252,7 @@ body {
 	img{
 		width: 60vw;
 		object-fit: fill;
-		opacity: 0.1;
+		/* opacity: 0.1; */
 	}
 	
 	
@@ -312,7 +312,8 @@ dialog{
 			flex-direction: column;
 			gap: var(--size-2);
 			height: max-content;
-			background-color: var(--third-color);
+			/* background-color: var(--third-color); */
+
 
 			
 			#recipe-name, #recipe-description{
@@ -330,6 +331,15 @@ dialog{
 				padding-block-end: var(--size-1);
 			}
 
+			#glass{
+					position: absolute;
+					height: 100%;
+					opacity: 0.6;
+					pointer-events: none;
+					z-index: -1;
+					margin: calc(var(--size-1)* -1);
+			}
+
 			#ingredients-img{
 				height: min-content;
 				display: flex;
@@ -337,11 +347,12 @@ dialog{
 				justify-content: space-between;
 	
 				
-				#glass{
+				/* #glass{
 					max-height: 12rem;
 					pointer-events: none;
 					z-index: 1;
-				}
+				} */
+				
 	
 				#ingredients{
 					display: flex;
@@ -423,9 +434,8 @@ dialog{
 		}
 
 		#glass{
-			height: 90%;
-			pointer-events: none;
-			z-index: -1;
+			/* height: 90%; */
+
 		}
 
 	}

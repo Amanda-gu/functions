@@ -310,8 +310,8 @@ let showCard = (data) => {
 							</section>
 						</section>
 
-						 <img id="glass" src="assets/glasses/${familyName}.svg">
-					</section>
+						</section>
+						<img id="glass" src="assets/glasses/${familyName}.svg">
 
 					<section id="scales-section">
 						<section id="alc-section">
