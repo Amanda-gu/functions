@@ -87,6 +87,19 @@ let showCard = (data) => {
 			console.log('selected bases', selectedBases)		
 		}
 
+		if (!selectedBases[0] && !selectedBases[1]) { 
+			//&& means this function works only if both are undefined.
+			//logical not: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_NOT
+			// this check if both are undefined
+			ingredientList.innerHTML = `
+				<section class="error-state">
+					<h2>Oops! Try again!</h2>
+					<p>We couldn't find a perfect match for that combination.</p>
+				</section>
+			`
+			return // Stop the rest of the function from running
+		}
+
 	//family and base are chosen, below is for mixer and garnish selection 
 	//data here looks like: Light/Medium/Strong -> family -> base/mixer
 		for (let i = 0; i < selectedBases.length; i++) {
