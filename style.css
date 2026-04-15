@@ -76,15 +76,15 @@ body {
 	display: flex;
 	flex-direction: column;
 	align-items: stretch;
-	gap: var(--size-4);
+	gap: var(--size-2);
 	margin: auto;
 
 	border-radius: var(--border-radius);
 	hgroup{
-
 		display: flex;
 		flex-direction: column;
-		gap: var(--size-1);
+		align-items: center;
+		gap: var(--size-0);
 		
 		h1{
 			text-align: center;
@@ -102,7 +102,7 @@ body {
 	form {
 		display: flex;
 		flex-direction: column;
-		gap: var(--size-2);
+		gap: var(--size-1);
 		align-items: center;
 		
 		#input{
@@ -306,7 +306,7 @@ dialog{
 	align-items: center;
 	justify-content: center;
 
-	gap: var(--size-2);
+	gap: var(--size-1);
 	background-color: var(--third-color);
 	pointer-events: none;
 
@@ -333,12 +333,8 @@ dialog{
 		#ingredient-list{
 			display: flex;
 			flex-direction: column;
-			gap: var(--size-2);
 			height: max-content;
-			/* background-color: var(--third-color); */
 
-
-			
 			#recipe-name, #recipe-description{
 				text-transform: capitalize;
 			}
@@ -362,17 +358,24 @@ dialog{
 					pointer-events: none;
 					z-index: -1;
 					margin: calc(var(--size-1)* -1);
-			}
+				}
+			@media (width > 600px) {
+						#mobile-glass{
+							display: none;
+						}
+
+					}
 
 			#ingredients-img{
 				height: min-content;
 				display: flex;
 				align-items: center;
 				justify-content: space-between;
+				padding-block: var(--size-1);
 	
 				
 				#desktop-glass{
-					max-height: 12rem;
+					max-height: 11rem;
 					pointer-events: none;
 					z-index: 1;
 					opacity: 0;
@@ -383,12 +386,10 @@ dialog{
 					}
 				}
 
-				
-	
 				#ingredients{
 					display: flex;
 					flex-direction: column;
-					gap: var(--size-2);
+					gap: var(--size-1);
 					height: max-content;
 	
 					#base-section, #mixer-section,#garnish-section, #scales-section{
@@ -464,9 +465,6 @@ dialog{
 			height: 100vh;
 		}
 
-		#mobile-glass{
-			display: none;
-		}
 
 	}
 
