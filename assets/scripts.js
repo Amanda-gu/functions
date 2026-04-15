@@ -1,3 +1,4 @@
+
 let mixButton = document.querySelector('#mix')
 let mixagainButton = document.querySelector('#mix-again')
 let resultCard = document.querySelector('#result-modal')
@@ -92,14 +93,16 @@ let showCard = (data) => {
 			console.log('selected bases', selectedBases)		
 		}
 
-		if (!selectedBases[0] && !selectedBases[1]) { 
+		if (!selectedBases[0] || !selectedBases[1]) { 
 			//&& means this function works only if both are undefined.
 			//logical not: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_NOT
+			//should use || instead becasue i need this funtion to run if any of the bases is undefined.
 			// this check if both are undefined
 			ingredientList.innerHTML = `
-				<section class="error-state">
+				<section id="error-state">
 					<h2>Oops! Try again!</h2>
 					<p>We couldn't find a perfect match for that combination.</p>
+					<p>Try again by adjusting your selections or clicking Mix Again.</p>
 				</section>
 			`
 			return // Stop the rest of the function from running
@@ -382,8 +385,6 @@ let showCard = (data) => {
 				console.error()
 				}})
 }
-
-
 
 
 //click button show result modal
