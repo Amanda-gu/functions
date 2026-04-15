@@ -324,66 +324,65 @@ let showCard = (data) => {
 			
 	//SHARE	
 		//maybe i turn it into an image first then i share the image?
-		const btn = document.querySelector("#share")
+		const shareBtn = document.querySelector("#share")
 			
-		// btn.addEventListener("click", async () => {
-		// 		//turn html elemetns into image: https://www.youtube.com/watch?v=rIubDKHy0js
-		// 		//what i learned: turn it into canvas so i can get the image from the canvas
-		// 		html2canvas(ingredientList).then(canvas => {
-		// 		let recipeURL = canvas.toDataURL("image/png")
-
-		// 		canvas.toBlob(function(blob) {
-		// 			let recipeBlob = URL.createObjectURL(blob)
-
-		// 			recipeURL.src = recipeBlob;
-		// 			console.log('image URL', recipeBlob)
-
-		// 		const shareData = {
-		// 			title: `${cocktailLabel}`,
-		// 			text: "Check out this cocktail recipe I got from the Mixed Signals!",
-		// 			// files: 
-		// 			// 	[new File([recipeBlob], 
-		// 			// 		"my recipe.png", 
-		// 			// 	{ type: "image/png" })]
-							
-		// 					// i referenced this link for sharing files https://web.dev/patterns/files/share-files#js
-		// 					// trouble shoot why above code is not working: https://chatgpt.com/share/69d6828e-7360-8327-83e1-29deb4cbe844
-		// 					// what i learned: toDataURL returns NOT an actual file but a text string of base64(binary data), toBlob object representing the image contained in the canvas
-		// 					//  files is an ARRAY of File objects representing files to be shared. See below for shareable file types
-		// 		}
-		// 		console.log('share data', shareData)
-		// 			//share template from MDN: https://developer.mozilla.org/en-US/docs/Web/API/Web_Share_API 			
-		// 			// Share must be triggered by "user activation"
-			
-		// 		try {
-		// 			navigator.share(shareData);
-		// 			resultPara.textContent = "MDN shared successfully"
-		// 		} catch (err) {
-		// 			resultPara.textContent = `Error: ${err}`
-		// 			}})
-		// 		})
-			
-		// });
-
-
-		btn.addEventListener("click", async () => {
+		shareBtn.addEventListener("click", async () => {
 				//turn html elemetns into image: https://www.youtube.com/watch?v=rIubDKHy0js
 				//what i learned: turn it into canvas so i can get the image from the canvas
+				html2canvas(ingredientList).then(canvas => {
+				let recipeURL = canvas.toDataURL("image/png")
+
+				canvas.toBlob(function(blob) {
+					const recipeBlob = URL.createObjectURL(blob);
+           			console.log('image URL', recipeBlob);
+
+					const shareData = {
+						title: `${cocktailLabel}`,
+						text: "Check out this cocktail recipe I got from the Mixed Signals!",
+						files: 
+							[new File([blob], 
+								"my recipe.png", 
+							{ type: "image/png" })]
+
+								// i referenced this link for sharing files https://web.dev/patterns/files/share-files#js
+								// trouble shoot why above code is not working: https://chatgpt.com/share/69d6828e-7360-8327-83e1-29deb4cbe844
+								// what i learned: toDataURL returns NOT an actual file but a text string of base64(binary data), toBlob object representing the image contained in the canvas
+								//  files is an ARRAY of File objects representing files to be shared. See below for shareable file types
+					}
+
+					try {
+						navigator.share(shareData);
+					} catch (err) {
+						}
+					console.log('share data', shareData)
+
+					//share template from MDN: https://developer.mozilla.org/en-US/docs/Web/API/Web_Share_API 			
+					// Share must be triggered by "user activation"
 			
-			const shareData = {
-				title: "Mixed Signals Cocktail Recipe",
-				text: "I made a" + cocktailLabel + " with Mixed Signals!" + " You can try it out too with this link:",
-				url: "https://amanda-gu.github.io/functions/"
-			}
-			console.log('share data', shareData)
-				//share template from MDN: https://developer.mozilla.org/en-US/docs/Web/API/Web_Share_API 			
-				// Share must be triggered by "user activation"
+				})
+				})
+			
+		});
+
+
+		// shareBtn.addEventListener("click", async () => {
+		// 		//turn html elemetns into image: https://www.youtube.com/watch?v=rIubDKHy0js
+		// 		//what i learned: turn it into canvas so i can get the image from the canvas
+			
+		// 	const shareData = {
+		// 		title: "Mixed Signals Cocktail Recipe",
+		// 		text: "I made a" + cocktailLabel + " with Mixed Signals!" + " You can try it out too with this link:",
+		// 		url: "https://amanda-gu.github.io/functions/"
+		// 	}
+		// 	console.log('share data', shareData)
+		// 		//share template from MDN: https://developer.mozilla.org/en-US/docs/Web/API/Web_Share_API 			
+		// 		// Share must be triggered by "user activation"
 		
-			try {
-				navigator.share(shareData);
-			} catch (err) {
-				console.error()
-				}})
+		// 	try {
+		// 		navigator.share(shareData);
+		// 	} catch (err) {
+		// 		console.error()
+		// 		}})
 }
 
 
