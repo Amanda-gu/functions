@@ -178,7 +178,7 @@ body {
 						}
 				}
 
-
+/* the above is not support on mobile! https://chatgpt.com/share/69dfe6d1-dd48-83ea-a879-245f9f51301c */
 				@media (width < 600px) {
 
 					#occasion-wrapper::after{
