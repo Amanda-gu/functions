@@ -188,6 +188,7 @@ body {
 					#occasion-wrapper{
 						display: flex;
 						flex-direction: row;
+						padding-inline: var(--size-1);
 
 						#occasion{
 							appearance: none;
