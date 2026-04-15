@@ -3,6 +3,7 @@ let mixagainButton = document.querySelector('#mix-again')
 let resultCard = document.querySelector('#result-modal')
 let ingredientList = document.getElementById('ingredient-list')
 let highlightClass= 'highlight'
+let dialogCard = document.querySelector('#card')
 
 //what's inside the result card function
 let showCard = (data) => {
@@ -14,7 +15,7 @@ let showCard = (data) => {
 	let adventureScale = document.querySelector("#adv-scale").value
 
 	
-	ingredientList.classList.add(highlightClass)
+	dialogCard.classList.add(highlightClass)
 
 
 	//need to see user input in console
@@ -385,13 +386,11 @@ let showCard = (data) => {
 
 
 
-
-
 //click button show result modal
 
 mixButton.addEventListener('click', () => { // “Listen” for clicks.	
 
-	ingredientList.classList.add(highlightClass)
+	dialogCard.classList.toggle(highlightClass)
 	resultCard.showModal()
 	
    //fetch in the click so it only fetches when the button is clicked
@@ -404,7 +403,7 @@ mixButton.addEventListener('click', () => { // “Listen” for clicks.
 	
 })
 
-//close modal
+//return to home 
 
 let closeButton = document.getElementById('close')
 
@@ -415,7 +414,7 @@ let closeButton = document.getElementById('close')
 //mix again
 
 mixagainButton.addEventListener('click', () => { // “Listen” for clicks.	
-	ingredientList.classList.toggle(highlightClass)
+	dialogCard.classList.toggle(highlightClass)
    //fetch in the click so it only fetches when the button is clicked
 	fetch('./assets/data.json')
 	.then(response => response.json())
