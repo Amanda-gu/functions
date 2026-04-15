@@ -339,20 +339,22 @@ let showCard = (data) => {
 					const shareData = {
 						title: `${cocktailLabel}`,
 						text: "Check out this cocktail recipe I got from the Mixed Signals!",
+						url: "https://amanda-gu.github.io/functions/",
 						files: 
 							[new File([blob], 
 								"my recipe.png", 
 							{ type: "image/png" })]
 
-								// i referenced this link for sharing files https://web.dev/patterns/files/share-files#js
-								// trouble shoot why above code is not working: https://chatgpt.com/share/69d6828e-7360-8327-83e1-29deb4cbe844
-								// what i learned: toDataURL returns NOT an actual file but a text string of base64(binary data), toBlob object representing the image contained in the canvas
-								//  files is an ARRAY of File objects representing files to be shared. See below for shareable file types
+							// i referenced this link for sharing files https://web.dev/patterns/files/share-files#js
+							// trouble shoot why above code is not working: https://chatgpt.com/share/69d6828e-7360-8327-83e1-29deb4cbe844
+							// what i learned: toDataURL returns NOT an actual file but a text string of base64(binary data), toBlob object representing the image contained in the canvas
+							//  files is an ARRAY of File objects representing files to be shared. See below for shareable file types
 					}
 
 					try {
 						navigator.share(shareData);
 					} catch (err) {
+						console.error()
 						}
 					console.log('share data', shareData)
 
@@ -362,7 +364,7 @@ let showCard = (data) => {
 				})
 				})
 			
-		});
+		})
 
 
 		// shareBtn.addEventListener("click", async () => {
