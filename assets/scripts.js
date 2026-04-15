@@ -341,8 +341,8 @@ let showCard = (data) => {
 					//give it a size
 					//asked chat gpt in this thread:  https://chatgpt.com/share/69d6828e-7360-8327-83e1-29deb4cbe844
 					//i cant change the size of blob because its raw data.
-					canvas.width = 1080
-					canvas.height = 1920
+					// canvas.width = 1080
+					// canvas.height = 1920
 
 					canvas.toBlob(function(blob) {
 
