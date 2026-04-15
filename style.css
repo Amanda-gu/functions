@@ -337,6 +337,7 @@ dialog{
 
 			#recipe-name, #recipe-description{
 				text-transform: capitalize;
+				padding-block-end: var(--size-1);
 			}
 			h2{
 				font-family: var(--font-deco);
@@ -347,7 +348,6 @@ dialog{
 			#recipe-description{
 				font-size: var(--size-2);
 				border-bottom: var(--border-style);
-				padding-block-end: var(--size-1);
 			}
 
 			#mobile-glass{
