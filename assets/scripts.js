@@ -93,16 +93,16 @@ let showCard = (data) => {
 			console.log('selected bases', selectedBases)		
 		}
 
-		if (!selectedBases[0] || !selectedBases[1]) { 
+		if (!selectedBases[0] & !selectedBases[1]) { 
 			//&& means this function works only if both are undefined.
 			//logical not: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_NOT
-			//should use || instead becasue i need this funtion to run if any of the bases is undefined.
+			//& means this function works if either one is undefined
 			// this check if both are undefined
 			ingredientList.innerHTML = `
 				<section id="error-state">
-					<h2>Oops! Try again!</h2>
-					<p>We couldn't find a perfect match for that combination.</p>
-					<p>Try again by adjusting your selections or clicking Mix Again.</p>
+					<h2>Oops!</h2>
+					<h3 id="error-statement">We couldn't find a perfect match for that combination at this time.</h3>
+					<p>Adjust your selections or mix again.</p>
 				</section>
 			`
 			return // Stop the rest of the function from running
