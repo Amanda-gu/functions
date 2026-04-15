@@ -125,55 +125,58 @@ body {
 					color: var(--forth-color);
 				}
 
-				#occasion-wrapper, .slider #alc-scale, .slider #adv-scale{
+				#occasion-wrapper,#occasion-wrapper #occasion, .slider #alc-scale, .slider #adv-scale{
 					background-color: var(--third-color);
 					width: 100%;
 				}
 				
-				#occasion, #occasion option{
-					display: flex;
-					justify-content: center;
-					padding: var(--size-0);
+				#occasion-wrapper{
+
+					#occasion, #occasion option{
+						display: flex;
+						justify-content: center;
+						padding: var(--size-0);
+					}
+					#occasion{
+						text-align: center;
+						font-size: var(--size-1);
+						
+						
+						option {
+							background-color: var(--secondary-color);
+							gap: var(--size-1);
+							transition: 0.4s;
+							}
+	
+						option:hover,
+						option:focus {
+							background: var(--primary-color);
+							color: var(--secondary-color);
+							}
+						option::checkmark {
+								display: none;
+							}
+						
+					}
+	
+					#occasion,
+						::picker(select) {
+						appearance: base-select;
+						}
+					#occasion::picker-icon {
+						transition: 0.4s rotate;
+						margin-inline-start: var(--size-0);
+						}
+	
+					#occasion:open::picker-icon {
+						rotate: 180deg;
+						}
+						
+						::picker(select) {
+							border: var(--border-style);
+							border-radius: var(--border-radius);
+						}
 				}
-				#occasion{
-					text-align: center;
-					font-size: var(--size-1);
-					
-					
-					option {
-						background-color: var(--secondary-color);
-						gap: var(--size-1);
-						transition: 0.4s;
-						}
-
-					option:hover,
-					option:focus {
-						background: var(--primary-color);
-						color: var(--secondary-color);
-						}
-					option::checkmark {
-							display: none;
-						}
-					
-				}
-
-				#occasion,
-					::picker(select) {
-					appearance: base-select;
-					}
-				#occasion::picker-icon {
-					transition: 0.4s rotate;
-					margin-inline-start: var(--size-0);
-					}
-
-				#occasion:open::picker-icon {
-					rotate: 180deg;
-					}
-					
-					::picker(select) {
-						border: var(--border-style);
-						border-radius: var(--border-radius);
-					}
 
 
 				@media (width < 600px) {
@@ -185,12 +188,9 @@ body {
 					#occasion-wrapper{
 						display: flex;
 						flex-direction: row;
-						align-items: center;
-						gap: 0;
 
 						#occasion{
 							appearance: none;
-							width: max-content;
 						}
 					
 					
