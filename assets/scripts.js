@@ -83,11 +83,11 @@ let showCard = (data) => {
 						// let base2 = Math.floor(Math.random() * filterBase.length)
 
 			
-			let base =Array.from(filterBase.keys()) 
-					base.sort(() => Math.random()  - 0.5)	 
-					//get the number array first, so the 2 numbers are always different
-					let base1 = base[0]
-					let base2 = base[1]
+		let base =Array.from(filterBase.keys()) 
+				base.sort(() => Math.random()  - 0.5)	 
+				//get the number array first, so the 2 numbers are always different
+				let base1 = base[0]
+				let base2 = base[1]
 
 		if (alcoholScale <= 6){			
 			selectedBases = [filterBase[base1]]
@@ -349,7 +349,7 @@ let showCard = (data) => {
 
 						const shareData = {
 							title: `${cocktailLabel}`,
-							text: "Check out this cocktail recipe I got from the Mixed Signals!",
+							text: "I made a" + cocktailLabel + " with Mixed Signals!" + " You can try it out too with this link:",
 							url: "https://amanda-gu.github.io/functions/",
 							files: 
 								[new File([blob], 
