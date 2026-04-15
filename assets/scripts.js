@@ -205,9 +205,14 @@ let showCard = (data) => {
 						return gar //true or false for each line above
 						})
 
-					let mix1 = Math.floor(Math.random() * filterMixer.length)
-					let mix2 = Math.floor(Math.random() * filterMixer.length)		 
+					let mix =Array.from(filterMixer.keys()) //get the index of the mixer array 
+					// .key() returns an array iterator of the keys in the array, and here the keys are the index number of the mixer array
+					mix.sort(() => Math.random()  - 0.5)	 
+					//get the number array first, so the 2 numbers are always different
+					let mix1 = mix[0]
+					let mix2 = mix[1]
 					selectedMixer = [filterMixer[mix1], filterMixer[mix2]]
+
 								//for me to see in console what is chosen
 					selectedGarnish = filterGarnish[Math.floor(Math.random() * filterGarnish.length)]
 					console.log('selected mixer', selectedMixer)
