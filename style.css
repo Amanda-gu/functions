@@ -49,7 +49,7 @@ body {
 	
 	.secondary-cta{
 		background-color: var(--secondary-color);
-		border: var(--border-style);
+		/* border: var(--border-style); */
 		color: var(--primary-color);
 	}
 }
@@ -294,23 +294,36 @@ dialog{
 	
 		}
 		
+		&.highlight {
+				animation-name: highlight-transition;
+				animation-duration: 1200ms;
+				animation-iteration-count: 1;
+				 /* Enable 3D transformations. */
+				animation-fill-mode: forwards; /* Keep the final state of the animation. */
+			}
+		
 		#ingredient-list{
 			display: flex;
 			flex-direction: column;
 			gap: var(--size-2);
 			height: max-content;
+
 			
+
+			
+			
+			#recipe-name, #recipe-description{
+				text-transform: capitalize;
+			}
 			#recipe-name{
 				font-family: var(--font-deco);
 				font-size: var(--size-3);
 				line-height: var(--size-3);
-				text-transform: capitalize;
 			}
 			
 			#recipe-description{
 				border-bottom: var(--border-style);
 				padding-block-end: var(--size-1);
-				text-transform: capitalize;
 			}
 
 			#ingredients-img{
@@ -347,6 +360,7 @@ dialog{
 					border-top: var(--border-style);
 					padding-block-start: var(--size-1);
 				}
+				
 
 		}
 
@@ -398,3 +412,15 @@ dialog{
 
 }
 
+
+
+@keyframes highlight-transition {
+				0% {
+					transform: translateY(var(--size-0));
+					opacity: 0;
+				}
+				100% {
+					transform: translateY(0);
+					opacity: 1;
+				}
+			}
