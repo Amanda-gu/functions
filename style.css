@@ -117,13 +117,7 @@ body {
 		gap: var(--size-0);
 		align-items: center;
 
-		/* position: absolute; 
-		margin: auto;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);  */
-		
-
+	
 		h1, img{		
 			text-align: center;
 			font-family: var(--font-deco);
@@ -274,11 +268,11 @@ body {
 				}
 
 /* the above is not support on mobile! https://chatgpt.com/share/69dfe6d1-dd48-83ea-a879-245f9f51301c */
-				@media (width < 600px) {
+				@media (width < 1000px) {
 
 					#occasion-wrapper::after{
 							content:"▾";
-							color: #000000;
+							color: var(--primary-color);
 						}
 					#occasion-wrapper{
 						display: flex;

@@ -357,7 +357,10 @@ let showCard = (data) => {
 					files: [file]
 				}
 				
-				shareBtn.addEventListener("click", () => {
+
+			})	
+			
+			shareBtn.addEventListener("click", () => {
 						//using a lib to turn html elemetns into image: https://www.youtube.com/watch?v=rIubDKHy0js
 						//what i learned: turn it into canvas so i can get the image from the canvas	
 						
@@ -377,8 +380,6 @@ let showCard = (data) => {
 						// Share must be triggered by "user activation"
 					
 				})
-
-			})	
 		})	
 
 
