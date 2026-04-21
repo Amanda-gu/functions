@@ -259,7 +259,8 @@ let showCard = (data) => {
 
 		cocktailLabel =	
 			
-			(selectedBases.label || '') + ' ' +(selectedBases.label || '') 
+			// (selectedBases.label || '') + ' ' +(selectedBases.label || '') 
+			(selectedBases.label ?? (selectedBases[0].label || '' + selectedBases[1].label || ''))
 			+ ' ' + 
 			selectedMixer[0].label 
 			+ ' ' + 
@@ -337,7 +338,6 @@ let showCard = (data) => {
 		
 		let image
 		let file
-		let shareData
 		
 		shareBtn.addEventListener("click", () => {
 			//using a lib to turn html elemetns into image: https://www.youtube.com/watch?v=rIubDKHy0js
@@ -354,7 +354,7 @@ let showCard = (data) => {
 					file = new File([blob], 'image', {type: blob.type});
 					console.log(file)
 	
-					shareData = {
+					let shareData = {
 						title: `${cocktailLabel}`,
 						text: "I made a" + cocktailLabel + " with Mixed Signals!" + " You can try it out too with this link:",
 						url: "https://amanda-gu.github.io/functions/",
