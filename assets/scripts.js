@@ -348,10 +348,10 @@ let showCard = (data) => {
 				//i cant change the size of blob because its raw data.
 				// canvas.width = 1080
 				// canvas.height = 1920
-				image = canvas.toDataURL("image/png")
+				// image = canvas.toDataURL("image/png")
 	
 				canvas.toBlob((blob) => {
-					file = new File([blob], 'image', {type: blob.type});
+					file = new File([blob], 'image', {type: "image/png"});
 					console.log(file)
 	
 					let shareData = {
