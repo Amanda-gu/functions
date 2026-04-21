@@ -36,7 +36,13 @@ body {
 	height: 100vh;
 	display: flex; 
 	align-items: center;
-	background-color: var(--secondary-color);
+	/* background-color: var(--third-color); */
+
+	animation-name: page-intro-body;
+	animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+	animation-iteration-count: 1;
+	animation-duration: 3000ms;
+	animation-fill-mode: forwards;
 
 	.main-cta, .main-cta-inverted,.secondary-cta {
 		corner-shape: bevel;
@@ -93,6 +99,27 @@ body {
 
 }
 
+#page-intro-container{
+	position: absolute;
+	height: 100vh;
+	width: 100vw;
+	h1{		
+		text-align: center;
+		font-family: var(--font-deco);
+		font-size: 5rem;
+		line-height: 100%;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%); 
+
+			animation-name: page-intro-h1;
+			animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+			animation-iteration-count: 1;
+			animation-duration: 3500ms;
+			animation-fill-mode: forwards;
+	}
+}
 
 #intro, #intro form, #intro form #input section{
 	display: flex;
@@ -108,7 +135,7 @@ body {
 #intro {
 	display: flex;
 	flex-direction: column;
-	align-items: stretch;
+	align-items: center;
 	gap: var(--size-2);
 	margin: auto;
 
@@ -122,7 +149,7 @@ body {
 			text-align: center;
 			font-family: var(--font-deco);
 			font-size: var(--size-4);
-			line-height: var(--size-4);
+			line-height: 100%;
 		}
 
 		h2{
@@ -131,6 +158,7 @@ body {
 			opacity: 0.8;
 		}
 	}
+
 	form {
 		display: flex;
 		flex-direction: column;
@@ -141,6 +169,8 @@ body {
 			display: grid;
 			gap: var(--size-4);
 			border: var(--border-style-1);
+
+			background-color: var(--secondary-color);
 			
 			corner-shape: bevel;
 			border-radius: var(--border-radius-large);
@@ -199,6 +229,8 @@ body {
 					#occasion,
 						::picker(select) {
 						appearance: base-select;
+						corner-shape: bevel;
+						border-radius: var(--border-radius-small);
 						}
 					#occasion::picker-icon {
 						transition: 0.4s rotate;
@@ -290,8 +322,12 @@ body {
 					}
 			}
 
+			animation-name: page-intro-form;
+			animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+			animation-iteration-count: 1;
+			animation-duration: 3500ms;
+			animation-fill-mode: forwards;
 		}
-
 
 		
 	}
@@ -302,9 +338,6 @@ body {
 			width: clamp(20rem, 50vw, 26rem);
 		}
 		}
-
-
-
 
 
 #glass-bg {
@@ -419,45 +452,48 @@ dialog{
 					pointer-events: none;
 					z-index: -1;
 					margin: calc(var(--size-1)* -1);
-				}
-			@media (width > 600px) {
-						#mobile-glass{
+					
+					@media (width > 600px) {
 							display: none;
-						}
-
 					}
+				}
 
 			#ingredients-img{
 				height: min-content;
 				display: flex;
-				align-items: center;
+				align-items: flex-start;
 				justify-content: space-between;
 				padding-block: var(--size-1);
 	
 				
 				#desktop-glass{
-					max-height: 11rem;
+					display: none;
 					pointer-events: none;
 					z-index: 1;
 					opacity: 0;
 				}
 				@media (width > 600px) {
 					#desktop-glass{
+						display: flex;
+						max-height: 11rem;
 						opacity: 1;
 					}
 				}
 
 				#ingredients{
-					display: flex;
-					flex-direction: column;
+					display: grid;
+					grid-template-columns: repeat(2, 1fr);
 					gap: var(--size-1);
-					height: max-content;
 	
 					#base-section, #mixer-section,#garnish-section, #scales-section{
 						display: flex;
 						flex-direction: column;
 						gap: 0;
 					}
+
+				@media (width > 600px) {
+					grid-template-columns: repeat(1, 1fr);
+				}
 				}
 	
 			}
@@ -543,3 +579,55 @@ dialog{
 					opacity: 1;
 				}
 			}
+
+
+@keyframes page-intro-body {
+				0% {
+					background-color: var(--primary-color);
+				}
+
+				75% {
+					background-color: var(--primary-color);
+				}
+
+
+				100% {
+					background-color: var(--third-color);
+				}
+}
+
+@keyframes page-intro-h1 {
+				0% {
+					color: var(--secondary-color);
+
+				}
+
+				60% {
+					color: var(--secondary-color);
+
+					opacity: 1;
+				}
+
+				90% {
+					color: var(--primary-color);
+		
+					opacity: 0;
+				}
+			}
+
+@keyframes page-intro-form {
+				0% {
+					transform: translateY(var(--size-0));
+					opacity: 0;
+				}
+
+				75% {
+					transform: translateY(var(--size-0));
+					opacity: 0;
+				}
+				100% {
+					transform: translateY(0);
+					opacity: 1;
+				}
+			}
+
