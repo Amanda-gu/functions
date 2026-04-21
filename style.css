@@ -13,7 +13,9 @@
 	--border-radius-small: 0.4rem;
 	--border-style-1: dashed var(--primary-color) 0.06rem;
 	--border-style-2: dashed var(--secondary-color) 0.06rem;
-	--border-style-solid: solid var(--primary-color) 0.06rem;
+	--border-style-solid-1: solid var(--primary-color) 0.06rem;
+	--border-style-solid-2: solid var(--secondary-color) 0.06rem;
+
 
 	--font-mono: "attribute-mono", sans-serif;
 	--font-serif: "legitima", serif;
@@ -36,20 +38,29 @@ body {
 	align-items: center;
 	background-color: var(--secondary-color);
 
-	.main-cta, .secondary-cta {
+	.main-cta, .main-cta-inverted,.secondary-cta {
 		corner-shape: bevel;
 		border-radius: var(--border-radius-small);
 		padding-inline: var(--size-2);
 		padding-block: var(--size-0);
-		
+		transition: all 200ms;
 		width: fit-content;
 		font-weight: bold;
+	}
+
+	.main-cta:hover, .main-cta-inverted:hover,.secondary-cta:hover{
+		border-radius: 0%;
+		border: var(--border-style-solid-2);
 	}
 	
 	.main-cta {
 		color: var(--primary-color);
-		background-color: var(--secondary-color);
+		background-color: var(--third-color);
 		text-align: center;	
+	}
+	.main-cta-inverted{
+		background-color: var(--primary-color);
+		color: var(--third-color);
 	}
 	
 	.secondary-cta{
@@ -65,6 +76,21 @@ body {
 			display: inline;
 		}
 	}
+
+	#close{
+		font-family: var(--font-serif);
+		text-transform: capitalize;
+		font-size: var(--size-1);
+		color: var(--third-color);
+		border-bottom:  var(--border-style-2);
+		outline-offset: -0.06rem;
+		transition: all 200ms;
+	}
+
+	#close:hover{
+		border-bottom: var(--border-style-solid-2);
+	}
+
 }
 
 
@@ -142,11 +168,13 @@ body {
 				#occasion-wrapper{
 					corner-shape: bevel;
 					border-radius: var(--border-radius-small);
+
 					#occasion, #occasion option{
 						display: flex;
 						justify-content: center;
 						padding: var(--size-0);
 					}
+
 					#occasion{
 						text-align: center;
 						font-size: var(--size-1);
@@ -199,11 +227,11 @@ body {
 						display: flex;
 						flex-direction: row;
 						padding-inline: var(--size-1);
+						
 
 						#occasion{
 							appearance: none;
 						}
-					
 					
 					}	
 				}
@@ -335,7 +363,10 @@ dialog{
 	background-color: var(--primary-color);
 	pointer-events: none;
 
-	
+	#card-buttons{
+		display: flex;
+		gap: var(--size-0);
+	}
 	
 	#card{
 		/* border: var(--border-style); */
@@ -345,7 +376,7 @@ dialog{
 		background-color: var(--third-color);
 		corner-shape: bevel;
 		border-radius:  var(--border-radius-large);
-		outline: var(--border-style-solid);
+		outline: var(--border-style-solid-1);
   		outline-offset: calc(var(--size-0) * -1);
 
 		@media (width > 400px) {
@@ -377,7 +408,7 @@ dialog{
 			
 			#recipe-description{
 				font-size: var(--size-2);
-				border-bottom: var(--border-style-solid);
+				border-bottom: var(--border-style-solid-1);
 			}
 
 			#mobile-glass{
@@ -434,7 +465,7 @@ dialog{
 					display: flex;
 					flex-direction: row;
 					gap: var(--size-1);
-					border-top: var(--border-style-solid);
+					border-top: var(--border-style-solid-1);
 					padding-block-start: var(--size-1);
 				}
 				
@@ -465,23 +496,16 @@ dialog{
 		}
 }
 
-	#close, #card #ingredient-list h3, #card #ingredient-list #error-state p{
+	#card #ingredient-list h3, #card #ingredient-list #error-state p{
 		font-family: var(--font-mono);
-		font-size: var(--size-0);
-		line-height: var(--size-2);
 		text-transform: uppercase;
 		color: var(--forth-color);
+		font-size: var(--size-0);
 	}
 
-	#close{
-		font-family: var(--font-serif);
-		text-transform: capitalize;
-		font-size: var(--size-1);
-		color: var(--secondary-color);
-		border-bottom:  var(--border-style-2);
-		outline-offset: -0.06rem;
+	#close, #card #ingredient-list h3, #card #ingredient-list #error-state p{
+		line-height: var(--size-2);
 	}
-
 	
 
 	&[open] { 
