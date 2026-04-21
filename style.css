@@ -392,6 +392,7 @@ dialog{
 		padding: var(--size-4);
 		margin: var(--size-0);
 		width: 100%;
+		color: var(--primary-color);
 		background-color: var(--third-color);
 		corner-shape: bevel;
 		border-radius:  var(--border-radius-large);
