@@ -30,7 +30,8 @@
                         "occasion": [
                             "Flexible",
                             "Brunch",
-                            "Weekend Fun"
+                            "Weekend Fun",
+                            "Date Night"
                         ],
                         "label": "optimist"
                     },
@@ -45,7 +46,8 @@
                         "occasion": [
                             "Flexible",
                             "Casual Weeknight",
-                            "Date Night"
+                            "Date Night",
+                            "Brunch"
                         ],
                         "label": "diplomat"
                     },
@@ -60,12 +62,13 @@
                         "occasion": [
                             "Flexible",
                             "Brunch",
-                            "Dinner Party"
+                            "Dinner Party",
+                            "Weekend Fun"
                         ],
                         "label": "orator"
                     },
                     {
-                        "name": "Ros\u00e9",
+                        "name": "Rosé",
                         "taste": [
                             "fruity",
                             "acid",
@@ -75,7 +78,8 @@
                         "occasion": [
                             "Flexible",
                             "Weekend Fun",
-                            "Brunch"
+                            "Brunch",
+                            "Date Night"
                         ],
                         "label": "dusk"
                     },
@@ -90,7 +94,8 @@
                         "occasion": [
                             "Flexible",
                             "Celebrating something",
-                            "Brunch"
+                            "Brunch",
+                            "Weekend Fun"
                         ],
                         "label": "toaster"
                     },
@@ -105,7 +110,8 @@
                         "occasion": [
                             "Flexible",
                             "Celebrating something",
-                            "Date Night"
+                            "Date Night",
+                            "Brunch"
                         ],
                         "label": "chandelier"
                     },
@@ -120,7 +126,8 @@
                         "occasion": [
                             "Flexible",
                             "Date Night",
-                            "Dinner Party"
+                            "Dinner Party",
+                            "Brunch"
                         ],
                         "label": "romantic"
                     },
@@ -135,7 +142,8 @@
                         "occasion": [
                             "Flexible",
                             "Dinner Party",
-                            "Casual Weeknight"
+                            "Casual Weeknight",
+                            "Brunch"
                         ],
                         "label": "archivist"
                     },
@@ -150,7 +158,8 @@
                         "occasion": [
                             "Flexible",
                             "Weekend Fun",
-                            "Brunch"
+                            "Brunch",
+                            "Date Night"
                         ],
                         "label": "escapee"
                     },
@@ -165,7 +174,8 @@
                         "occasion": [
                             "Flexible",
                             "Dinner Party",
-                            "Date Night"
+                            "Date Night",
+                            "Brunch"
                         ],
                         "label": "pared"
                     },
@@ -180,7 +190,8 @@
                         "occasion": [
                             "Flexible",
                             "Casual Weeknight",
-                            "Weekend Fun"
+                            "Weekend Fun",
+                            "Brunch"
                         ],
                         "label": "maverick"
                     },
@@ -195,7 +206,8 @@
                         "occasion": [
                             "Flexible",
                             "Date Night",
-                            "Dinner Party"
+                            "Dinner Party",
+                            "Brunch"
                         ],
                         "label": "idealist"
                     },
@@ -210,7 +222,8 @@
                         "occasion": [
                             "Flexible",
                             "Dinner Party",
-                            "Casual Weeknight"
+                            "Casual Weeknight",
+                            "Brunch"
                         ],
                         "label": "skeptic"
                     },
@@ -225,9 +238,42 @@
                         "occasion": [
                             "Flexible",
                             "Weekend Fun",
-                            "Celebrating something"
+                            "Celebrating something",
+                            "Brunch"
                         ],
                         "label": "hedonist"
+                    },
+                    {
+                        "name": "Elderflower Liqueur",
+                        "taste": [
+                            "floral",
+                            "sweet",
+                            "herbal"
+                        ],
+                        "description": "delicate",
+                        "occasion": [
+                            "Flexible",
+                            "Brunch",
+                            "Date Night",
+                            "Celebrating something"
+                        ],
+                        "label": "bloom"
+                    },
+                    {
+                        "name": "Sparkling Rosé",
+                        "taste": [
+                            "fruity",
+                            "acid",
+                            "floral"
+                        ],
+                        "description": "festive",
+                        "occasion": [
+                            "Flexible",
+                            "Brunch",
+                            "Celebrating something",
+                            "Girls Night"
+                        ],
+                        "label": "blush"
                     }
                 ],
                 "mixer": [
@@ -361,6 +407,26 @@
                             "Flexible"
                         ],
                         "label": "idealist"
+                    },
+                    {
+                        "name": "Elderflower Cordial",
+                        "taste": [
+                            "floral",
+                            "sweet",
+                            "herbal"
+                        ],
+                        "description": "perfumed",
+                        "label": "garden"
+                    },
+                    {
+                        "name": "Yuzu Juice",
+                        "taste": [
+                            "acid",
+                            "fruity",
+                            "floral"
+                        ],
+                        "description": "bright",
+                        "label": "tokyo"
                     }
                 ],
                 "garnish": [
@@ -369,12 +435,9 @@
                         "taste": [
                             "fruity",
                             "acid",
-                            "sweet"
+                            "bitter"
                         ],
-                        "description": "bright",
-                        "occasion": [
-                            "Flexible"
-                        ]
+                        "description": "sunny"
                     },
                     {
                         "name": "Lemon Twist",
@@ -383,46 +446,43 @@
                             "fruity",
                             "bitter"
                         ],
-                        "description": "zesty",
-                        "occasion": [
-                            "Flexible"
-                        ]
+                        "description": "bright"
                     },
                     {
                         "name": "Mint Sprig",
                         "taste": [
                             "herbal",
                             "sweet",
-                            "floral"
+                            "clean"
                         ],
-                        "description": "cool",
-                        "occasion": [
-                            "Flexible"
-                        ]
+                        "description": "fresh"
                     },
                     {
                         "name": "Strawberry",
                         "taste": [
                             "sweet",
                             "fruity",
-                            "acid"
+                            "floral"
                         ],
-                        "description": "playful",
-                        "occasion": [
-                            "Flexible"
-                        ]
+                        "description": "playful"
                     },
                     {
                         "name": "Cucumber Slice",
                         "taste": [
-                            "umami",
                             "clean",
-                            "herbal"
+                            "herbal",
+                            "floral"
                         ],
-                        "description": "refreshing",
-                        "occasion": [
-                            "Flexible"
-                        ]
+                        "description": "cool"
+                    },
+                    {
+                        "name": "Edible Flower",
+                        "taste": [
+                            "floral",
+                            "herbal",
+                            "sweet"
+                        ],
+                        "description": "delicate"
                     }
                 ]
             }
@@ -441,7 +501,8 @@
                         "occasion": [
                             "Flexible",
                             "Weekend Fun",
-                            "Casual Weeknight"
+                            "Casual Weeknight",
+                            "Brunch"
                         ],
                         "label": "rover"
                     },
@@ -456,7 +517,8 @@
                         "occasion": [
                             "Flexible",
                             "Dinner Party",
-                            "Date Night"
+                            "Date Night",
+                            "Weekend Fun"
                         ],
                         "label": "sage"
                     },
@@ -471,7 +533,8 @@
                         "occasion": [
                             "Flexible",
                             "Weekend Fun",
-                            "Date Night"
+                            "Date Night",
+                            "Brunch"
                         ],
                         "label": "botanist"
                     },
@@ -486,7 +549,8 @@
                         "occasion": [
                             "Flexible",
                             "Weekend Fun",
-                            "Casual Weeknight"
+                            "Casual Weeknight",
+                            "Brunch"
                         ],
                         "label": "flux"
                     },
@@ -501,12 +565,13 @@
                         "occasion": [
                             "Flexible",
                             "Weekend Fun",
-                            "Casual Weeknight"
+                            "Casual Weeknight",
+                            "Brunch"
                         ],
                         "label": "spark"
                     },
                     {
-                        "name": "Cacha\u00e7a",
+                        "name": "Cachaça",
                         "taste": [
                             "herbal",
                             "sweet",
@@ -516,7 +581,8 @@
                         "occasion": [
                             "Flexible",
                             "Brunch",
-                            "Weekend Fun"
+                            "Weekend Fun",
+                            "Celebrating something"
                         ],
                         "label": "dancer"
                     },
@@ -531,7 +597,8 @@
                         "occasion": [
                             "Flexible",
                             "Weekend Fun",
-                            "Celebrating something"
+                            "Celebrating something",
+                            "Brunch"
                         ],
                         "label": "hedonist"
                     },
@@ -546,7 +613,8 @@
                         "occasion": [
                             "Flexible",
                             "Dinner Party",
-                            "Date Night"
+                            "Date Night",
+                            "Weekend Fun"
                         ],
                         "label": "brooder"
                     },
@@ -561,7 +629,8 @@
                         "occasion": [
                             "Flexible",
                             "Casual Weeknight",
-                            "Date Night"
+                            "Date Night",
+                            "Weekend Fun"
                         ],
                         "label": "diplomat"
                     },
@@ -576,7 +645,8 @@
                         "occasion": [
                             "Flexible",
                             "Dinner Party",
-                            "Casual Weeknight"
+                            "Casual Weeknight",
+                            "Weekend Fun"
                         ],
                         "label": "archivist"
                     },
@@ -591,12 +661,13 @@
                         "occasion": [
                             "Flexible",
                             "Dinner Party",
-                            "Celebrating something"
+                            "Celebrating something",
+                            "Weekend Fun"
                         ],
                         "label": "anchor"
                     },
                     {
-                        "name": "Ros\u00e9",
+                        "name": "Rosé",
                         "taste": [
                             "fruity",
                             "acid",
@@ -606,7 +677,8 @@
                         "occasion": [
                             "Flexible",
                             "Weekend Fun",
-                            "Brunch"
+                            "Brunch",
+                            "Celebrating something"
                         ],
                         "label": "dusk"
                     },
@@ -621,7 +693,8 @@
                         "occasion": [
                             "Flexible",
                             "Dinner Party",
-                            "Date Night"
+                            "Date Night",
+                            "Weekend Fun"
                         ],
                         "label": "pared"
                     },
@@ -636,7 +709,8 @@
                         "occasion": [
                             "Flexible",
                             "Casual Weeknight",
-                            "Weekend Fun"
+                            "Weekend Fun",
+                            "Brunch"
                         ],
                         "label": "maverick"
                     },
@@ -651,9 +725,42 @@
                         "occasion": [
                             "Flexible",
                             "Date Night",
-                            "Dinner Party"
+                            "Dinner Party",
+                            "Weekend Fun"
                         ],
                         "label": "idealist"
+                    },
+                    {
+                        "name": "Mezcal",
+                        "taste": [
+                            "smoky",
+                            "herbal",
+                            "fruity"
+                        ],
+                        "description": "smoky",
+                        "occasion": [
+                            "Flexible",
+                            "Date Night",
+                            "Weekend Fun",
+                            "Dinner Party"
+                        ],
+                        "label": "ghost"
+                    },
+                    {
+                        "name": "Whiskey",
+                        "taste": [
+                            "spicy",
+                            "sweet",
+                            "herbal"
+                        ],
+                        "description": "warm",
+                        "occasion": [
+                            "Flexible",
+                            "Casual Weeknight",
+                            "Weekend Fun",
+                            "Date Night"
+                        ],
+                        "label": "pioneer"
                     }
                 ],
                 "mixer": [
@@ -786,32 +893,46 @@
                             "Flexible"
                         ],
                         "label": "verbose"
+                    },
+                    {
+                        "name": "Tamarind Syrup",
+                        "taste": [
+                            "sour",
+                            "sweet",
+                            "fruity"
+                        ],
+                        "description": "tangy",
+                        "label": "grove"
+                    },
+                    {
+                        "name": "Coconut Water",
+                        "taste": [
+                            "sweet",
+                            "clean",
+                            "nutty"
+                        ],
+                        "description": "tropical",
+                        "label": "lagoon"
                     }
                 ],
                 "garnish": [
                     {
-                        "name": "Seasonal Fruit",
-                        "taste": [
-                            "fruity",
-                            "acid",
-                            "sweet"
-                        ],
-                        "description": "festive",
-                        "occasion": [
-                            "Flexible"
-                        ]
-                    },
-                    {
-                        "name": "Mint",
+                        "name": "Mint Sprig",
                         "taste": [
                             "herbal",
                             "sweet",
+                            "clean"
+                        ],
+                        "description": "fresh"
+                    },
+                    {
+                        "name": "Strawberry",
+                        "taste": [
+                            "sweet",
+                            "fruity",
                             "floral"
                         ],
-                        "description": "fresh",
-                        "occasion": [
-                            "Flexible"
-                        ]
+                        "description": "playful"
                     },
                     {
                         "name": "Citrus Wheel",
@@ -820,34 +941,34 @@
                             "fruity",
                             "bitter"
                         ],
-                        "description": "bright",
-                        "occasion": [
-                            "Flexible"
-                        ]
-                    },
-                    {
-                        "name": "Berries",
-                        "taste": [
-                            "sweet",
-                            "acid",
-                            "fruity"
-                        ],
-                        "description": "juicy",
-                        "occasion": [
-                            "Flexible"
-                        ]
+                        "description": "classic"
                     },
                     {
                         "name": "Edible Flower",
                         "taste": [
+                            "floral",
                             "herbal",
-                            "fruity",
-                            "floral"
+                            "sweet"
                         ],
-                        "description": "pretty",
-                        "occasion": [
-                            "Flexible"
-                        ]
+                        "description": "delicate"
+                    },
+                    {
+                        "name": "Cherry",
+                        "taste": [
+                            "sweet",
+                            "fruity",
+                            "herbal"
+                        ],
+                        "description": "sweet"
+                    },
+                    {
+                        "name": "Grapefruit Slice",
+                        "taste": [
+                            "acid",
+                            "bitter",
+                            "fruity"
+                        ],
+                        "description": "tart"
                     }
                 ]
             }
@@ -866,7 +987,8 @@
                         "occasion": [
                             "Flexible",
                             "Casual Weeknight",
-                            "Weekend Fun"
+                            "Weekend Fun",
+                            "Date Night"
                         ],
                         "label": "charmer"
                     },
@@ -881,7 +1003,8 @@
                         "occasion": [
                             "Flexible",
                             "Weekend Fun",
-                            "Casual Weeknight"
+                            "Casual Weeknight",
+                            "Date Night"
                         ],
                         "label": "flux"
                     },
@@ -896,7 +1019,8 @@
                         "occasion": [
                             "Flexible",
                             "Weekend Fun",
-                            "Date Night"
+                            "Date Night",
+                            "Casual Weeknight"
                         ],
                         "label": "botanist"
                     },
@@ -911,7 +1035,8 @@
                         "occasion": [
                             "Flexible",
                             "Weekend Fun",
-                            "Casual Weeknight"
+                            "Casual Weeknight",
+                            "Date Night"
                         ],
                         "label": "rover"
                     },
@@ -926,7 +1051,8 @@
                         "occasion": [
                             "Flexible",
                             "Weekend Fun",
-                            "Casual Weeknight"
+                            "Casual Weeknight",
+                            "Date Night"
                         ],
                         "label": "spark"
                     },
@@ -941,7 +1067,8 @@
                         "occasion": [
                             "Flexible",
                             "Date Night",
-                            "Dinner Party"
+                            "Dinner Party",
+                            "Weekend Fun"
                         ],
                         "label": "wanderer"
                     },
@@ -956,7 +1083,8 @@
                         "occasion": [
                             "Flexible",
                             "Dinner Party",
-                            "Date Night"
+                            "Date Night",
+                            "Weekend Fun"
                         ],
                         "label": "sage"
                     },
@@ -971,7 +1099,8 @@
                         "occasion": [
                             "Flexible",
                             "Casual Weeknight",
-                            "Weekend Fun"
+                            "Weekend Fun",
+                            "Date Night"
                         ],
                         "label": "maverick"
                     },
@@ -986,7 +1115,8 @@
                         "occasion": [
                             "Flexible",
                             "Dinner Party",
-                            "Date Night"
+                            "Date Night",
+                            "Weekend Fun"
                         ],
                         "label": "pared"
                     },
@@ -1001,7 +1131,8 @@
                         "occasion": [
                             "Flexible",
                             "Dinner Party",
-                            "Date Night"
+                            "Date Night",
+                            "Weekend Fun"
                         ],
                         "label": "brooder"
                     },
@@ -1016,12 +1147,13 @@
                         "occasion": [
                             "Flexible",
                             "Casual Weeknight",
-                            "Date Night"
+                            "Date Night",
+                            "Weekend Fun"
                         ],
                         "label": "diplomat"
                     },
                     {
-                        "name": "Cacha\u00e7a",
+                        "name": "Cachaça",
                         "taste": [
                             "herbal",
                             "sweet",
@@ -1031,7 +1163,8 @@
                         "occasion": [
                             "Flexible",
                             "Brunch",
-                            "Weekend Fun"
+                            "Weekend Fun",
+                            "Casual Weeknight"
                         ],
                         "label": "dancer"
                     },
@@ -1046,7 +1179,8 @@
                         "occasion": [
                             "Flexible",
                             "Date Night",
-                            "Dinner Party"
+                            "Dinner Party",
+                            "Weekend Fun"
                         ],
                         "label": "idealist"
                     },
@@ -1061,7 +1195,8 @@
                         "occasion": [
                             "Flexible",
                             "Weekend Fun",
-                            "Celebrating something"
+                            "Celebrating something",
+                            "Casual Weeknight"
                         ],
                         "label": "hedonist"
                     },
@@ -1076,9 +1211,42 @@
                         "occasion": [
                             "Flexible",
                             "Brunch",
-                            "Weekend Fun"
+                            "Weekend Fun",
+                            "Casual Weeknight"
                         ],
                         "label": "optimist"
+                    },
+                    {
+                        "name": "Bourbon",
+                        "taste": [
+                            "sweet",
+                            "spicy",
+                            "herbal"
+                        ],
+                        "description": "warm",
+                        "occasion": [
+                            "Flexible",
+                            "Casual Weeknight",
+                            "Weekend Fun",
+                            "Date Night"
+                        ],
+                        "label": "homestead"
+                    },
+                    {
+                        "name": "Rye",
+                        "taste": [
+                            "spicy",
+                            "herbal",
+                            "bitter"
+                        ],
+                        "description": "sharp",
+                        "occasion": [
+                            "Flexible",
+                            "Casual Weeknight",
+                            "Date Night",
+                            "Dinner Party"
+                        ],
+                        "label": "contrarian"
                     }
                 ],
                 "mixer": [
@@ -1211,9 +1379,56 @@
                             "Flexible"
                         ],
                         "label": "flirt"
+                    },
+                    {
+                        "name": "Cucumber Juice",
+                        "taste": [
+                            "clean",
+                            "herbal",
+                            "floral"
+                        ],
+                        "description": "cool",
+                        "label": "greenhouse"
+                    },
+                    {
+                        "name": "Ginger Beer",
+                        "taste": [
+                            "spicy",
+                            "sweet",
+                            "herbal"
+                        ],
+                        "description": "fiery",
+                        "label": "ignite"
                     }
                 ],
                 "garnish": [
+                    {
+                        "name": "Lemon Twist",
+                        "taste": [
+                            "acid",
+                            "fruity",
+                            "bitter"
+                        ],
+                        "description": "bright"
+                    },
+                    {
+                        "name": "Mint Sprig",
+                        "taste": [
+                            "herbal",
+                            "sweet",
+                            "clean"
+                        ],
+                        "description": "fresh"
+                    },
+                    {
+                        "name": "Cucumber Slice",
+                        "taste": [
+                            "clean",
+                            "herbal",
+                            "floral"
+                        ],
+                        "description": "cool"
+                    },
                     {
                         "name": "Lime Wedge",
                         "taste": [
@@ -1221,34 +1436,7 @@
                             "fruity",
                             "bitter"
                         ],
-                        "description": "zesty",
-                        "occasion": [
-                            "Flexible"
-                        ]
-                    },
-                    {
-                        "name": "Lemon Wheel",
-                        "taste": [
-                            "acid",
-                            "fruity",
-                            "bitter"
-                        ],
-                        "description": "bright",
-                        "occasion": [
-                            "Flexible"
-                        ]
-                    },
-                    {
-                        "name": "Mint Sprig",
-                        "taste": [
-                            "herbal",
-                            "sweet",
-                            "floral"
-                        ],
-                        "description": "cool",
-                        "occasion": [
-                            "Flexible"
-                        ]
+                        "description": "zesty"
                     },
                     {
                         "name": "Cherry",
@@ -1257,22 +1445,16 @@
                             "fruity",
                             "herbal"
                         ],
-                        "description": "classic",
-                        "occasion": [
-                            "Flexible"
-                        ]
+                        "description": "sweet"
                     },
                     {
-                        "name": "Orange Peel",
+                        "name": "Grapefruit Slice",
                         "taste": [
-                            "fruity",
                             "acid",
-                            "bitter"
+                            "bitter",
+                            "fruity"
                         ],
-                        "description": "aromatic",
-                        "occasion": [
-                            "Flexible"
-                        ]
+                        "description": "tart"
                     }
                 ]
             }
@@ -1293,7 +1475,8 @@
                         "occasion": [
                             "Flexible",
                             "Weekend Fun",
-                            "Casual Weeknight"
+                            "Casual Weeknight",
+                            "Date Night"
                         ],
                         "label": "flux"
                     },
@@ -1308,7 +1491,8 @@
                         "occasion": [
                             "Flexible",
                             "Weekend Fun",
-                            "Date Night"
+                            "Date Night",
+                            "Dinner Party"
                         ],
                         "label": "botanist"
                     },
@@ -1323,7 +1507,8 @@
                         "occasion": [
                             "Flexible",
                             "Weekend Fun",
-                            "Casual Weeknight"
+                            "Casual Weeknight",
+                            "Date Night"
                         ],
                         "label": "rover"
                     },
@@ -1338,7 +1523,8 @@
                         "occasion": [
                             "Flexible",
                             "Weekend Fun",
-                            "Casual Weeknight"
+                            "Casual Weeknight",
+                            "Date Night"
                         ],
                         "label": "spark"
                     },
@@ -1353,7 +1539,8 @@
                         "occasion": [
                             "Flexible",
                             "Casual Weeknight",
-                            "Weekend Fun"
+                            "Weekend Fun",
+                            "Date Night"
                         ],
                         "label": "charmer"
                     },
@@ -1368,7 +1555,8 @@
                         "occasion": [
                             "Flexible",
                             "Dinner Party",
-                            "Date Night"
+                            "Date Night",
+                            "Weekend Fun"
                         ],
                         "label": "sage"
                     },
@@ -1383,12 +1571,13 @@
                         "occasion": [
                             "Flexible",
                             "Date Night",
-                            "Dinner Party"
+                            "Dinner Party",
+                            "Weekend Fun"
                         ],
                         "label": "idealist"
                     },
                     {
-                        "name": "Cacha\u00e7a",
+                        "name": "Cachaça",
                         "taste": [
                             "grassy",
                             "sweet",
@@ -1398,7 +1587,8 @@
                         "occasion": [
                             "Flexible",
                             "Brunch",
-                            "Weekend Fun"
+                            "Weekend Fun",
+                            "Date Night"
                         ],
                         "label": "dancer"
                     },
@@ -1413,7 +1603,8 @@
                         "occasion": [
                             "Flexible",
                             "Date Night",
-                            "Dinner Party"
+                            "Dinner Party",
+                            "Weekend Fun"
                         ],
                         "label": "wanderer"
                     },
@@ -1428,7 +1619,8 @@
                         "occasion": [
                             "Flexible",
                             "Casual Weeknight",
-                            "Weekend Fun"
+                            "Weekend Fun",
+                            "Date Night"
                         ],
                         "label": "maverick"
                     },
@@ -1459,7 +1651,8 @@
                         "occasion": [
                             "Flexible",
                             "Weekend Fun",
-                            "Celebrating something"
+                            "Celebrating something",
+                            "Date Night"
                         ],
                         "label": "hedonist"
                     },
@@ -1474,7 +1667,8 @@
                         "occasion": [
                             "Flexible",
                             "Brunch",
-                            "Weekend Fun"
+                            "Weekend Fun",
+                            "Date Night"
                         ],
                         "label": "optimist"
                     },
@@ -1489,7 +1683,8 @@
                         "occasion": [
                             "Flexible",
                             "Dinner Party",
-                            "Date Night"
+                            "Date Night",
+                            "Weekend Fun"
                         ],
                         "label": "brooder"
                     },
@@ -1504,9 +1699,42 @@
                         "occasion": [
                             "Flexible",
                             "Casual Weeknight",
-                            "Date Night"
+                            "Date Night",
+                            "Weekend Fun"
                         ],
                         "label": "diplomat"
+                    },
+                    {
+                        "name": "Bourbon",
+                        "taste": [
+                            "sweet",
+                            "spicy",
+                            "herbal"
+                        ],
+                        "description": "warm",
+                        "occasion": [
+                            "Flexible",
+                            "Casual Weeknight",
+                            "Weekend Fun",
+                            "Date Night"
+                        ],
+                        "label": "homestead"
+                    },
+                    {
+                        "name": "Elderflower Liqueur",
+                        "taste": [
+                            "floral",
+                            "sweet",
+                            "herbal"
+                        ],
+                        "description": "delicate",
+                        "occasion": [
+                            "Flexible",
+                            "Brunch",
+                            "Date Night",
+                            "Celebrating something"
+                        ],
+                        "label": "bloom"
                     }
                 ],
                 "mixer": [
@@ -1609,6 +1837,26 @@
                         ],
                         "description": "spiced",
                         "label": "shadow"
+                    },
+                    {
+                        "name": "Egg White",
+                        "taste": [
+                            "clean",
+                            "sweet",
+                            "creamy"
+                        ],
+                        "description": "silky",
+                        "label": "foam"
+                    },
+                    {
+                        "name": "Aquafaba",
+                        "taste": [
+                            "clean",
+                            "sweet",
+                            "neutral"
+                        ],
+                        "description": "airy",
+                        "label": "cloud"
                     }
                 ],
                 "garnish": [
@@ -1619,7 +1867,7 @@
                             "fruity",
                             "bitter"
                         ],
-                        "description": "bright"
+                        "description": "classic"
                     },
                     {
                         "name": "Lime Wheel",
@@ -1637,25 +1885,34 @@
                             "fruity",
                             "herbal"
                         ],
-                        "description": "classic"
+                        "description": "sweet"
                     },
                     {
                         "name": "Orange Slice",
                         "taste": [
                             "fruity",
                             "acid",
-                            "sweet"
+                            "bitter"
                         ],
-                        "description": "soft"
+                        "description": "sunny"
                     },
                     {
                         "name": "Mint Sprig",
                         "taste": [
                             "herbal",
                             "sweet",
-                            "floral"
+                            "clean"
                         ],
                         "description": "fresh"
+                    },
+                    {
+                        "name": "Dehydrated Citrus",
+                        "taste": [
+                            "acid",
+                            "bitter",
+                            "fruity"
+                        ],
+                        "description": "artisan"
                     }
                 ]
             }
@@ -1674,7 +1931,8 @@
                         "occasion": [
                             "Flexible",
                             "Weekend Fun",
-                            "Date Night"
+                            "Date Night",
+                            "Casual Weeknight"
                         ],
                         "label": "botanist"
                     },
@@ -1689,7 +1947,8 @@
                         "occasion": [
                             "Flexible",
                             "Weekend Fun",
-                            "Casual Weeknight"
+                            "Casual Weeknight",
+                            "Date Night"
                         ],
                         "label": "flux"
                     },
@@ -1704,7 +1963,8 @@
                         "occasion": [
                             "Flexible",
                             "Weekend Fun",
-                            "Casual Weeknight"
+                            "Casual Weeknight",
+                            "Date Night"
                         ],
                         "label": "rover"
                     },
@@ -1719,7 +1979,8 @@
                         "occasion": [
                             "Flexible",
                             "Weekend Fun",
-                            "Casual Weeknight"
+                            "Casual Weeknight",
+                            "Date Night"
                         ],
                         "label": "spark"
                     },
@@ -1734,7 +1995,8 @@
                         "occasion": [
                             "Flexible",
                             "Casual Weeknight",
-                            "Weekend Fun"
+                            "Weekend Fun",
+                            "Date Night"
                         ],
                         "label": "charmer"
                     },
@@ -1749,7 +2011,8 @@
                         "occasion": [
                             "Flexible",
                             "Dinner Party",
-                            "Date Night"
+                            "Date Night",
+                            "Weekend Fun"
                         ],
                         "label": "sage"
                     },
@@ -1764,12 +2027,13 @@
                         "occasion": [
                             "Flexible",
                             "Date Night",
-                            "Dinner Party"
+                            "Dinner Party",
+                            "Weekend Fun"
                         ],
                         "label": "idealist"
                     },
                     {
-                        "name": "Cacha\u00e7a",
+                        "name": "Cachaça",
                         "taste": [
                             "grassy",
                             "sweet",
@@ -1779,7 +2043,8 @@
                         "occasion": [
                             "Flexible",
                             "Brunch",
-                            "Weekend Fun"
+                            "Weekend Fun",
+                            "Casual Weeknight"
                         ],
                         "label": "dancer"
                     },
@@ -1794,7 +2059,8 @@
                         "occasion": [
                             "Flexible",
                             "Casual Weeknight",
-                            "Weekend Fun"
+                            "Weekend Fun",
+                            "Date Night"
                         ],
                         "label": "maverick"
                     },
@@ -1809,7 +2075,8 @@
                         "occasion": [
                             "Flexible",
                             "Dinner Party",
-                            "Date Night"
+                            "Date Night",
+                            "Weekend Fun"
                         ],
                         "label": "pared"
                     },
@@ -1824,7 +2091,8 @@
                         "occasion": [
                             "Flexible",
                             "Weekend Fun",
-                            "Celebrating something"
+                            "Celebrating something",
+                            "Casual Weeknight"
                         ],
                         "label": "hedonist"
                     },
@@ -1839,7 +2107,8 @@
                         "occasion": [
                             "Flexible",
                             "Brunch",
-                            "Weekend Fun"
+                            "Weekend Fun",
+                            "Casual Weeknight"
                         ],
                         "label": "optimist"
                     },
@@ -1854,7 +2123,8 @@
                         "occasion": [
                             "Flexible",
                             "Dinner Party",
-                            "Date Night"
+                            "Date Night",
+                            "Weekend Fun"
                         ],
                         "label": "brooder"
                     },
@@ -1869,7 +2139,8 @@
                         "occasion": [
                             "Flexible",
                             "Casual Weeknight",
-                            "Date Night"
+                            "Date Night",
+                            "Weekend Fun"
                         ],
                         "label": "diplomat"
                     },
@@ -1884,9 +2155,42 @@
                         "occasion": [
                             "Flexible",
                             "Date Night",
-                            "Dinner Party"
+                            "Dinner Party",
+                            "Weekend Fun"
                         ],
                         "label": "wanderer"
+                    },
+                    {
+                        "name": "Elderflower Liqueur",
+                        "taste": [
+                            "floral",
+                            "sweet",
+                            "herbal"
+                        ],
+                        "description": "delicate",
+                        "occasion": [
+                            "Flexible",
+                            "Brunch",
+                            "Date Night",
+                            "Girls Night"
+                        ],
+                        "label": "bloom"
+                    },
+                    {
+                        "name": "Shochu",
+                        "taste": [
+                            "clean",
+                            "floral",
+                            "sweet"
+                        ],
+                        "description": "light",
+                        "occasion": [
+                            "Flexible",
+                            "Dinner Party",
+                            "Date Night",
+                            "Casual Weeknight"
+                        ],
+                        "label": "quiet"
                     }
                 ],
                 "mixer": [
@@ -1989,6 +2293,26 @@
                         ],
                         "description": "cool",
                         "label": "simmer"
+                    },
+                    {
+                        "name": "Cucumber Juice",
+                        "taste": [
+                            "clean",
+                            "herbal",
+                            "floral"
+                        ],
+                        "description": "cool",
+                        "label": "greenhouse"
+                    },
+                    {
+                        "name": "Yuzu Juice",
+                        "taste": [
+                            "acid",
+                            "fruity",
+                            "floral"
+                        ],
+                        "description": "bright",
+                        "label": "tokyo"
                     }
                 ],
                 "garnish": [
@@ -1999,7 +2323,7 @@
                             "fruity",
                             "bitter"
                         ],
-                        "description": "bright"
+                        "description": "classic"
                     },
                     {
                         "name": "Cherry",
@@ -2008,34 +2332,43 @@
                             "fruity",
                             "herbal"
                         ],
-                        "description": "classic"
+                        "description": "sweet"
                     },
                     {
                         "name": "Orange Slice",
                         "taste": [
                             "fruity",
                             "acid",
-                            "sweet"
+                            "bitter"
                         ],
-                        "description": "soft"
+                        "description": "sunny"
                     },
                     {
-                        "name": "Mint",
+                        "name": "Mint Sprig",
                         "taste": [
                             "herbal",
                             "sweet",
-                            "floral"
+                            "clean"
                         ],
                         "description": "fresh"
                     },
                     {
-                        "name": "Cucumber",
+                        "name": "Cucumber Ribbon",
                         "taste": [
                             "clean",
-                            "sweet",
-                            "herbal"
+                            "herbal",
+                            "floral"
                         ],
-                        "description": "cool"
+                        "description": "elegant"
+                    },
+                    {
+                        "name": "Basil Leaf",
+                        "taste": [
+                            "herbal",
+                            "sweet",
+                            "spicy"
+                        ],
+                        "description": "aromatic"
                     }
                 ]
             }
@@ -2054,7 +2387,8 @@
                         "occasion": [
                             "Flexible",
                             "Weekend Fun",
-                            "Casual Weeknight"
+                            "Casual Weeknight",
+                            "Date Night"
                         ],
                         "label": "spark"
                     },
@@ -2069,7 +2403,8 @@
                         "occasion": [
                             "Flexible",
                             "Weekend Fun",
-                            "Date Night"
+                            "Date Night",
+                            "Casual Weeknight"
                         ],
                         "label": "botanist"
                     },
@@ -2084,7 +2419,8 @@
                         "occasion": [
                             "Flexible",
                             "Weekend Fun",
-                            "Casual Weeknight"
+                            "Casual Weeknight",
+                            "Date Night"
                         ],
                         "label": "flux"
                     },
@@ -2099,7 +2435,8 @@
                         "occasion": [
                             "Flexible",
                             "Weekend Fun",
-                            "Casual Weeknight"
+                            "Casual Weeknight",
+                            "Date Night"
                         ],
                         "label": "rover"
                     },
@@ -2114,7 +2451,8 @@
                         "occasion": [
                             "Flexible",
                             "Casual Weeknight",
-                            "Weekend Fun"
+                            "Weekend Fun",
+                            "Date Night"
                         ],
                         "label": "charmer"
                     },
@@ -2129,7 +2467,8 @@
                         "occasion": [
                             "Flexible",
                             "Dinner Party",
-                            "Date Night"
+                            "Date Night",
+                            "Weekend Fun"
                         ],
                         "label": "sage"
                     },
@@ -2144,12 +2483,13 @@
                         "occasion": [
                             "Flexible",
                             "Date Night",
-                            "Dinner Party"
+                            "Dinner Party",
+                            "Weekend Fun"
                         ],
                         "label": "idealist"
                     },
                     {
-                        "name": "Cacha\u00e7a",
+                        "name": "Cachaça",
                         "taste": [
                             "grassy",
                             "sweet",
@@ -2159,7 +2499,8 @@
                         "occasion": [
                             "Flexible",
                             "Brunch",
-                            "Weekend Fun"
+                            "Weekend Fun",
+                            "Casual Weeknight"
                         ],
                         "label": "dancer"
                     },
@@ -2174,7 +2515,8 @@
                         "occasion": [
                             "Flexible",
                             "Casual Weeknight",
-                            "Weekend Fun"
+                            "Weekend Fun",
+                            "Date Night"
                         ],
                         "label": "maverick"
                     },
@@ -2189,7 +2531,8 @@
                         "occasion": [
                             "Flexible",
                             "Dinner Party",
-                            "Date Night"
+                            "Date Night",
+                            "Weekend Fun"
                         ],
                         "label": "pared"
                     },
@@ -2204,7 +2547,8 @@
                         "occasion": [
                             "Flexible",
                             "Weekend Fun",
-                            "Celebrating something"
+                            "Celebrating something",
+                            "Casual Weeknight"
                         ],
                         "label": "hedonist"
                     },
@@ -2219,7 +2563,8 @@
                         "occasion": [
                             "Flexible",
                             "Brunch",
-                            "Weekend Fun"
+                            "Weekend Fun",
+                            "Casual Weeknight"
                         ],
                         "label": "optimist"
                     },
@@ -2234,7 +2579,8 @@
                         "occasion": [
                             "Flexible",
                             "Dinner Party",
-                            "Date Night"
+                            "Date Night",
+                            "Weekend Fun"
                         ],
                         "label": "brooder"
                     },
@@ -2249,7 +2595,8 @@
                         "occasion": [
                             "Flexible",
                             "Casual Weeknight",
-                            "Date Night"
+                            "Date Night",
+                            "Weekend Fun"
                         ],
                         "label": "diplomat"
                     },
@@ -2264,9 +2611,42 @@
                         "occasion": [
                             "Flexible",
                             "Date Night",
-                            "Dinner Party"
+                            "Dinner Party",
+                            "Weekend Fun"
                         ],
                         "label": "wanderer"
+                    },
+                    {
+                        "name": "Sotol",
+                        "taste": [
+                            "herbal",
+                            "earthy",
+                            "spicy"
+                        ],
+                        "description": "wild",
+                        "occasion": [
+                            "Flexible",
+                            "Date Night",
+                            "Dinner Party",
+                            "Weekend Fun"
+                        ],
+                        "label": "desert"
+                    },
+                    {
+                        "name": "Elderflower Liqueur",
+                        "taste": [
+                            "floral",
+                            "sweet",
+                            "herbal"
+                        ],
+                        "description": "delicate",
+                        "occasion": [
+                            "Flexible",
+                            "Brunch",
+                            "Date Night",
+                            "Celebrating something"
+                        ],
+                        "label": "bloom"
                     }
                 ],
                 "mixer": [
@@ -2369,18 +2749,29 @@
                         ],
                         "description": "spiced",
                         "label": "shadow"
+                    },
+                    {
+                        "name": "Hibiscus Syrup",
+                        "taste": [
+                            "floral",
+                            "sweet",
+                            "acid"
+                        ],
+                        "description": "crimson",
+                        "label": "bloom"
+                    },
+                    {
+                        "name": "Jalapeño Tincture",
+                        "taste": [
+                            "spicy",
+                            "herbal",
+                            "bitter"
+                        ],
+                        "description": "heat",
+                        "label": "flare"
                     }
                 ],
                 "garnish": [
-                    {
-                        "name": "Salt Rim",
-                        "taste": [
-                            "salty",
-                            "bitter",
-                            "umami"
-                        ],
-                        "description": "sharp"
-                    },
                     {
                         "name": "Lime Wheel",
                         "taste": [
@@ -2391,31 +2782,49 @@
                         "description": "zesty"
                     },
                     {
-                        "name": "Orange Slice",
-                        "taste": [
-                            "fruity",
-                            "acid",
-                            "sweet"
-                        ],
-                        "description": "bright"
-                    },
-                    {
                         "name": "Cherry",
                         "taste": [
                             "sweet",
                             "fruity",
                             "herbal"
                         ],
-                        "description": "classic"
+                        "description": "sweet"
                     },
                     {
-                        "name": "Mint",
+                        "name": "Orange Slice",
                         "taste": [
-                            "herbal",
-                            "sweet",
-                            "floral"
+                            "fruity",
+                            "acid",
+                            "bitter"
                         ],
-                        "description": "fresh"
+                        "description": "sunny"
+                    },
+                    {
+                        "name": "Salt Rim",
+                        "taste": [
+                            "salty",
+                            "mineral",
+                            "clean"
+                        ],
+                        "description": "savory"
+                    },
+                    {
+                        "name": "Dehydrated Citrus",
+                        "taste": [
+                            "acid",
+                            "bitter",
+                            "fruity"
+                        ],
+                        "description": "artisan"
+                    },
+                    {
+                        "name": "Tajín Rim",
+                        "taste": [
+                            "spicy",
+                            "salty",
+                            "acid"
+                        ],
+                        "description": "bold"
                     }
                 ]
             }
@@ -2451,7 +2860,9 @@
                         "description": "rich",
                         "occasion": [
                             "Night",
-                            "Flexible"
+                            "Flexible",
+                            "Night Out",
+                            "Date Night"
                         ],
                         "label": "poet"
                     },
@@ -2465,7 +2876,9 @@
                         "description": "dry",
                         "occasion": [
                             "Night",
-                            "Flexible"
+                            "Flexible",
+                            "Night Out",
+                            "Date Night"
                         ],
                         "label": "contrarian"
                     },
@@ -2623,7 +3036,9 @@
                         "description": "rich",
                         "occasion": [
                             "Night",
-                            "Flexible"
+                            "Flexible",
+                            "Night Out",
+                            "Date Night"
                         ],
                         "label": "dreamer"
                     },
@@ -2654,9 +3069,42 @@
                         "occasion": [
                             "Night",
                             "Celebrating something",
-                            "Flexible" 
+                            "Flexible",
+                            "Night Out"
                         ],
                         "label": "alchemist"
+                    },
+                    {
+                        "name": "Scotch",
+                        "taste": [
+                            "smoky",
+                            "spicy",
+                            "herbal"
+                        ],
+                        "description": "peated",
+                        "occasion": [
+                            "Flexible",
+                            "Night Out",
+                            "Date Night",
+                            "Dinner Party"
+                        ],
+                        "label": "peat"
+                    },
+                    {
+                        "name": "Rum (aged)",
+                        "taste": [
+                            "sweet",
+                            "spicy",
+                            "herbal"
+                        ],
+                        "description": "mellow",
+                        "occasion": [
+                            "Flexible",
+                            "Night Out",
+                            "Casual Weeknight",
+                            "Celebrating something"
+                        ],
+                        "label": "anchor"
                     }
                 ],
                 "mixer": [
@@ -2759,6 +3207,26 @@
                         ],
                         "description": "roasted",
                         "label": "nocturnal"
+                    },
+                    {
+                        "name": "Mole Bitters",
+                        "taste": [
+                            "bitter",
+                            "spicy",
+                            "sweet"
+                        ],
+                        "description": "complex",
+                        "label": "ritual"
+                    },
+                    {
+                        "name": "Mezcal Rinse",
+                        "taste": [
+                            "smoky",
+                            "herbal",
+                            "earthy"
+                        ],
+                        "description": "smoky",
+                        "label": "veil"
                     }
                 ],
                 "garnish": [
@@ -2778,7 +3246,7 @@
                             "fruity",
                             "herbal"
                         ],
-                        "description": "classic"
+                        "description": "sweet"
                     },
                     {
                         "name": "Lemon Twist",
@@ -2796,16 +3264,25 @@
                             "bitter",
                             "umami"
                         ],
-                        "description": "savory"
+                        "description": "classic"
                     },
                     {
                         "name": "Flamed Peel",
                         "taste": [
                             "fruity",
                             "bitter",
-                            "herbal"
+                            "smoky"
                         ],
-                        "description": "smoky"
+                        "description": "dramatic"
+                    },
+                    {
+                        "name": "Expressed Citrus Peel",
+                        "taste": [
+                            "acid",
+                            "fruity",
+                            "bitter"
+                        ],
+                        "description": "refined"
                     }
                 ]
             }
@@ -2823,7 +3300,9 @@
                         "description": "rich",
                         "occasion": [
                             "Night",
-                            "Flexible"
+                            "Flexible",
+                            "Night Out",
+                            "Date Night"
                         ],
                         "label": "poet"
                     },
@@ -2837,7 +3316,9 @@
                         "description": "dry",
                         "occasion": [
                             "Night",
-                            "Flexible"
+                            "Flexible",
+                            "Night Out",
+                            "Date Night"
                         ],
                         "label": "contrarian"
                     },
@@ -2852,6 +3333,7 @@
                         "occasion": [
                             "Night",
                             "Flexible",
+                            "Brunch",
                             "Weekend Fun",
                             "Casual Weeknight"
                         ],
@@ -2980,6 +3462,7 @@
                         "occasion": [
                             "Night",
                             "Flexible",
+                            "Brunch",
                             "Dinner Party",
                             "Casual Weeknight"
                         ],
@@ -2995,7 +3478,9 @@
                         "description": "rich",
                         "occasion": [
                             "Night",
-                            "Flexible"
+                            "Flexible",
+                            "Night Out",
+                            "Date Night"
                         ],
                         "label": "dreamer"
                     },
@@ -3025,7 +3510,9 @@
                         "description": "intense",
                         "occasion": [
                             "Night",
-                            "Flexible"
+                            "Flexible",
+                            "Night Out",
+                            "Date Night"
                         ],
                         "label": "alchemist"
                     },
@@ -3044,6 +3531,38 @@
                             "Weekend Fun"
                         ],
                         "label": "charmer"
+                    },
+                    {
+                        "name": "Scotch",
+                        "taste": [
+                            "smoky",
+                            "spicy",
+                            "herbal"
+                        ],
+                        "description": "peated",
+                        "occasion": [
+                            "Flexible",
+                            "Night Out",
+                            "Date Night",
+                            "Dinner Party"
+                        ],
+                        "label": "peat"
+                    },
+                    {
+                        "name": "Rum (aged)",
+                        "taste": [
+                            "sweet",
+                            "spicy",
+                            "herbal"
+                        ],
+                        "description": "mellow",
+                        "occasion": [
+                            "Flexible",
+                            "Night Out",
+                            "Casual Weeknight",
+                            "Celebrating something"
+                        ],
+                        "label": "anchor"
                     }
                 ],
                 "mixer": [
@@ -3146,6 +3665,26 @@
                         ],
                         "description": "deep",
                         "label": "brooder"
+                    },
+                    {
+                        "name": "Mole Bitters",
+                        "taste": [
+                            "bitter",
+                            "spicy",
+                            "sweet"
+                        ],
+                        "description": "complex",
+                        "label": "ritual"
+                    },
+                    {
+                        "name": "Tobacco Bitters",
+                        "taste": [
+                            "bitter",
+                            "smoky",
+                            "herbal"
+                        ],
+                        "description": "aged",
+                        "label": "ember"
                     }
                 ],
                 "garnish": [
@@ -3165,7 +3704,7 @@
                             "fruity",
                             "herbal"
                         ],
-                        "description": "classic"
+                        "description": "sweet"
                     },
                     {
                         "name": "Lemon Twist",
@@ -3183,16 +3722,25 @@
                             "sweet",
                             "herbal"
                         ],
-                        "description": "warm"
+                        "description": "warming"
                     },
                     {
                         "name": "Star Anise",
                         "taste": [
                             "spicy",
                             "herbal",
+                            "sweet"
+                        ],
+                        "description": "exotic"
+                    },
+                    {
+                        "name": "Expressed Citrus Peel",
+                        "taste": [
+                            "acid",
+                            "fruity",
                             "bitter"
                         ],
-                        "description": "aromatic"
+                        "description": "refined"
                     }
                 ]
             }
@@ -3242,7 +3790,9 @@
                         "description": "spiced",
                         "occasion": [
                             "Night",
-                            "Flexible"
+                            "Flexible",
+                            "Night Out",
+                            "Date Night"
                         ],
                         "label": "northerner"
                     },
@@ -3432,9 +3982,43 @@
                         "description": "intense",
                         "occasion": [
                             "Night",
-                            "Flexible"
+                            "Flexible",
+                            "Night Out",
+                            "Date Night"
                         ],
                         "label": "alchemist"
+                    },
+                    {
+                        "name": "Mezcal",
+                        "taste": [
+                            "smoky",
+                            "herbal",
+                            "fruity"
+                        ],
+                        "description": "smoky",
+                        "occasion": [
+                            "Flexible",
+                            "Night Out",
+                            "Date Night",
+                            "Dinner Party"
+                        ],
+                        "label": "phantom"
+                    },
+                    {
+                        "name": "Rum (white)",
+                        "taste": [
+                            "sweet",
+                            "clean",
+                            "fruity"
+                        ],
+                        "description": "light",
+                        "occasion": [
+                            "Flexible",
+                            "Night Out",
+                            "Weekend Fun",
+                            "Casual Weeknight"
+                        ],
+                        "label": "mariner"
                     }
                 ],
                 "mixer": [
@@ -3537,17 +4121,46 @@
                         ],
                         "description": "wild",
                         "label": "spark"
+                    },
+                    {
+                        "name": "Yuzu Juice",
+                        "taste": [
+                            "acid",
+                            "fruity",
+                            "floral"
+                        ],
+                        "description": "bright",
+                        "label": "tokyo"
+                    },
+                    {
+                        "name": "Pickled Brine",
+                        "taste": [
+                            "salty",
+                            "acid",
+                            "umami"
+                        ],
+                        "description": "briny",
+                        "label": "vault"
                     }
                 ],
                 "garnish": [
                     {
-                        "name": "Olive",
+                        "name": "Orange Peel",
                         "taste": [
-                            "salty",
-                            "bitter",
-                            "umami"
+                            "fruity",
+                            "acid",
+                            "bitter"
                         ],
-                        "description": "classic"
+                        "description": "aromatic"
+                    },
+                    {
+                        "name": "Cherry",
+                        "taste": [
+                            "sweet",
+                            "fruity",
+                            "herbal"
+                        ],
+                        "description": "sweet"
                     },
                     {
                         "name": "Lemon Twist",
@@ -3559,13 +4172,13 @@
                         "description": "bright"
                     },
                     {
-                        "name": "Orange Peel",
+                        "name": "Olive",
                         "taste": [
-                            "fruity",
-                            "acid",
-                            "bitter"
+                            "salty",
+                            "bitter",
+                            "umami"
                         ],
-                        "description": "aromatic"
+                        "description": "classic"
                     },
                     {
                         "name": "Onion",
@@ -3577,13 +4190,13 @@
                         "description": "sharp"
                     },
                     {
-                        "name": "Cherry",
+                        "name": "Smoked Salt Rim",
                         "taste": [
-                            "sweet",
-                            "fruity",
-                            "herbal"
+                            "salty",
+                            "smoky",
+                            "mineral"
                         ],
-                        "description": "playful"
+                        "description": "moody"
                     }
                 ]
             }
