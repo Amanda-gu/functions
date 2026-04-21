@@ -336,22 +336,19 @@ let showCard = (data) => {
 		//maybe i turn it into an image first then i share the image?
 	
 		
-		let image
-		let file
+
+	
 		
-		shareBtn.addEventListener("click", () => {
+		shareBtn.addEventListener("click", async() => {
 			//using a lib to turn html elemetns into image: https://www.youtube.com/watch?v=rIubDKHy0js
 			//what i learned: turn it into canvas so i can get the image from the canvas	
 			html2canvas(dialogCard).then(canvas => {
 				//give it a size
 				//asked chat gpt in this thread:  https://chatgpt.com/share/69d6828e-7360-8327-83e1-29deb4cbe844
 				//i cant change the size of blob because its raw data.
-				// canvas.width = 1080
-				// canvas.height = 1920
-				// image = canvas.toDataURL("image/png")
-	
+			
 				canvas.toBlob((blob) => {
-					file = new File([blob], 'image', {type: "image/png"});
+					let file = new File([blob], 'image', {type: "image/png"})
 					console.log(file)
 	
 					let shareData = {
