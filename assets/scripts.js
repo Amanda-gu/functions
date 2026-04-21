@@ -351,16 +351,16 @@ let showCard = (data) => {
 			})
 		})
 
+		const shareData = {
+			title: `${cocktailLabel}`,
+			text: "I made a" + cocktailLabel + " with Mixed Signals!" + " You can try it out too with this link:",
+			url: "https://amanda-gu.github.io/functions/",
+			files: [file]
+		}
 		shareBtn.addEventListener("click", () => {
 				//using a lib to turn html elemetns into image: https://www.youtube.com/watch?v=rIubDKHy0js
 				//what i learned: turn it into canvas so i can get the image from the canvas	
 
-				const shareData = {
-					title: `${cocktailLabel}`,
-					text: "I made a" + cocktailLabel + " with Mixed Signals!" + " You can try it out too with this link:",
-					url: "https://amanda-gu.github.io/functions/",
-					files: [file]
-				}
 				
 				try {
 					navigator.share(shareData);
