@@ -135,7 +135,7 @@ body {
 			width: 3rem;
 			object-fit:contain;
 		}
-		animation-name: page-intro-h1;
+		animation-name: page-intro;
 		animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
 		animation-iteration-count: 1;
 		animation-duration: 3000ms;
@@ -582,7 +582,7 @@ dialog{
 				}
 }
 
-@keyframes page-intro-h1 {
+@keyframes page-intro {
 				0% {
 					opacity: 1;
 				}
@@ -593,6 +593,11 @@ dialog{
 				}
 
 				90% {
+		
+					opacity: 0;
+				}
+
+				100% {
 		
 					opacity: 0;
 				}
