@@ -326,7 +326,6 @@ dialog{
 				animation-name: highlight-transition;
 				animation-duration: 1200ms;
 				animation-iteration-count: 1;
-				 /* Enable 3D transformations. */
 				animation-fill-mode: forwards; /* Keep the final state of the animation. */
 			}
 		

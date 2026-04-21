@@ -336,7 +336,7 @@ let showCard = (data) => {
 	
 			
 		shareBtn.addEventListener("click", async () => {
-				//turn html elemetns into image: https://www.youtube.com/watch?v=rIubDKHy0js
+				//using a lib to turn html elemetns into image: https://www.youtube.com/watch?v=rIubDKHy0js
 				//what i learned: turn it into canvas so i can get the image from the canvas
 				html2canvas(dialogCard).then(canvas => {
 					//give it a size
