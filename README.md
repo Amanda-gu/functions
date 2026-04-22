@@ -16,9 +16,9 @@ The main challenge is how to balance between taste, intensity, and mood.
 My approach for simplifying the recipe creation is by dividing the data into 3 layers.  
 1. **Base Layer** - The Strength
    - Everything is firstly categorized by intensity: Light, Medium, or Strong.
-3. **Second Layer** - The Taste Profile
+3. **Second Layer** - The Families
    - Within each strength, I’ve mapped out 3 distinct families. This is where the 'Adventure Scale' lives. This acts as "logic guardrails" to ensure that recipes remain compatible and delicious, even at high adventure scales.
-5. **Third Layer** - Modular data
+5. **Third Layer** - The Ingredients
    - Finally, every family has a consistent 3-part framework: Base, Mixer, and Garnish.
 
 ## Visual Design
