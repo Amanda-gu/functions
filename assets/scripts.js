@@ -347,6 +347,7 @@ let showCard = (data) => {
 							text: "I made a" + cocktailLabel + " with Mixed Signals!" + " You can try it out too with this link:",
 							url: "https://amanda-gu.github.io/functions/"
 					}
+
 				if (navigator.canShare) {
 
 					html2canvas(dialogCard).then(canvas => {
@@ -361,19 +362,26 @@ let showCard = (data) => {
 									{ type: "image/png" })]
 							}
 
-							navigator.share(shareData)
+							if (navigator.canShare(shareData)) {
+								navigator.share(shareData)
+							} else {
+								navigator.share(shareDataFallback)
+							}
 						})
 					})
-					
+				
 				} else if (navigator.share) {
 					navigator.share(shareDataFallback)
 					console.log('share data fallback', shareDataFallback)
 				}
 				
+				// asked chat gpt in this thread:  
+				// https://chatgpt.com/share/69d6828e-7360-8327-83e1-29deb4cbe844
+				// https://chatgpt.com/share/69e8df1c-40c8-83ea-82af-cf4040ce1b4f
 				
+				//below is old
 				// html2canvas(dialogCard).then(canvas => {
 				// 	//give it a size
-				// 	//asked chat gpt in this thread:  https://chatgpt.com/share/69d6828e-7360-8327-83e1-29deb4cbe844
 				// 	//i cant change the size of blob because its raw data.
 
 					

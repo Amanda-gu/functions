@@ -385,7 +385,7 @@ dialog{
 		padding: var(--size-4);
 		margin: var(--size-0);
 		width: 100%;
-		color: var(--primary-color);
+		opacity: 1;
 		background-color: var(--third-color);
 		corner-shape: bevel;
 		border-radius:  var(--border-radius-large);
@@ -429,6 +429,7 @@ dialog{
 					height: 100%;
 					scale: 0.85;
 					opacity: 0.6;
+
 					pointer-events: none;
 					z-index: -1;
 					margin: calc(var(--size-1)* -1);
