@@ -338,9 +338,8 @@ let showCard = (data) => {
 		
 
 	
-		
+	const shareData
 	shareBtn.addEventListener("click", async () => {
-		let image 
 				//using a lib to turn html elemetns into image: https://www.youtube.com/watch?v=rIubDKHy0js
 				//what i learned: turn it into canvas so i can get the image from the canvas
 				html2canvas(dialogCard).then(canvas => {
@@ -348,9 +347,7 @@ let showCard = (data) => {
 					//asked chat gpt in this thread:  https://chatgpt.com/share/69d6828e-7360-8327-83e1-29deb4cbe844
 					//i cant change the size of blob because its raw data.
 
-					image = canvas.toDataURL('image/png')
 					
-					const shareData
 					canvas.toBlob(function(blob) {
 
 						shareData = {
@@ -367,24 +364,26 @@ let showCard = (data) => {
 								// what i learned: toDataURL returns NOT an actual file but a text string of base64(binary data), toBlob object representing the image contained in the canvas
 								//
 								//  files is an ARRAY of File objects representing files to be shared. 
+								
+								//share template from MDN: https://developer.mozilla.org/en-US/docs/Web/API/Web_Share_API 			
+								// Share must be triggered by "user activation"
 						}
 
-						//share template from MDN: https://developer.mozilla.org/en-US/docs/Web/API/Web_Share_API 			
-						// Share must be triggered by "user activation"
-						if (navigator.canShare && navigator.canShare(shareData)) {
-							navigator.share(shareData);
-						} else {
-							// fallback for mobile chrome: download the image instead
-							shareData = {
-									title: "Mixed Signals Cocktail Recipe",
-									text: "I made a" + cocktailLabel + " with Mixed Signals!" + " You can try it out too with this link:",
-									url: "https://amanda-gu.github.io/functions/"
-							}
-						}
-						console.log('share data', shareData)
-				
 					})
 				})
+
+				if (navigator.canShare && navigator.canShare(shareData)) {
+					navigator.share(shareData);
+				} else {
+					// fallback for mobile chrome: download the image instead
+					shareData = {
+							title: "Mixed Signals Cocktail Recipe",
+							text: "I made a" + cocktailLabel + " with Mixed Signals!" + " You can try it out too with this link:",
+							url: "https://amanda-gu.github.io/functions/"
+					}
+				}
+				console.log('share data', shareData)
+
 			
 		})
 

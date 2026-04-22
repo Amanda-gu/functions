@@ -36,7 +36,6 @@ body {
 	height: 100vh;
 	display: flex; 
 	align-items: center;
-	/* background-color: var(--third-color); */
 
 	animation-name: page-intro-body;
 	animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
