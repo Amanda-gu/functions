@@ -35,10 +35,10 @@ body {
 	font-size: var(--size-1);
 	padding: var(--spacing);
 	height: 100vh;
-	display: flex; 
-	flex-direction: column;
+	display: grid; 
+	grid-template-rows: 1fr min-content;
 	align-items: center;
-	justify-content: space-around;
+	justify-content: center;
 
 	animation-name: page-intro-body;
 	animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
@@ -48,14 +48,13 @@ body {
 	
 	main{
 		width: 100%;
+		height: max-content;
 	}
 	footer{
-		position: absolute;
-		height: min-content;
 		padding-block: var(--size-0);
 		size: var(--size-0);
-		bottom: 0;
 		color: var(--forth-color);
+		text-align: center;
 
 		a{
 			text-decoration: underline;
