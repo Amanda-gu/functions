@@ -552,7 +552,7 @@ dialog{
 @keyframes highlight-transition {
 				0% {
 					transform: translateY(var(--size-0));
-					opacity: 0;
+					opacity: 0.5;
 				}
 				100% {
 					transform: translateY(0);
