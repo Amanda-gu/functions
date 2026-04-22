@@ -19,7 +19,7 @@ My approach for simplifying the recipe creation is by dividing the data into 3 l
 3. **Second Layer** - The Taste Profile
    - Within each strength, I’ve mapped out 3 distinct families. This is where the 'Adventure Scale' lives. This acts as "logic guardrails" to ensure that recipes remain compatible and delicious, even at high adventure scales.
 5. **Third Layer** - Modular data
-  - Finally, every family has a consistent 3-part framework: Base, Mixer, and Garnish.
+   - Finally, every family has a consistent 3-part framework: Base, Mixer, and Garnish.
 
 ## Visual Design
 The visual direction takes inspiration from physical menu designs. I prioritized clean and structured typography, and stepped away from heavy imageries as I don't want detailed photography to limit the way users imagines what the drink might look like. Instead, I created a series of cocktail family illustrations that subtle suggest what glass might be the best for the cocktail. 
