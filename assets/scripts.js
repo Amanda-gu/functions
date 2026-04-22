@@ -338,7 +338,7 @@ let showCard = (data) => {
 		
 
 	
-	const shareData
+	
 	shareBtn.addEventListener("click", async () => {
 				//using a lib to turn html elemetns into image: https://www.youtube.com/watch?v=rIubDKHy0js
 				//what i learned: turn it into canvas so i can get the image from the canvas
@@ -350,7 +350,7 @@ let showCard = (data) => {
 					
 					canvas.toBlob(function(blob) {
 
-						shareData = {
+						const shareData = {
 							title: `${cocktailLabel}`,
 							text: "I made a" + cocktailLabel + " with Mixed Signals!" + " You can try it out too with this link:",
 							url: "https://amanda-gu.github.io/functions/",
@@ -359,30 +359,31 @@ let showCard = (data) => {
 									"my recipe.png", 
 								{ type: "image/png" })]
 
-								// i referenced this link for sharing files https://web.dev/patterns/files/share-files#js
-								// trouble shoot why above code is not working: https://chatgpt.com/share/69d6828e-7360-8327-83e1-29deb4cbe844
-								// what i learned: toDataURL returns NOT an actual file but a text string of base64(binary data), toBlob object representing the image contained in the canvas
-								//
-								//  files is an ARRAY of File objects representing files to be shared. 
-								
-								//share template from MDN: https://developer.mozilla.org/en-US/docs/Web/API/Web_Share_API 			
-								// Share must be triggered by "user activation"
-						}
+							}
+						const shareDataFallback = {
+									title: "Mixed Signals Cocktail Recipe",
+									text: "I made a" + cocktailLabel + " with Mixed Signals!" + " You can try it out too with this link:",
+									url: "https://amanda-gu.github.io/functions/"
+							}
+							// i referenced this link for sharing files https://web.dev/patterns/files/share-files#js
+							// trouble shoot why above code is not working: https://chatgpt.com/share/69d6828e-7360-8327-83e1-29deb4cbe844
+							// what i learned: toDataURL returns NOT an actual file but a text string of base64(binary data), toBlob object representing the image contained in the canvas
+							//
+							//  files is an ARRAY of File objects representing files to be shared. 
+							
+							//share template from MDN: https://developer.mozilla.org/en-US/docs/Web/API/Web_Share_API 			
+							// Share must be triggered by "user activation"
 
+						if (navigator.canShare && navigator.canShare(shareData)) {
+							navigator.share(shareData)
+						} else {
+							// fallback for mobile chrome: download the image instead
+							navigator.share(shareDataFallback)
+						}
+						console.log('share data', shareData)
 					})
 				})
 
-				if (navigator.canShare && navigator.canShare(shareData)) {
-					navigator.share(shareData);
-				} else {
-					// fallback for mobile chrome: download the image instead
-					shareData = {
-							title: "Mixed Signals Cocktail Recipe",
-							text: "I made a" + cocktailLabel + " with Mixed Signals!" + " You can try it out too with this link:",
-							url: "https://amanda-gu.github.io/functions/"
-					}
-				}
-				console.log('share data', shareData)
 
 			
 		})
