@@ -349,10 +349,11 @@ let showCard = (data) => {
 					//i cant change the size of blob because its raw data.
 
 					image = canvas.toDataURL('image/png')
-
+					
+					const shareData
 					canvas.toBlob(function(blob) {
 
-						const shareData = {
+						shareData = {
 							title: `${cocktailLabel}`,
 							text: "I made a" + cocktailLabel + " with Mixed Signals!" + " You can try it out too with this link:",
 							url: "https://amanda-gu.github.io/functions/",
@@ -374,7 +375,11 @@ let showCard = (data) => {
 							navigator.share(shareData);
 						} else {
 							// fallback for mobile chrome: download the image instead
-							image.download = "my recipe.png"
+							shareData = {
+									title: "Mixed Signals Cocktail Recipe",
+									text: "I made a" + cocktailLabel + " with Mixed Signals!" + " You can try it out too with this link:",
+									url: "https://amanda-gu.github.io/functions/"
+							}
 						}
 						console.log('share data', shareData)
 				
