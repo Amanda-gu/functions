@@ -385,8 +385,7 @@ body {
 
 
 dialog{
-	height: max-content;
-	min-height: 100vh;
+	height: 100vh;
 
 	display: none;
 	flex-direction: column; 
@@ -439,6 +438,7 @@ dialog{
 				font-family: var(--font-deco);
 				font-size: var(--size-3);
 				line-height: var(--size-3);
+				text-align: left;
 			}
 			
 			#recipe-description{
