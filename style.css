@@ -29,19 +29,49 @@
 	font-size: 120%;
 
 }
+
 body {
     font-family: var(--font-serif);
 	font-size: var(--size-1);
 	padding: var(--spacing);
 	height: 100vh;
 	display: flex; 
+	flex-direction: column;
 	align-items: center;
+	justify-content: space-around;
 
 	animation-name: page-intro-body;
 	animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
 	animation-iteration-count: 1;
 	animation-duration: 3000ms;
 	animation-fill-mode: forwards;
+	
+	main{
+		width: 100%;
+	}
+	footer{
+		position: absolute;
+		height: min-content;
+		padding-block: var(--size-0);
+		size: var(--size-0);
+		bottom: 0;
+		color: var(--forth-color);
+
+		a{
+			text-decoration: underline;
+		}
+
+		a:hover{
+			color: var(--primary-color);
+		}
+		animation-name: page-intro-form;
+		animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+		animation-iteration-count: 1;
+		animation-duration: 3000ms;
+		animation-fill-mode: forwards;
+
+		
+	}
 
 	.main-cta, .main-cta-inverted,.secondary-cta {
 		corner-shape: bevel;
