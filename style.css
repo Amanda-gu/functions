@@ -183,7 +183,7 @@ body {
 
 	}
 
-	p{
+	#my-name{
 		size: var(--size-0);
 		color: var(--forth-color);
 		text-align: center;
