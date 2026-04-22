@@ -35,6 +35,7 @@ body {
 	font-size: var(--size-1);
 	padding: var(--spacing);
 	height: 100vh;
+	overflow: hidden;
 	display: grid; 
 	grid-template-rows: 1fr min-content;
 	align-items: center;
