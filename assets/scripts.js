@@ -350,7 +350,7 @@ let showCard = (data) => {
 
 	
 				if (navigator.canShare) {
-					//chrome has can share so it's gonna be block by this canvas function
+					//chrome has can share bbut has to be immediate action so does not work when share is inside async functions
 					html2canvas(dialogCard).then(canvas => {
 						canvas.toBlob(function(blob) {
 							const shareData = {
