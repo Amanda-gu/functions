@@ -362,6 +362,15 @@ let showCard = (data) => {
 									{ type: "image/png" })]
 							}
 
+							// i referenced this link for sharing files https://web.dev/patterns/files/share-files#js
+				 			// trouble shoot why above code is not working: https://chatgpt.com/share/69d6828e-7360-8327-83e1-29deb4cbe844
+				 			// what i learned: toDataURL returns NOT an actual file but a text string of base64(binary data), toBlob object representing the image contained in the canvas
+				 			//
+							//  files is an ARRAY of File objects representing files to be shared. 
+							
+							//share template from MDN: https://developer.mozilla.org/en-US/docs/Web/API/Web_Share_API 			
+				 			// Share must be triggered by "user activation"
+
 							if (navigator.canShare(shareData)) {
 								navigator.share(shareData)
 							} else {
@@ -375,53 +384,10 @@ let showCard = (data) => {
 					console.log('share data fallback', shareDataFallback)
 				}
 				
-				// asked chat gpt in this thread:  
+				// trouble shoot w chat gpt:  
 				// https://chatgpt.com/share/69d6828e-7360-8327-83e1-29deb4cbe844
 				// https://chatgpt.com/share/69e8df1c-40c8-83ea-82af-cf4040ce1b4f
 				
-				//below is old
-				
-				// html2canvas(dialogCard).then(canvas => {
-				// 	//give it a size
-				// 	//i cant change the size of blob because its raw data.
-
-					
-				// 	canvas.toBlob(function(blob) {
-
-				// 		const shareData = {
-				// 			title: `${cocktailLabel}`,
-				// 			text: "I made a" + cocktailLabel + " with Mixed Signals!" + " You can try it out too with this link:",
-				// 			url: "https://amanda-gu.github.io/functions/",
-				// 			files: 
-				// 				[new File([blob], 
-				// 					"my recipe.png", 
-				// 				{ type: "image/png" })]
-
-				// 			}
-				// 		const shareDataFallback = {
-				// 					title: "Mixed Signals Cocktail Recipe",
-				// 					text: "I made a" + cocktailLabel + " with Mixed Signals!" + " You can try it out too with this link:",
-				// 					url: "https://amanda-gu.github.io/functions/"
-				// 			}
-				// 			// i referenced this link for sharing files https://web.dev/patterns/files/share-files#js
-				// 			// trouble shoot why above code is not working: https://chatgpt.com/share/69d6828e-7360-8327-83e1-29deb4cbe844
-				// 			// what i learned: toDataURL returns NOT an actual file but a text string of base64(binary data), toBlob object representing the image contained in the canvas
-				// 			//
-				// 			//  files is an ARRAY of File objects representing files to be shared. 
-							
-				// 			//share template from MDN: https://developer.mozilla.org/en-US/docs/Web/API/Web_Share_API 			
-				// 			// Share must be triggered by "user activation"
-
-				// 		if (navigator.canShare && navigator.canShare(shareData)) {
-				// 			navigator.share(shareData)
-				// 		} else {
-				// 			// fallback for mobile chrome: download the image instead
-				// 			navigator.share(shareDataFallback)
-				// 		}
-				// 		console.log('share data', shareData)
-				// 	})
-				// })
-
 	
 		})
 
