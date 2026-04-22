@@ -348,6 +348,17 @@ let showCard = (data) => {
 							url: "https://amanda-gu.github.io/functions/"
 					}
 
+				const testFile = new File(["test"], "test.png", { type: "image/png" })
+				const canShareFiles = navigator.canShare && navigator.canShare({ files: [testFile] })
+					//make a fake file to test if chrome can run on mobile
+				if (!canShareFiles) {
+					// chrome mobile: share immediately within gesture/ doesnt work if the share is within other function like the canvas function
+					if (navigator.share) {
+						navigator.share(shareDataFallback)
+					}
+					return
+				}
+
 				if (navigator.canShare) {
 
 					html2canvas(dialogCard).then(canvas => {
