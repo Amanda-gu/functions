@@ -348,7 +348,7 @@ let showCard = (data) => {
 							url: "https://amanda-gu.github.io/functions/"
 					}
 				if (navigator.canShare) {
-					// needs the blob, so stays inside html2canvas
+
 					html2canvas(dialogCard).then(canvas => {
 						canvas.toBlob(function(blob) {
 							const shareData = {
@@ -361,14 +361,10 @@ let showCard = (data) => {
 									{ type: "image/png" })]
 							}
 
-							if (navigator.canShare(shareData)) {
-								navigator.share(shareData)
-								console.log('share data', shareData)
-							} else {
-								navigator.share(shareDataFallback)
-							}
+							navigator.share(shareData)
 						})
 					})
+					
 				} else if (navigator.share) {
 					navigator.share(shareDataFallback)
 					console.log('share data fallback', shareDataFallback)
